@@ -78,6 +78,7 @@ export interface RelatedSolution {
 export interface SolutionPageData {
   title: string;
   description: string;
+  slug: string;
   breadcrumb: string;
   heroData: HeroData;
   quickStats: QuickStat[];
