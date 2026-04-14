@@ -2,11 +2,11 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { 
   Search, 
   Globe, 
-  ChevronDown, 
-  Cpu
+  ChevronDown
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import styles from "./Header.module.css";
@@ -49,7 +49,14 @@ export function Header() {
       <div className={`${styles.headerInner} container`}>
         {/* LOGO */}
         <Link href="/" className={styles.logoArea}>
-          <Cpu className={styles.aiIcon} size={32} />
+          <Image 
+            src="/logo.png" 
+            alt="Claritiy Logo" 
+            width={36} 
+            height={36}
+            className={styles.aiIcon}
+            priority
+          />
           <span>Claritiy</span>
         </Link>
 

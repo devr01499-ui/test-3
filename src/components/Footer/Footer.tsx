@@ -2,8 +2,8 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { 
-  Cpu, 
   Building2, 
   Send, 
   MessageSquare, 
@@ -27,7 +27,7 @@ export function Footer() {
           {/* BRAND COLUMN */}
           <div className={styles.brandCol}>
             <Link href="/" className={styles.logo}>
-              <Cpu size={32} />
+              <Image src="/logo.png" alt="Claritiy Logo" width={36} height={36} />
               <span>Claritiy</span>
             </Link>
             <p className={styles.desc}>
