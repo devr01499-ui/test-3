@@ -4,8 +4,6 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { 
-  Search, 
-  Globe, 
   ChevronDown
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -74,15 +72,6 @@ export function Header() {
           ))}
         </nav>
 
-        {/* ACTIONS */}
-        <div className={styles.actions}>
-          <div className={styles.langSwitch}>
-            <Globe size={18} />
-            <span>EN</span>
-            <ChevronDown size={12} />
-          </div>
-          <Search size={20} className={styles.actionIcon} />
-        </div>
       </div>
 
       {/* MEGA MENUS */}
