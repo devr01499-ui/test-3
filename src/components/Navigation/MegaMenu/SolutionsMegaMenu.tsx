@@ -1,7 +1,39 @@
 import React from "react";
+import Link from "next/link";
 import { ArrowRight, Calculator, Calendar, BarChart3, Target, Download, FileText, PieChart, TrendingUp, Zap } from "lucide-react";
 import styles from "./MegaMenu.module.css";
 import { enhancedSolutions } from "@/lib/navData";
+
+const routeMap: Record<string, string> = {
+  "Customer Service": "/solutions/customer-service",
+  "Technical Support": "/solutions/technical-support",
+  "Help Desk": "/solutions/technical-support",
+  "Live Chat Support": "/solutions/email-chat",
+  "Social Media Mgmt": "/solutions/content-moderation",
+  "Telemarketing": "/solutions/sales-telemarketing",
+  "Lead Generation": "/solutions/sales-telemarketing",
+  "Sales Support": "/solutions/sales-telemarketing",
+  "Appointment Setting": "/solutions/sales-telemarketing",
+  "Data Entry": "/solutions/data-entry",
+  "Data Processing": "/solutions/data-entry",
+  "Order Processing": "/solutions/order-processing",
+  "Claims Processing": "/solutions/claims-processing",
+  "Document Management": "/solutions/back-office-operations",
+  "Bookkeeping": "/solutions/finance-accounting",
+  "Accounts Payable": "/solutions/finance-accounting",
+  "Accounts Receivable": "/solutions/finance-accounting",
+  "Payroll Processing": "/solutions/finance-accounting",
+  "Tax Preparation": "/solutions/finance-accounting",
+  "Recruitment Process": "/solutions/hr-recruitment",
+  "Onboarding": "/solutions/hr-recruitment",
+  "Payroll Services": "/solutions/hr-recruitment",
+  "Benefits Admin": "/solutions/hr-recruitment",
+  "Employee Support": "/solutions/hr-recruitment",
+  "Content Moderation": "/solutions/content-moderation",
+  "Chat Support": "/solutions/email-chat",
+  "Email Management": "/solutions/email-chat",
+  "Virtual Assistance": "/solutions/back-office-operations"
+};
 
 export function SolutionsMegaMenu() {
   return (
@@ -16,9 +48,9 @@ export function SolutionsMegaMenu() {
               <ul className={styles.list}>
                 {group.items.map((item) => (
                   <li key={item}>
-                    <a href="#" className={styles.link}>
+                    <Link href={routeMap[item] || "/solutions"} className={styles.link} style={{ textDecoration: "none" }}>
                       <div className={styles.bullet} /> {item}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -139,9 +171,9 @@ export function SolutionsMegaMenu() {
 
       {/* FOOTER ACTIONS */}
       <div className={styles.footerActions}>
-        <a href="#" className={styles.actionBtn}><FileText size={16} /> View All Solutions</a>
-        <a href="#" className={styles.actionBtn}><BarChart3 size={16} /> Solutions Comparison</a>
-        <a href="#" className={styles.actionBtn}><Target size={16} /> Find My Solution</a>
+        <Link href="/solutions" className={styles.actionBtn} style={{ textDecoration: "none" }}><FileText size={16} /> View All Solutions</Link>
+        <Link href="/solutions" className={styles.actionBtn} style={{ textDecoration: "none" }}><BarChart3 size={16} /> Solutions Comparison</Link>
+        <Link href="/solutions" className={styles.actionBtn} style={{ textDecoration: "none" }}><Target size={16} /> Find My Solution</Link>
       </div>
     </div>
   );
