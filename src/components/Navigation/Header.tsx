@@ -17,14 +17,14 @@ const ResourcesMegaMenu = dynamic(() => import("./MegaMenu/ResourcesMegaMenu").t
 const AboutMegaMenu = dynamic(() => import("./MegaMenu/AboutMegaMenu").then(mod => mod.AboutMegaMenu), { ssr: false });
 
 const navItems = [
-  { name: "Solutions", component: SolutionsMegaMenu },
-  { name: "Industries", component: IndustriesMegaMenu },
-  { name: "AI Technology", component: AITechMegaMenu },
-  { name: "Resources", component: ResourcesMegaMenu },
-  { name: "About", component: AboutMegaMenu },
-  { name: "Partnership", hasDropdown: false },
-  { name: "Careers", hasDropdown: false },
-  { name: "Contact", hasDropdown: false },
+  { name: "Solutions", path: "/solutions", component: SolutionsMegaMenu },
+  { name: "Industries", path: "/industries", component: IndustriesMegaMenu },
+  { name: "AI Technology", path: "/ai-technology", component: AITechMegaMenu },
+  { name: "Resources", path: "/resources", component: ResourcesMegaMenu },
+  { name: "About", path: "/about", component: AboutMegaMenu },
+  { name: "Partnership", path: "/partnership", hasDropdown: false },
+  { name: "Careers", path: "/careers", hasDropdown: false },
+  { name: "Contact", path: "/contact", hasDropdown: false },
 ];
 
 export function Header() {
@@ -57,16 +57,31 @@ export function Header() {
         {/* MAIN MENU */}
         <nav className={styles.nav}>
           {navItems.map((item) => (
-            <div 
-              key={item.name} 
-              className={styles.navItem}
-              onMouseEnter={() => handleMouseEnter(item.name)}
-            >
-              {item.name}
-              {(item.component || item.hasDropdown) && (
-                <ChevronDown size={14} className={styles.chevron} />
-              )}
-            </div>
+            item.path ? (
+              <Link 
+                href={item.path}
+                key={item.name} 
+                className={styles.navItem}
+                style={{ textDecoration: 'none', color: 'inherit' }}
+                onMouseEnter={() => handleMouseEnter(item.name)}
+              >
+                {item.name}
+                {(item.component || item.hasDropdown) && (
+                  <ChevronDown size={14} className={styles.chevron} />
+                )}
+              </Link>
+            ) : (
+              <div 
+                key={item.name} 
+                className={styles.navItem}
+                onMouseEnter={() => handleMouseEnter(item.name)}
+              >
+                {item.name}
+                {(item.component || item.hasDropdown) && (
+                  <ChevronDown size={14} className={styles.chevron} />
+                )}
+              </div>
+            )
           ))}
         </nav>
 

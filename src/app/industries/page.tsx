@@ -30,8 +30,29 @@ const allIndustries = [
 
 export default function IndustriesIndex() {
   return (
-    <div style={{ background: "var(--background)", minHeight: "100vh", paddingTop: "8rem", paddingBottom: "8rem" }}>
-      <div className="container">
+    <div style={{ position: "relative", background: "var(--background)", minHeight: "100vh", paddingTop: "8rem", paddingBottom: "8rem", overflow: "hidden" }}>
+      {/* Background Video */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          zIndex: 0,
+          opacity: 0.15,
+          pointerEvents: "none"
+        }}
+      >
+        <source src="https://videos.pexels.com/video-files/4624087/4624087-hd_1920_1080_30fps.mp4" type="video/mp4" />
+      </video>
+
+      <div className="container" style={{ position: "relative", zIndex: 1 }}>
         
         <div style={{ textAlign: "center", marginBottom: "5rem" }}>
           <h1 style={{ fontSize: "4rem", fontWeight: 800, marginBottom: "1.5rem", color: "var(--text-main)", letterSpacing: "-0.02em" }}>Industry Specializations</h1>
