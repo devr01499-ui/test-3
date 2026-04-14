@@ -31,7 +31,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <Header />
-        <main style={{ flex: 1 }}>{children}</main>
+        <main style={{ flex: 1, paddingTop: "80px" }}>{children}</main>
         <Footer />
       </body>
     </html>
