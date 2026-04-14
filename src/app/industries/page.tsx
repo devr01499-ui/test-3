@@ -44,7 +44,7 @@ export default function IndustriesIndex() {
           width: "100vw",
           height: "100vh",
           objectFit: "cover",
-          zIndex: -1,
+          zIndex: 0,
           opacity: 0.7,
           pointerEvents: "none"
         }}
