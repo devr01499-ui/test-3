@@ -1,0 +1,100 @@
+.section {
+  padding: 120px 0;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.title {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  opacity: 0.8;
+  margin-bottom: 4rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.primary {
+  background: var(--primary);
+  color: white;
+  padding: 1.25rem 3rem;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+}
+
+.primary:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(14, 165, 233, 0.3);
+}
+
+.secondary {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 1.25rem 3rem;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.secondary:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.tertiary {
+  color: white;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.tertiary:hover {
+  text-decoration: underline;
+}
+
+.trustText {
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.5;
+  margin-bottom: 2rem;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  opacity: 0.4;
+}
+
+.logoPlaceholder {
+  font-weight: 800;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .actions {
+    flex-direction: column;
+    align-items: center;
+  }
+}

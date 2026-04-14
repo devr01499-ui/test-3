@@ -1,0 +1,33 @@
+steps:
+  - id: 1
+    task: Initial project setup and memory initialization.
+    status: COMPLETED
+  - id: 2
+    task: Global styles, typography, and color system.
+    status: COMPLETED
+  - id: 3
+    task: Modular Homepage Build (13 Sections).
+    status: IN_PROGRESS
+    subtasks:
+      - Hero Section (50/50 Layout & Stats)
+      - AI + Human Intelligence Showcase
+      - Services Carousel
+      - Industry Expertise Grid
+      - AI Technology Spotlight (Demo + Tech Stack)
+      - Proof & Results Dashboard
+      - Client Success Slider
+      - Client Logo Wall
+      - Global Presence Map
+      - Resources & Insights Hub
+      - ROI Calculator Teaser
+      - Certifications & Compliance
+      - Final CTA & Mega Footer
+  - id: 4
+    task: Header & Navigation Polish.
+    status: PLANNED
+  - id: 5
+    task: Mobile Responsive Adaptation.
+    status: PLANNED
+  - id: 6
+    task: Final Vercel Build Check.
+    status: PLANNED

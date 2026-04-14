@@ -1,0 +1,147 @@
+.section {
+  padding: 100px 0;
+  background: var(--surface);
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 4rem;
+}
+
+.mapContainer {
+  position: relative;
+  background: white;
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  padding: 4rem;
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.05);
+  margin-bottom: 4rem;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mapSVG {
+  width: 100%;
+  height: auto;
+  max-width: 1000px;
+  opacity: 0.15;
+}
+
+.pin {
+  cursor: pointer;
+}
+
+.pinPulse {
+  fill: var(--primary);
+  opacity: 0.4;
+}
+
+.pinCore {
+  fill: var(--primary);
+}
+
+.mapOverlay {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  width: 300px;
+}
+
+.regionItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.regionCount {
+  color: var(--primary);
+  font-weight: 800;
+}
+
+.presenceStats {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.statIcon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: white;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  margin-bottom: 0.5rem;
+}
+
+.statVal {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.statLab {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.primaryCTA {
+  background: var(--primary);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+.secondaryCTA {
+  background: white;
+  border: 1px solid var(--border);
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+  .mapOverlay {
+    position: static;
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .presenceStats {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

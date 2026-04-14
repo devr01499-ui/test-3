@@ -1,0 +1,145 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+.headerInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.logoArea {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.aiIcon {
+  color: var(--primary);
+  filter: drop-shadow(0 0 5px var(--primary));
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navItem {
+  position: relative;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-main);
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.navItem:hover {
+  color: var(--primary);
+}
+
+.chevron {
+  margin-left: 4px;
+  transition: transform 0.2s ease;
+}
+
+.navItem:hover .chevron {
+  transform: rotate(180deg);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.actionIcon {
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.actionIcon:hover {
+  color: var(--primary);
+}
+
+.langSwitch {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-main);
+  cursor: pointer;
+}
+
+.portalBtn {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--primary);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.portalBtn:hover {
+  background: var(--surface);
+}
+
+.quoteBtn {
+  font-size: 0.875rem;
+  font-weight: 600;
+  background: var(--primary);
+  color: white;
+  padding: 0.6rem 1.25rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(14, 165, 233, 0.2);
+  transition: all 0.2s ease;
+}
+
+.quoteBtn:hover {
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 15px rgba(14, 165, 233, 0.3);
+}
+
+/* Mega Menu Container */
+.megaMenuWrapper {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100vw;
+  background: white;
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  z-index: 999;
+}
+
+.megaMenuInner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+@media (max-width: 1024px) {
+  .nav, .actions {
+    display: none;
+  }
+}
