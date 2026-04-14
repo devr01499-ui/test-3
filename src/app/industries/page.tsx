@@ -49,7 +49,7 @@ export default function IndustriesIndex() {
           pointerEvents: "none"
         }}
       >
-        <source src="https://videos.pexels.com/video-files/4624087/4624087-hd_1920_1080_30fps.mp4" type="video/mp4" />
+        <source src="/hero-video.mp4" type="video/mp4" />
       </video>
 
       <div className="container" style={{ position: "relative", zIndex: 1 }}>
