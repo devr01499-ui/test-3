@@ -36,29 +36,8 @@ const mainStats = [
 
 export function HeroSection() {
   return (
-    <section className={styles.hero} style={{ position: "relative", overflow: "hidden" }}>
-      {/* Background Video */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          objectFit: "cover",
-          zIndex: 0,
-          opacity: 0.15,
-          pointerEvents: "none"
-        }}
-      >
-        <source src="/hero-video.mp4" type="video/mp4" />
-      </video>
-
-      <div className={`${styles.heroInner} container`} style={{ position: "relative", zIndex: 1 }}>
+    <section className={styles.hero}>
+      <div className={`${styles.heroInner} container`}>
         {/* LEFT CONTENT */}
         <div className={styles.leftContent}>
           <motion.div 
@@ -119,55 +98,44 @@ export function HeroSection() {
         {/* RIGHT VISUAL */}
         <div className={styles.rightVisual}>
           <div className={styles.visualContainer}>
-            {/* BRAIN/AI NODE ANIMATION (SIMULATED) */}
-            <svg viewBox="0 0 500 500" className={styles.aiGraphic}>
-              {/* Central AI Node */}
-              <motion.circle 
-                cx="250" cy="250" r="40" 
-                fill="var(--primary)" 
-                animate={{ opacity: [0.6, 1, 0.6], scale: [1, 1.1, 1] }} 
-                transition={{ duration: 4, repeat: Infinity }}
-              />
+            {/* HERO VIDEO INSTEAD OF SVG */}
+            <motion.div 
+              style={{
+                width: "100%",
+                aspectRatio: "16/9",
+                borderRadius: "24px",
+                overflow: "hidden",
+                boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
+                border: "1px solid rgba(255, 255, 255, 0.1)",
+                position: "relative"
+              }}
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+            >
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  background: "var(--surface)"
+                }}
+              >
+                <source src="/hero-video.mp4" type="video/mp4" />
+              </video>
               
-              {/* Connecting Lines & Nodes */}
-              {[...Array(8)].map((_, i) => (
-                <g key={i}>
-                  <motion.line 
-                    x1="250" y1="250" 
-                    x2={250 + 150 * Math.cos(i * (Math.PI / 4))} 
-                    y2={250 + 150 * Math.sin(i * (Math.PI / 4))}
-                    stroke="var(--primary)"
-                    strokeWidth="1"
-                    initial={{ pathLength: 0, opacity: 0 }}
-                    animate={{ pathLength: 1, opacity: 0.2 }}
-                    transition={{ duration: 2, delay: i * 0.2 }}
-                  />
-                  <motion.circle 
-                    cx={250 + 150 * Math.cos(i * (Math.PI / 4))} 
-                    cy={250 + 150 * Math.sin(i * (Math.PI / 4))} 
-                    r="6" 
-                    fill="var(--secondary)"
-                    animate={{ y: [0, -10, 0] }}
-                    transition={{ duration: 3, repeat: Infinity, delay: i * 0.4 }}
-                  />
-                </g>
-              ))}
-
-              {/* Data Flow Particles */}
-              {[...Array(12)].map((_, i) => (
-                <motion.circle 
-                  key={`p-${i}`}
-                  r="2"
-                  fill="var(--primary)"
-                  animate={{ 
-                    cx: [250, 250 + 200 * Math.cos(i * (Math.PI / 6))],
-                    cy: [250, 250 + 200 * Math.sin(i * (Math.PI / 6))],
-                    opacity: [0, 1, 0]
-                  }}
-                  transition={{ duration: 2, repeat: Infinity, delay: i * 0.5 }}
-                />
-              ))}
-            </svg>
+              {/* Optional clean overlay gradient */}
+              <div style={{
+                position: "absolute",
+                inset: 0,
+                background: "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%)",
+                pointerEvents: "none"
+              }} />
+            </motion.div>
 
             {/* TRUST BADGES OVERLAY */}
             <div className={styles.trustOverlay}>
