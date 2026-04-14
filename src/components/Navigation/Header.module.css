@@ -4,10 +4,8 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.65);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(226, 232, 240, 0.6);
+  background: var(--background);
+  border-bottom: 1px solid var(--border);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
   transition: all 0.3s ease;
 }
@@ -15,8 +13,7 @@
 .headerInner {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  gap: 5rem;
+  justify-content: space-between;
   height: 80px;
 }
 
@@ -89,6 +86,9 @@
 
 .megaMenuInner {
   padding: 2.5rem;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 @media (max-width: 1024px) {
