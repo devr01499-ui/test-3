@@ -93,3 +93,39 @@ button {
   border-color: var(--primary);
   box-shadow: var(--card-shadow-hover);
 }
+
+/* 3D Bright Gradient Overlays & Cards */
+.card-3d-wrapper {
+  perspective: 1000px;
+  height: 100%;
+}
+
+.card-3d-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: white;
+  transform-style: preserve-3d;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-3d-content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+  pointer-events: none;
+}
+
+.hover-glow-1 { background: linear-gradient(135deg, #FF9A9E 0%, #FECFEF 100%); }
+.hover-glow-2 { background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%); }
+.hover-glow-3 { background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%); }
+.hover-glow-4 { background: linear-gradient(135deg, #fccb90 0%, #d57eeb 100%); }
+.hover-glow-5 { background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%); }
+

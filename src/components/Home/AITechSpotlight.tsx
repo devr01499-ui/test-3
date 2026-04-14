@@ -44,35 +44,54 @@ export function AITechSpotlight() {
     <section className={styles.section}>
       <div className="container">
         <div className={styles.flex}>
-          {/* LEFT: INTERACTIVE DEMO */}
+          {/* LEFT: INTERACTIVE DEMO (OPTION A 3D Background Card) */}
           <div className={styles.leftDemo}>
-            <motion.div 
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className={styles.demoCard}
-            >
-              <div className={styles.demoHeader}>
-                <div className={styles.demoDot} />
-                <span style={{ fontSize: "0.75rem", fontWeight: 700, color: "var(--text-muted)" }}>LIVE AI AGENT DEMO</span>
-              </div>
-              <div className={styles.demoContent}>
-                <div className={styles.demoChat}>
-                  <AnimatePresence mode="popLayout">
-                    {chatMessages.slice(0, msgCount).map((msg, idx) => (
-                      <motion.div 
-                        key={idx}
-                        initial={{ opacity: 0, y: 10, scale: 0.95 }}
-                        animate={{ opacity: 1, y: 0, scale: 1 }}
-                        className={`${styles.msg} ${msg.role === 'ai' ? styles.aiMsg : styles.userMsg}`}
-                      >
-                        {msg.text}
-                      </motion.div>
-                    ))}
-                  </AnimatePresence>
+            <div className="card-3d-wrapper">
+              <motion.div 
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                whileHover={{ rotateY: 8, rotateX: 5, scale: 1.02 }}
+                transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                viewport={{ once: true }}
+                className={`card-3d-content ${styles.demoCard}`}
+                style={{ position: "relative", overflow: "hidden", display: "flex", flexDirection: "column" }}
+              >
+                {/* Option A: Full Card Background Image */}
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="https://loremflickr.com/800/800/artificialintelligence,server/all" alt="AI Agent" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover", zIndex: 0 }} />
+                {/* Heavy Glass/Gradient Overlay to make chat readable */}
+                <div style={{ position: "absolute", inset: 0, background: "linear-gradient(135deg, rgba(14, 165, 233, 0.85) 0%, rgba(168, 85, 247, 0.85) 100%)", zIndex: 1, backdropFilter: "blur(4px)" }} />
+                
+                <div style={{ position: "relative", zIndex: 2, height: "100%", display: "flex", flexDirection: "column" }}>
+                  <div className={styles.demoHeader} style={{ background: "rgba(255,255,255,0.1)", borderBottom: "1px solid rgba(255,255,255,0.2)" }}>
+                    <div className={styles.demoDot} style={{ background: "#22c55e", boxShadow: "0 0 10px #22c55e" }} />
+                    <span style={{ fontSize: "0.75rem", fontWeight: 700, color: "white" }}>LIVE AI AGENT DEMO</span>
+                  </div>
+                  <div className={styles.demoContent} style={{ flexGrow: 1, padding: "1.5rem" }}>
+                    <div className={styles.demoChat}>
+                      <AnimatePresence mode="popLayout">
+                        {chatMessages.slice(0, msgCount).map((msg, idx) => (
+                          <motion.div 
+                            key={idx}
+                            initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                            animate={{ opacity: 1, y: 0, scale: 1 }}
+                            className={`${styles.msg} ${msg.role === 'ai' ? styles.aiMsg : styles.userMsg}`}
+                            style={{ 
+                              background: msg.role === 'ai' ? "rgba(255,255,255,0.9)" : "rgba(30,30,30,0.8)", 
+                              color: msg.role === 'ai' ? "var(--text-main)" : "white",
+                              boxShadow: "0 10px 20px rgba(0,0,0,0.15)",
+                              border: "1px solid rgba(255,255,255,0.2)"
+                            }}
+                          >
+                            {msg.text}
+                          </motion.div>
+                        ))}
+                      </AnimatePresence>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </motion.div>
+              </motion.div>
+            </div>
           </div>
 
           {/* RIGHT: TECH STACK */}
