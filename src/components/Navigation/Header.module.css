@@ -2,10 +2,11 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: var(--glass-bg);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.6);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
   transition: all 0.3s ease;
 }
 
@@ -34,7 +35,7 @@
 .nav {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .navItem {
@@ -122,20 +123,21 @@
 /* Mega Menu Container */
 .megaMenuWrapper {
   position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100vw;
-  background: white;
-  border-bottom: 1px solid var(--border);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+  top: calc(100% + 15px);
+  left: 50%;
+  width: 95vw;
+  max-width: 1100px;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   z-index: 999;
 }
 
 .megaMenuInner {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 3rem 2rem;
+  padding: 2.5rem;
 }
 
 @media (max-width: 1024px) {

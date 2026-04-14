@@ -18,7 +18,6 @@ const AITechMegaMenu = dynamic(() => import("./MegaMenu/AITechMegaMenu").then(mo
 const LocationsMegaMenu = dynamic(() => import("./MegaMenu/LocationsMegaMenu").then(mod => mod.LocationsMegaMenu), { ssr: false });
 const ResourcesMegaMenu = dynamic(() => import("./MegaMenu/ResourcesMegaMenu").then(mod => mod.ResourcesMegaMenu), { ssr: false });
 const AboutMegaMenu = dynamic(() => import("./MegaMenu/AboutMegaMenu").then(mod => mod.AboutMegaMenu), { ssr: false });
-const ServicesMegaMenu = dynamic(() => import("./MegaMenu/ServicesMegaMenu").then(mod => mod.ServicesMegaMenu), { ssr: false });
 
 const navItems = [
   { name: "Solutions", component: SolutionsMegaMenu },
@@ -27,10 +26,9 @@ const navItems = [
   { name: "Locations", component: LocationsMegaMenu },
   { name: "Resources", component: ResourcesMegaMenu },
   { name: "About", component: AboutMegaMenu },
-  { name: "Services", component: ServicesMegaMenu },
+  { name: "Partnership", hasDropdown: false },
   { name: "Careers", hasDropdown: false },
   { name: "Contact", hasDropdown: false },
-  { name: "Pricing", hasDropdown: false },
 ];
 
 export function Header() {
@@ -84,8 +82,6 @@ export function Header() {
             <ChevronDown size={12} />
           </div>
           <Search size={20} className={styles.actionIcon} />
-          <button className={styles.portalBtn}>Client Portal</button>
-          <button className={styles.quoteBtn}>Get Quote</button>
         </div>
       </div>
 
@@ -93,9 +89,9 @@ export function Header() {
       <AnimatePresence>
         {activeMenu && navItems.find(i => i.name === activeMenu)?.component && (
           <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
+            initial={{ opacity: 0, y: 10, x: "-50%" }}
+            animate={{ opacity: 1, y: 0, x: "-50%" }}
+            exit={{ opacity: 0, y: 10, x: "-50%" }}
             transition={{ duration: 0.2, ease: "easeOut" }}
             className={styles.megaMenuWrapper}
             onMouseEnter={() => handleMouseEnter(activeMenu)}
