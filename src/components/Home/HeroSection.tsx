@@ -36,8 +36,29 @@ const mainStats = [
 
 export function HeroSection() {
   return (
-    <section className={styles.hero}>
-      <div className={`${styles.heroInner} container`}>
+    <section className={styles.hero} style={{ position: "relative", overflow: "hidden" }}>
+      {/* Background Video */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          zIndex: 0,
+          opacity: 0.15,
+          pointerEvents: "none"
+        }}
+      >
+        <source src="/hero-video.mp4" type="video/mp4" />
+      </video>
+
+      <div className={`${styles.heroInner} container`} style={{ position: "relative", zIndex: 1 }}>
         {/* LEFT CONTENT */}
         <div className={styles.leftContent}>
           <motion.div 
