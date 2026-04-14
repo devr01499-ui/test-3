@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "NEURA | Intelligent BPO Solutions",
+  title: "Claritiy | Intelligent BPO Solutions",
   description: "Cutting-edge AI-augmented BPO services for the modern enterprise.",
 };
 

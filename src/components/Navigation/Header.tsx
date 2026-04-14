@@ -50,7 +50,7 @@ export function Header() {
         {/* LOGO */}
         <Link href="/" className={styles.logoArea}>
           <Cpu className={styles.aiIcon} size={32} />
-          <span>NEURA</span>
+          <span>Claritiy</span>
         </Link>
 
         {/* MAIN MENU */}

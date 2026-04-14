@@ -28,7 +28,7 @@ export function Footer() {
           <div className={styles.brandCol}>
             <Link href="/" className={styles.logo}>
               <Cpu size={32} />
-              <span>NEURA</span>
+              <span>Claritiy</span>
             </Link>
             <p className={styles.desc}>
               The future of intelligent outsourcing. Seamlessly integrating AI capabilities 
@@ -88,7 +88,7 @@ export function Footer() {
 
         <div className={styles.bottom}>
           <div className={styles.copyright}>
-            © {year} NEURA BPO Solutions. All rights reserved.
+            © {year} Claritiy BPO Solutions. All rights reserved.
           </div>
           
           <div className={styles.legalLinks}>

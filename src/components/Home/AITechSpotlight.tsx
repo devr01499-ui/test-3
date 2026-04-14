@@ -100,7 +100,7 @@ export function AITechSpotlight() {
                 transition={{ duration: 2, repeat: Infinity }}
                 className={styles.engineNode}
               >
-                AI ENGINE NEURA
+                AI ENGINE CLARITIY
               </motion.div>
 
               <div className={styles.connector} />
