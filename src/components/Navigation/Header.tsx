@@ -13,7 +13,6 @@ import dynamic from "next/dynamic";
 const SolutionsMegaMenu = dynamic(() => import("./MegaMenu/SolutionsMegaMenu").then(mod => mod.SolutionsMegaMenu), { ssr: false });
 const IndustriesMegaMenu = dynamic(() => import("./MegaMenu/IndustriesMegaMenu").then(mod => mod.IndustriesMegaMenu), { ssr: false });
 const AITechMegaMenu = dynamic(() => import("./MegaMenu/AITechMegaMenu").then(mod => mod.AITechMegaMenu), { ssr: false });
-const LocationsMegaMenu = dynamic(() => import("./MegaMenu/LocationsMegaMenu").then(mod => mod.LocationsMegaMenu), { ssr: false });
 const ResourcesMegaMenu = dynamic(() => import("./MegaMenu/ResourcesMegaMenu").then(mod => mod.ResourcesMegaMenu), { ssr: false });
 const AboutMegaMenu = dynamic(() => import("./MegaMenu/AboutMegaMenu").then(mod => mod.AboutMegaMenu), { ssr: false });
 
@@ -21,7 +20,6 @@ const navItems = [
   { name: "Solutions", component: SolutionsMegaMenu },
   { name: "Industries", component: IndustriesMegaMenu },
   { name: "AI Technology", component: AITechMegaMenu },
-  { name: "Locations", component: LocationsMegaMenu },
   { name: "Resources", component: ResourcesMegaMenu },
   { name: "About", component: AboutMegaMenu },
   { name: "Partnership", hasDropdown: false },
