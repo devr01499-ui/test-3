@@ -1,7 +1,23 @@
-import React from "react";
+import Link from "next/link";
 import { ArrowRight, FileText, BarChart3, Target, ChevronRight } from "lucide-react";
 import styles from "./MegaMenu.module.css";
 import { enhancedIndustries } from "@/lib/navData";
+
+const routeMap: Record<string, string> = {
+  "Healthcare & Medical": "/industries/healthcare",
+  "E-commerce & Retail": "/industries/ecommerce-retail",
+  "Banking & Financial Services": "/industries/banking-finance",
+  "Technology & SaaS": "/industries/tech-saas",
+  "Telecommunications": "/industries/telecom",
+  "Travel & Hospitality": "/industries/travel-hospitality",
+  "Insurance": "/industries/insurance",
+  "Education & E-Learning": "/industries/education",
+  "Utilities & Energy": "/industries/utilities-energy",
+  "Logistics & Supply Chain": "/industries/logistics",
+  "Media & Entertainment": "/industries/media-entertainment",
+  "Real Estate": "/industries/real-estate",
+  "Automotive": "/industries/automotive"
+};
 
 export function IndustriesMegaMenu() {
   return (
@@ -13,20 +29,26 @@ export function IndustriesMegaMenu() {
           {enhancedIndustries.map((item) => {
             const IconComponent = item.icon;
             return (
-              <div key={item.name} className={styles.industryCardDetailed}>
-                <div className={styles.industryIcon}>
-                  <IconComponent size={24} />
+              <Link 
+                href={routeMap[item.name] || "/industries"} 
+                key={item.name} 
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                <div className={styles.industryCardDetailed}>
+                  <div className={styles.industryIcon}>
+                    <IconComponent size={24} />
+                  </div>
+                  <h4 className={styles.industryTitle}>{item.name}</h4>
+                  <div className={styles.industryBullets}>
+                    {item.bullets.map((bullet) => (
+                      <span key={bullet} className={styles.industryBullet}>{bullet}</span>
+                    ))}
+                  </div>
+                  <div className={styles.viewDetails}>
+                    View Details <ChevronRight size={14} />
+                  </div>
                 </div>
-                <h4 className={styles.industryTitle}>{item.name}</h4>
-                <div className={styles.industryBullets}>
-                  {item.bullets.map((bullet) => (
-                    <span key={bullet} className={styles.industryBullet}>{bullet}</span>
-                  ))}
-                </div>
-                <div className={styles.viewDetails}>
-                  View Details <ChevronRight size={14} />
-                </div>
-              </div>
+              </Link>
             );
           })}
         </div>
