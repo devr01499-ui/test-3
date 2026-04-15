@@ -221,6 +221,117 @@ export default function CareersPage() {
         </div>
       </section>
 
+      {/* TESTIMONIALS (ENHANCED) */}
+      <section className={styles.section}>
+        <div className="container">
+          <div className={styles.sectionHeader}>
+            <h2 className={styles.sectionTitle}>Hear From Our Team</h2>
+            <p className={styles.sectionSub}>Real stories from real people</p>
+          </div>
+
+          <div style={{ background: "#000", borderRadius: "24px", height: "500px", marginBottom: "4rem", position: "relative", overflow: "hidden", display: "flex", alignItems: "center", justifyContent: "center" }}>
+             <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" style={{ position: "absolute", width: "100%", height: "100%", objectFit: "cover", opacity: 0.6 }} />
+             <div style={{ position: "relative", zIndex: 1, textAlign: "center", color: "white" }}>
+                <div style={{ background: "var(--primary)", width: "80px", height: "80px", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 1.5rem", cursor: "pointer" }}>
+                  <TrendingUp size={32} style={{ transform: "rotate(90deg)" }} />
+                </div>
+                <h3 style={{ fontSize: "2rem" }}>"From Agent to Director: My 8-Year Journey"</h3>
+                <p>Maria Santos, Operations Director, Manila</p>
+             </div>
+          </div>
+          
+          <div className={styles.propsGrid} style={{ gridTemplateColumns: "repeat(3, 1fr)" }}>
+            {careersData.testimonials.map((t, i) => (
+              <div key={i} className={styles.propCard} style={{ textAlign: "center" }}>
+                <div style={{ width: "80px", height: "80px", borderRadius: "50%", background: "#e2e8f0", margin: "0 auto 1.5rem" }} />
+                <p style={{ fontStyle: "italic", marginBottom: "1.5rem" }}>"{t.quote}"</p>
+                <div style={{ color: "#fbbf24", marginBottom: "0.5rem" }}>★★★★★</div>
+                <h4 style={{ fontWeight: 800 }}>{t.name}</h4>
+                <p style={{ fontSize: "0.85rem", color: "var(--text-muted)" }}>{t.role} | Joined {t.joined}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* LIFE AT COMPANY (GALLERY) */}
+      <section className={`${styles.section} ${styles.bgSurface}`}>
+        <div className="container">
+          <div className={styles.sectionHeader}>
+            <h2 className={styles.sectionTitle}>Life at Claritiy</h2>
+          </div>
+          <div className={styles.galleryGrid}>
+            {careersData.lifeAtCompany.map((img, i) => (
+              <div key={i} className={styles.galleryItem}>
+                <img src={img.url} alt={img.alt} />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* DIVERSITY & INCLUSION */}
+      <section className={styles.section}>
+        <div className="container">
+          <div className={styles.diversityGrid}>
+            <div>
+              <h2 className={styles.sectionTitle} style={{ textAlign: "left" }}>Diversity is Our Strength</h2>
+              <p className={styles.heroSub}>
+                We celebrate differences and foster belonging for all. We believe that diverse teams driving inclusive technology is the key to solving the world's most complex challenges.
+              </p>
+              
+              <ul className={styles.checkList} style={{ gridTemplateColumns: "1fr", marginTop: "2rem" }}>
+                <li><CheckCircle2 size={18} color="var(--primary)"/> Equal opportunity</li>
+                <li><CheckCircle2 size={18} color="var(--primary)"/> Pay equity</li>
+                <li><CheckCircle2 size={18} color="var(--primary)"/> Inclusive policies</li>
+                <li><CheckCircle2 size={18} color="var(--primary)"/> ERGs & affinity groups</li>
+                <li><CheckCircle2 size={18} color="var(--primary)"/> Unconscious bias training</li>
+              </ul>
+            </div>
+
+            <div>
+               <div className={styles.diversityMetrics}>
+                  {careersData.diversity.metrics.map((m, i) => (
+                    <div key={i} className={styles.metricCard}>
+                      <span style={{ fontSize: "2rem", fontWeight: 800, color: "var(--primary)", display: "block" }}>{m.value}</span>
+                      <span style={{ fontWeight: 700, opacity: 0.7 }}>{m.label}</span>
+                    </div>
+                  ))}
+               </div>
+               <div className={styles.diversityCerts}>
+                  {careersData.diversity.certifications.map(c => (
+                    <span key={c} className={styles.certBadge}>{c}</span>
+                  ))}
+               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CAMPUS & EARLY CAREER */}
+      <section className={`${styles.section} ${styles.bgSurface}`}>
+        <div className="container">
+          <div className={styles.sectionHeader}>
+            <h2 className={styles.sectionTitle}>Start Your Career With Us</h2>
+            <p className={styles.sectionSub}>Programs for students and recent graduates</p>
+          </div>
+
+          <div className={styles.campusGrid}>
+            {careersData.campus.map((prog, i) => (
+              <div key={i} className={styles.campusCard}>
+                <div className={styles.campusIcon}>
+                  <IconMap name={prog.icon === "GraduationCap" ? "BookOpen" : prog.icon === "Zap" ? "TrendingUp" : "FileText"} size={32} />
+                </div>
+                <h3>{prog.title}</h3>
+                <p style={{ color: "var(--text-muted)", margin: "1rem 0 1.5rem" }}>{prog.desc}</p>
+                <div style={{ fontWeight: 700, color: "var(--primary)", marginBottom: "1.5rem" }}>{prog.count}</div>
+                <button className={styles.btnPrimary} style={{ width: "100%" }}>Apply Now</button>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* BENEFITS */}
       <section className={styles.section}>
         <div className="container">
@@ -311,13 +422,54 @@ export default function CareersPage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className={styles.section} style={{ background: "var(--primary)", color: "white", textAlign: "center" }}>
+      {/* STAY CONNECTED */}
+      <section className={styles.section} style={{ background: "linear-gradient(135deg, #0ea5e9, #8b5cf6)", color: "white" }}>
         <div className="container">
-          <h2 style={{ fontSize: "3rem", fontWeight: 800, marginBottom: "2rem" }}>Ready to Start Your Journey?</h2>
+          <div className={styles.diversityGrid}>
+            <div style={{ background: "rgba(255,255,255,0.1)", padding: "3rem", borderRadius: "24px", backdropFilter: "blur(10px)" }}>
+              <h2 style={{ fontSize: "2rem", fontWeight: 800, marginBottom: "1rem" }}>TALENT COMMUNITY</h2>
+              <p style={{ marginBottom: "2rem", opacity: 0.9 }}>Join our talent network and get personalized job alerts, company updates, and exclusive event invitations.</p>
+              <div className={styles.searchInputs} style={{ gridTemplateColumns: "1fr auto" }}>
+                <input type="email" placeholder="Enter your email" className={styles.searchInput} style={{ paddingLeft: "1.5rem" }} />
+                <button className={styles.btnPrimary} style={{ background: "white", color: "var(--primary)" }}>Sign Up &rarr;</button>
+              </div>
+              <ul className={styles.checkList} style={{ gridTemplateColumns: "1fr 1fr", marginTop: "2rem", color: "white" }}>
+                <li><CheckCircle2 size={18} /> Personalized alerts</li>
+                <li><CheckCircle2 size={18} /> Career tips</li>
+                <li><CheckCircle2 size={18} /> Company updates</li>
+                <li><CheckCircle2 size={18} /> Exclusive events</li>
+              </ul>
+            </div>
+
+            <div style={{ padding: "1rem 3rem" }}>
+              <h2 style={{ fontSize: "2rem", fontWeight: 800, marginBottom: "2rem" }}>FOLLOW US</h2>
+              <p style={{ marginBottom: "2.5rem", opacity: 0.9 }}>Stay connected and see what it's really like to work at Claritiy. #LifeAtClaritiy #WeAreHiring</p>
+              
+              <div style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
+                {[
+                  { label: "LinkedIn", count: "50K followers", color: "#0077b5" },
+                  { label: "Instagram", count: "25K followers", color: "#e4405f" },
+                  { label: "Twitter", count: "15K followers", color: "#1da1f2" },
+                  { label: "Facebook", count: "30K followers", color: "#1877f2" }
+                ].map(social => (
+                  <div key={social.label} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", borderBottom: "1px solid rgba(255,255,255,0.2)", paddingBottom: "0.75rem" }}>
+                    <span style={{ fontWeight: 700, fontSize: "1.1rem" }}>{social.label}</span>
+                    <span style={{ opacity: 0.8 }}>{social.count}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className={styles.section} style={{ textAlign: "center" }}>
+        <div className="container">
+          <h2 style={{ fontSize: "3rem", fontWeight: 800, marginBottom: "2rem", color: "var(--text-main)" }}>Ready to Start Your Journey?</h2>
           <div style={{ display: "flex", justifyContent: "center", gap: "1rem", flexWrap: "wrap" }}>
-             <button className={styles.btnSecondary} style={{ color: "white", borderColor: "white" }}>Talk to Recruiter</button>
-             <button className={styles.btnPrimary} style={{ background: "white", color: "var(--primary)" }}>Search All Jobs</button>
+             <button className={styles.btnSecondary} style={{ padding: "1rem 3rem" }}>Talk to Recruiter</button>
+             <button className={styles.btnPrimary} style={{ padding: "1rem 3rem" }}>Search All Jobs</button>
           </div>
         </div>
       </section>

@@ -633,12 +633,124 @@
   line-height: 1.6;
 }
 
+/* ── LIFE AT COMPANY (GALLERY) ── */
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+}
+
+.galleryItem {
+  border-radius: 12px;
+  overflow: hidden;
+  height: 200px;
+  position: relative;
+  cursor: pointer;
+}
+
+.galleryItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.galleryItem:hover img {
+  transform: scale(1.1);
+}
+
+.galleryItem:nth-child(4n+1) { grid-column: span 2; }
+
+/* ── DIVERSITY & INCLUSION ── */
+.diversityGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.diversityMetrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.metricCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: var(--card-shadow);
+}
+
+.diversityCerts {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.certBadge {
+  background: white;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+/* ── CAMPUS & EARLY CAREER ── */
+.campusGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.campusCard {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 2.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: var(--card-shadow);
+}
+
+.campusCard:hover {
+  transform: translateY(-10px);
+  border-color: var(--primary);
+}
+
+.campusIcon {
+  width: 64px;
+  height: 64px;
+  background: var(--surface);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  margin: 0 auto 1.5rem;
+}
+
+.uniLogos {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 4rem;
+  opacity: 0.6;
+  filter: grayscale(1);
+}
+
 /* ── RESPONSIVE ── */
 @media (max-width: 1024px) {
-  .heroGrid { grid-template-columns: 1fr; }
+  .heroGrid, .diversityGrid { grid-template-columns: 1fr; }
+  .galleryGrid { grid-template-columns: repeat(3, 1fr); }
   .statsOverlay { display: none; }
   .searchInputs { grid-template-columns: 1fr 1fr; }
-  .propsGrid, .jobGrid, .beneGrid { grid-template-columns: repeat(2, 1fr); }
+  .propsGrid, .jobGrid, .beneGrid, .campusGrid { grid-template-columns: repeat(2, 1fr); }
   .deptGrid { grid-template-columns: repeat(2, 1fr); }
   .timeline { flex-wrap: wrap; gap: 2rem; justify-content: center; }
   .timeline::before { display: none; }
@@ -647,7 +759,8 @@
 @media (max-width: 640px) {
   .heroTitle { font-size: 2.5rem; }
   .searchInputs { grid-template-columns: 1fr; }
-  .propsGrid, .jobGrid, .beneGrid, .deptGrid { grid-template-columns: 1fr; }
+  .propsGrid, .jobGrid, .beneGrid, .campusGrid, .deptGrid { grid-template-columns: 1fr; }
+  .galleryGrid { grid-template-columns: repeat(2, 1fr); }
   .checkList { grid-template-columns: 1fr; }
   .heroBtns { flex-direction: column; }
   .statsGrid { justify-content: center; }

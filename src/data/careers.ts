@@ -126,5 +126,48 @@ export const careersData = {
     { q: "What are the growth opportunities?", a: "We prioritize internal mobility. Over 60% of our management positions are filled internally through our dedicated leadership development tracks." },
     { q: "How long does the application process take?", a: "On average, the process takes 2-4 weeks from initial application to offer letter, depending on the complexity of the role." },
     { q: "Do you sponsor work visas?", a: "Visa sponsorship is assessed on a case-by-case basis for highly specialized technical and leadership roles." },
+  ],
+  lifeAtCompany: [
+    { url: "https://images.unsplash.com/photo-1522071820081-009f0129c71c", alt: "Team Collaboration" },
+    { url: "https://images.unsplash.com/photo-1542744094-24638eff58bb", alt: "Modern Office" },
+    { url: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4", alt: "Training Session" },
+    { url: "https://images.unsplash.com/photo-1556761175-b413da4baf72", alt: "Team Celebration" },
+    { url: "https://images.unsplash.com/photo-1521737711867-e3b97375f902", alt: "Inclusive Culture" },
+    { url: "https://images.unsplash.com/photo-1552664730-d307ca884978", alt: "Meeting" },
+    { url: "https://images.unsplash.com/photo-1600880212340-02d956ea0a0c", alt: "Volunteer" },
+    { url: "https://images.unsplash.com/photo-1551434678-e076c223a692", alt: "Fun at work" },
+    { url: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e", alt: "Presentation" },
+    { url: "https://images.unsplash.com/photo-1519389950473-47ba0277781c", alt: "Tech team" },
+    { url: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f", alt: "Group Learning" },
+    { url: "https://images.unsplash.com/photo-1558403194-611308249627", alt: "Success Party" }
+  ],
+  diversity: {
+    metrics: [
+      { value: "52%", label: "Women in Workforce" },
+      { value: "100+", label: "Nationalities" },
+      { value: "45%", label: "Women in Leadership" },
+      { value: "25+", label: "Employee Resource Grps" }
+    ],
+    certifications: ["Best Employer for Diversity", "Equal Opportunity Employer", "LGBTQ+ Friendly Workplace"]
+  },
+  campus: [
+    {
+      title: "GRADUATE PROGRAMS",
+      icon: "GraduationCap",
+      desc: "12-month structured program with rotations and mentorship.",
+      count: "50+ positions"
+    },
+    {
+      title: "INTERNSHIP PROGRAM",
+      icon: "FileSearch",
+      desc: "3-6 month paid internship on real projects with conversion opportunities.",
+      count: "75+ positions"
+    },
+    {
+      title: "ROTATIONAL PROGRAM",
+      icon: "Zap",
+      desc: "24-month leadership development through multi-functional exposure.",
+      count: "15+ positions"
+    }
   ]
 };
