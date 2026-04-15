@@ -70,7 +70,17 @@ export function Footer() {
             <div className={styles.colTitle}>Industries</div>
             <ul className={styles.linkList}>
               {["Healthcare", "E-commerce", "Banking & Finance", "Tech & SaaS", "Telecom"].map(link => (
-                <li key={link}><a href="#" className={styles.link}>{link}</a></li>
+                <li key={link}><a href={`/industries/${link.toLowerCase().replace(/ & |-|\s+/g, '-')}`} className={styles.link}>{link}</a></li>
+              ))}
+            </ul>
+          </div>
+
+          {/* RESOURCES */}
+          <div>
+            <div className={styles.colTitle}>Resources</div>
+            <ul className={styles.linkList}>
+              {["Blog & Insights", "Case Studies", "Whitepapers", "Webinars", "API Documentation"].map(link => (
+                <li key={link}><a href="/resources" className={styles.link}>{link}</a></li>
               ))}
             </ul>
           </div>
