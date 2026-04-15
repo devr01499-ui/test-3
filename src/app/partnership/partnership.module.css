@@ -1,0 +1,251 @@
+/* ═══════════════════════════════════════════
+   PARTNERSHIP — Master Stylesheet
+   ═══════════════════════════════════════════ */
+
+.page {
+  background: var(--background);
+  min-height: 100vh;
+}
+
+/* ─── HERO ─── */
+.hero {
+  padding: 8rem 2rem 6rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.badge {
+  display: inline-flex;
+  padding: 0.5rem 1.25rem;
+  background: rgba(14, 165, 233, 0.05);
+  border: 1px solid rgba(14, 165, 233, 0.2);
+  border-radius: 100px;
+  color: var(--primary);
+  font-size: 0.85rem;
+  font-weight: 700;
+  width: max-content;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.heroTitle {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--text-main);
+  letter-spacing: -0.04em;
+}
+
+.heroSub {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  max-width: 600px;
+}
+
+.heroVisual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.visualCard {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  box-shadow: 0 40px 100px -20px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 1;
+}
+
+.statsStrip {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.statVal {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.statLab {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+/* ─── PILLARS ─── */
+.section {
+  padding: 8rem 0;
+}
+
+.bgSurface { background: var(--surface); }
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.sectionTitle {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--text-main);
+  letter-spacing: -0.02em;
+}
+
+.pillarGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.pillarCard {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  transition: all 0.35s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.pillarCard:hover {
+  transform: translateY(-8px);
+  border-color: var(--primary);
+  box-shadow: var(--card-shadow-hover);
+}
+
+.pillarIcon {
+  width: 56px;
+  height: 56px;
+  background: var(--surface);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.pillarTitle {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 1rem;
+}
+
+.pillarDesc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.benefitList {
+  list-style: none;
+  padding: 0;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.benefitList li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+/* ─── LEVELS TABLE ─── */
+.tableWrapper {
+  background: white;
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+}
+
+.levelTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.levelTable th {
+  padding: 1.5rem 2rem;
+  background: var(--surface);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-bottom: 1.5px solid var(--border);
+}
+
+.levelTable td {
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid var(--border);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-main);
+}
+
+.levelName {
+  font-weight: 800;
+  color: var(--primary);
+}
+
+/* ─── APPLY FORM ─── */
+.formFull {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  padding: 4rem;
+  border-radius: 32px;
+  border: 1px solid var(--border);
+  box-shadow: 0 40px 100px -20px rgba(0,0,0,0.08);
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 1200px) {
+  .pillarGrid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 1024px) {
+  .heroGrid { grid-template-columns: 1fr; }
+  .visualCard { display: none; }
+}
+
+@media (max-width: 768px) {
+  .heroTitle { font-size: 3rem; }
+  .pillarGrid { grid-template-columns: 1fr; }
+  .formFull { padding: 2.5rem 1.5rem; }
+  .section { padding: 4rem 0; }
+}

@@ -1,0 +1,205 @@
+/* ═══════════════════════════════════════════
+   SERVICES CATALOG — Master Stylesheet
+   ═══════════════════════════════════════════ */
+
+.page {
+  background: var(--background);
+  min-height: 100vh;
+}
+
+/* ─── HERO ─── */
+.hero {
+  padding: 8rem 2rem 6rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heroTitle {
+  font-size: 4.5rem;
+  font-weight: 800;
+  color: var(--text-main);
+  letter-spacing: -0.04em;
+  margin-bottom: 1.5rem;
+}
+
+.heroSub {
+  font-size: 1.35rem;
+  color: var(--text-muted);
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+}
+
+/* ─── CORE DOMAINS ─── */
+.section {
+  padding: 8rem 0;
+}
+
+.bgSurface { background: var(--surface); }
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.sectionTitle {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--text-main);
+  letter-spacing: -0.02em;
+}
+
+.coreGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.coreCard {
+  background: white;
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  padding: 3rem;
+  transition: all 0.4s ease;
+  box-shadow: var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+}
+
+.coreCard:hover {
+  transform: translateY(-10px);
+  border-color: var(--primary);
+  box-shadow: 0 40px 80px -20px rgba(14, 165, 233, 0.2);
+}
+
+.iconWrap {
+  width: 64px;
+  height: 64px;
+  background: var(--surface);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  margin-bottom: 2rem;
+}
+
+.domainTitle {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 1.5rem;
+}
+
+.domainList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.domainList li {
+  font-size: 1rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.domainList li::before {
+  content: '→';
+  color: var(--primary);
+  font-weight: 800;
+}
+
+/* ─── SPECIALIZED SECTION ─── */
+.specGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.specCard {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.specCard:hover {
+  background: var(--surface);
+  border-color: var(--primary);
+}
+
+.specTitle {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1.25rem;
+}
+
+/* ─── ENGAGEMENT MODELS ─── */
+.modelGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.modelGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.modelItem {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.modelIcon {
+  width: 48px;
+  height: 48px;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.modelText h4 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.modelText p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 1024px) {
+  .heroTitle { font-size: 3.5rem; }
+  .coreGrid { grid-template-columns: 1fr 1fr; }
+  .specGrid { grid-template-columns: 1fr 1fr; }
+  .modelGrid { grid-template-columns: 1fr; gap: 3rem; }
+}
+
+@media (max-width: 768px) {
+  .heroTitle { font-size: 2.8rem; }
+  .coreGrid { grid-template-columns: 1fr; }
+  .specGrid { grid-template-columns: 1fr; }
+}
