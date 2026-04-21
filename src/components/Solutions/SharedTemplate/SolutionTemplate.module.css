@@ -241,3 +241,66 @@
   color: var(--charcoal-deep); 
 }
 .faqAnswer { padding: 0 2rem 2.5rem; color: var(--medium-gray); line-height: 1.6; font-size: 17px; font-weight: 500; }
+
+/* Section Title (missing definition) */
+.sectionTitle {
+  font-size: 52px;
+  text-align: center;
+  margin-bottom: 5rem;
+  color: var(--charcoal-deep);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Benefits Grid (missing definition) */
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.benefitItem {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.5rem 2rem;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  transition: all 0.3s ease;
+}
+
+.benefitItem:hover {
+  border-color: var(--electric-blue);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-level-2);
+}
+
+/* Secondary Button (missing definition) */
+.btn-secondary {
+  background: transparent;
+  color: var(--charcoal-deep);
+  border: 1.5px solid var(--border);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-secondary:hover {
+  border-color: var(--electric-blue);
+  color: var(--electric-blue);
+  transform: translateY(-2px);
+}
+
+/* Chevron utility */
+.chevron {
+  color: var(--border);
+  flex-shrink: 0;
+}
+
