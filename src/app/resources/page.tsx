@@ -23,6 +23,7 @@ import {
 } from "lucide-react";
 import { enhancedResources } from "@/lib/navData";
 import styles from "./resources.module.css";
+import Image from "next/image";
 
 const CategoryIcon = ({ title, size = 28 }: { title: string; size?: number }) => {
   if (title.includes("Blog")) return <BookOpen size={size} />;

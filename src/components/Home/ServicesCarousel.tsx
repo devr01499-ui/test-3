@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import styles from "./ServicesCarousel.module.css";
 
 const services = [
   { title: "Intelligent Customer Experience", icon: Headset, img: "https://images.unsplash.com/photo-1549923746-c502d488b3ea?auto=format&fit=crop&q=80&w=800", glow: "hover-glow-1" },

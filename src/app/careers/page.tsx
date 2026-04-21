@@ -393,6 +393,4 @@ export default function CareersPage() {
 
     </div>
   );
-}/div>
-  );
 }

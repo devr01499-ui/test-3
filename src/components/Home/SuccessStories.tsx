@@ -84,7 +84,7 @@ export function SuccessStories() {
                 initial={{ opacity: 0, x: 40 }}
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -40 }}
-                transition={{ duration: 0.5, ease: "var(--ease-out-expo)" }}
+                transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
                 style={{ display: "grid", gridTemplateColumns: "1.2fr 0.8fr", gap: "5rem", alignItems: "center" }}
               >
                 <div>
@@ -103,13 +103,13 @@ export function SuccessStories() {
 
                   <blockquote style={{ padding: "2rem", background: "var(--soft-gray)", borderRadius: "12px", borderLeft: "4px solid var(--sunrise-amber)", marginBottom: "3rem" }}>
                     <p style={{ fontStyle: "italic", fontSize: "18px", color: "var(--charcoal-deep)", marginBottom: "1.5rem" }}>"{caseStudies[index].quote}"</p>
-                    <cite style={{ display: "flex", alignItems: "center", gap: "1rem", notItalic: true }}>
+                    <div style={{ display: "flex", alignItems: "center", gap: "1rem", fontStyle: "normal" }}>
                        <div style={{ width: "40px", height: "40px", background: "var(--border)", borderRadius: "50%" }} />
                        <div>
                           <div style={{ fontWeight: 800, fontSize: "15px" }}>{caseStudies[index].author}</div>
                           <div style={{ fontSize: "12px", color: "var(--medium-gray)", fontWeight: 700 }}>{caseStudies[index].authorTitle}</div>
                        </div>
-                    </cite>
+                    </div>
                   </blockquote>
 
                   <div style={{ display: "flex", gap: "1.5rem" }}>

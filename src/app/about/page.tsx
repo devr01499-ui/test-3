@@ -4,7 +4,8 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, Globe, Users, TrendingUp, Target, ShieldCheck, Share2, Trophy, Leaf, Heart, ArrowUpRight } from "lucide-react";
 import { aboutData } from "@/data/about";
-import styles from "@/app/ai-technology/technology.module.css"; // Reuse some of the awesome grid styles
+import styles from "@/app/ai-technology/technology.module.css";
+import Image from "next/image";
 
 const iconMap: Record<string, React.ReactNode> = {
   Globe: <Globe size={28} />,

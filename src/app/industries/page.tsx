@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ArrowRight, HeartPulse, ShoppingCart, Landmark, Laptop, PhoneCall, Plane, ShieldCheck, GraduationCap, Zap, Truck, Clapperboard, Home, FileText, Car, Building2, Heart, Utensils, Factory, Briefcase, Bitcoin, Gamepad2 } from "lucide-react";
 import { motion } from "framer-motion";
 import styles from "@/components/Industries/SharedTemplate/IndustryTemplate.module.css";
+import Image from "next/image";
 
 const allIndustries = [
   { name: "Healthcare & Medical", icon: <HeartPulse size={28} />, path: "/industries/healthcare", desc: "HIPAA-compliant BPO services supporting better patient outcomes.", img: "https://loremflickr.com/800/400/healthcare,hospital/all", glow: "hover-glow-1" },

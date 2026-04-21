@@ -23,6 +23,7 @@ import {
 } from "lucide-react";
 import { enhancedServices } from "@/lib/navData";
 import styles from "./services.module.css";
+import Image from "next/image";
 
 const DomainIcon = ({ title, size = 32 }: { title: string; size?: number }) => {
   if (title.includes("Contact")) return <Headphones size={size} />;

@@ -154,7 +154,7 @@ export function ServicesAndFeatures({ services, processFlow, features }: { servi
             {features.items.map((feat, i) => (
               <BPOEnterpriseCard key={i} elevation={2} intensity={8}>
                 <div style={{ padding: "2.5rem", height: "380px", display: "flex", flexDirection: "column" }}>
-                  <div style={{ width: "60px", height: "60px", background: "var(--electric-blue)", border: "1px solid var(--border)", borderRadius: "16px", display: "flex", alignItems: "center", justify: "center", color: "white", marginBottom: "2rem", boxShadow: "var(--shadow-level-2)" }}>
+                  <div style={{ width: "60px", height: "60px", background: "var(--electric-blue)", border: "1px solid var(--border)", borderRadius: "16px", display: "flex", alignItems: "center", justifyContent: "center", color: "white", marginBottom: "2rem", boxShadow: "var(--shadow-level-2)" }}>
                     <IconResolver name={feat.icon} size={30} />
                   </div>
                   <h3 style={{ fontSize: "24px", fontWeight: 700, color: "var(--charcoal-deep)", marginBottom: "1.5rem" }}>{feat.title}</h3>
@@ -176,8 +176,5 @@ export function ServicesAndFeatures({ services, processFlow, features }: { servi
         </div>
       </section>
     </div>
-  );
-}
-    </>
   );
 }

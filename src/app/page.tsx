@@ -11,6 +11,8 @@ import { ResourcesHub } from "@/components/Home/ResourcesHub";
 import { ROICalculator } from "@/components/Home/ROICalculator";
 import { ComplianceStrip } from "@/components/Home/ComplianceStrip";
 import { FinalCTA } from "@/components/Home/FinalCTA";
+import { ServicesCarousel } from "@/components/Home/ServicesCarousel";
+import styles from "./page.module.css";
 
 
 export default function Home() {

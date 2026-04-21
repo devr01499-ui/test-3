@@ -9,6 +9,7 @@ import {
   FileText, Award, Rocket
 } from "lucide-react";
 import styles from "./technology.module.css";
+import Image from "next/image";
 
 /* ── AI Capabilities Data ── */
 const capabilities = [
