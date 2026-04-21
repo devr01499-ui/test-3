@@ -350,7 +350,7 @@ export default function CareersPage() {
               <h2 style={{ fontSize: "2.5rem", fontWeight: 800, marginBottom: "1.5rem" }}>Talent Community</h2>
               <p style={{ marginBottom: "2.5rem", color: "rgba(255,255,255,0.8)", fontSize: "1.1rem" }}>Register for prioritized job alerts and exclusive networking sessions with our global tech leads.</p>
               <div className={styles.searchInputs} style={{ gridTemplateColumns: "1fr auto" }}>
-                <input type="email" placeholder="professional.email@company.com" className={styles.searchInput} style={{ background: "rgba(255,255,255,0.1)", border: "1px solid rgba(255,255,255,0.3)", color: "white", paddingLeft: "1.5rem" }} />
+                <input type="email" placeholder="your@email.com" className={styles.searchInput} style={{ background: "rgba(255,255,255,0.1)", border: "1px solid rgba(255,255,255,0.3)", color: "white", paddingLeft: "1.5rem" }} />
                 <button className={styles.btnPrimary} style={{ background: "white", color: "var(--text-main)" }}>Join Now &rarr;</button>
               </div>
             </div>

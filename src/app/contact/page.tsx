@@ -222,32 +222,32 @@ export default function ContactPage() {
 
               <div className={styles.formGroup}>
                 <label className={styles.label}>First Name *</label>
-                <input type="text" className={styles.input} placeholder="John" required />
+                <input type="text" className={styles.input} placeholder="Your first name" required />
               </div>
 
               <div className={styles.formGroup}>
                 <label className={styles.label}>Last Name *</label>
-                <input type="text" className={styles.input} placeholder="Doe" required />
+                <input type="text" className={styles.input} placeholder="Your last name" required />
               </div>
 
               <div className={styles.formGroup}>
                 <label className={styles.label}>Business Email *</label>
-                <input type="email" className={styles.input} placeholder="john@company.com" required />
+                <input type="email" className={styles.input} placeholder="your@company.com" required />
               </div>
 
               <div className={styles.formGroup}>
                 <label className={styles.label}>Phone Number</label>
-                <input type="tel" className={styles.input} placeholder="+1 (555) 000-0000" />
+                <input type="tel" className={styles.input} placeholder="+1 (___) ___-____" />
               </div>
 
               <div className={styles.formGroup}>
                 <label className={styles.label}>Company Name *</label>
-                <input type="text" className={styles.input} placeholder="Acme Inc." required />
+                <input type="text" className={styles.input} placeholder="Your company name" required />
               </div>
 
               <div className={styles.formGroup}>
                 <label className={styles.label}>Job Title</label>
-                <input type="text" className={styles.input} placeholder="Operations Director" />
+                <input type="text" className={styles.input} placeholder="Your job title" />
               </div>
 
               <div className={styles.formGroup}>
@@ -305,7 +305,7 @@ export default function ContactPage() {
                   className={styles.textarea} 
                   rows={4} 
                   maxLength={500} 
-                  placeholder="Tell us a bit about your requirements, goals, and any specific challenges you're looking to solve..."
+                  placeholder="Describe your requirements, goals, and challenges..."
                   required
                 ></textarea>
                 <div style={{ textAlign: "right", fontSize: "0.75rem", color: "var(--text-muted)" }}>0 / 500</div>

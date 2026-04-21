@@ -177,7 +177,7 @@ export default function PartnershipPage() {
              <form onSubmit={handleSubmit} style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "2rem" }}>
                 <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
                   <label style={{ fontWeight: 700, fontSize: "0.9rem" }}>Company Name *</label>
-                  <input type="text" placeholder="Global Tech Ltd" style={{ padding: "1rem", borderRadius: "10px", border: "1.5px solid var(--border)" }} required />
+                  <input type="text" placeholder="Your company name" style={{ padding: "1rem", borderRadius: "10px", border: "1.5px solid var(--border)" }} required />
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
                   <label style={{ fontWeight: 700, fontSize: "0.9rem" }}>Partner Type *</label>
@@ -190,15 +190,15 @@ export default function PartnershipPage() {
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
                   <label style={{ fontWeight: 700, fontSize: "0.9rem" }}>Contact Name *</label>
-                  <input type="text" placeholder="Sarah Johnson" style={{ padding: "1rem", borderRadius: "10px", border: "1.5px solid var(--border)" }} required />
+                  <input type="text" placeholder="Your full name" style={{ padding: "1rem", borderRadius: "10px", border: "1.5px solid var(--border)" }} required />
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
                   <label style={{ fontWeight: 700, fontSize: "0.9rem" }}>Business Email *</label>
-                  <input type="email" placeholder="partners@company.com" style={{ padding: "1rem", borderRadius: "10px", border: "1.5px solid var(--border)" }} required />
+                  <input type="email" placeholder="your@company.com" style={{ padding: "1rem", borderRadius: "10px", border: "1.5px solid var(--border)" }} required />
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem", gridColumn: "span 2" }}>
                   <label style={{ fontWeight: 700, fontSize: "0.9rem" }}>Partner Goals *</label>
-                  <textarea rows={4} placeholder="Briefly describe your partnership goals and current footprint..." style={{ padding: "1rem", borderRadius: "10px", border: "1.5px solid var(--border)" }} required />
+                  <textarea rows={4} placeholder="Briefly describe your partnership goals and current business footprint..." style={{ padding: "1rem", borderRadius: "10px", border: "1.5px solid var(--border)" }} required />
                 </div>
                 <div style={{ gridColumn: "span 2" }}>
                    <button type="submit" className="btn-modern-primary" style={{ width: "100%", padding: "1.25rem" }} disabled={submitted}>
