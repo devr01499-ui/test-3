@@ -9,14 +9,14 @@ import { motion } from "framer-motion";
 import styles from "./ComplianceStrip.module.css";
 
 const badges = [
-  { name: "ISO", sub: "27001" },
-  { name: "SOC2", sub: "Type 2" },
-  { name: "GDPR", sub: "Compliant" },
-  { name: "HIPAA", sub: "Cert" },
-  { name: "PCI", sub: "DSS" },
-  { name: "CMMI", sub: "Level 5" },
-  { name: "SSAE", sub: "18" },
-  { name: "Cyber", sub: "Essentials" },
+  { name: "ISO", sub: "27001:2022" },
+  { name: "SOC 2", sub: "Type II" },
+  { name: "GDPR", sub: "E.U. Compliant" },
+  { name: "HIPAA", sub: "HITRUST Certified" },
+  { name: "PCI DSS", sub: "Level 1 v4.0" },
+  { name: "CMMI", sub: "Level 5 SVC/3" },
+  { name: "NIST", sub: "800-53" },
+  { name: "ISO", sub: "9001:2015" },
 ];
 
 export function ComplianceStrip() {
@@ -29,7 +29,7 @@ export function ComplianceStrip() {
           viewport={{ once: true }}
           className={styles.title}
         >
-          Enterprise-Grade Security & Compliance
+          Institutional Security & Global Compliance Framework
         </motion.h2>
 
         <div className={styles.grid}>

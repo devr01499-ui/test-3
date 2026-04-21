@@ -8,23 +8,23 @@ export const backOfficeData: SolutionPageData = {
   
   heroData: {
     badgeIcon: "Layers",
-    badgeText: "Back Office Operations",
-    headline: "Flawless Execution Behind the Scenes",
-    subheading: "Eliminate bottlenecks, reduce operational overhead by up to 60%, and let your core team focus entirely on strategic growth.",
+    badgeText: "Operational Excellence Mastery",
+    headline: "Unseen Precision: Institutional Back-Office Architecture",
+    subheading: "Eliminate administrative friction and compress operational overhead with high-precision neural automation and expert Six Sigma process orchestration.",
     bullets: [
-      "Process automation workflows",
-      "Rigorous six-sigma quality control",
-      "Scalable administrative support",
-      "Strict data compliance (ISO/GDPR)"
+      "Advanced Process Automation Mesh",
+      "Rigorous Institutional Quality Control",
+      "Elastic Administrative Capacity",
+      "Institutional-Grade Compliance (ISO 27001)"
     ],
-    primaryCta: "Streamline Operations",
-    secondaryCta: "Watch Workflow Demo",
+    primaryCta: "Architect Your Operations",
+    secondaryCta: "Access Efficiency Blueprint",
     visualIcon: "Workflow",
-    visualText: "Automated Processing Pipeline",
+    visualText: "Neural Processing & Automation Pipeline",
     metricsOverlay: [
-      { value: "99.9%", label: "Accuracy Rate" },
-      { value: "60%", label: "Cost Reduction" },
-      { value: "3x", label: "Processing Speed" }
+      { value: "99.95%", label: "Data Accuracy Index" },
+      { value: "Up to 60%", label: "OpEx Reduction" },
+      { value: "4x", label: "Cycle-Time Compression" }
     ]
   },
 
@@ -36,22 +36,22 @@ export const backOfficeData: SolutionPageData = {
   ],
 
   services: {
-    title: "Comprehensive Back Office Support",
+    title: "Institutional Support Framework",
     items: [
       {
-        title: "Data Management",
+        title: "High-Precision Data Management",
         icon: "Database",
-        features: ["Data Entry & Digitization", "Data Cleansing", "CRM Database Management", "Data Mining", "Catalog Management"]
+        features: ["Strategic Data Orchestration", "Neural Data Cleansing", "Enterprise CRM Stewardship", "Deep Analytics Mining", "Global Catalog Governance"]
       },
       {
-        title: "Financial & Administrative",
+        title: "Strategic Financial & Admin",
         icon: "Calculator",
-        features: ["Invoice Processing", "Expense Auditing", "Virtual Assistants", "Document Verification", "Compliance Checking"]
+        features: ["Institutional Invoice Processing", "Complex Expense Auditing", "Executive Support Ecosystems", "Institutional Document Verification", "Regulatory Compliance Monitoring"]
       },
       {
-        title: "E-Commerce Support",
+        title: "E-Commerce Growth Support",
         icon: "ShoppingCart",
-        features: ["Inventory Management", "Order Fulfillment Processing", "Refund Processing", "Product Listing", "Competitor Price Monitoring"]
+        features: ["Neural Inventory Management", "Order Fulfillment Orchestration", "High-Resolution Refund Processing", "SEO-Driven Catalog Optimization", "Competitive Market Intelligence"]
       }
     ]
   },
@@ -144,9 +144,9 @@ export const backOfficeData: SolutionPageData = {
   },
 
   cta: {
-    title: "Ready to Optimize Your Operations?",
-    primaryBtn: "Discuss Your Processes",
-    secondaryBtn1: "View Automation Case Studies",
-    secondaryBtn2: "Security Compliance"
+    title: "Ready to Re-Engineer Your Global Back-Office?",
+    primaryBtn: "Request Process Audit",
+    secondaryBtn1: "Review Industrial Blueprints",
+    secondaryBtn2: "Security Compliance Matrix"
   }
 };

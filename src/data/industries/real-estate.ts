@@ -8,57 +8,57 @@ export const realEstateData: IndustryPageData = {
 
   heroData: {
     badgeIcon: "Home",
-    badgeText: "Real Estate",
-    headline: "Scale Your Real Estate Operations",
-    subheading: "From lead qualification to lease administration, our real estate BPO experts keep your portfolio and agents highly productive.",
+    badgeText: "Institutional Real Estate Mastery",
+    headline: "Real Estate Integrity: Advanced Portfolio & Transaction Orchestration",
+    subheading: "Empower your real estate institution with high-precision lead qualification, tenant stewardship, and architectural lease administration. We deliver scalable, RESPA-grade operational integrity.",
     bullets: [
-      "24/7 lead capture & qualification",
-      "Tenant helpdesk & lease management",
-      "Title & escrow support services",
-      "MLS data management & compliance"
+      "24/7/365 Institutional Lead Capture & Qualification Hubs",
+      "Strategic Tenant Helpdesk & Lease Lifecycle Management",
+      "Institutional Title, Escrow & Transaction Support",
+      "Global MLS Data Orchestration & Regulatory Compliance"
     ],
-    primaryCta: "Scale Real Estate Ops",
-    secondaryCta: "View Real Estate Brief",
+    primaryCta: "Architect Real Estate Ops",
+    secondaryCta: "Access Real Estate Brief",
     visualIcon: "Home",
-    visualList: ["Lead management dashboards", "Tenant portal helpdesks", "Transaction coordination screens", "Property data management"],
+    visualList: ["Institutional Lead Management Hubs", "Tenant Stewardship Control Centers", "Transaction Coordination Resilience Hubs", "Global Property Data Integrity Mesh"],
     certifications: [
-      { id: "c1", name: "ISO 27001" },
+      { id: "c1", name: "ISO 27001:2022" },
       { id: "c2", name: "SOC 2 Type II" },
-      { id: "c3", name: "RESPA Aligned" },
-      { id: "c4", name: "GDPR" }
+      { id: "c3", name: "RESPA Institutional Aligned" },
+      { id: "c4", name: "GDPR Verified" }
     ],
     clientSuccess: {
-      stat1: "100+ Real estate clients",
-      stat2: "4.8/5 Tenant satisfaction"
+      stat1: "100+ Institutional Partners",
+      stat2: "4.8/5 Verified Tenant CSAT Index"
     }
   },
 
   services: {
-    title: "Full-Service Real Estate BPO",
+    title: "Full-Service Institutional Real Estate BPO",
     gridItems: [
       {
-        title: "LEAD MANAGEMENT",
-        features: ["Inbound Lead Capture", "Lead Qualification", "Appointment Setting", "CRM Data Entry", "Follow-up Campaigns"]
+        title: "STRATEGIC LEAD MANAGEMENT",
+        features: ["Institutional Inbound Capture", "Neural Lead Qualification", "Strategic Appointment Setting", "Institutional CRM Integrity", "Precision Follow-up Campaigns"]
       },
       {
-        title: "TENANT SERVICES",
-        features: ["24/7 Tenant Helpdesk", "Maintenance Dispatch", "Lease Inquiries", "Move-in/Move-out Support", "Rent Collection Ops"]
+        title: "TENANT STEWARDSHIP",
+        features: ["24/7 Mission-Critical Helpdesk", "Neural Maintenance Dispatch", "Institutional Lease Inquiries", "Strategic Move-in/out Support", "Secure Rent Collection Ops"]
       },
       {
-        title: "TRANSACTION SUPPORT",
-        features: ["Transaction Coordination", "Title Research", "Escrow Support", "Document Management", "Closing Coordination"]
+        title: "TRANSACTION ORCHESTRATION",
+        features: ["Institutional Transaction Coordination", "High-Resolution Title Research", "Strategic Escrow Integrity Support", "Neural Document Stewardship", "Verified Closing Coordination"]
       },
       {
-        title: "PROPERTY MANAGEMENT",
-        features: ["Listing Administration", "MLS Data Management", "Inspection Scheduling", "HOA Support", "Vendor Coordination"]
+        title: "PROPERTY ADMINISTRATION",
+        features: ["Institutional Listing Stewardship", "Global MLS Data Integrity", "Neural Inspection Scheduling", "Strategic HOA Support Hubs", "Institutional Vendor Coordination"]
       },
       {
-        title: "MORTGAGE & TITLE",
-        features: ["Mortgage Processing", "Title Search", "Lien Verification", "Document Prep", "Closing Disclosure Support"]
+        title: "MORTGAGE & TITLE INTEGRITY",
+        features: ["Institutional Mortgage Processing", "High-Resolution Title Search", "Strategic Lien Verification", "Neural Document Preparation", "Verified Closing Disclosure Support"]
       },
       {
-        title: "DATA & ANALYTICS",
-        features: ["Market Research", "Comp Analysis Support", "Portfolio Reporting", "Vacancy Tracking", "Revenue Forecasting"]
+        title: "REAL ESTATE ANALYTICS",
+        features: ["Institutional Market Intelligence", "Neural Comp Analysis Support", "Strategic Portfolio Reporting", "Global Vacancy Tracking Hubs", "Precision Revenue Forecasting"]
       }
     ]
   },

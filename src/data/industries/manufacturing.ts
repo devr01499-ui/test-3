@@ -8,57 +8,57 @@ export const manufacturingData: IndustryPageData = {
 
   heroData: {
     badgeIcon: "Factory",
-    badgeText: "Manufacturing",
-    headline: "Optimize Manufacturing Back-Office Operations",
-    subheading: "From procurement to warranty support, our manufacturing BPO specialists keep your production lines free from administrative bottlenecks.",
+    badgeText: "Institutional Manufacturing Mastery",
+    headline: "Manufacturing Integrity: Advanced Industrial Back-Office Orchestration",
+    subheading: "Orchestrate complex industrial supply chains and enhance operational velocity with institutional-grade procurement and mission-critical production support.",
     bullets: [
-      "Procurement & purchase order management",
-      "Warranty claims & returns processing",
-      "Dealer & distributor support networks",
-      "ERP data management & master data"
+      "Institutional-Grade procurement & Strategic Purchase Order Management",
+      "Strategic Warranty Claims Adjudication & Global Returns Orchestration",
+      "Institutional Dealer & Distributor Stewardship Networks",
+      "Mission-Critical ERP Master Data Integrity & Synchronization"
     ],
-    primaryCta: "Streamline Manufacturing Ops",
-    secondaryCta: "View Manufacturing Brief",
+    primaryCta: "Architect Manufacturing Ops",
+    secondaryCta: "Access Manufacturing Brief",
     visualIcon: "Factory",
-    visualList: ["ERP management dashboards", "Procurement workflow screens", "Quality reporting platforms", "Supply chain coordination"],
+    visualList: ["Institutional ERP Management Hubs", "Neural Procurement Workflow Centers", "Global Quality Integrity Meshes", "Mission-Critical Supply Chain Orchestration Control"],
     certifications: [
-      { id: "c1", name: "ISO 9001" },
-      { id: "c2", name: "ISO 27001" },
+      { id: "c1", name: "ISO 9001:2015 QMS Mastered" },
+      { id: "c2", name: "ISO 27001:2022 Verified" },
       { id: "c3", name: "SOC 2 Type II" },
-      { id: "c4", name: "ITAR Aware" }
+      { id: "c4", name: "ITAR Regulatory Aware" }
     ],
     clientSuccess: {
-      stat1: "85+ Manufacturing clients",
-      stat2: "99.3% Order accuracy rate"
+      stat1: "85+ Institutional Industrial Partners",
+      stat2: "99.9% Order Integrity Index"
     }
   },
 
   services: {
-    title: "End-to-End Manufacturing BPO Support",
+    title: "End-to-End Institutional Manufacturing Solutions",
     gridItems: [
       {
-        title: "PROCUREMENT SUPPORT",
-        features: ["Purchase Order Processing", "Supplier Management", "Vendor Onboarding", "Invoice Matching", "Contract Administration"]
+        title: "STRATEGIC PROCUREMENT STEWARDSHIP",
+        features: ["Institutional Purchase Order Lifecycle", "Neural Supplier Relationship Management", "Strategic Vendor Onboarding Hubs", "Verified Invoice Integrity Matching", "Institutional Contract Administration"]
       },
       {
-        title: "SUPPLY CHAIN OPS",
-        features: ["Demand Planning Support", "Inventory Management", "Logistics Coordination", "BOM Management", "Lead Time Tracking"]
+        title: "MISSION-CRITICAL SUPPLY CHAIN",
+        features: ["Institutional Demand Orchestration Support", "Neural Inventory Integrity Management", "Strategic Global Logistics Coordination", "Institutional BOM Integrity Ops", "Neural Lead Time Tracking Logic"]
       },
       {
-        title: "CUSTOMER & DEALER SUPPORT",
-        features: ["Dealer Helpdesk", "Order Status Updates", "Technical Inquiries", "Parts Ordering", "Distributor Relations"]
+        title: "INSTITUTIONAL PARTNER SUPPORT",
+        features: ["Hyper-Resolution Dealer Helpdesk", "Neural Order Status Synchronization", "Strategic Industrial Tech Inquiries", "Institutional Spare Parts Orchestration", "Verified Distributor Ecosystem Stewardship"]
       },
       {
-        title: "WARRANTY & RETURNS",
-        features: ["Warranty Claims Processing", "RMA Management", "Quality Issue Tracking", "Field Engineer Coordination", "Spare Parts Support"]
+        title: "PRECISION WARRANTY & RETURNS",
+        features: ["Institutional Warranty Claims Adjudication", "Global RMA Lifecycle Management", "Neural Quality Integrity Tracking", "Strategic Field Resource Coordination", "Institutional Spare Parts Pipelines"]
       },
       {
-        title: "QUALITY & COMPLIANCE",
-        features: ["CAPA Documentation", "NCR Processing", "Audit Support", "Regulatory Filings", "Inspection Scheduling"]
+        title: "QUALITY & REGULATORY CARE",
+        features: ["Institutional CAPA Documentation Hubs", "Neural NCR Integrity Processing", "Strategic Audit Readiness Support", "Regulatory Manufacturing Filings", "Institutional Inspection Scheduling Logic"]
       },
       {
-        title: "BACK-OFFICE OPERATIONS",
-        features: ["ERP Data Entry", "Master Data Mgmt", "Financial Reconciliation", "HR Administrative Support", "Reporting & Analytics"]
+        title: "REGULATORY BACK-OFFICE OPS",
+        features: ["Institutional ERP Master Data Entry", "Precision Master Data Stewardship", "Verified Financial Reconciliation", "Strategic HR Administrative Support", "Institutional Regulatory Analytics"]
       }
     ]
   },

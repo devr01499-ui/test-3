@@ -2,8 +2,36 @@ import {
   HeartPulse, ShoppingCart, Landmark, Laptop, 
   PhoneCall, Plane, ShieldCheck, GraduationCap, 
   Zap, Truck, Clapperboard, Home, Car, 
-  Building2, Pill, PlusCircle,
+  Building2, PlusCircle, Briefcase, FileText,
+  Bot, Mic, BarChart3, Repeat, Target, Brain, 
+  Cpu, LayoutDashboard, MessageSquareText, Eye,
+  Bitcoin, Gamepad2, Utensils, Factory, Heart,
+  Scale
 } from "lucide-react";
+
+export const enhancedIndustries = [
+  { name: "Healthcare & Medical", icon: HeartPulse, bullets: ["Institutional Claims", "Neural Prior Auth", "Precision Coding"] },
+  { name: "Banking & Financial Services", icon: Landmark, bullets: ["Institutional Ops", "Neural Collections", "Compliance Integrity"] },
+  { name: "E-commerce & Retail", icon: ShoppingCart, bullets: ["Institutional Order Mgmt", "Neural CX Hubs", "Fulfillment Ops"] },
+  { name: "Technology & SaaS", icon: Laptop, bullets: ["Neural Tech Support", "Institutional Help Desk", "Success Ops"] },
+  { name: "Telecommunications", icon: PhoneCall, bullets: ["Institutional Billing", "Neural Tech Care", "Activation Ops"] },
+  { name: "Logistics & Supply Chain", icon: Truck, bullets: ["Institutional Tracking", "Neural Scheduling", "Customs Mesh"] },
+  { name: "Insurance", icon: ShieldCheck, bullets: ["Institutional Underwriting", "Neural Claims", "Customer Integrity"] },
+  { name: "Travel & Hospitality", icon: Plane, bullets: ["Institutional Booking", "Neural Guest Serv", "Concierge Ops"] },
+  { name: "Education & E-Learning", icon: GraduationCap, bullets: ["Institutional Admissions", "Neural Student Support", "Admissions"] },
+  { name: "Utilities & Energy", icon: Zap, bullets: ["Institutional Billing", "Neural Field Support", "Outage Ops"] },
+  { name: "Media & Entertainment", icon: Clapperboard, bullets: ["Neural Content Mod", "Institutional Subscript", "Fan Support"] },
+  { name: "Real Estate", icon: Home, bullets: ["Institutional Lead Gen", "Neural Showing Sch", "Tenant Integrity"] },
+  { name: "Automotive", icon: Car, bullets: ["Institutional Dealer Supp", "Neural Roadside", "Parts Mastery"] },
+  { name: "Government & Public", icon: Building2, bullets: ["Institutional Citizen Srv", "Neural Help Center", "Case Integrity"] },
+  { name: "Crypto & Fintech", icon: Bitcoin, bullets: ["Institutional KYC/AML", "Neural Trading Supp", "Wallet Integrity"] },
+  { name: "Legal Services", icon: Scale, bullets: ["Institutional Doc Review", "Neural Research", "Case Integrity"] },
+  { name: "Manufacturing", icon: Factory, bullets: ["Institutional Supply Chain", "Neural Procurement", "Order Integrity"] },
+  { name: "Non-Profit", icon: Heart, bullets: ["Institutional Donor Serv", "Neural Grants", "Mission Integrity"] },
+  { name: "Gaming & Esports", icon: Gamepad2, bullets: ["Neural Player Support", "Institutional Mod", "Trust & Safety"] },
+  { name: "Food & Beverage", icon: Utensils, bullets: ["Institutional Order Ops", "Neural Supply Chain", "Franchise Supp"] },
+  { name: "Professional Services", icon: Briefcase, bullets: ["Institutional BPO", "Neural Research", "Admin Integrity"] }
+];
 
 export const enhancedSolutions = {
   byFunction: [
@@ -90,24 +118,7 @@ export const enhancedAITech = {
   certifications: ["AI Safety Standards", "Data Privacy", "Security Compliance", "Industry Certs"]
 };
 
-export const enhancedIndustries = [
-  { name: "Healthcare & Medical", icon: HeartPulse, bullets: ["Claims Proc", "Prior Auth", "Medical Cod"] },
-  { name: "E-commerce & Retail", icon: ShoppingCart, bullets: ["Order Mgmt", "Customer Service"] },
-  { name: "Banking & Financial Services", icon: Landmark, bullets: ["Account Ops", "Collections", "Compliance"] },
-  { name: "Technology & SaaS", icon: Laptop, bullets: ["Tech Support", "Help Desk", "Onboarding"] },
-  { name: "Telecommunications", icon: PhoneCall, bullets: ["Billing", "Tech Supp", "Activations"] },
-  { name: "Travel & Hospitality", icon: Plane, bullets: ["Booking", "Guest Serv", "Concierge"] },
-  { name: "Insurance", icon: ShieldCheck, bullets: ["Underwriting", "Claims", "Customer"] },
-  { name: "Education & E-Learning", icon: GraduationCap, bullets: ["Admissions", "Student Supp", "Course Mgmt"] },
-  { name: "Utilities & Energy", icon: Zap, bullets: ["Billing", "Field Supp", "Outages"] },
-  { name: "Logistics & Supply Chain", icon: Truck, bullets: ["Tracking", "Scheduling", "Customs"] },
-  { name: "Media & Entertainment", icon: Clapperboard, bullets: ["Content Mod", "Subscript", "Support"] },
-  { name: "Real Estate", icon: Home, bullets: ["Lead Gen", "Showing Sch", "Tenant Serv"] },
-  { name: "Automotive", icon: Car, bullets: ["Dealer Supp", "Roadside", "Parts Mgmt"] },
-  { name: "Government & Public", icon: Building2, bullets: ["Citizen Srv", "Help Center", "Case Mgmt"] },
-  { name: "Pharma & Life Sciences", icon: Pill, bullets: ["Medical Info", "Compliance", "Safety"] },
-  { name: "15+ More Industries", icon: PlusCircle, bullets: ["Manufacturing", "Food Service", "Non-Profit"] }
-];
+// Industries already updated in the first chunk
 
 export const enhancedResources = {
   learn: [

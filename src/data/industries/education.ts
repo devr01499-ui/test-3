@@ -8,57 +8,57 @@ export const educationData: IndustryPageData = {
 
   heroData: {
     badgeIcon: "GraduationCap",
-    badgeText: "Education & E-learning",
-    headline: "Scale Student Success Operations",
-    subheading: "Empower educational institutions with dedicated enrollment, student support, and academic administration services.",
+    badgeText: "Institutional Education Mastery",
+    headline: "Educational Excellence: Advanced Student Lifecycle Orchestration",
+    subheading: "Empower your institution with high-precision admissions, student support, and academic administration services. We deliver scalable, FERPA-grade operational integrity for global education leaders.",
     bullets: [
-      "24/7 student helpdesk & tutoring support",
-      "LMS integration & tech support",
-      "Enrollment & admissions processing",
-      "FERPA-compliant data handling"
+      "24/7/365 Institutional Student Helpdesk & Tutoring Support",
+      "Strategic LMS Mesh & Technical Integration Support",
+      "Institutional Enrollment & Admissions Lifecycle Orchestration",
+      "Rigorous FERPA-Grade Student Data Integrity"
     ],
-    primaryCta: "Scale Your Institution",
-    secondaryCta: "View EdTech Brief",
+    primaryCta: "Architect Your Institution",
+    secondaryCta: "Access EdTech Brief",
     visualIcon: "GraduationCap",
-    visualList: ["Student support agents at work", "LMS dashboards & portals", "Enrollment processing workflows", "Virtual classroom support"],
+    visualList: ["Institutional Student Support Hubs", "LMS Mesh Control Centers", "Enrollment Lifecycle Pipelines", "Virtual Classroom Resilience Support"],
     certifications: [
-      { id: "c1", name: "FERPA" },
-      { id: "c2", name: "COPPA" },
-      { id: "c3", name: "ISO 27001" },
-      { id: "c4", name: "SOC 2" }
+      { id: "c1", name: "FERPA Compliant" },
+      { id: "c2", name: "COPPA Verified" },
+      { id: "c3", name: "ISO 27001:2022" },
+      { id: "c4", name: "SOC 2 Type II" }
     ],
     clientSuccess: {
-      stat1: "180+ Educational institutions",
-      stat2: "94% Student satisfaction rate"
+      stat1: "180+ Institutional Partners",
+      stat2: "94.5% Verified Student CSAT"
     }
   },
 
   services: {
-    title: "End-to-End Education BPO Solutions",
+    title: "End-to-End Institutional Education Solutions",
     gridItems: [
       {
-        title: "STUDENT SERVICES",
-        features: ["Admissions Inquiries", "Course Registration", "Financial Aid Help", "Transcript Requests", "24/7 Student Helpdesk"]
+        title: "STRATEGIC STUDENT SERVICES",
+        features: ["Institutional Admissions Inquiries", "Neural Course Registration Hubs", "Strategic Financial Aid Orchestration", "Verified Transcript Lifecycle", "24/7 Mission-Critical Student Helpdesk"]
       },
       {
-        title: "ENROLLMENT OPERATIONS",
-        features: ["Application Processing", "Document Verification", "Fee Collection", "Offer Letter Generation", "Deferrals"]
+        title: "ENROLLMENT LIFECYCLE OPS",
+        features: ["Institutional Application Processing", "Rigorous Document Integrity Verification", "Secure Fee Collection Orchestration", "Strategic Offer Letter Generation", "Institutional Deferral Logic"]
       },
       {
-        title: "LEARNING SUPPORT",
-        features: ["LMS Technical Support", "Virtual Tutoring Coord.", "Attendance Tracking", "Assignment Submissions", "Grading Assistance"]
+        title: "NEURAL LEARNING SUPPORT",
+        features: ["Institutional LMS Technical Mesh", "Strategic Virtual Tutoring Coordination", "Neural Attendance Tracking Hubs", "Verified Assignment Lifecycle", "Strategic Grading Support Assistance"]
       },
       {
-        title: "FACULTY & ADMIN SUPPORT",
-        features: ["Scheduling Support", "Content Upload Assistance", "Faculty IT Helpdesk", "Reporting", "Newsletter Mgmt"]
+        title: "FACULTY & ADMIN STEWARDSHIP",
+        features: ["Institutional Scheduling Orchestration", "Neural Content Upload Hubs", "Strategic Faculty Technical Support", "Institutional Regulatory Reporting", "Strategic Newsletter Stewardship"]
       },
       {
-        title: "ALUMNI & DONOR RELATIONS",
-        features: ["Alumni Outreach", "Donation Processing", "Event Coordination", "Career Services Ops", "Newsletter Campaigns"]
+        title: "ALUMNI & DONOR ORCHESTRATION",
+        features: ["Strategic Alumni Lifecycle Engagement", "Secure Donation Integrity Processing", "Global Event Coordination Hubs", "Institutional Career Services Ops", "Neural Alumni Outreach Campaigns"]
       },
       {
-        title: "COMPLIANCE & REPORTING",
-        features: ["FERPA Compliance", "Title IV Reporting", "IPEDS Data Prep", "Audit Support", "Accreditation Docs"]
+        title: "REGULATORY COMPLIANCE",
+        features: ["Institutional FERPA Integrity", "Strategic Title IV Reporting", "Neural IPEDS Data Orchestration", "Verified Audit Integrity Support", "Regulatory Accreditation Stewardship"]
       }
     ]
   },

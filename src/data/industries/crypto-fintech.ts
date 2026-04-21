@@ -8,57 +8,57 @@ export const cryptoFintechData: IndustryPageData = {
 
   heroData: {
     badgeIcon: "Bitcoin",
-    badgeText: "Cryptocurrency & Fintech",
-    headline: "Compliant Operations for the Web3 Economy",
-    subheading: "Navigate the complex regulatory landscape and deliver world-class user experiences with our crypto and fintech BPO specialists.",
+    badgeText: "Institutional Fintech Hub",
+    headline: "Compliant Core: Advanced Crypto & Fintech Orchestration",
+    subheading: "Navigate hyper-complex regulatory landscapes and deliver mission-critical user experiences. We merge global KYC/AML integrity with neural fintech operations.",
     bullets: [
-      "KYC/AML onboarding & monitoring",
-      "24/7 crypto user support & escalations",
-      "Transaction monitoring & fraud detection",
-      "Regulatory compliance across jurisdictions"
+      "Institutional KYC/AML Onboarding & Global Monitoring",
+      "24/7/365 Mission-Critical Crypto Support & Escalations",
+      "Neural Transaction Monitoring & Advanced Fraud Eradication",
+      "Multi-Jurisdictional Institutional Regulatory Compliance"
     ],
-    primaryCta: "Build Compliant Ops",
-    secondaryCta: "View Fintech Brief",
+    primaryCta: "Architect Compliant Ops",
+    secondaryCta: "Access Fintech Brief",
     visualIcon: "Bitcoin",
-    visualList: ["KYC verification dashboards", "Transaction monitoring screens", "Crypto customer support portals", "Regulatory reporting platforms"],
+    visualList: ["Institutional KYC Integrity Dashboards", "Neural Transaction Surveillance Mesh", "High-Resolution Crypto Support Hubs", "Regulatory Reporting Orchestration Control"],
     certifications: [
-      { id: "c1", name: "ISO 27001" },
+      { id: "c1", name: "ISO 27001:2022" },
       { id: "c2", name: "SOC 2 Type II" },
-      { id: "c3", name: "GDPR" },
-      { id: "c4", name: "FinCEN Aligned" }
+      { id: "c3", name: "GDPR Verified" },
+      { id: "c4", name: "FinCEN Regulatory Aligned" }
     ],
     clientSuccess: {
-      stat1: "55+ Crypto & fintech clients",
-      stat2: "< 5 min avg. KYC turnaround"
+      stat1: "55+ Global Fintech Partners",
+      stat2: "Sub-5m KYC Integrity Latency"
     }
   },
 
   services: {
-    title: "Specialized Crypto & Fintech BPO Operations",
+    title: "Institutional Crypto & Fintech BPO Operations",
     gridItems: [
       {
-        title: "KYC & ONBOARDING",
-        features: ["Identity Verification", "Document Review", "Liveness Checks", "Adverse Media Screening", "Risk Scoring"]
+        title: "STRATEGIC KYC & ONBOARDING",
+        features: ["Institutional Identity Verification", "Neural Document Review Labs", "Mission-Critical Liveness Checks", "Global Adverse Media Screening", "Neural Risk Scoring Architectures"]
       },
       {
-        title: "AML & COMPLIANCE",
-        features: ["Transaction Monitoring", "Suspicious Activity Reports (SAR)", "Sanctions Screening", "Risk-Based Reviews", "Regulatory Reporting"]
+        title: "GLOBAL AML & COMPLIANCE",
+        features: ["Neural Transaction Monitoring", "Institutional Suspicious Activity Reports (SAR)", "Global Sanctions Mesh", "Risk-Based Integrity Reviews", "Regulatory Reporting Orchestration"]
       },
       {
-        title: "USER SUPPORT",
-        features: ["24/7 Crypto Help Desk", "Wallet & Access Issues", "Transaction Disputes", "DeFi Product Support", "Onboarding Assistance"]
+        title: "MISSION-CRITICAL USER SUPPORT",
+        features: ["24/7/365 Institutional Crypto Helpdesk", "Neural Wallet & Access Resolution", "Strategic Transaction Adjudication", "Institutional DeFi Product Support", "Neural Onboarding Assistance"]
       },
       {
-        title: "FRAUD OPERATIONS",
-        features: ["Fraud Case Management", "Account Takeover Prevention", "Chargeback Management", "Pattern Analysis", "Escalation Handling"]
+        title: "ADVANCED FRAUD OPERATIONS",
+        features: ["Institutional Fraud Lifecycle Management", "Neural Account Takeover Eradication", "Strategic Chargeback Adjudication", "Deep Pattern Analysis Mesh", "Institutional Escalation Orchestration"]
       },
       {
-        title: "TRUST & SAFETY",
-        features: ["Marketplace Content Review", "Scam Detection", "Community Guidelines Enforcement", "Phishing Investigations", "Appeals"]
+        title: "INSTITUTIONAL TRUST & SAFETY",
+        features: ["Managed Marketplace Integrity", "Neural Scam Eradication", "Institutional Community Stewardship", "Deep Phishing Investigations", "Verified Appeals Stewardship"]
       },
       {
-        title: "BACK OFFICE",
-        features: ["Reconciliation Support", "Reporting & Analytics", "Regulatory Filing Support", "Partner Onboarding", "Data Operations"]
+        title: "STRATEGIC BACK OFFICE",
+        features: ["Institutional Reconciliation Hubs", "Neural Regulatory Analytics", "Global Filing Support Mesh", "Strategic Partner Onboarding", "Institutional Data Integrity Ops"]
       }
     ]
   },

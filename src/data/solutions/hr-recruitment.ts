@@ -8,23 +8,23 @@ export const hrRecruitmentData: SolutionPageData = {
   
   heroData: {
     badgeIcon: "Users",
-    badgeText: "HR & Recruitment Process Outsourcing",
-    headline: "Source Top Talent Faster. Manage Globally.",
-    subheading: "Outsource your entire talent acquisition lifecycle and payroll administration to dedicated expert recruiters powered by AI sourcing models.",
+    badgeText: "Strategic RPO Excellence",
+    headline: "Institutional Talent Acquisition & Global HR Orchestration",
+    subheading: "Elevate your human capital strategy with embedded RPO solutions. We merge high-tier neural sourcing with strategic human recruitment to drive global scale and institutional culture.",
     bullets: [
-      "End-to-end Recruitment Process Outsourcing (RPO)",
-      "Global payroll & compliance management",
-      "Employee onboarding and record administration",
-      "AI-driven candidate screening"
+      "Strategic Recruitment Process Outsourcing (RPO)",
+      "Global Compliance & Multi-Country Payroll Mesh",
+      "Institutional Employee Lifecycle Orchestration",
+      "Advanced Neural Sourcing & Screening Architectures"
     ],
-    primaryCta: "Scale Your Team",
-    secondaryCta: "RPO Strategy Call",
+    primaryCta: "Scale Your Institution",
+    secondaryCta: "Request RPO Strategy Brief",
     visualIcon: "Briefcase",
-    visualText: "Applicant Tracking System Dashboard",
+    visualText: "Institutional Talent & ATS Control Center",
     metricsOverlay: [
-      { value: "45%", label: "Faster Time-to-Fill" },
-      { value: "50%", label: "Lower Cost/Hire" },
-      { value: "98%", label: "Offer Acceptance" }
+      { value: "45%+", label: "Target Fill-Time Reduction" },
+      { value: "50%", label: "Efficiency Per Hire" },
+      { value: "98.2%", label: "Offer Integration Rate" }
     ]
   },
 
@@ -36,22 +36,22 @@ export const hrRecruitmentData: SolutionPageData = {
   ],
 
   services: {
-    title: "Comprehensive HR Services",
+    title: "Institutional Talent Framework",
     items: [
       {
-        title: "Talent Acquisition (RPO)",
+        title: "Strategic Talent Acquisition (RPO)",
         icon: "Search",
-        features: ["Passive Candidate Sourcing", "Resume Screening using AI", "Interview Coordination", "Reference Checking", "Offer Negotiation"]
+        features: ["Neuro-Semantic Passive Sourcing", "AI-Driven Meritocratic Screening", "Global Interview Orchestration", "Institutional Reference Auditing", "Strategic Offer Architecture"]
       },
       {
-        title: "HR Administration",
+        title: "Global HR Stewardship",
         icon: "FileText",
-        features: ["Employee Onboarding", "Benefits Administration", "Leave & Attendance Mgmt", "Employee Helpdesk", "Exit Interviews"]
+        features: ["Frictionless Employee Onboarding", "Institutional Benefits Architecture", "Lifecycle Record Administration", "Global Employee Support Hubs", "Insightful Exit Analytics"]
       },
       {
-        title: "Global Payroll Mgmt",
+        title: "Cross-Border Payroll Mesh",
         icon: "DollarSign",
-        features: ["Multi-country Payroll", "Tax Compliance & Filing", "Expense Reimbursements", "Statutory Reporting", "Vendor Management"]
+        features: ["Multi-Jurisdictional Payroll", "Institutional Tax Compliance", "Automated Expense Orchestration", "Statutory Regulatory Reporting", "Global Vendor Ecosystem Management"]
       }
     ]
   },
@@ -144,9 +144,9 @@ export const hrRecruitmentData: SolutionPageData = {
   },
 
   cta: {
-    title: "Ready to Transform Your Hiring?",
+    title: "Ready to Architect Your Global Talent Strategy?",
     primaryBtn: "Talk to a Talent Architect",
-    secondaryBtn1: "RPO Cost Calculator",
-    secondaryBtn2: "View Sourcing Tech"
+    secondaryBtn1: "RPO Efficiency Calculator",
+    secondaryBtn2: "Institutional Tech Stack Overview"
   }
 };

@@ -144,37 +144,48 @@ export default function ContactPage() {
       <section className={`${styles.section} ${styles.bgSurface}`}>
         <div className="container">
           <div className={styles.sectionHeader}>
-            <h2 className={styles.sectionTitle}>How Can We Help You Today?</h2>
-            <p style={{ color: "var(--text-muted)", fontSize: "1.1rem" }}>Choose the path that best matches your needs for the fastest response.</p>
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className={styles.sectionTitle}
+            >
+              How Can We Help You Today?
+            </motion.h2>
+            <p style={{ color: "var(--text-main)", fontSize: "1.1rem", fontWeight: 600 }}>Choose the path that best matches your needs for the fastest response.</p>
           </div>
 
           <div className={styles.optionsGrid}>
             {contactData.options.map((opt, i) => (
-              <motion.div 
-                key={opt.id} 
-                className={styles.optionCard}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.1 }}
-              >
-                <div className={styles.optionIcon}>
-                  <IconMap name={opt.icon} size={32} />
-                </div>
-                <div className={styles.responseTag}>Response: {opt.responseTime}</div>
-                <h3 className={styles.optionTitle}>{opt.title}</h3>
-                <p className={styles.optionDesc}>{opt.description}</p>
-                
-                <div className={styles.bestFor}>
-                   <div className={styles.bestTitle}>Best For:</div>
-                   <ul className={styles.bestList}>
-                      {opt.bestFor.map(item => <li key={item}>{item}</li>)}
-                   </ul>
-                </div>
+              <div key={opt.id} className="card-3d-wrapper" style={{ height: "420px" }}>
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  whileHover={{ rotateY: 8, rotateX: -4, scale: 1.05 }}
+                  viewport={{ once: true }}
+                  transition={{ type: "spring", stiffness: 260, damping: 20, delay: i * 0.1 }}
+                  className={`card-3d-content ${styles.optionCard}`}
+                  style={{ border: "1px solid var(--border)" }}
+                >
+                  <div className={styles.responseTag} style={{ background: "var(--surface)", color: "var(--primary)", border: "1px solid var(--border)", fontWeight: 800 }}>{opt.responseTime} Response</div>
+                  <div className={styles.optionIcon} style={{ background: "var(--surface)", border: "1px solid var(--border)" }}>
+                    <IconMap name={opt.icon} size={32} />
+                  </div>
+                  <h3 className={styles.optionTitle} style={{ color: "var(--text-main)", fontWeight: 800 }}>{opt.title}</h3>
+                  <p className={styles.optionDesc} style={{ fontSize: "0.9rem", flexGrow: 1 }}>{opt.description}</p>
+                  
+                  <div className={styles.bestFor} style={{ borderTop: "1px solid var(--border)", paddingTop: "1rem", marginTop: "1rem" }}>
+                    <div className={styles.bestTitle} style={{ fontSize: "0.7rem", color: "var(--primary)", fontWeight: 800 }}>Ideal For:</div>
+                    <ul className={styles.bestList}>
+                        {opt.bestFor.map(item => <li key={item} style={{ fontWeight: 600, fontSize: "0.85rem" }}>{item}</li>)}
+                    </ul>
+                  </div>
 
-                <Link href="#form" className={styles.ctaLink}>
-                  {opt.cta} <ArrowRight size={18} />
-                </Link>
-              </motion.div>
+                  <Link href="#form" className={styles.ctaLink} style={{ fontWeight: 800, marginTop: "1rem" }}>
+                    {opt.cta} <ArrowRight size={18} />
+                  </Link>
+                </motion.div>
+              </div>
             ))}
           </div>
         </div>

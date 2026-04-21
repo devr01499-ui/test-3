@@ -8,57 +8,57 @@ export const utilitiesEnergyData: IndustryPageData = {
 
   heroData: {
     badgeIcon: "Zap",
-    badgeText: "Utilities & Energy",
-    headline: "Powering Reliable Utility Operations",
-    subheading: "Deliver exceptional service to millions of customers with scalable billing, outage management, and field support operations.",
+    badgeText: "Institutional Utility Mastery",
+    headline: "Utility Integrity: Advanced Infrastructure & Billing Orchestration",
+    subheading: "Orchestrate critical infrastructure support and enhance operational resilience with institutional-grade billing, outage management, and field resource coordination.",
     bullets: [
-      "Smart meter billing & query resolution",
-      "Outage management & emergency dispatch",
-      "Field service scheduling & coordination",
-      "Energy deregulation switching support"
+      "Institutional-Grade Smart Meter Billing & Neural Query Resolution",
+      "Strategic Outage Management & Global Emergency Dispatch Hubs",
+      "Institutional Field Service Orchestration & Resource Coordination",
+      "Mission-Critical Energy Deregulation Switching Integrity Support"
     ],
-    primaryCta: "Optimize Utility Ops",
-    secondaryCta: "View Energy Brief",
+    primaryCta: "Architect Utility Ops",
+    secondaryCta: "Access Energy Brief",
     visualIcon: "Zap",
-    visualList: ["Smart meter billing screens", "Field service dispatch dashboards", "Outage management maps", "Customer self-service portals"],
+    visualList: ["Institutional Billing Integrity Hubs", "Neural Dispatch Orchestration Centers", "Global Outage Management Meshes", "Mission-Critical Self-Service Frameworks"],
     certifications: [
-      { id: "c1", name: "ISO 27001" },
+      { id: "c1", name: "ISO 27001:2022 Verified" },
       { id: "c2", name: "SOC 2 Type II" },
-      { id: "c3", name: "NERC CIP" },
-      { id: "c4", name: "GDPR" }
+      { id: "c3", name: "NERC CIP Regulatory Standards" },
+      { id: "c4", name: "GDPR Verified" }
     ],
     clientSuccess: {
-      stat1: "90+ Utility clients globally",
-      stat2: "99.5% Billing accuracy"
+      stat1: "90+ Institutional Global Partners",
+      stat2: "99.95% Billing Integrity Index"
     }
   },
 
   services: {
-    title: "Comprehensive Utilities & Energy BPO",
+    title: "Comprehensive Institutional Utilities Solutions",
     gridItems: [
       {
-        title: "BILLING & PAYMENTS",
-        features: ["Bill Presentment", "AMI/Smart Meter Queries", "Payment Processing", "Dispute Resolution", "Arrears Management"]
+        title: "PRECISION BILLING & REVENUE",
+        features: ["Institutional Bill Presentment", "Neural AMI/Smart Meter Queries", "Verified Payment Processing", "Strategic Dispute Adjudication", "Institutional Arrears Stewardship"]
       },
       {
-        title: "CUSTOMER CARE",
-        features: ["New Service Connections", "Outage Notifications", "Move-In/Move-Out", "Energy Efficiency Tips", "Rate Plan Inquiries"]
+        title: "STRATEGIC CUSTOMER CARE",
+        features: ["Institutional Service Connections", "Neural Outage Notifications", "Strategic Move-In/Out Flow", "Global Energy Efficiency Intel", "Institutional Rate Plan Adjudication"]
       },
       {
-        title: "FIELD SERVICE SUPPORT",
-        features: ["Technician Scheduling", "Work Order Management", "Meter Reading Support", "Safety Notifications", "Dispatch Coordination"]
+        title: "FIELD RESOURCE ORCHESTRATION",
+        features: ["Institutional Technician Scheduling", "Neural Work Order Lifecycle", "Strategic Meter Reading Hubs", "Global Safety Notifications", "Institutional Dispatch Orchestration"]
       },
       {
-        title: "OUTAGE MANAGEMENT",
-        features: ["Emergency Hotlines", "Outage Ticketing", "ETA Communication", "Priority Customer Routing", "Post-Outage Follow-up"]
+        title: "MISSION-CRITICAL OUTAGE OPS",
+        features: ["Institutional Emergency Hotlines", "Neural Outage Adjudication", "Strategic ETA Communication", "Global Priority Routing Logic", "Institutional Post-Event Follow-up"]
       },
       {
-        title: "RENEWABLE ENERGY",
-        features: ["Solar Incentive Support", "EV Charging Queries", "Net Metering", "Green Tariff Enrollment", "Rebate Processing"]
+        title: "RENEWABLE ECOSYSTEM OPS",
+        features: ["Institutional Solar Incentive Support", "Neural EV Charging Intelligence", "Strategic Net Metering Flows", "Global Green Tariff Enrollment", "Institutional Rebate Adjudication"]
       },
       {
-        title: "REGULATORY & COMPLIANCE",
-        features: ["Low-Income Program Admin", "LIHEAP Processing", "Regulatory Reporting", "Tariff Administration", "Audit Support"]
+        title: "REGULATORY & PUBLIC COMPLIANCE",
+        features: ["Institutional Low-Income Program Admin", "Neural LIHEAP Integrity Processing", "Strategic Regulatory Reporting", "Global Tariff Administration", "Institutional Audit Stewardship"]
       }
     ]
   },

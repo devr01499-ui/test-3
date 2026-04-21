@@ -8,23 +8,23 @@ export const technicalSupportData: SolutionPageData = {
   
   heroData: {
     badgeIcon: "Laptop",
-    badgeText: "Technical Support",
-    headline: "Uninterrupted Uptime, Unmatched Resolution",
-    subheading: "Resolve complex technical issues faster with AI-augmented diagnostic tools and certified IT engineering teams.",
+    badgeText: "Engineering Support Excellence",
+    headline: "Mission-Critical Technical Support & AIOps Orchestration",
+    subheading: "Compress MTTR and elevate infrastructure resilience with AI-augmented diagnostics and certified Tier 1-3 engineering teams specialized in enterprise-scale troubleshooting.",
     bullets: [
-      "Tier 1 to Tier 3 engineering support",
-      "AI-driven initial diagnostics",
-      "Hardware and software troubleshooting",
-      "Stringent SLA guarantees"
+      "Full-Spectrum Tier 1 to Tier 3 Engineering",
+      "Neural Diagnostic & Self-Healing Engines",
+      "Hardware, Software, & Cloud Infrastructure Mastery",
+      "Zero-Drift SLA Infrastructure Guarantees"
     ],
-    primaryCta: "Optimize Your IT",
-    secondaryCta: "See Tech Demo",
+    primaryCta: "Architect Your Tech Support",
+    secondaryCta: "Access Security Overview",
     visualIcon: "Server",
-    visualText: "IT Helpdesk & Monitoring Dashboard",
+    visualText: "AIOps Control Center & NOC Dashboard",
     metricsOverlay: [
-      { value: "98%", label: "First Call Res." },
-      { value: "<2min", label: "Avg Wait Time" },
-      { value: "99.9%", label: "Platform Uptime" }
+      { value: "98.2%", label: "First Contact Resolution" },
+      { value: "Sub-2min", label: "Avg Engagement Latency" },
+      { value: "99.99%", label: "Platform Resilience" }
     ]
   },
 
@@ -36,22 +36,22 @@ export const technicalSupportData: SolutionPageData = {
   ],
 
   services: {
-    title: "Comprehensive IT Helpdesk Services",
+    title: "High-Tier Engineering Ecosystem",
     items: [
       {
-        title: "L1 Support & Triage",
+        title: "Tier 1: Intelligent Triage",
         icon: "Headset",
-        features: ["Password Resets", "Account Provisioning", "Basic Network Issues", "Software Installation", "Device Configuration"]
+        features: ["Institutional Account Provisioning", "Predictive Password Management", "Neural Network Diagnostics", "Software Deployment Orchestration", "Hardware Configuration Triage"]
       },
       {
-        title: "L2 & L3 Engineering",
+        title: "Tier 2 & 3: Advanced Engineering",
         icon: "Code",
-        features: ["Server Management", "Database Administration", "Cloud Infrastructure (AWS/Azure)", "Bug Triage", "Security Patching"]
+        features: ["Hybrid Cloud Architecture (AWS/Azure/GCP)", "Neural Database Optimization", "Mission-Critical Bug Orchestration", "Security Patch Logic", "High-Resolution RCA (Root Cause Analysis)"]
       },
       {
-        title: "Managed IT Services",
+        title: "Managed Infrastructure Services",
         icon: "Network",
-        features: ["Network Monitoring", "Asset Management", "MDM Deployments", "Backup & Recovery", "Vendor Management"]
+        features: ["Continuous NOC Monitoring", "Asset Lifecycle Orchestration", "Enterprise MDM Management", "Business Continuity & Disaster Recovery", "Strategic Vendor Ecosystem Navigation"]
       }
     ]
   },
@@ -144,9 +144,9 @@ export const technicalSupportData: SolutionPageData = {
   },
 
   cta: {
-    title: "Ready to Upgrade Your Technical Support?",
-    primaryBtn: "Talk to an Architect",
-    secondaryBtn1: "Review Tech Case Studies",
-    secondaryBtn2: "Security Overview"
+    title: "Ready to Architect Your Next-Gen Technical Support Ecosystem?",
+    primaryBtn: "Talk to a Solutions Architect",
+    secondaryBtn1: "Review Industrial Case Studies",
+    secondaryBtn2: "Institutional Security Protocol"
   }
 };

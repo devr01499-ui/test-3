@@ -8,57 +8,57 @@ export const techSaasData: IndustryPageData = {
 
   heroData: {
     badgeIcon: "Laptop",
-    badgeText: "Technology & SaaS",
-    headline: "Scale Your SaaS with Specialized Support",
-    subheading: "Focus on building your product while we handle complex technical support, user onboarding, and hyper-growth recruiting.",
+    badgeText: "High-Growth SaaS Architecture",
+    headline: "Scale Without Failure: Neural SaaS Success Orchestration",
+    subheading: "Accelerate your product roadmap while we orchestrate complex technical support, user lifecycle success, and hyper-growth talent acquisition.",
     bullets: [
-      "L1/L2 technical support engineers",
-      "Seamless product onboarding",
-      "SDR & appointment setting",
-      "Specialized tech RPO"
+      "Tier 1-3 Specialized Technical Support Engineers",
+      "Institutional Frictionless User Onboarding Flows",
+      "Strategic SaaS Revenue & Growth Operations",
+      "High-Velocity Technology RPO Architectures"
     ],
-    primaryCta: "Scale My Startup",
-    secondaryCta: "View Portfolios",
+    primaryCta: "Architect Your Scale",
+    secondaryCta: "Access Growth Portfolio",
     visualIcon: "Cpu",
-    visualList: ["Developer support dashboards", "User onboarding flows", "Cloud infrastructure snapshots", "Agile team coordination"],
+    visualList: ["Developer Knowledge Mesh Dashboards", "Frictionless Onboarding Architectures", "Neural Cloud Resource Control", "Agile Product Lifecycle Hubs"],
     certifications: [
       { id: "c1", name: "SOC 2 Type II" },
-      { id: "c2", name: "ISO 27001" },
-      { id: "c3", name: "GDPR" },
-      { id: "c4", name: "AWS Partner" }
+      { id: "c2", name: "ISO 27001:2022" },
+      { id: "c3", name: "GDPR Verified" },
+      { id: "c4", name: "Cloud Partner Status" }
     ],
     clientSuccess: {
-      stat1: "200+ Tech clients",
-      stat2: "92% Tier 1 resolution"
+      stat1: "200+ High-Growth SaaS Partners",
+      stat2: "92% FCR Precision Rating"
     }
   },
 
   services: {
-    title: "Support for the Modern Tech Stack",
+    title: "Institutional Support for the Modern Tech Stack",
     gridItems: [
       {
-        title: "TECHNICAL SUPPORT",
-        features: ["L1-L3 Troubleshooting", "API & Developer Support", "Bug Reporting & Triage", "Knowledge Base Mgmt", "Hardware Support"]
+        title: "STRATEGIC TECHNICAL SUPPORT",
+        features: ["L1-L3 High-tier Troubleshooting", "API & Developer Experience Support", "Neural Bug Reporting & Triage", "Institutional Knowledge Base Orchestration", "Strategic Hardware Asset Support"]
       },
       {
-        title: "CUSTOMER SUCCESS",
-        features: ["User Onboarding", "Account Management", "Churn Prevention", "Product Adoption", "Training & Webinars"]
+        title: "NEURAL CUSTOMER SUCCESS",
+        features: ["Institutional User Onboarding", "Strategic Lifecycle Account Management", "Predictive Churn Prevention Logic", "Hyper-Adoption Product Strategies", "Expert Technology Training & Webinars"]
       },
       {
-        title: "SALES & REVENUE",
-        features: ["SDR & Lead Gen", "Appointment Setting", "Inbound Closers", "Renewal Management", "Market Expansion"]
+        title: "STRATEGIC SALES & REVENUE",
+        features: ["High-Velocity SDR & Lead Generation", "Institutional Appointment Setting", "High-Impact Inbound Closers", "Strategic Renewal Lifecycle Management", "Global Market Expansion Logic"]
       },
       {
-        title: "RECRUITING (RPO)",
-        features: ["Tech Talent Sourcing", "Interview Scheduling", "Technical Screening", "Employer Branding"]
+        title: "TECHNOLOGY RECRUITING (RPO)",
+        features: ["Institutional Tech Talent Sourcing", "Strategic Interview Orchestration", "Rigorous Technical Screening Hubs", "Enterprise Employer Branding Logic"]
       },
       {
-        title: "DIGITAL OPERATIONS",
-        features: ["Content Moderation", "Data Labeling (AI)", "App Testing (QA)", "App Store Optimization"]
+        title: "DIGITAL NEURAL OPERATIONS",
+        features: ["Institutional Content Moderation", "Advanced Neural Data Labeling (AI)", "High-Resolution App Testing (QA)", "Strategic App Store Optimization"]
       },
       {
-        title: "TRUST & SAFETY",
-        features: ["Account Security", "Abuse Prevention", "Policy Enforcement", "Trust Audits"]
+        title: "INSTITUTIONAL TRUST & SAFETY",
+        features: ["Zero-Trust Account Security", "Advanced Abuse Prevention Logic", "Dynamic Policy Enforcement Hubs", "Institutional Trust & Safety Audits"]
       }
     ]
   },

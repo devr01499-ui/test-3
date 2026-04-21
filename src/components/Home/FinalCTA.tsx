@@ -19,7 +19,7 @@ export function FinalCTA() {
           viewport={{ once: true }}
           className={styles.title}
         >
-          Ready to Transform Your Operations?
+          Ready to Scale with Institutional Precision?
         </motion.h2>
         <motion.p 
           initial={{ opacity: 0, y: 20 }}
@@ -28,7 +28,7 @@ export function FinalCTA() {
           transition={{ delay: 0.1 }}
           className={styles.subtitle}
         >
-          Let's discuss how we can help you achieve your goals with our AI-human hybrid solutions.
+          Partner with Clarity to integrate high-tier human strategic intelligence with advanced neural architectures.
         </motion.p>
 
         <div className={styles.actions}>
@@ -37,7 +37,7 @@ export function FinalCTA() {
             whileTap={{ scale: 0.95 }}
             className={styles.primary}
           >
-            Get Started <ArrowRight size={20} style={{ verticalAlign: "middle", marginLeft: "8px" }} />
+            Deploy Global Platform <ArrowRight size={20} style={{ verticalAlign: "middle", marginLeft: "8px" }} />
           </motion.button>
           
           <motion.button 
@@ -46,12 +46,12 @@ export function FinalCTA() {
             className={styles.secondary}
           >
             <Play size={20} fill="currentColor" style={{ verticalAlign: "middle", marginRight: "8px" }} />
-            Schedule Demo
+            Request Strategy Brief
           </motion.button>
           
           <button className={styles.tertiary}>
             <Download size={20} />
-            Download Brochure
+            Download Institutional Blueprint
           </button>
         </div>
 

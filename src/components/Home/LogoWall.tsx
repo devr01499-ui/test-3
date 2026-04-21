@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 import styles from "./LogoWall.module.css";
 
 const logos = [
-  "GLOBAL-IT", "TECH-SPHERE", "NEXUS", "VIRTUE", 
-  "PRIME", "LUMEN", "VERTEX", "CORE",
-  "GLOBAL-IT", "TECH-SPHERE", "NEXUS", "VIRTUE", 
-  "PRIME", "LUMEN", "VERTEX", "CORE"
+  "GLOBAL-SYS", "NEURAL-TECH", "NEXUS-CORP", "VIRTUE-HEALTH", 
+  "PRIME-FI", "LUMEN-SOFT", "VERTEX-OPS", "CORE-RCM",
+  "GLOBAL-SYS", "NEURAL-TECH", "NEXUS-CORP", "VIRTUE-HEALTH", 
+  "PRIME-FI", "LUMEN-SOFT", "VERTEX-OPS", "CORE-RCM"
 ];
 
 const filters = ["All", "Healthcare", "Finance", "Tech", "Retail", "Manufacturing"];
@@ -25,7 +25,7 @@ export function LogoWall() {
           viewport={{ once: true }}
           className={styles.title}
         >
-          Powering Success for 500+ Global Brands
+          Architecting Success for 500+ Institutional Partners
         </motion.h2>
 
         <div className={styles.logoTrack}>

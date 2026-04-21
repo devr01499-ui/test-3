@@ -56,63 +56,84 @@ export default function ServicesPage() {
       </section>
 
       {/* CORE DOMAINS */}
-      <section className={styles.section}>
+      <section className={styles.section} style={{ background: "var(--background)" }}>
         <div className="container">
           <div className={styles.sectionHeader}>
-            <h2 className={styles.sectionTitle}>Core Service Domains</h2>
-            <p style={{ color: "var(--text-muted)", fontSize: "1.1rem" }}>Our foundational expertise across the enterprise value chain.</p>
+            <h2 className={styles.sectionTitle} style={{ fontSize: "3rem", fontWeight: 900 }}>Core Service <span style={{ color: "var(--primary)" }}>Domains</span></h2>
+            <p style={{ color: "var(--text-main)", fontSize: "1.2rem", fontWeight: 600 }}>Our foundational expertise across the enterprise value chain.</p>
           </div>
 
-          <div className={styles.coreGrid}>
+          <div className={styles.coreGrid} style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(350px, 1fr))", gap: "2.5rem" }}>
             {enhancedServices.core.map((domain, i) => (
-              <motion.div 
-                key={domain.title} 
-                className={styles.coreCard}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-              >
-                <div className={styles.iconWrap}>
-                  <DomainIcon title={domain.title} />
-                </div>
-                <h3 className={styles.domainTitle}>{domain.title.replace(/^[^\w\s]*/, '')}</h3>
-                <ul className={styles.domainList}>
-                  {domain.items.map(item => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
-              </motion.div>
+              <div key={domain.title} className="card-3d-wrapper" style={{ height: "480px" }}>
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  whileHover={{ rotateY: 8, rotateX: -4, scale: 1.05 }}
+                  viewport={{ once: true }}
+                  transition={{ type: "spring", stiffness: 260, damping: 20, delay: i * 0.1 }}
+                  className="card-3d-content"
+                  style={{ border: "1px solid var(--border)" }}
+                >
+                  <Image 
+                    src={`https://images.unsplash.com/photo-${i === 0 ? '1556740758-90de374c12ad' : i === 1 ? '1454165833222-d1d44d60ed4b' : i === 2 ? '1554224155-8d04cb21cd6c' : '1521791136064-7986c2959441'}?auto=format&fit=crop&q=80&w=800`}
+                    alt={domain.title}
+                    fill
+                    className="card-image-bg"
+                  />
+                  <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(8, 47, 73, 0.3) 0%, rgba(8, 47, 73, 0.9) 100%)", zIndex: 1 }} />
+                  
+                  <div style={{ position: "relative", zIndex: 2, height: "100%", display: "flex", flexDirection: "column", padding: "2.5rem", color: "white" }}>
+                    <div className={styles.iconWrap} style={{ background: "rgba(255,255,255,0.2)", backdropFilter: "blur(12px)", color: "white", border: "1px solid rgba(255,255,255,0.2)", marginBottom: "1.5rem" }}>
+                      <DomainIcon title={domain.title} />
+                    </div>
+                    <h3 className={styles.domainTitle} style={{ color: "white", fontSize: "1.75rem", fontWeight: 900, marginBottom: "1.5rem" }}>{domain.title.replace(/^[^\w\s]*/, '')}</h3>
+                    <ul className={styles.domainList} style={{ color: "rgba(255,255,255,0.9)", fontWeight: 500, flexGrow: 1 }}>
+                      {domain.items.map(item => (
+                        <li key={item} style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                          <CheckCircle size={14} style={{ color: "var(--secondary)" }} /> {item}
+                        </li>
+                      ))}
+                    </ul>
+                    <Link href="#" style={{ color: "var(--secondary)", fontWeight: 800, marginTop: "2rem", display: "flex", alignItems: "center", gap: "8px" }}>
+                      Detailed Scope <ArrowRight size={18} />
+                    </Link>
+                  </div>
+                </motion.div>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
       {/* SPECIALIZED SERVICES */}
-      <section className={`${styles.section} ${styles.bgSurface}`}>
+      <section className={`${styles.section}`} style={{ background: "var(--surface)" }}>
         <div className="container">
           <div className={styles.sectionHeader}>
-            <h2 className={styles.sectionTitle}>Specialized Offerings</h2>
+            <h2 className={styles.sectionTitle} style={{ fontSize: "2.5rem", fontWeight: 900 }}>Specialized <span style={{ color: "var(--primary)" }}>Solutions</span></h2>
           </div>
 
-          <div className={styles.specGrid}>
+          <div className={styles.specGrid} style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "2rem" }}>
             {Object.entries(enhancedServices.specialized).map(([key, items], i) => (
-              <motion.div 
-                key={key} 
-                className={styles.specCard}
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-              >
-                <div className={styles.specTitle}>{key}</div>
-                <ul className={styles.domainList} style={{ gap: "0.5rem" }}>
-                   {items.slice(0, 5).map((item: string) => (
-                     <li key={item} style={{ fontSize: "0.9rem" }}>{item}</li>
-                   ))}
-                </ul>
-                <div style={{ marginTop: "1.5rem", fontSize: "0.85rem", fontWeight: 700, color: "var(--primary)" }}>+ More</div>
-              </motion.div>
+              <div key={key} className="card-3d-wrapper" style={{ height: "320px" }}>
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  whileHover={{ rotateY: -10, rotateX: 5, scale: 1.05 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.1 }}
+                  className={`card-3d-content ${styles.specCard}`}
+                  style={{ background: "white", padding: "2rem", border: "1px solid var(--border)" }}
+                >
+                  <div className={styles.specTitle} style={{ fontWeight: 900, color: "var(--primary)", borderBottom: "1px solid var(--surface)", paddingBottom: "1rem", marginBottom: "1rem" }}>{key}</div>
+                  <ul className={styles.domainList} style={{ gap: "0.5rem" }}>
+                    {items.slice(0, 5).map((item: string) => (
+                      <li key={item} style={{ fontSize: "0.9rem", fontWeight: 600, color: "var(--text-main)" }}>{item}</li>
+                    ))}
+                  </ul>
+                  <div style={{ marginTop: "auto", fontSize: "0.85rem", fontWeight: 800, color: "var(--primary)", textTransform: "uppercase" }}>Explorer Category</div>
+                </motion.div>
+              </div>
             ))}
           </div>
         </div>

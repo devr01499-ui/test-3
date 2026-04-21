@@ -8,57 +8,57 @@ export const foodBeverageData: IndustryPageData = {
 
   heroData: {
     badgeIcon: "Utensils",
-    badgeText: "Food & Beverage",
-    headline: "Serve up Exceptional Food Operations",
-    subheading: "Keep your kitchens, supply chains, and customers happy with dedicated F&B operations support around the clock.",
+    badgeText: "Institutional F&B Mastery",
+    headline: "F&B Integrity: Advanced Lifecycle & Supply Chain Orchestration",
+    subheading: "Orchestrate complex global food operations and enhance consumer trust with institutional-grade supply chain coordination and mission-critical customer care.",
     bullets: [
-      "24/7 order management & customer care",
-      "Franchise & multi-unit support services",
-      "Food safety compliance documentation",
-      "Supply chain & vendor coordination"
+      "24/7/365 Institutional Order Management & Strategic Customer Care",
+      "Strategic Franchise & Multi-Unit Support Lifecycle Services",
+      "Institutional Food Safety Compliance & Verified Documentation Hubs",
+      "Mission-Critical Supply Chain & Global Vendor Orchestration Meshes"
     ],
-    primaryCta: "Optimize F&B Operations",
-    secondaryCta: "View F&B Brief",
+    primaryCta: "Architect F&B Ops",
+    secondaryCta: "Access F&B Brief",
     visualIcon: "Utensils",
-    visualList: ["Order management platforms", "Franchise support dashboards", "Menu data management", "Supply chain coordination screens"],
+    visualList: ["Institutional Order Integrity Hubs", "Neural Franchise Stewardship Centers", "Global Menu Data Control Meshes", "Mission-Critical Supply Chain Orchestration Control"],
     certifications: [
-      { id: "c1", name: "ISO 22000" },
-      { id: "c2", name: "FDA Food Safety" },
-      { id: "c3", name: "ISO 27001" },
-      { id: "c4", name: "PCI DSS" }
+      { id: "c1", name: "ISO 22000 Verified" },
+      { id: "c2", name: "FDA Food Safety Standards" },
+      { id: "c3", name: "ISO 27001:2022" },
+      { id: "c4", name: "PCI DSS v4.0" }
     ],
     clientSuccess: {
-      stat1: "70+ F&B brands served",
-      stat2: "98% Order accuracy rate"
+      stat1: "70+ Institutional F&B Partners",
+      stat2: "99.5% Order Integrity Index"
     }
   },
 
   services: {
-    title: "Full-Service F&B Operations Support",
+    title: "Full-Service Institutional F&B Operations",
     gridItems: [
       {
-        title: "ORDER MANAGEMENT",
-        features: ["Order Taking Support", "Online Order Assistance", "Delivery Coordination", "Order Status Updates", "Complaint Handling"]
+        title: "STRATEGIC ORDER MANAGEMENT",
+        features: ["Institutional Order Taking Support", "Neural Online Order Orchestration", "Verified Delivery Coordination", "Strategic Status Synchronization", "Institutional Complaint Adjudication"]
       },
       {
-        title: "CUSTOMER CARE",
-        features: ["Guest Relations", "Allergen Inquiries", "Loyalty Program Support", "Gift Card Services", "Feedback Management"]
+        title: "INSTITUTIONAL CUSTOMER CARE",
+        features: ["Strategic Guest Relations Hubs", "Neural Allergen Inquiry Support", "Verified Loyalty Program Lifecycle", "Institutional Gift Card Services", "Global Feedback Adjudication"]
       },
       {
-        title: "FRANCHISE SUPPORT",
-        features: ["Franchisee Helpdesk", "Operations Compliance", "Marketing Material Dist.", "Training Admin", "Royalty Reporting"]
+        title: "STRATEGIC FRANCHISE SUPPORT",
+        features: ["Institutional Franchisee Helpdesk", "Neural Operations Compliance Mesh", "Strategic Marketing Asset Dist.", "Verified Training Administration", "Institutional Royalty Integrity Reporting"]
       },
       {
-        title: "SUPPLY CHAIN",
-        features: ["Supplier Coordination", "Purchase Order Processing", "Inventory Management", "Invoice Reconciliation", "Vendor Relations"]
+        title: "MISSION-CRITICAL SUPPLY CHAIN",
+        features: ["Institutional Supplier Coordination", "Neural Purchase Order Lifecycle", "Strategic Inventory Integrity Ops", "Verified Invoice Reconciliation Hubs", "Institutional Vendor Relations"]
       },
       {
-        title: "FOOD SAFETY OPS",
-        features: ["HACCP Documentation", "Audit Preparation", "Recall Management", "Health Code Compliance", "Incident Reports"]
+        title: "REGULATORY FOOD SAFETY",
+        features: ["Institutional HACCP Documentation Hubs", "Neural Audit Readiness Support", "Strategic Recall Management Logic", "Verified Health Code Compliance", "Institutional Incident Adjudication"]
       },
       {
-        title: "DIGITAL OPERATIONS",
-        features: ["Menu Data Management", "Digital Channel Support", "Review Response", "Social Media Moderation", "Delivery Platform Ops"]
+        title: "NEURAL DIGITAL OPS",
+        features: ["Institutional Menu Data Stewardship", "Strategic Digital Channel Support", "Neural Unified Review Response", "Global Social Mesh Moderation", "Institutional Delivery Platform Ops"]
       }
     ]
   },

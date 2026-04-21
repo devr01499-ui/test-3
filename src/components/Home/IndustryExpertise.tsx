@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import { 
   HeartPulse, 
@@ -16,85 +15,83 @@ import {
 } from "lucide-react";
 import { motion } from "framer-motion";
 import styles from "./IndustryExpertise.module.css";
+import { BPOEnterpriseCard } from "../Shared/BPOEnterpriseCard";
+import { GeometricDivider } from "../Shared/GeometricDivider";
+import Image from "next/image";
 
 const industries = [
-  { name: "Healthcare & Medical", icon: HeartPulse, clients: "500+ Clnts", img: "https://loremflickr.com/600/600/healthcare,doctor/all?lock=51", glow: "hover-glow-1" },
-  { name: "E-commerce & Retail", icon: ShoppingCart, clients: "850+ Clnts", img: "https://loremflickr.com/600/600/ecommerce,shopping/all?lock=52", glow: "hover-glow-2" },
-  { name: "Banking & Finance", icon: Landmark, clients: "300+ Clnts", img: "https://loremflickr.com/600/600/bank,finance/all?lock=53", glow: "hover-glow-3" },
-  { name: "Tech & SaaS", icon: Laptop, clients: "420+ Clnts", img: "https://loremflickr.com/600/600/technology,code/all?lock=54", glow: "hover-glow-4" },
-  { name: "Telecom", icon: PhoneCall, clients: "280+ Clnts", img: "https://loremflickr.com/600/600/telecom,antenna/all?lock=55", glow: "hover-glow-5" },
-  { name: "Insurance", icon: ShieldCheck, clients: "350+ Clnts", img: "https://loremflickr.com/600/600/insurance,protection/all?lock=56", glow: "hover-glow-1" },
-  { name: "Education & E-Learning", icon: GraduationCap, clients: "150+ Clnts", img: "https://loremflickr.com/600/600/education,classroom/all?lock=57", glow: "hover-glow-2" },
-  { name: "Utilities & Energy", icon: Zap, clients: "120+ Clnts", img: "https://loremflickr.com/600/600/energy,solar/all?lock=58", glow: "hover-glow-3" },
-  { name: "Logistics", icon: Truck, clients: "240+ Clnts", img: "https://loremflickr.com/600/600/logistics,warehouse/all?lock=59", glow: "hover-glow-4" },
-  { name: "Media & Entertainment", icon: Clapperboard, clients: "180+ Clnts", img: "https://loremflickr.com/600/600/entertainment,media/all?lock=60", glow: "hover-glow-5" },
+  { name: "Healthcare & Life Sciences", icon: <HeartPulse size={24} />, desc: "High-precision clinical data integrity, HIPAA-compliant patient cycle automation, and specialized RCM scaling.", img: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=800", color: "var(--electric-blue)" },
+  { name: "Global Finance & Banking", icon: <Landmark size={24} />, desc: "Regulatory-grade transaction support, autonomous auditing frameworks, and secure end-to-end financial reconciliation.", img: "https://images.unsplash.com/photo-1501167786227-4cba60f6d58f?auto=format&fit=crop&q=80&w=800", color: "var(--emerald-green)" },
+  { name: "E-commerce & High-Growth Retail", icon: <ShoppingCart size={24} />, desc: "AI-driven supply chain orchestration, predictive demand planning, and omnichannel customer lifetime value optimization.", img: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=800", color: "var(--sunrise-amber)" },
+  { name: "Enterprise Tech & SaaS", icon: <Laptop size={24} />, desc: "Neural dev-ops assistance, proactive level 3 engineering support, and specialized churn mitigation strategies.", img: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=800", color: "var(--cyan-accent)" },
+  { name: "Global Telecom & Infrastructure", icon: <PhoneCall size={24} />, desc: "Real-time network optimization, autonomous billing reconciliation, and mission-critical 5G support workflows.", img: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=800", color: "var(--electric-blue-deep)" },
+  { name: "Insurance & Risk Management", icon: <ShieldCheck size={24} />, desc: "Automated underwriting engines, deep-learning fraud detection, and high-precision claims life-cycle management.", img: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800", color: "var(--emerald-vibrant)" },
 ];
 
 export function IndustryExpertise() {
   return (
-    <section className={styles.section}>
+    <section style={{ padding: "128px 0", background: "var(--white)", position: "relative" }}>
       <div className="container">
-        <motion.h2 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className={styles.title}
-        >
-          Trusted Across Industries
-        </motion.h2>
-        <motion.p 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.1 }}
-          className={styles.subtitle}
-        >
-          Deep domain expertise in 25+ sectors
-        </motion.p>
+        <div style={{ textAlign: "center", marginBottom: "5rem" }}>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            style={{ color: "var(--electric-blue)", fontWeight: 800, textTransform: "uppercase", letterSpacing: "2px", fontSize: "14px", marginBottom: "1rem" }}
+          >
+            Domain Intelligence
+          </motion.div>
+          <h2 style={{ fontSize: "52px", color: "var(--charcoal-deep)", fontWeight: 700 }}>
+            Specialized in <span style={{ color: "var(--electric-blue)" }}>Enterprise Scale.</span>
+          </h2>
+        </div>
 
-        <div className={styles.grid}>
-          {industries.map((industry, i) => (
-            <div key={i} className="card-3d-wrapper" style={{ height: "220px" }}>
-              <motion.div
-                className={`card-3d-content ${styles.card}`}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                whileHover={{ rotateY: 6, rotateX: -6, scale: 1.05 }}
-                viewport={{ once: true }}
-                transition={{ type: "spring", stiffness: 300, damping: 20, delay: i * 0.05 }}
-                style={{ position: "relative", overflow: "hidden" }}
-              >
-                {/* Option A: full background image */}
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={industry.img} alt={industry.name} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", zIndex: 0 }} />
-                <div className={industry.glow} style={{ position: "absolute", inset: 0, opacity: 0.4, zIndex: 1, mixBlendMode: "overlay" }} />
-                <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(10,20,50,0.55) 0%, rgba(5,5,20,0.88) 100%)", zIndex: 2 }} />
-                <div style={{ position: "relative", zIndex: 3, display: "flex", flexDirection: "column", alignItems: "flex-start", height: "100%", padding: "1.5rem" }}>
-                  <div className={styles.iconBox} style={{ color: "white", background: "rgba(255,255,255,0.15)", backdropFilter: "blur(8px)", marginBottom: "auto" }}>
-                    <industry.icon size={28} />
-                  </div>
-                  <div>
-                    <h3 className={styles.industryName} style={{ color: "white" }}>{industry.name}</h3>
-                    <p className={styles.clientCount} style={{ color: "rgba(255,255,255,0.7)" }}>{industry.clients}</p>
-                    <a href="#" className={styles.exploreLink} style={{ color: "rgba(255,255,255,0.9)" }}>
-                      Explore <ArrowRight size={16} />
-                    </a>
-                  </div>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(380px, 1fr))", gap: "2.5rem" }}>
+          {industries.map((ind, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1 }}
+            >
+              <BPOEnterpriseCard elevation={3} intensity={12}>
+                <div style={{ height: "420px", display: "flex", flexDirection: "column" }}>
+                   <div style={{ height: "180px", position: "relative", borderRadius: "8px", overflow: "hidden", marginBottom: "2rem" }}>
+                      <Image src={ind.img} alt={ind.name} fill style={{ objectFit: "cover", opacity: 0.9 }} />
+                      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(15, 23, 42, 0.6), transparent)" }} />
+                   </div>
+                   
+                   <div style={{ display: "flex", gap: "1rem", marginBottom: "1rem", alignItems: "center" }}>
+                      <div style={{ color: ind.color }}>{ind.icon}</div>
+                      <h3 style={{ fontSize: "22px", fontWeight: 700 }}>{ind.name}</h3>
+                   </div>
+
+                   <p style={{ color: "var(--medium-gray)", fontSize: "16px", lineHeight: 1.6, flexGrow: 1 }}>
+                     {ind.desc}
+                   </p>
+
+                   <div style={{ marginTop: "2rem", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                      <button className="btn-premium" style={{ padding: "0.5rem 0", color: ind.color, border: "none" }}>
+                         Industry Brief <ArrowRight size={16} />
+                      </button>
+                      <div style={{ height: "8px", width: "8px", background: ind.color, borderRadius: "50%" }} />
+                   </div>
                 </div>
-              </motion.div>
-            </div>
+              </BPOEnterpriseCard>
+            </motion.div>
           ))}
         </div>
 
-        <motion.a 
-          href="#" 
-          className={styles.moreIndustries}
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-        >
-          +15 More Industries <ArrowRight size={18} style={{ verticalAlign: "middle" }} />
-        </motion.a>
+        <div style={{ textAlign: "center", marginTop: "5rem" }}>
+           <button className="btn-premium btn-primary" style={{ background: "var(--charcoal-deep)" }}>
+              View All 25+ Industry Solutions
+           </button>
+        </div>
+      </div>
+      
+      <div style={{ marginTop: "120px" }}>
+        <GeometricDivider type="slant-up" color="var(--soft-gray)" height="100px" />
       </div>
     </section>
   );

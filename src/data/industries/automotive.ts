@@ -8,57 +8,57 @@ export const automotiveData: IndustryPageData = {
 
   heroData: {
     badgeIcon: "Car",
-    badgeText: "Automotive",
-    headline: "Drive Smarter Automotive Operations",
-    subheading: "From dealer support to warranty management, our automotive BPO specialists keep your business in high gear.",
+    badgeText: "Institutional Automotive Mastery",
+    headline: "Automotive Integrity: Advanced Global Lifecycle Orchestration",
+    subheading: "Orchestrate complex automotive operations and enhance dealer performance with institutional-grade technical support and mission-critical warranty adjudication.",
     bullets: [
-      "Dealer network support & coordination",
-      "Warranty claims processing & adjudication",
-      "Parts ordering & inventory management",
-      "Connected vehicle & EV customer support"
+      "Institutional Dealer Network Stewardship & Coordination",
+      "Carrier-Grade Warranty Claims Adjudication",
+      "Strategic Parts Integrity & Inventory Orchestration",
+      "Institutional EV & Connected Vehicle CX Support"
     ],
-    primaryCta: "Accelerate Automotive Ops",
-    secondaryCta: "View Automotive Brief",
+    primaryCta: "Architect Automotive Ops",
+    secondaryCta: "Access Automotive Brief",
     visualIcon: "Car",
-    visualList: ["Dealer management dashboards", "Warranty claims platforms", "Parts inventory screens", "Connected car support consoles"],
+    visualList: ["Institutional Dealer Management Control", "Neural Warranty Adjudication Platforms", "Global Parts Inventory Hubs", "Mission-Critical Connected Car Consoles"],
     certifications: [
-      { id: "c1", name: "ISO 27001" },
+      { id: "c1", name: "ISO 27001:2022" },
       { id: "c2", name: "SOC 2 Type II" },
-      { id: "c3", name: "IATF 16949" },
-      { id: "c4", name: "GDPR" }
+      { id: "c3", name: "IATF 16949 Mastered" },
+      { id: "c4", name: "GDPR Verified" }
     ],
     clientSuccess: {
-      stat1: "60+ Automotive clients",
-      stat2: "97% Dealer satisfaction score"
+      stat1: "60+ Institutional Automotive Partners",
+      stat2: "97.5% Dealer Satisfaction Index"
     }
   },
 
   services: {
-    title: "End-to-End Automotive BPO Solutions",
+    title: "End-to-End Institutional Automotive Solutions",
     gridItems: [
       {
-        title: "DEALER SUPPORT",
-        features: ["Dealer Helpdesk", "Sales Lead Routing", "Finance & Insurance Ops", "Inventory Uploads", "Dealer Portal Support"]
+        title: "STRATEGIC DEALER STEWARDSHIP",
+        features: ["Institutional Dealer Helpdesk", "Neural Sales Lead Orchestration", "Strategic Finance & Insurance Ops", "High-Resolution Inventory Hubs", "Institutional Dealer Portal Support"]
       },
       {
-        title: "WARRANTY & RECALLS",
-        features: ["Warranty Claims Processing", "Recall Campaign Mgmt", "Technical Hotlines", "Parts Return Coordination", "Goodwill Processing"]
+        title: "MISSION-CRITICAL WARRANTY & RECALLS",
+        features: ["Institutional Warranty Claims Adjudication", "Global Recall Lifecycle Management", "Strategic Technical Hotlines", "Neural Parts Return Coordination", "Institutional Goodwill Orchestration"]
       },
       {
-        title: "PARTS & ACCESSORIES",
-        features: ["Parts Ordering", "Inventory Management", "Pricing Support", "Return Authorizations", "Supplier Coordination"]
+        title: "PRECISION PARTS & ACCESSORIES",
+        features: ["Institutional Parts Orchestration", "Neural Inventory Integrity", "Strategic Pricing Support Hubs", "Verified Return Authorizations", "Global Supplier Coordination Logic"]
       },
       {
-        title: "CUSTOMER SERVICES",
-        features: ["Owner Helplines", "Roadside Assistance Coord.", "Connected Car Support", "EV Customer Support", "Service Scheduling"]
+        title: "INSTITUTIONAL CUSTOMER SERVICES",
+        features: ["High-tier Owner Helplines", "Mission-Critical Roadside Coordination", "Strategic Connected Car Support", "Institutional EV Customer Support", "Frictionless Service Scheduling"]
       },
       {
-        title: "FLEET MANAGEMENT",
-        features: ["Fleet Account Support", "Telematics Data Ops", "Maintenance Scheduling", "Driver Support Lines", "Fuel Card Mgmt"]
+        title: "STRATEGIC FLEET MANAGEMENT",
+        features: ["Institutional Fleet Account Support", "Neural Telematics Data Operations", "Strategic Maintenance Orchestration", "Global Driver Support Lines", "Institutional Fuel Account Stewardship"]
       },
       {
-        title: "BACK OFFICE",
-        features: ["Invoice Processing", "Compliance Reporting", "Market Research Support", "Data Entry", "Regulatory Filings"]
+        title: "REGULATORY BACK OFFICE",
+        features: ["Institutional Invoice Processing", "Global Compliance Reporting", "Strategic Market Intelligence Support", "High-Precision Data Entry", "Regulatory Institutional Filings"]
       }
     ]
   },

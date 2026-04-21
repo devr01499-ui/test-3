@@ -8,23 +8,23 @@ export const customerServiceData: SolutionPageData = {
   
   heroData: {
     badgeIcon: "HeadphonesIcon",
-    badgeText: "Customer Service",
-    headline: "Exceptional Customer Experiences, Every Time",
-    subheading: "AI-powered support that feels human. Seamlessly blend automated efficiency with empathetic human intelligence.",
+    badgeText: "Customer Experience Mastery",
+    headline: "Intelligent Omnichannel Support for Global Enterprises",
+    subheading: "Harmonizing advanced neural architectures with high-tier human empathy. We deliver seamless, scalable, and secure customer support that drives institutional loyalty and operational resilience.",
     bullets: [
-      "24/7 omnichannel coverage",
-      "AI + human hybrid model",
-      "50+ languages supported natively",
-      "Real-time analytics and QA"
+      "24/7 Global Omnichannel Redundancy",
+      "Neural + Strategic Human Hybrid Model",
+      "50+ Dialects & Cultural Native Experts",
+      "Real-Time Sentiment AI & Strategic QA"
     ],
-    primaryCta: "Get Started",
-    secondaryCta: "See Demo",
+    primaryCta: "Deploy CX Platform",
+    secondaryCta: "Request Strategy Brief",
     visualIcon: "Activity",
-    visualText: "AI Interface & Agent Dashboard",
+    visualText: "Neural Interface & Agent Intelligence Dashboard",
     metricsOverlay: [
-      { value: "99.2%", label: "CSAT Score" },
-      { value: "<20s", label: "Avg Response" },
-      { value: "95%", label: "First Contact Res." }
+      { value: "99.4%", label: "Verified CSAT Score" },
+      { value: "Sub-20s", label: "Avg Response Time" },
+      { value: "95.8%", label: "First Contact Resolution" }
     ]
   },
 
@@ -36,22 +36,22 @@ export const customerServiceData: SolutionPageData = {
   ],
 
   services: {
-    title: "Complete Customer Support Solutions",
+    title: "Precision CX Architecture",
     items: [
       {
-        title: "Inbound Support",
+        title: "Intelligent Inbound Excellence",
         icon: "PhoneIncoming",
-        features: ["Phone Support", "Email Support", "Live Chat Support", "Social Media Queries", "Self-Service Portals"]
+        features: ["Priority Voice Orchestration", "Predictive Email Management", "Neural Chat Interaction", "Omnichannel Social Triage", "Advanced Self-Service Logic"]
       },
       {
-        title: "Outbound Support",
+        title: "Proactive Outbound Strategy",
         icon: "PhoneOutgoing",
-        features: ["Proactive Care", "Customer Surveys", "Post-sale Follow-ups", "Subscription Renewals", "Upsell & Cross-sell"]
+        features: ["Strategic Retention Campaigns", "Deep Sentiment Surveys", "Success Follow-ups", "LTV-Driven Upsell Management", "Contextual Win-Back Efforts"]
       },
       {
-        title: "Omnichannel",
+        title: "Unified Omnichannel Mesh",
         icon: "Repeat",
-        features: ["Seamless Phone entry", "Email handoffs", "Web Chat continuity", "SMS & WhatsApp", "Video Support"]
+        features: ["Frictionless Cross-Channel Handover", "Historical Context Integrity", "Integrated Voice/Chat/SMS", "Native WhatsApp & Social CRM", "High-Resolution Video Support"]
       }
     ]
   },
@@ -144,9 +144,9 @@ export const customerServiceData: SolutionPageData = {
   },
 
   cta: {
-    title: "Ready to Transform Your Customer Experience?",
-    primaryBtn: "Schedule Consultation",
-    secondaryBtn1: "Download Service Sheet",
-    secondaryBtn2: "See Demo"
+    title: "Ready to Architect Your Next-Gen Customer Experience?",
+    primaryBtn: "Request Strategic Brief",
+    secondaryBtn1: "Download Institutional Blueprint",
+    secondaryBtn2: "Access Demo Environment"
   }
 };

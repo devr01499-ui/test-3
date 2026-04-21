@@ -44,7 +44,7 @@ export function MobileMenu({ onClose }: MobileMenuProps) {
     { 
       name: "Industries", 
       path: "/industries", 
-      items: ["Healthcare", "E-commerce", "Banking", "Technology", "Logistics", "View All"]
+      items: ["Healthcare", "Banking", "E-commerce", "Technology", "Logistics", "Insurance", "Manufacturing", "View All Industry Specs"]
     },
     { 
       name: "AI Technology", 

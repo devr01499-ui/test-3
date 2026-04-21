@@ -43,46 +43,57 @@ export default function AboutIndexPage() {
           </p>
         </div>
         
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "2.5rem" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(350px, 1fr))", gap: "2.5rem" }}>
           {aboutRoutes.map((route, i) => (
             <Link 
               href={`/about/${route.slug}`} 
               key={i} 
               style={{ textDecoration: "none", color: "inherit" }}
+              className="card-3d-wrapper"
             >
-              <motion.div 
-                whileHover={{ y: -5, scale: 1.02 }}
-                transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                style={{ 
-                  background: "white", 
-                  borderRadius: "16px", 
-                  padding: "2.5rem", 
-                  height: "100%", 
-                  display: "flex", 
-                  flexDirection: "column",
-                  border: "1px solid var(--border)",
-                  boxShadow: "var(--card-shadow)"
-                }}
-              >
-                <div style={{ 
-                  padding: "16px", 
-                  background: "var(--surface)", 
-                  display: "inline-flex", 
-                  borderRadius: "16px", 
-                  color: "var(--primary)", 
-                  marginBottom: "1.5rem", 
-                  width: "max-content",
-                }}>
-                  {iconMap[route.data.iconName]}
-                </div>
-                <h2 style={{ fontSize: "1.5rem", fontWeight: 800, color: "var(--text-main)", marginBottom: "1rem" }}>{route.data.title}</h2>
-                <p style={{ color: "var(--text-muted)", fontSize: "1.05rem", lineHeight: "1.6", flexGrow: 1, marginBottom: "2rem" }}>
-                  {route.data.description}
-                </p>
-                <div style={{ color: "var(--primary)", fontWeight: 700, display: "flex", alignItems: "center", gap: "8px", marginTop: "auto" }}>
-                  Read More <ArrowUpRight size={18} />
-                </div>
-              </motion.div>
+              <div style={{ height: "400px" }}>
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  whileHover={{ rotateY: 8, rotateX: -4, scale: 1.05 }}
+                  viewport={{ once: true }}
+                  transition={{ type: "spring", stiffness: 260, damping: 20, delay: i * 0.05 }}
+                  className="card-3d-content"
+                  style={{ border: "1px solid var(--border)" }}
+                >
+                   {/* Background Image based on the slug */}
+                   <Image 
+                    src={`https://images.unsplash.com/photo-${i === 0 ? '1497366216548-37526070297c' : i === 1 ? '1521737711867-e3b97375f902' : i === 2 ? '1557804506-669a67965ba0' : '1552664730-d307ca884978'}?auto=format&fit=crop&q=80&w=800`}
+                    alt={route.data.title}
+                    fill
+                    className="card-image-bg"
+                   />
+                   <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(8, 47, 73, 0.2) 0%, rgba(8, 47, 73, 0.9) 100%)", zIndex: 1 }} />
+                   
+                   <div style={{ position: "relative", zIndex: 2, height: "100%", display: "flex", flexDirection: "column", padding: "2.5rem", color: "white" }}>
+                      <div style={{ 
+                        padding: "12px", 
+                        background: "rgba(255, 255, 255, 0.2)", 
+                        backdropFilter: "blur(12px)",
+                        display: "inline-flex", 
+                        borderRadius: "12px", 
+                        color: "white", 
+                        marginBottom: "auto", 
+                        width: "max-content",
+                        border: "1px solid rgba(255, 255, 255, 0.2)"
+                      }}>
+                        {iconMap[route.data.iconName]}
+                      </div>
+                      <h2 style={{ fontSize: "1.75rem", fontWeight: 900, marginBottom: "0.5rem" }}>{route.data.title}</h2>
+                      <p style={{ color: "rgba(255, 255, 255, 0.8)", fontSize: "0.95rem", lineHeight: "1.6", fontWeight: 500 }}>
+                        {route.data.description}
+                      </p>
+                      <div style={{ color: "var(--secondary)", fontWeight: 800, display: "flex", alignItems: "center", gap: "8px", marginTop: "1.5rem", fontSize: "0.9rem" }}>
+                        View Details <ArrowUpRight size={18} />
+                      </div>
+                   </div>
+                </motion.div>
+              </div>
             </Link>
           ))}
         </div>

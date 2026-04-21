@@ -8,57 +8,57 @@ export const gamingData: IndustryPageData = {
 
   heroData: {
     badgeIcon: "Gamepad2",
-    badgeText: "Gaming & iGaming",
-    headline: "Level Up Your Player Operations",
-    subheading: "Deliver exceptional player experiences and maintain a safe, compliant gaming environment with our dedicated gaming BPO specialists.",
+    badgeText: "Global Gaming Integrity Hub",
+    headline: "Level Up: Advanced Player Ecosystems & Community Orchestration",
+    subheading: "Deliver high-resolution player experiences and orchestrate safe, compliant gaming environments. We merge high-tier human empathy with neural community moderation.",
     bullets: [
-      "24/7 multilingual player support",
-      "Trust & Safety and content moderation",
-      "iGaming compliance & responsible gambling",
-      "Community management at global scale"
+      "24/7/365 Native Multilingual Player Engagement Hubs",
+      "Institutional Trust & Safety & Neural Content Integrity",
+      "Strategic iGaming Compliance & Responsible Play Ops",
+      "Global Community Stewardship & Discord Orchestration"
     ],
-    primaryCta: "Enhance Player Experience",
-    secondaryCta: "View Gaming Brief",
+    primaryCta: "Architect Player CX",
+    secondaryCta: "Access Gaming Brief",
     visualIcon: "Gamepad2",
-    visualList: ["Player support dashboards", "Community moderation platforms", "Trust & safety review screens", "iGaming compliance portals"],
+    visualList: ["Institutional Player Engagement Hubs", "Neural Community Integrity Controllers", "High-Resolution T&S Review Mesh", "iGaming Regulatory Compliance Dashboards"],
     certifications: [
-      { id: "c1", name: "ISO 27001" },
+      { id: "c1", name: "ISO 27001:2022" },
       { id: "c2", name: "SOC 2 Type II" },
-      { id: "c3", name: "GamCare" },
-      { id: "c4", name: "MGA Licensed" }
+      { id: "c3", name: "GamCare Institutional" },
+      { id: "c4", name: "MGA/UKGC Regulatory Mastery" }
     ],
     clientSuccess: {
-      stat1: "60+ Gaming & iGaming clients",
-      stat2: "4.7/5 Player satisfaction score"
+      stat1: "60+ Global Gaming Partners",
+      stat2: "4.8/5 Institutional CSAT Index"
     }
   },
 
   services: {
-    title: "Full-Spectrum Gaming & iGaming BPO",
+    title: "Full-Spectrum Institutional Gaming BPO",
     gridItems: [
       {
-        title: "PLAYER SUPPORT",
-        features: ["24/7 In-Game Help", "Account Recovery", "Technical Support", "Billing Disputes", "VIP Player Services"]
+        title: "STRATEGIC PLAYER SUPPORT",
+        features: ["24/7 Mission-Critical In-Game Support", "Institutional Account Recovery Labs", "Hyper-Resolution Tech Support", "Verified Billing Integrity", "VIP Tier-1 Player Stewardship"]
       },
       {
-        title: "TRUST & SAFETY",
-        features: ["Content Moderation", "Cheating Detection", "Harassment Reports", "Appeals Handling", "Ban Reviews"]
+        title: "INSTITUTIONAL TRUST & SAFETY",
+        features: ["Neural Content Integrity Hubs", "Advanced Anti-Cheat Orchestration", "Zero-Tolerance Harassment Detection", "Verified Appeals Stewardship", "Strategic Account Sanction Logic"]
       },
       {
-        title: "COMMUNITY MANAGEMENT",
-        features: ["Forum Moderation", "Discord & Social Mgmt", "Event Support", "Bug Reporting Triage", "Creator Relations"]
+        title: "COMMUNITY ORCHESTRATION",
+        features: ["Strategic Forum Stewardship", "Neural Discord & Social Mesh Mgmt", "Global Event Logistics Support", "Neural Bug Triage Pipelines", "Institutional Creator Ecosystems"]
       },
       {
-        title: "iGAMING COMPLIANCE",
-        features: ["KYC & Age Verification", "Responsible Gambling Tools", "Self-Exclusion Mgmt", "AML Monitoring", "Regulatory Reporting"]
+        title: "iGAMING REGULATORY OPS",
+        features: ["Institutional KYC & Age Integrity", "Strategic Responsible Play Hubs", "Neural Self-Exclusion Logic", "Global AML Integrity Monitoring", "Regulatory Reporting Orchestration"]
       },
       {
-        title: "FRAUD & CHARGEBACK",
-        features: ["Payment Fraud Detection", "Chargeback Management", "Bonus Abuse Detection", "Multi-Account Detection", "Risk Scoring"]
+        title: "FRAUD & REVENUE INTEGRITY",
+        features: ["Neural Payment Fraud Eradication", "Strategic Chargeback Adjudication", "Institutional Bonus Abuse Defense", "Deep Multi-Account Detection", "Neural Behavioral Risk Scoring"]
       },
       {
-        title: "GAME OPERATIONS",
-        features: ["Live Ops Support", "Tournament Admin", "Localization QA", "Beta Test Support", "UAT Coordination"]
+        title: "GLOBAL GAME LIVE STANDARDS",
+        features: ["Mission-Critical Live Ops Support", "Institutional Tournament Orchestration", "Native Localization QA Mesh", "Strategic Beta Resource Support", "Institutional UAT Coordination"]
       }
     ]
   },

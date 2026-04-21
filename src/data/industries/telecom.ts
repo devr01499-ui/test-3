@@ -8,57 +8,57 @@ export const telecomData: IndustryPageData = {
 
   heroData: {
     badgeIcon: "PhoneCall",
-    badgeText: "Telecommunications",
-    headline: "Transforming Subscriber Experience at Scale",
-    subheading: "Manage massive volume and complex technical support with AI-augmented agents and specialized billing operations.",
+    badgeText: "Institutional Telecom Mastery",
+    headline: "Telecom Integrity: Advanced Network & Subscriber Orchestration",
+    subheading: "Manage massive scale and complex technical support with institutional-grade operations. We deliver mission-critical billing, connectivity, and subscriber lifecycle excellence.",
     bullets: [
-      "24/7 technical support helpdesk",
-      "High-volume billing & order ops",
-      "Retention & churn management",
-      "Cross-selling & upselling pods"
+      "24/7/365 Mission-Critical Technical Support & Network Hubs",
+      "Institutional High-Volume Billing & Verified Order Orchestration",
+      "Strategic Retention & Neural Churn Eradication Architectures",
+      "Institutional Cross-Selling Mesh & Growth Orchestration Pods"
     ],
-    primaryCta: "Optimize Telecom",
-    secondaryCta: "Case Studies",
+    primaryCta: "Architect Telecom Ops",
+    secondaryCta: "Access Telecom Brief",
     visualIcon: "Signal",
-    visualList: ["Network monitoring dashboards", "Billing dispute queues", "Subscriber lifecycle maps", "Multilingual support centers"],
+    visualList: ["Institutional Network Monitoring Centers", "Neural Billing Dispute Integrity Hubs", "Global Subscriber Lifecycle Control", "Mission-Critical Multilingual Care Hubs"],
     certifications: [
-      { id: "c1", name: "PCI DSS" },
-      { id: "c2", name: "ISO 9001" },
-      { id: "c3", name: "GDPR" },
-      { id: "c4", name: "SOC 2" }
+      { id: "c1", name: "PCI DSS v4.0" },
+      { id: "c2", name: "ISO 9001:2015 QMS" },
+      { id: "c3", name: "GDPR Verified" },
+      { id: "c4", name: "SOC 2 Type II" }
     ],
     clientSuccess: {
-      stat1: "50M+ Subscribers supported",
-      stat2: "40% Lower support cost"
+      stat1: "50M+ Institutional Subscribers",
+      stat2: "40% Operational Latency Compression"
     }
   },
 
   services: {
-    title: "High-Volume Telecom Solutions",
+    title: "High-Volume Institutional Telecom Solutions",
     gridItems: [
       {
-        title: "CUSTOMER CARE",
-        features: ["Inquiries & Support", "Account Management", "Plan Upgrades", "Roaming Support", "Multilingual Care"]
+        title: "STRATEGIC CUSTOMER CARE",
+        features: ["Institutional Inquiries & Support", "Neural Account Lifecycle Management", "Strategic Plan Upgrade Orchestration", "Global Roaming Integrity Support", "Native Multilingual Engagement"]
       },
       {
-        title: "TECHNICAL SUPPORT",
-        features: ["Connectivity Issues", "Hardware Troubleshooting", "App Support", "Network Outages", "Provisioning assistance"]
+        title: "MISSION-CRITICAL TECH SUPPORT",
+        features: ["Neural Connectivity Resolution", "Institutional Hardware Troubleshooting", "Strategic App Ecosystem Support", "Global Network Outage Management", "Verified Provisioning Assistance"]
       },
       {
-        title: "BILLING & PAYMENTS",
-        features: ["Invoice Queries", "Payment Processing", "Collections support", "Dispute Resolution", "Dunning management"]
+        title: "PRECISION BILLING & PAYMENTS",
+        features: ["Institutional Invoice Adjudication", "Secure Payment Processing Mesh", "Verified Collections Stewardship", "Neural Dispute Resolution Hubs", "Institutional Dunning Management"]
       },
       {
-        title: "SALES & RETENTION",
-        features: ["Win-back Campaigns", "Churn Prevention", "Outbound Sales", "Loyalty Programs", "New Subscriber Onboarding"]
+        title: "STRATEGIC SALES & RETENTION",
+        features: ["Institutional Win-back Architectures", "Neural Churn Eradication", "Strategic Outbound Growth Ops", "Global Loyalty Mesh Management", "Institutional Onboarding Orchestration"]
       },
       {
-        title: "BACK OFFICE",
-        features: ["Order Entry", "Activation Support", "Data Management", "Documentation", "Inventory Tracking"]
+        title: "REGULATORY BACK OFFICE",
+        features: ["Institutional Order Entry Flow", "Neural Activation Support Hubs", "Precision Master Data Management", "Regulatory Documentation Stewardship", "Institutional Inventory Tracking"]
       },
       {
-        title: "DIGITAL SUPPORT",
-        features: ["Social Media Care", "Live Chat & Messaging", "Self-service Support", "Automated IVR Support"]
+        title: "NEURAL DIGITAL ENGAGEMENT",
+        features: ["Institutional Social Mesh Care", "High-Resolution Live Chat Hubs", "Strategic Self-service Architectures", "Neural IVR Orchestration Support"]
       }
     ]
   },

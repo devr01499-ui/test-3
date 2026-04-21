@@ -8,56 +8,56 @@ export const ecommerceRetailData: IndustryPageData = {
 
   heroData: {
     badgeIcon: "ShoppingCart",
-    badgeText: "E-commerce & Retail",
-    headline: "Scale Your Retail Operations with AI",
-    subheading: "Drive customer loyalty and handle peak season surges with intelligent order processing and 24/7 omnichannel support.",
+    badgeText: "Institutional Digital Commerce",
+    headline: "Institutional Digital commerce: Advanced Retail Orchestration",
+    subheading: "Drive institutional loyalty and orchestrate massive global surges with high-precision digital commerce operations and mission-critical lifecycle support.",
     bullets: [
-      "Omnichannel customer support",
-      "AI-driven order management",
-      "Seamless returns & refunds",
-      "Real-time inventory sync"
+      "Institutional Omnichannel Customer Support Mesh",
+      "Advanced Neural Order Management Architectures",
+      "Frictionless Global Returns & Integrity Verification",
+      "Real-Time Institutional Inventory Synchronization"
     ],
-    primaryCta: "Optimize Retail",
-    secondaryCta: "Case Studies",
+    primaryCta: "Architect Retail Growth",
+    secondaryCta: "Institutional Case Studies",
     visualIcon: "Package",
-    visualList: ["Order fulfillment pipelines", "Customer service dashboards", "Inventory management scenes", "Technology integration"],
+    visualList: ["Neural Order Fulfillment Pipelines", "Institutional Digital Support Control", "Global Inventory Resilience Hubs", "Regulatory Commerce Technology Mesh"],
     certifications: [
-      { id: "c1", name: "PCI DSS" },
-      { id: "c2", name: "ISO 9001" },
-      { id: "c3", name: "SOC 2" }
+      { id: "c1", name: "PCI DSS v4.0" },
+      { id: "c2", name: "ISO 9001:2015" },
+      { id: "c3", name: "SOC 2 Type II" }
     ],
     clientSuccess: {
-      stat1: "1000+ Retail clients",
-      stat2: "99% Order accuracy"
+      stat1: "1000+ Institutional Retailers",
+      stat2: "99.9% Order Integrity Index"
     }
   },
 
   services: {
-    title: "Comprehensive E-commerce Solutions",
+    title: "Institutional Digital Commerce Solutions",
     gridItems: [
       {
-        title: "CUSTOMER CARE",
-        features: ["Inquiries & Support", "Live Chat & Email", "Social Media Care", "Loyalty Programs", "Multilingual Support"]
+        title: "STRATEGIC CUSTOMER CARE",
+        features: ["Institutional Inquiries & Support", "Neural Live Chat & Email Mesh", "Global Social Media Stewardship", "Strategic Loyalty Architecture", "Native Multilingual Engagement"]
       },
       {
-        title: "ORDER MANAGEMENT",
-        features: ["Order Entry & Verification", "Payment Processing", "Billing & Invoicing", "Fraud Prevention", "Subscription Billing"]
+        title: "PRECISION ORDER LIFECYCLE",
+        features: ["Institutional Order Entry & Verification", "Secure Mission-Critical Payment Processing", "Regulatory Billing & Invoicing", "Advanced Neural Fraud Prevention", "Strategic Subscription Architecture"]
       },
       {
-        title: "LOGISTICS & CX",
-        features: ["Returns Management", "Refund Processing", "Delivery Coordination", "Stock Updates", "Supplier Support"]
+        title: "SUPPLY CHAIN INTEGRITY & CX",
+        features: ["Frictionless Returns Orchestration", "High-Resolution Refund Processing", "Global Delivery Coordination", "Neural Stock Synchronization", "Strategic Supplier Support Hubs"]
       },
       {
-        title: "SALES & GROWTH",
-        features: ["Lead Qualification", "Upselling & Cross-selling", "Cart Abandonment Recovery", "Market Research"]
+        title: "STRATEGIC SALES & GROWTH",
+        features: ["High-Velocity Lead Qualification", "LTV-Driven Upsell Orchestration", "Neural Cart Abandonment Recovery", "Institutional Market Intelligence"]
       },
       {
-        title: "DIGITAL CATALOG",
-        features: ["Product Information Mgmt", "Content Moderation", "Image Enhancement", "Price Monitoring"]
+        title: "NEURAL DIGITAL CATALOG",
+        features: ["Strategic Product Information Stewardship", "Institutional Content Integrity", "High-Resolution Image Enhancement", "Competitive Market Price Monitoring"]
       },
       {
-        title: "ADMIN OPERATIONS",
-        features: ["Virtual Assistance", "Data Entry", "Inventory Audits", "Vendor Coordination"]
+        title: "INSTITUTIONAL ADMIN OPS",
+        features: ["Strategic Virtual Stewardship", "High-Precision Data Entry", "Neural Inventory Auditing", "Global Vendor Coordination Logic"]
       }
     ]
   },

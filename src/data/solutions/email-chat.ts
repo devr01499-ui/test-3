@@ -6,14 +6,45 @@ export const emailChatData: SolutionPageData = {
   slug: "email-chat",
   breadcrumb: "Email & Chat Support",
   heroData: {
-    badgeIcon: "MessageCircle", badgeText: "Email & Chat", headline: "Always On. Instantly Responsive.", subheading: "Handle thousands of concurrent customer queries flawlessly via live chat, email, and social messaging apps.", bullets: ["Live Web Chat & In-App Messaging", "Asynchronous Email Queues", "WhatsApp, SMS, & Social DM support", "AI Chatbot Pre-screening"], primaryCta: "Start Chatting", secondaryCta: "See Chat Demo", visualIcon: "MessagesSquare", visualText: "Omnichannel Messaging Inbox", metricsOverlay: [{ value: "<15s", label: "Chat Response" }, { value: "<1h", label: "Email TAT" }, { value: "98%", label: "CSAT Score" }]
+    badgeIcon: "MessageCircle",
+    badgeText: "Institutional Digital Engagement",
+    headline: "Instant Resolution: Advanced Digital CX & Chat Orchestration",
+    subheading: "Orchestrate thousands of concurrent institutional engagements across Email, Live Chat, and Global Messaging. We merge high-tier neural conversational models with expert digital support architecture.",
+    bullets: [
+      "Institutional Live Web Chat & Managed In-App Messaging",
+      "Strategic Asynchronous Email Queue Orchestration",
+      "Global Messaging Mesh (WhatsApp, SMS, Social DM)",
+      "Advanced Neural Chatbot Pre-screening & Integration"
+    ],
+    primaryCta: "Architect Digital Support",
+    secondaryCta: "Access Engagement Demo",
+    visualIcon: "MessagesSquare",
+    visualText: "Institutional Omnichannel Messaging Control Center",
+    metricsOverlay: [
+      { value: "Sub-15s", label: "Initial Engagement Latency" },
+      { value: "Sub-1h", label: "Strategic Email TAT" },
+      { value: "98.5%", label: "Verified CSAT Index" }
+    ]
   },
   quickStats: [{ icon: "MessageSquare", text: "20M+ Chats Handled" }, { icon: "Clock", text: "<15s Avg Answer Time" }, { icon: "ThumbsUp", text: "98% Customer Satisfaction" }, { icon: "TrendingDown", text: "40% Deflection Rate" }],
   services: {
-    title: "Written Support Specialties", items: [
-      { title: "Live Chat Support", icon: "MessageCircle", features: ["Pre-sales inquiries", "Technical troubleshooting", "Cart abandonment", "Account assistance"] },
-      { title: "Email Management", icon: "Mail", features: ["Ticketing system management", "Complex escalations", "Billing queries", "General inquiries"] },
-      { title: "Social & Messaging", icon: "Smartphone", features: ["WhatsApp Business", "Facebook Messenger", "SMS Support", "In-App Intercom"] }
+    title: "Institutional Digital Specialties",
+    items: [
+      {
+        title: "Strategic Live Chat Support",
+        icon: "MessageCircle",
+        features: ["Institutional Pre-Sales Inquiries", "Complex Technical Troubleshooting", "LTV-Driven Cart Recovery", "Precision Account Stewardship"]
+      },
+      {
+        title: "Enterprise Email Orchestration",
+        icon: "Mail",
+        features: ["Strategic Ticketing Lifecycle Management", "High-Resolution Escalation Protocols", "Institutional Billing Resolution", "Global Inquiry Management"]
+      },
+      {
+        title: "Global Messaging & Social Mesh",
+        icon: "Smartphone",
+        features: ["Strategic WhatsApp Business Support", "Enterprise Social DM Management", "Institutional SMS Engagement", "Frictionless In-App Intercom Flows"]
+      }
     ]
   },
   processFlow: {

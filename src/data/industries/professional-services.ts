@@ -8,57 +8,57 @@ export const professionalServicesData: IndustryPageData = {
 
   heroData: {
     badgeIcon: "Briefcase",
-    badgeText: "Professional Services",
-    headline: "Scale Your Firm Without Scaling Overhead",
-    subheading: "Focus on delivering client value while our professional services BPO handles your administrative, billing, and front-office operations.",
+    badgeText: "Institutional Firm Mastery",
+    headline: "Professional Integrity: Advanced Firm & Administrative Orchestration",
+    subheading: "Focus on delivering high-tier client value while we orchestrate your institutional administrative, billing, and front-office operations with mission-critical precision.",
     bullets: [
-      "Front-office client reception & scheduling",
-      "Time & billing management support",
-      "Research, data entry & reporting",
-      "Recruitment process outsourcing (RPO)"
+      "Institutional Front-Office Client Reception & Strategic Scheduling",
+      "Strategic Time & Billing Management & Institutional Revenue Integrity",
+      "Global Research, Neural Data Entry & Regulatory Reporting",
+      "Institutional Recruitment Process Outsourcing (RPO) & Global Talent Architecture"
     ],
-    primaryCta: "Scale Your Firm",
-    secondaryCta: "View Services Brief",
+    primaryCta: "Architect Your Firm",
+    secondaryCta: "Access Services Brief",
     visualIcon: "Briefcase",
-    visualList: ["Client management dashboards", "Billing and time entry screens", "Research workflow platforms", "Talent acquisition portals"],
+    visualList: ["Institutional Client Management Hubs", "Neural Billing & Time Integrity Centers", "Global Research Workflow Meshes", "Institutional Talent Acquisition Hubs"],
     certifications: [
-      { id: "c1", name: "ISO 27001" },
+      { id: "c1", name: "ISO 27001:2022 Verified" },
       { id: "c2", name: "SOC 2 Type II" },
-      { id: "c3", name: "GDPR" },
-      { id: "c4", name: "CCPA" }
+      { id: "c3", name: "GDPR Verified" },
+      { id: "c4", name: "CCPA Standards Aligned" }
     ],
     clientSuccess: {
-      stat1: "110+ Professional firms served",
-      stat2: "40% Staff cost reduction"
+      stat1: "110+ Institutional Global Partners",
+      stat2: "40% Operational Latency Compression"
     }
   },
 
   services: {
-    title: "Comprehensive Professional Services BPO",
+    title: "Comprehensive Institutional Professional Services BPO",
     gridItems: [
       {
-        title: "FRONT OFFICE",
-        features: ["Virtual Reception", "Client Intake & Onboarding", "Appointment Scheduling", "Meeting Coordination", "CRM Management"]
+        title: "STRATEGIC FRONT OFFICE",
+        features: ["Institutional Virtual Reception", "Neural Client Intake & Onboarding", "Strategic Appointment Orchestration", "Global Meeting Coordination Hubs", "Institutional CRM Integrity"]
       },
       {
-        title: "TIME & BILLING",
-        features: ["Time Sheet Collection", "Invoice Generation", "Accounts Receivable", "Expense Processing", "WIP Reporting"]
+        title: "PRECISION TIME & BILLING",
+        features: ["Institutional Time Sheet Lifecycle", "Neural Invoice Integrity Generation", "Verified Accounts Receivable Hubs", "Strategic Expense Processing", "Institutional WIP Regulatory Reporting"]
       },
       {
-        title: "RESEARCH & ANALYTICS",
-        features: ["Market Research", "Competitive Intelligence", "Data Collection", "Report Writing", "Presentation Prep"]
+        title: "RESEARCH & KNOWLEDGE OPS",
+        features: ["Institutional Market Intelligence", "Neural Competitive Research Labs", "Strategic Data Collection Hubs", "Verified Report Integrity", "Institutional Presentation Stewardship"]
       },
       {
-        title: "RECRUITMENT (RPO)",
-        features: ["Job Ad Management", "CV Screening", "Candidate Coordination", "Interview Scheduling", "Offer Management"]
+        title: "STRATEGIC RPO & TALENT",
+        features: ["Institutional Job Ad Orchestration", "Neural CV Screening Labs", "Strategic Candidate Coordination", "Global Interview Scheduling Hubs", "Institutional Offer Integrity Management"]
       },
       {
-        title: "MARKETING OPERATIONS",
-        features: ["Lead Generation", "Content Scheduling", "Email Campaign Support", "Social Media Ops", "CRM Data Hygiene"]
+        title: "NEURAL MARKETING OPS",
+        features: ["Institutional Lead Generation", "Strategic Content Orchestration", "Neural Email Campaign Support", "Global Social Mesh Operations", "Institutional CRM Data Integrity"]
       },
       {
-        title: "KNOWLEDGE MANAGEMENT",
-        features: ["Document Management", "Proposal Writing Support", "Knowledge Base Maintenance", "Taxonomy Creation", "Training Materials"]
+        title: "KNOWLEDGE ARCHITECTURE",
+        features: ["Institutional Document Management", "Strategic Proposal Stewardship", "Neural Knowledge Base Maintenance", "Global Taxonomy Logic", "Institutional Training Materials"]
       }
     ]
   },

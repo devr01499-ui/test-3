@@ -1,7 +1,6 @@
-import styles from "./page.module.css";
 import { HeroSection } from "@/components/Home/HeroSection";
 import { SynergyShowcase } from "@/components/Home/SynergyShowcase";
-import { ServicesCarousel } from "@/components/Home/ServicesCarousel";
+import { ServicesGrid } from "@/components/Home/ServicesGrid";
 import { IndustryExpertise } from "@/components/Home/IndustryExpertise";
 import { AITechSpotlight } from "@/components/Home/AITechSpotlight";
 import { ResultsDashboard } from "@/components/Home/ResultsDashboard";

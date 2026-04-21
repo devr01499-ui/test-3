@@ -8,23 +8,23 @@ export const dataEntryData: SolutionPageData = {
   
   heroData: {
     badgeIcon: "Keyboard",
-    badgeText: "Data Entry & Processing",
-    headline: "Perfect Data, Processed Instantly",
-    subheading: "Stop drowning in unstructured paperwork. Digitize, categorize, and process massive volumes of information with absolute precision.",
+    badgeText: "High-Precision Data mastery",
+    headline: "Neural Data Integrity: Zero-Defect Processing at Scale",
+    subheading: "Digitize and orchestrate massive institutional datasets with absolute mathematical certainty. We combine advanced neural extraction with double-blind human verification.",
     bullets: [
-      "99.9% guaranteed accuracy via double-blind entry",
-      "Advanced AI & OCR document extraction",
-      "Strict data privacy (GDPR/ISO 27001 compliant)",
-      "High-speed 24/7 processing centers"
+      "99.95% Guaranteed Accuracy Index",
+      "Advanced Neural OCR & ICR Extraction",
+      "Institutional Security (GDPR/HIPAA/ISO Certs)",
+      "24/7/365 High-Velocity Processing Hubs"
     ],
-    primaryCta: "Digitize Your Data",
-    secondaryCta: "Accuracy Demo",
+    primaryCta: "Architect Data Pipeline",
+    secondaryCta: "Access Integrity Blueprint",
     visualIcon: "Database",
-    visualText: "High-Volume Digitization Pipeline",
+    visualText: "High-Velocity Neural Processing Pipeline",
     metricsOverlay: [
-      { value: "99.9%", label: "Accuracy Rate" },
-      { value: "500K+", label: "Daily Transactions" },
-      { value: "65%", label: "Cost Reduction" }
+      { value: "99.95%", label: "Verified Accuracy Index" },
+      { value: "500K+", label: "Institutional Records / Day" },
+      { value: "Up to 65%", label: "OpEx Compression" }
     ]
   },
 
@@ -36,22 +36,22 @@ export const dataEntryData: SolutionPageData = {
   ],
 
   services: {
-    title: "Comprehensive Data Solutions",
+    title: "Institutional Data Orchestration",
     items: [
       {
-        title: "Offline/Online Data Entry",
+        title: "High-Velocity Digitization",
         icon: "Keyboard",
-        features: ["Handwritten Document Digitization", "Mailing List Compilation", "Form Processing", "E-book & PDF Conversion", "Image Tagging"]
+        features: ["Neuro-ICR Document Digitization", "Strategic Mailing List Curation", "Institutional Form Processing", "High-Resolution PDF/E-book Conversion", "Systemic Image Tagging"]
       },
       {
-        title: "Data Cleansing & Mining",
+        title: "Strategic Data Enrichment & Mining",
         icon: "Filter",
-        features: ["Database De-duplication", "Web Scraping & Mining", "Missing Data Appending", "CRM CRM Cleanups", "Data Standardization"]
+        features: ["Complex Database De-duplication", "High-Scale Neural Web Scraping", "Value-Added Data Appending", "Institutional CRM Sanitization", "Standardized Data Structuring"]
       },
       {
-        title: "Transaction Processing",
+        title: "Mission-Critical Transaction Processing",
         icon: "CreditCard",
-        features: ["Invoice & PO Data Entry", "Healthcare Claims Typing", "Survey/Ballot Processing", "Rebates Processing", "Waybill Tracking"]
+        features: ["High-Volume Invoice/PO Entry", "HIPAA-Grade Healthcare Claims Typing", "Institutional Survey Processing", "Complex Rebate Orchestration", "Real-Time Waybill Logistics Tracking"]
       }
     ]
   },
@@ -144,9 +144,9 @@ export const dataEntryData: SolutionPageData = {
   },
 
   cta: {
-    title: "Ready to Achieve Perfect Data?",
-    primaryBtn: "Discuss Your Blueprint",
-    secondaryBtn1: "Calculate Validation Costs",
-    secondaryBtn2: "Security Overview"
+    title: "Ready to Architect Your Data Integrity Strategy?",
+    primaryBtn: "Request Process Audit",
+    secondaryBtn1: "Data Validation Blueprint",
+    secondaryBtn2: "Security Infrastructure Review"
   }
 };

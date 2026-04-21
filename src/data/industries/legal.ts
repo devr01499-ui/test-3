@@ -8,57 +8,57 @@ export const legalData: IndustryPageData = {
 
   heroData: {
     badgeIcon: "FileText",
-    badgeText: "Legal Services",
-    headline: "Precision-Driven Legal Operations Support",
-    subheading: "Empower your attorneys to focus on winning cases while we handle document management, research, and administrative operations.",
+    badgeText: "Institutional Legal Mastery",
+    headline: "Legal Integrity: Advanced Process & Document Orchestration",
+    subheading: "Empower your attorneys with institutional-grade document management and strategic paralegal support. We deliver scalable, attorney-supervised operational excellence.",
     bullets: [
-      "Attorney-supervised document review",
-      "Legal research & case preparation",
-      "Privileged information handling protocols",
-      "Court filing & deadline management"
+      "Institutional Attorney-Supervised Document Review",
+      "Strategic Legal Research & Global Case Preparation",
+      "Rigorous Privileged Information Integrity Protocols",
+      "Mission-Critical Court Filing & Deadline Orchestration"
     ],
-    primaryCta: "Optimize Legal Ops",
-    secondaryCta: "View Legal Brief",
+    primaryCta: "Architect Legal Integrity",
+    secondaryCta: "Access Legal Brief",
     visualIcon: "FileText",
-    visualList: ["Document review platforms", "Legal research dashboards", "Case management screens", "eDiscovery workflows"],
+    visualList: ["Institutional Document Review Hubs", "Neural Legal Research Dashboards", "Case Lifecycle Management Control", "Mission-Critical eDiscovery Mesh"],
     certifications: [
-      { id: "c1", name: "ISO 27001" },
+      { id: "c1", name: "ISO 27001:2022" },
       { id: "c2", name: "SOC 2 Type II" },
-      { id: "c3", name: "GDPR" },
-      { id: "c4", name: "ABA Compliant" }
+      { id: "c3", name: "GDPR Verified" },
+      { id: "c4", name: "ABA Standards Compliant" }
     ],
     clientSuccess: {
-      stat1: "80+ Law firms & legal depts.",
-      stat2: "99.9% Document accuracy"
+      stat1: "80+ Institutional Law Partners",
+      stat2: "99.95% Document Precision Index"
     }
   },
 
   services: {
-    title: "Comprehensive Legal BPO Support",
+    title: "Institutional Legal BPO Support",
     gridItems: [
       {
-        title: "DOCUMENT MANAGEMENT",
-        features: ["Document Review", "Indexing & Coding", "Contract Management", "Template Creation", "Archive Management"]
+        title: "STRATEGIC DOCUMENT MANAGEMENT",
+        features: ["Institutional Document Review", "Advanced Indexing & Coding", "Regulatory Contract Management", "Strategic Template Creation", "Secure Archive Stewardship"]
       },
       {
-        title: "LEGAL RESEARCH",
-        features: ["Case Law Research", "Regulatory Research", "Precedent Analysis", "Expert Witness Prep", "Memo Drafting Support"]
+        title: "INSTITUTIONAL LEGAL RESEARCH",
+        features: ["Strategic Case Law Research", "Regulatory Compliance Research", "Deep Precedent Analysis", "Expert Witness Resource Prep", "Strategic Legal Memo Drafting"]
       },
       {
-        title: "eDISCOVERY",
-        features: ["Data Collection", "Processing & Filtering", "Privilege Review", "Production Support", "Litigation Hold Mgmt"]
+        title: "MISSION-CRITICAL eDISCOVERY",
+        features: ["Institutional Data Collection", "Advanced Processing & Filtering", "Rigorous Privilege Review", "Strategic Production Support", "Institutional Litigation Hold Mgmt"]
       },
       {
-        title: "PARALEGAL SERVICES",
-        features: ["Case Preparation", "Court Filing Support", "Deposition Summaries", "Exhibit Preparation", "Deadline Tracking"]
+        title: "STRATEGIC PARALEGAL SERVICES",
+        features: ["Institutional Case Preparation", "Strategic Court Filing Support", "High-Resolution Deposition Summaries", "Precision Exhibit Preparation", "Institutional Deadline Tracking"]
       },
       {
-        title: "CONTRACT LIFECYCLE",
-        features: ["Contract Drafting", "Review & Redlining", "Obligation Tracking", "Renewal Management", "Repository Mgmt"]
+        title: "CONTRACT LIFECYCLE ARCHITECTURE",
+        features: ["Strategic Contract Drafting", "Rigorous Review & Redlining", "Institutional Obligation Tracking", "Neural Renewal Management", "Secure Repository Stewardship"]
       },
       {
-        title: "ADMIN & BILLING",
-        features: ["Time & Billing Support", "Client Intake", "Matter Management Ops", "Accounts Receivable", "Conflict Checks"]
+        title: "REGULATORY ADMIN & BILLING",
+        features: ["Institutional Time & Billing Support", "Strategic Client Intake", "Matter Management Orchestration", "Verified Accounts Receivable", "Institutional Conflict Integrity Checks"]
       }
     ]
   },

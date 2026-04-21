@@ -84,60 +84,86 @@ export default function ResourcesPage() {
       </section>
 
       {/* CATEGORIES SECTION */}
-      <section className={`${styles.section} ${styles.bgSurface}`}>
+      <section className={`${styles.section}`} style={{ background: "var(--surface)" }}>
         <div className="container">
           <div className={styles.sectionHeader}>
-            <h2 className={styles.sectionTitle}>Resource Library</h2>
+            <h2 className={styles.sectionTitle} style={{ fontSize: "3rem", fontWeight: 900 }}>Resource <span style={{ color: "var(--primary)" }}>Library</span></h2>
+            <p style={{ color: "var(--text-main)", fontSize: "1.1rem", fontWeight: 600 }}>Curated insights and strategic frameworks for global operations.</p>
           </div>
 
-          <div className={styles.libGrid}>
+          <div className={styles.libGrid} style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "2.5rem" }}>
              {enhancedResources.learn.map((cat, i) => (
-               <motion.div 
-                key={cat.title} 
-                className={styles.libCard}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-               >
-                 <div className={styles.libIcon}>
-                   <CategoryIcon title={cat.title} />
-                 </div>
-                 <h3 className={styles.libTitle}>{cat.title}</h3>
-                 <ul className={styles.libList}>
-                    {cat.items.map(item => (
-                      <li key={item}>{item}</li>
-                    ))}
-                 </ul>
-                 <Link href="#" className={styles.libLink}>
-                   Explore Category <ArrowRight size={16} />
-                 </Link>
-               </motion.div>
+               <div key={cat.title} className="card-3d-wrapper" style={{ height: "400px" }}>
+                 <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  whileHover={{ rotateY: 8, rotateX: -4, scale: 1.05 }}
+                  viewport={{ once: true }}
+                  transition={{ type: "spring", stiffness: 260, damping: 20, delay: i * 0.1 }}
+                  className="card-3d-content"
+                  style={{ border: "1px solid var(--border)" }}
+                 >
+                    <Image 
+                      src={`https://images.unsplash.com/photo-${i === 0 ? '1450101499163-c8848c66ca85' : i === 1 ? '1586281380349-632531fb7ed4' : i === 2 ? '1434030216411-0b793f4b4173' : '1517048676732-d65bc937f952'}?auto=format&fit=crop&q=80&w=800`}
+                      alt={cat.title}
+                      fill
+                      className="card-image-bg"
+                    />
+                    <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(8, 47, 73, 0.4) 0%, rgba(8, 47, 73, 0.9) 100%)", zIndex: 1 }} />
+                    
+                    <div style={{ position: "relative", zIndex: 2, height: "100%", display: "flex", flexDirection: "column", padding: "2.5rem", color: "white" }}>
+                      <div className={styles.libIcon} style={{ background: "rgba(255,255,255,0.2)", backdropFilter: "blur(12px)", color: "white", border: "1px solid rgba(255,255,255,0.2)", marginBottom: "1.5rem" }}>
+                        <CategoryIcon title={cat.title} />
+                      </div>
+                      <h3 className={styles.libTitle} style={{ color: "white", fontSize: "1.5rem", fontWeight: 900, marginBottom: "1rem" }}>{cat.title}</h3>
+                      <ul className={styles.libList} style={{ color: "rgba(255,255,255,0.9)", fontWeight: 500, flexGrow: 1 }}>
+                        {cat.items.map(item => (
+                          <li key={item} style={{ fontSize: "0.85rem", marginBottom: "0.5rem" }}>• {item}</li>
+                        ))}
+                      </ul>
+                      <Link href="#" className={styles.libLink} style={{ color: "var(--secondary)", fontWeight: 800 }}>
+                        View Library <ArrowRight size={16} />
+                      </Link>
+                    </div>
+                 </motion.div>
+               </div>
              ))}
              
-             {/* Dynamic Report Section from navData */}
              {enhancedResources.insights.map((cat, i) => (
-               <motion.div 
-                key={cat.title} 
-                className={styles.libCard}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-               >
-                 <div className={styles.libIcon} style={{ background: "rgba(139, 92, 246, 0.1)", color: "#8b5cf6" }}>
-                   <CategoryIcon title={cat.title} />
-                 </div>
-                 <h3 className={styles.libTitle}>{cat.title}</h3>
-                 <ul className={styles.libList}>
-                    {cat.items.map(item => (
-                      <li key={item}>{item}</li>
-                    ))}
-                 </ul>
-                 <Link href="#" className={styles.libLink} style={{ color: "#8b5cf6" }}>
-                   View Documents <ArrowRight size={16} />
-                 </Link>
-               </motion.div>
+               <div key={cat.title} className="card-3d-wrapper" style={{ height: "400px" }}>
+                 <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  whileHover={{ rotateY: -10, rotateX: 5, scale: 1.05 }}
+                  viewport={{ once: true }}
+                  transition={{ type: "spring", stiffness: 260, damping: 20, delay: i * 0.1 }}
+                  className="card-3d-content"
+                  style={{ border: "1px solid var(--border)" }}
+                 >
+                    <Image 
+                      src={`https://images.unsplash.com/photo-${i === 0 ? '1460925895917-afdab827c52f' : '1554224155-8d04cb21cd6c'}?auto=format&fit=crop&q=80&w=800`}
+                      alt={cat.title}
+                      fill
+                      className="card-image-bg"
+                    />
+                    <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(8, 47, 73, 0.4) 0%, rgba(8, 47, 73, 0.9) 100%)", zIndex: 1 }} />
+                    
+                    <div style={{ position: "relative", zIndex: 2, height: "100%", display: "flex", flexDirection: "column", padding: "2.5rem", color: "white" }}>
+                      <div className={styles.libIcon} style={{ background: "rgba(255,255,255,0.2)", backdropFilter: "blur(12px)", color: "white", border: "1px solid rgba(255,255,255,0.2)", marginBottom: "1.5rem" }}>
+                        <CategoryIcon title={cat.title} />
+                      </div>
+                      <h3 className={styles.libTitle} style={{ color: "white", fontSize: "1.5rem", fontWeight: 900, marginBottom: "1rem" }}>{cat.title}</h3>
+                      <ul className={styles.libList} style={{ color: "rgba(255,255,255,0.9)", fontWeight: 500, flexGrow: 1 }}>
+                        {cat.items.map(item => (
+                          <li key={item} style={{ fontSize: "0.85rem", marginBottom: "0.5rem" }}>• {item}</li>
+                        ))}
+                      </ul>
+                      <Link href="#" className={styles.libLink} style={{ color: "var(--secondary)", fontWeight: 800 }}>
+                        View Insights <ArrowRight size={16} />
+                      </Link>
+                    </div>
+                 </motion.div>
+               </div>
              ))}
           </div>
         </div>

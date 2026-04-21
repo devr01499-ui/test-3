@@ -8,57 +8,57 @@ export const nonProfitData: IndustryPageData = {
 
   heroData: {
     badgeIcon: "Heart",
-    badgeText: "Non-Profit",
-    headline: "Scale Your Mission, Not Your Overhead",
-    subheading: "Enable your non-profit to do more good with expert donor support, volunteer coordination, and administrative operations.",
+    badgeText: "Institutional Mission Mastery",
+    headline: "Mission Integrity: Advanced Non-Profit & Donor Orchestration",
+    subheading: "Enable your non-profit to orchestrate massive global impact. We deliver institutional-grade donor stewardship, grant lifecycle management, and mission-critical administrative scaling.",
     bullets: [
-      "Donor acquisition & stewardship programs",
-      "Grant research, writing & reporting support",
-      "Volunteer management & coordination",
-      "Mission-aligned staff with sector expertise"
+      "Institutional Donor Acquisition & Strategic Stewardship Programs",
+      "Strategic Grant Research, Writing & Regulatory Reporting",
+      "Institutional Volunteer Orchestration & Coordination Hubs",
+      "Mission-Aligned Staff with Deep Sector Integrity Expertise"
     ],
     primaryCta: "Amplify Your Mission",
-    secondaryCta: "View Non-Profit Brief",
+    secondaryCta: "Access Non-Profit Brief",
     visualIcon: "Heart",
-    visualList: ["Donor management dashboards", "Volunteer coordination platforms", "Grant tracking systems", "Impact reporting screens"],
+    visualList: ["Institutional Donor Management Hubs", "Neural Volunteer Coordination Centers", "Global Grant Tracking Meshes", "Mission-Critical Impact Reporting Screens"],
     certifications: [
-      { id: "c1", name: "ISO 27001" },
+      { id: "c1", name: "ISO 27001:2022 Verified" },
       { id: "c2", name: "SOC 2 Type II" },
-      { id: "c3", name: "PCI DSS" },
-      { id: "c4", name: "GDPR" }
+      { id: "c3", name: "PCI DSS v4.0" },
+      { id: "c4", name: "GDPR Verified" }
     ],
     clientSuccess: {
-      stat1: "100+ Non-profits served globally",
-      stat2: "35% Average fundraising lift"
+      stat1: "100+ Institutional Global Partners",
+      stat2: "35% Verified Fundraising Lift"
     }
   },
 
   services: {
-    title: "Full Non-Profit Operations Support",
+    title: "Full Institutional Non-Profit Support Solutions",
     gridItems: [
       {
-        title: "DONOR SERVICES",
-        features: ["Donor Acquisition", "Pledge Processing", "Major Donor Stewardship", "Recurring Gift Mgmt", "Lapsed Donor Win-back"]
+        title: "STRATEGIC DONOR SERVICES",
+        features: ["Institutional Donor Acquisition", "Verified Pledge Processing", "Strategic Major Donor Stewardship", "Neural Recurring Gift Management", "Institutional Lapsed Donor Win-back"]
       },
       {
-        title: "FUNDRAISING SUPPORT",
-        features: ["Telefundraising", "Direct Mail Ops", "Crowdfunding Support", "Event Fundraising", "Corporate Matching"]
+        title: "FUNDRAISING ORCHESTRATION",
+        features: ["Strategic Telefundraising Hubs", "Neural Direct Mail Operations", "Global Crowdfunding Support", "Institutional Event Fundraising", "Strategic Corporate Matching Logic"]
       },
       {
-        title: "GRANT MANAGEMENT",
-        features: ["Grant Research", "Application Support", "Compliance Reporting", "Budget Tracking", "Funder Relations"]
+        title: "GRANT LIFECYCLE OPS",
+        features: ["Institutional Grant Research", "Neural Application Support", "Regulatory Compliance Reporting", "Strategic Budget Tracking Hubs", "Institutional Funder Relations"]
       },
       {
-        title: "VOLUNTEER MANAGEMENT",
-        features: ["Volunteer Recruitment", "Scheduling & Coordination", "Training Admin", "Hours Tracking", "Volunteer Comms"]
+        title: "VOLUNTEER ORCHESTRATION",
+        features: ["Institutional Volunteer Recruitment", "Neural Scheduling & Coordination", "Strategic Training Administration", "Verified Hours Tracking", "Institutional Volunteer Comms"]
       },
       {
-        title: "COMMUNICATIONS",
-        features: ["Newsletter Operations", "Social Media Mgmt", "Annual Report Support", "Donor Comms", "Advocacy Campaigns"]
+        title: "MISSION COMMUNICATIONS",
+        features: ["Institutional Newsletter Operations", "Strategic Social Mesh Management", "Neural Annual Report Support", "Institutional Donor Comms", "Strategic Advocacy Campaigns"]
       },
       {
-        title: "ADMINISTRATIVE OPS",
-        features: ["Bookkeeping Support", "Board Meeting Admin", "Compliance Filings", "CRM Data Hygiene", "Impact Reporting"]
+        title: "REGULATORY ADMIN OPS",
+        features: ["Institutional Bookkeeping Support", "Strategic Board Meeting Admin", "Regulatory Compliance Filings", "Neural CRM Data Integrity", "Institutional Impact Reporting"]
       }
     ]
   },

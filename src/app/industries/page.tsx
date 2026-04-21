@@ -41,43 +41,73 @@ export default function IndustriesIndex() {
           </p>
         </div>
         
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "2.5rem" }}>
-          {allIndustries.map((ind, i) => (
-            <Link 
-              href={ind.path} 
-              key={i} 
-              style={{ textDecoration: "none", color: "inherit" }}
-              className="card-3d-wrapper"
-            >
-              <motion.div 
-                whileHover={{ rotateY: 5, rotateX: -5, scale: 1.02 }}
-                transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                className={`card-3d-content ${styles.serviceCard}`} 
-                style={{ height: "100%", display: "flex", flexDirection: "column", padding: 0 }}
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(360px, 1fr))", gap: "2.5rem" }}>
+          {allIndustries.map((ind, i) => {
+            const unsplashKeywords: Record<string, string> = {
+              "Healthcare & Medical": "1586770107582-fc44cd4327a0",
+              "E-commerce & Retail": "1556742049-0cfed4f6a45d",
+              "Banking & Finance": "1550751827-4bd374c3f58b",
+              "Technology & SaaS": "1518770660439-4636190af475",
+              "Telecommunications": "1516383274235-5f42d6c6426d",
+              "Travel & Hospitality": "1451187580459-43490279c0fa",
+              "Insurance": "1450101499163-c8848c66ca85",
+              "Education & E-learning": "1523240715637-8917f646a73d",
+              "Utilities & Energy": "1473341304170-971dccb5ac1e",
+              "Logistics & Supply Chain": "1586528116311-ad99c7a61677",
+              "Media & Entertainment": "1470225620780-dba8ba36b745",
+              "Real Estate": "1560518883-ce09059eeffa",
+              "Legal Services": "1505664194779-847a7ad0d26a",
+              "Automotive": "1492144537055-56f8b5095e21",
+              "Government & Public Sector": "1529107386315-e1d23805ec07",
+              "Non-Profit": "1488521787997-04786875b682",
+              "Food & Beverage": "1552566629-107c640c8101",
+              "Manufacturing": "1581091226825-a6a2a5aee158",
+              "Professional Services": "1521791136064-7986c2959441",
+              "Cryptocurrency & Fintech": "1518544831936-3dd91320436b",
+              "Gaming & iGaming": "1542751371-adc3844ad15f"
+            };
+            const imageId = unsplashKeywords[ind.name] || "1451187580459-43490279c0fa";
+            
+            return (
+              <Link 
+                href={ind.path} 
+                key={ind.name} 
+                style={{ textDecoration: "none", color: "inherit" }}
+                className="card-3d-wrapper"
               >
-                {/* 3D Option B: Top Half Image */}
-                <div style={{ height: "200px", width: "100%", position: "relative", overflow: "hidden" }}>
-                  {/* The bright gradient overlay covering the top half slightly */}
-                  <div className={ind.glow} style={{ position: "absolute", inset: 0, opacity: 0.6, zIndex: 1, mixBlendMode: "overlay" }} />
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={ind.img} alt={ind.name} style={{ width: "100%", height: "100%", objectFit: "cover", zIndex: 0, position: "absolute" }} />
-                </div>
-
-                <div style={{ padding: "2.5rem", display: "flex", flexDirection: "column", flexGrow: 1, background: "white", zIndex: 2, position: "relative" }}>
-                  <div style={{ padding: "16px", background: "var(--surface)", display: "inline-flex", borderRadius: "16px", color: "var(--primary)", marginBottom: "1.5rem", width: "max-content", boxShadow: "0 4px 12px rgba(14, 165, 233, 0.1)", marginTop: "-4rem", zIndex: 3, position: "relative" }}>
-                    {ind.icon}
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  whileHover={{ rotateY: 10, rotateX: -5, scale: 1.05 }}
+                  transition={{ type: "spring", stiffness: 260, damping: 20 }}
+                  className="card-3d-content"
+                  style={{ height: "480px", border: "1px solid var(--border)", position: "relative" }}
+                >
+                  <Image 
+                    src={`https://images.unsplash.com/photo-${imageId}?auto=format&fit=crop&q=80&w=800`}
+                    alt={ind.name}
+                    fill
+                    className="card-image-bg"
+                  />
+                  <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(8, 47, 73, 0.2) 0%, rgba(8, 47, 73, 0.8) 100%)", zIndex: 1 }} />
+                  
+                  <div style={{ position: "relative", zIndex: 2, height: "100%", display: "flex", flexDirection: "column", padding: "2.5rem", color: "white" }}>
+                    <div style={{ padding: "16px", background: "rgba(255,255,255,0.2)", backdropFilter: "blur(12px)", color: "white", borderRadius: "16px", border: "1px solid rgba(255,255,255,0.2)", width: "max-content", marginBottom: "1.5rem" }}>
+                      {ind.icon}
+                    </div>
+                    <h2 style={{ fontSize: "1.75rem", fontWeight: 900, color: "white", marginBottom: "1rem" }}>{ind.name}</h2>
+                    <p style={{ color: "rgba(255,255,255,0.9)", fontSize: "1rem", lineHeight: "1.6", fontWeight: 500, flexGrow: 1 }}>
+                      {ind.desc}
+                    </p>
+                    <div style={{ color: "var(--secondary)", fontWeight: 800, display: "flex", alignItems: "center", gap: "8px", marginTop: "2rem" }}>
+                      Industry Specifications <ArrowRight size={18} />
+                    </div>
                   </div>
-                  <h2 style={{ fontSize: "1.5rem", fontWeight: 800, color: "var(--text-main)", marginBottom: "1rem" }}>{ind.name}</h2>
-                  <p style={{ color: "var(--text-muted)", fontSize: "1.05rem", lineHeight: "1.6", flexGrow: 1, marginBottom: "2rem" }}>
-                    {ind.desc}
-                  </p>
-                  <div style={{ color: "var(--primary)", fontWeight: 700, display: "flex", alignItems: "center", gap: "8px", marginTop: "auto" }}>
-                    View Industry Specs <ArrowRight size={18} />
-                  </div>
-                </div>
-              </motion.div>
-            </Link>
-          ))}
+                </motion.div>
+              </Link>
+            );
+          })}
         </div>
 
       </div>

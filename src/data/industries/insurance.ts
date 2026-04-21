@@ -8,28 +8,28 @@ export const insuranceData: IndustryPageData = {
 
   heroData: {
     badgeIcon: "ShieldCheck",
-    badgeText: "Insurance",
-    headline: "Accelerate Claims & Underwriting at Scale",
-    subheading: "Reduce processing times and improve policyholder satisfaction with dedicated insurance operations experts.",
+    badgeText: "Institutional Insurance Mastery",
+    headline: "Insurance Integrity: Advanced Claims & Underwriting Orchestration",
+    subheading: "Orchestrate complex risk environments and enhance policyholder satisfaction with institutional-grade claims adjudication and mission-critical underwriting support.",
     bullets: [
-      "End-to-end claims lifecycle management",
-      "Underwriting support & data extraction",
-      "Policy administration & endorsements",
-      "Fraud detection & investigation"
+      "Institutional-Grade End-to-End Claims Lifecycle Orchestration",
+      "Strategic Underwriting Support & Neural Data Extraction",
+      "Institutional Policy Administration & Global Endorsements",
+      "Neural Fraud Detection & Forensic Investigation Hubs"
     ],
-    primaryCta: "Streamline Claims",
-    secondaryCta: "View Insurance Brief",
+    primaryCta: "Architect Claims Integrity",
+    secondaryCta: "Access Insurance Brief",
     visualIcon: "ShieldCheck",
-    visualList: ["Claims processing workflows", "Underwriting data desks", "Fraud investigation screens", "Policy admin platforms"],
+    visualList: ["Neural Claims Adjudication Pipelines", "Institutional Underwriting Data Control", "High-Resolution Fraud Investigation Hubs", "Regulatory Policy Administration Mesh"],
     certifications: [
       { id: "c1", name: "SOC 2 Type II" },
-      { id: "c2", name: "ISO 27001" },
-      { id: "c3", name: "PCI DSS" },
-      { id: "c4", name: "GDPR" }
+      { id: "c2", name: "ISO 27001:2022" },
+      { id: "c3", name: "PCI DSS v4.0" },
+      { id: "c4", name: "GDPR Verified" }
     ],
     clientSuccess: {
-      stat1: "120+ Insurance carriers served",
-      stat2: "40% Faster claims resolution"
+      stat1: "120+ Institutional Carriers",
+      stat2: "40% Claims Latency Compression"
     }
   },
 

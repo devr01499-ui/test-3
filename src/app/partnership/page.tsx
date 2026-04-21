@@ -86,36 +86,46 @@ export default function PartnershipPage() {
       <section className={`${styles.section} ${styles.bgSurface}`}>
         <div className="container">
           <div className={styles.sectionHeader}>
-            <h2 className={styles.sectionTitle}>Four Ways to Partner</h2>
-            <p style={{ color: "var(--text-muted)", fontSize: "1.1rem", maxWidth: "600px", margin: "1rem auto 0" }}>
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className={styles.sectionTitle}
+            >
+              Four Ways to Partner
+            </motion.h2>
+            <p style={{ color: "var(--text-main)", fontSize: "1.1rem", maxWidth: "600px", margin: "1rem auto 0", fontWeight: 600 }}>
               Whether you provide technology, consulting, or sales leadership, there's a tier designed for your growth.
             </p>
           </div>
 
           <div className={styles.pillarGrid}>
             {partnershipData.pillars.map((pillar, i) => (
-              <motion.div 
-                key={pillar.title} 
-                className={styles.pillarCard}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-              >
-                <div className={styles.pillarIcon}>
-                  <IconMap name={pillar.icon} size={28} />
-                </div>
-                <h3 className={styles.pillarTitle}>{pillar.title}</h3>
-                <p className={styles.pillarDesc}>{pillar.description}</p>
-                <ul className={styles.benefitList}>
-                   {pillar.benefits.map(b => (
-                     <li key={b}><CheckCircle2 size={16} color="#10b981" /> {b}</li>
-                   ))}
-                </ul>
-                <Link href="#apply" style={{ marginTop: "1.5rem", display: "flex", alignItems: "center", gap: "0.5rem", fontWeight: 700, color: "var(--primary)", textDecoration: "none" }}>
-                  Learn More <ArrowRight size={16} />
-                </Link>
-              </motion.div>
+              <div key={pillar.title} className="card-3d-wrapper" style={{ height: "480px" }}>
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  whileHover={{ rotateY: 8, rotateX: -4, scale: 1.05 }}
+                  viewport={{ once: true }}
+                  transition={{ type: "spring", stiffness: 260, damping: 20, delay: i * 0.1 }}
+                  className={`card-3d-content ${styles.pillarCard}`}
+                  style={{ border: "1px solid var(--border)" }}
+                >
+                  <div className={styles.pillarIcon} style={{ background: "var(--surface)", border: "1px solid var(--border)" }}>
+                    <IconMap name={pillar.icon} size={28} />
+                  </div>
+                  <h3 className={styles.pillarTitle} style={{ color: "var(--primary)", fontWeight: 800 }}>{pillar.title}</h3>
+                  <p className={styles.pillarDesc} style={{ flexGrow: 1 }}>{pillar.description}</p>
+                  <ul className={styles.benefitList} style={{ borderTop: "1px solid var(--border)", paddingTop: "1.5rem", marginTop: "1rem" }}>
+                    {pillar.benefits.map(b => (
+                      <li key={b} style={{ fontWeight: 600 }}><CheckCircle2 size={16} color="var(--primary)" /> {b}</li>
+                    ))}
+                  </ul>
+                  <Link href="#apply" style={{ marginTop: "1.5rem", display: "flex", alignItems: "center", gap: "0.5rem", fontWeight: 800, color: "var(--primary)", textDecoration: "none" }}>
+                    Apply to Program <ArrowRight size={16} />
+                  </Link>
+                </motion.div>
+              </div>
             ))}
           </div>
         </div>

@@ -16,17 +16,17 @@ import {
   Check
 } from "lucide-react";
 import { motion } from "framer-motion";
-import styles from "./ServicesCarousel.module.css";
+import Image from "next/image";
 
 const services = [
-  { title: "Customer Service", icon: Headset, img: "https://loremflickr.com/600/600/customer,service/all?lock=71", glow: "hover-glow-1" },
-  { title: "Tech Support", icon: MessageSquare, img: "https://loremflickr.com/600/600/technical,support/all?lock=72", glow: "hover-glow-2" },
-  { title: "Sales & Marketing", icon: PhoneCall, img: "https://loremflickr.com/600/600/sales,marketing/all?lock=73", glow: "hover-glow-3" },
-  { title: "Back Office", icon: LayoutDashboard, img: "https://loremflickr.com/600/600/office,desk/all?lock=74", glow: "hover-glow-4" },
-  { title: "Finance & Accounting", icon: Coins, img: "https://loremflickr.com/600/600/accounting,calculator/all?lock=75", glow: "hover-glow-5" },
-  { title: "HR & Recruitment", icon: Users, img: "https://loremflickr.com/600/600/recruitment,hr/all?lock=76", glow: "hover-glow-1" },
-  { title: "Data Entry", icon: SquarePen, img: "https://loremflickr.com/600/600/data,typing/all?lock=77", glow: "hover-glow-2" },
-  { title: "Digital Services", icon: Globe, img: "https://loremflickr.com/600/600/digital,globe/all?lock=78", glow: "hover-glow-3" },
+  { title: "Intelligent Customer Experience", icon: Headset, img: "https://images.unsplash.com/photo-1549923746-c502d488b3ea?auto=format&fit=crop&q=80&w=800", glow: "hover-glow-1" },
+  { title: "High-Tier Technical Support", icon: MessageSquare, img: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=800", glow: "hover-glow-2" },
+  { title: "Strategic Sales & Marketing", icon: PhoneCall, img: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800", glow: "hover-glow-3" },
+  { title: "Enterprise Back-Office Operations", icon: LayoutDashboard, img: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=800", glow: "hover-glow-1" },
+  { title: "Regulatory Finance & Accounting", icon: Coins, img: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800", glow: "hover-glow-2" },
+  { title: "Global HR & Talent Acquisition", icon: Users, img: "https://images.unsplash.com/photo-1521791136064-7986c2953d75?auto=format&fit=crop&q=80&w=800", glow: "hover-glow-3" },
+  { title: "High-Precision Data Management", icon: SquarePen, img: "https://images.unsplash.com/photo-1542744094-3a31f2f9c568?auto=format&fit=crop&q=80&w=800", glow: "hover-glow-1" },
+  { title: "Integrated Digital Transformation", icon: Globe, img: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800", glow: "hover-glow-2" },
 ];
 
 export function ServicesCarousel() {
@@ -48,7 +48,7 @@ export function ServicesCarousel() {
           viewport={{ once: true }}
           className={styles.title}
         >
-          Comprehensive BPO Solutions
+          Premier BPO Solutions
         </motion.h2>
         <motion.p 
           initial={{ opacity: 0, y: 20 }}
@@ -57,7 +57,7 @@ export function ServicesCarousel() {
           transition={{ delay: 0.1 }}
           className={styles.subtitle}
         >
-          Industry-leading services powered by intelligent technology
+          Specialized enterprise expertise delivered via our high-performance global delivery network.
         </motion.p>
 
         <motion.div ref={carousel} className={styles.carouselContainer} whileTap={{ cursor: "grabbing" }}>
@@ -67,33 +67,35 @@ export function ServicesCarousel() {
             className={styles.track}
           >
             {services.map((service, i) => (
-              <div key={i} className="card-3d-wrapper" style={{ width: "260px", flexShrink: 0, height: "280px" }}>
+              <div key={i} className="card-3d-wrapper" style={{ width: "320px", flexShrink: 0, height: "380px", padding: "10px" }}>
                 <motion.div 
                   className={`card-3d-content ${styles.card}`}
                   initial={{ opacity: 0, scale: 0.9 }}
                   whileInView={{ opacity: 1, scale: 1 }}
-                  whileHover={{ rotateY: 6, rotateX: -6, scale: 1.05 }}
+                  whileHover={{ rotateY: 8, rotateX: -4, scale: 1.05 }}
                   viewport={{ once: true }}
-                  transition={{ type: "spring", stiffness: 300, damping: 20, delay: i * 0.05 }}
-                  style={{ position: "relative", overflow: "hidden" }}
+                  transition={{ type: "spring", stiffness: 260, damping: 20, delay: i * 0.05 }}
                 >
-                  {/* Option A: Full background image */}
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={service.img} alt={service.title} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", zIndex: 0 }} />
-                  <div className={service.glow} style={{ position: "absolute", inset: 0, opacity: 0.4, zIndex: 1, mixBlendMode: "overlay" }} />
-                  <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(5,10,30,0.45) 0%, rgba(5,5,20,0.90) 100%)", zIndex: 2 }} />
-                  <div style={{ position: "relative", zIndex: 3, display: "flex", flexDirection: "column", height: "100%", padding: "1.5rem" }}>
-                    <div className={styles.iconBox} style={{ background: "rgba(255,255,255,0.15)", backdropFilter: "blur(8px)", color: "white", marginBottom: "auto" }}>
-                      <service.icon size={28} />
+                  <Image 
+                    src={service.img} 
+                    alt={service.title} 
+                    fill 
+                    className="card-image-bg"
+                    sizes="(max-width: 768px) 100vw, 320px"
+                  />
+                  <div className="card-overlay" />
+                  <div className={`card-content-wrap ${service.glow}`}>
+                    <div className={styles.iconBox} style={{ background: "rgba(255,255,255,0.2)", backdropFilter: "blur(12px)", color: "white", marginBottom: "auto" }}>
+                      <service.icon size={30} />
                     </div>
-                    <div>
-                      <h3 className={styles.cardTitle} style={{ color: "white", marginBottom: "0.5rem" }}>{service.title}</h3>
-                      <div className={styles.aiBadge} style={{ background: "rgba(34,197,94,0.2)", color: "#86efac", border: "1px solid rgba(34,197,94,0.3)", width: "max-content" }}>
+                    <div className="card-glass" style={{ width: "100%" }}>
+                      <h3 className={styles.cardTitle} style={{ color: "white", marginBottom: "0.5rem", fontSize: "1.25rem" }}>{service.title}</h3>
+                      <div className={styles.aiBadge} style={{ background: "rgba(14, 165, 233, 0.3)", color: "white", border: "1px solid rgba(255, 255, 255, 0.4)", width: "max-content", padding: "4px 10px" }}>
                         <Check size={12} />
-                        AI: READY
+                        AI: ENHANCED
                       </div>
-                      <div className={styles.arrowLink} style={{ color: "rgba(255,255,255,0.8)", marginTop: "0.75rem" }}>
-                        <ArrowRight size={18} />
+                      <div className={styles.arrowLink} style={{ color: "white", marginTop: "1rem" }}>
+                        <ArrowRight size={20} />
                       </div>
                     </div>
                   </div>

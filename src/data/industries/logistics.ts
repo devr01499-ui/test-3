@@ -8,57 +8,57 @@ export const logisticsData: IndustryPageData = {
 
   heroData: {
     badgeIcon: "Truck",
-    badgeText: "Logistics & Supply Chain",
-    headline: "Streamline Your Supply Chain Operations",
-    subheading: "From freight audit to last-mile tracking, our logistics BPO experts keep your operations moving 24/7 at global scale.",
+    badgeText: "Institutional Logistics Mastery",
+    headline: "Supply Chain Integrity: Advanced Logistics & Global Orchestration",
+    subheading: "Optimize your global supply chain with institutional-grade operations. We deliver high-precision waybill processing, freight adjudication, and mission-critical tracking support.",
     bullets: [
-      "24/7 shipment tracking & customer updates",
-      "Freight audit, payment & reconciliation",
-      "Customs documentation & compliance",
-      "Carrier & vendor relationship management"
+      "24/7/365 Mission-Critical Shipment Orchestration",
+      "Institutional Freight Audit, Payment & Reconciliation",
+      "Universal Customs Integrity & Regulatory Compliance",
+      "Strategic Carrier & Vendor Ecosystem Management"
     ],
-    primaryCta: "Optimize Logistics",
-    secondaryCta: "View Supply Chain Brief",
+    primaryCta: "Architect Logistics Integrity",
+    secondaryCta: "Access Supply Chain Brief",
     visualIcon: "Truck",
-    visualList: ["Freight tracking dashboards", "Warehouse operations screens", "Customs documentation workflows", "Last-mile delivery coordination"],
+    visualList: ["Neural Freight Tracking Control Center", "Institutional Warehouse Resource Hubs", "Regulatory Customs Documentation Mesh", "Last-Mile Mission-Critical Coordination"],
     certifications: [
-      { id: "c1", name: "ISO 27001" },
+      { id: "c1", name: "ISO 27001:2022" },
       { id: "c2", name: "SOC 2 Type II" },
-      { id: "c3", name: "C-TPAT" },
-      { id: "c4", name: "AEO Certified" }
+      { id: "c3", name: "C-TPAT Validated" },
+      { id: "c4", name: "AEO Institutional Certified" }
     ],
     clientSuccess: {
-      stat1: "130+ Logistics clients",
-      stat2: "99.8% Shipment accuracy"
+      stat1: "130+ Institutional Logistics Partners",
+      stat2: "99.9% Shipment Integrity Index"
     }
   },
 
   services: {
-    title: "Full-Service Logistics & Supply Chain BPO",
+    title: "Institutional Logistics & Supply Chain BPO",
     gridItems: [
       {
-        title: "FREIGHT OPERATIONS",
-        features: ["Waybill Processing", "Freight Audit & Payment", "Rate Shopping", "Load Planning Support", "Carrier Scheduling"]
+        title: "STRATEGIC FREIGHT OPERATIONS",
+        features: ["High-Velocity Waybill Processing", "Institutional Freight Audit & Payment", "Strategic Carrier Rate Orchestration", "Neural Load Planning Support", "Global Carrier Scheduling"]
       },
       {
-        title: "TRACKING & VISIBILITY",
-        features: ["Shipment Tracking", "Proactive Customer Updates", "Exception Management", "Delivery Confirmation", "POD Collection"]
+        title: "MISSION-CRITICAL VISIBILITY",
+        features: ["Neural Shipment Tracking", "Proactive Institutional Updates", "Strategic Exception Management", "Verified Delivery Confirmation", "Electronic POD Stewardship"]
       },
       {
-        title: "CUSTOMS & COMPLIANCE",
-        features: ["Import/Export Docs", "HS Code Classification", "Duty Calculations", "Denied Party Screening", "Trade Compliance"]
+        title: "GLOBAL CUSTOMS & INTEGRITY",
+        features: ["Institutional Import/Export Documentation", "Precise HS Code Classification", "Regulatory Duty Orchestration", "Global Denied Party Screening", "Strategic Trade Compliance"]
       },
       {
-        title: "CUSTOMER OPERATIONS",
-        features: ["Customer Helplines", "Claims Management", "Order Inquiries", "Returns Processing", "Complaint Resolution"]
+        title: "INSTITUTIONAL CUSTOMER OPS",
+        features: ["High-tier Logistics Helplines", "Precision Claims Management", "Institutional Order Inquiries", "Neural Returns Orchestration", "Strategic Complaint Resolution"]
       },
       {
-        title: "VENDOR MANAGEMENT",
-        features: ["Carrier Onboarding", "Performance Monitoring", "Contract Administration", "Invoice Validation", "SLA Reporting"]
+        title: "STRATEGIC VENDOR STEWARDSHIP",
+        features: ["Institutional Carrier Onboarding", "Performance Integrity Monitoring", "Strategic Contract Administration", "Neural Invoice Validation", "Institutional SLA Reporting"]
       },
       {
-        title: "DATA & ANALYTICS",
-        features: ["Supply Chain KPIs", "Demand Forecasting", "Network Optimization", "Cost Analysis", "Custom Reporting"]
+        title: "LOGISTICS DATA & ANALYTICS",
+        features: ["Institutional Supply Chain KPIs", "Neural Demand Forecasting", "Network Optimization Logic", "Specialized Cost Analysis", "Institutional Custom Reporting"]
       }
     ]
   },

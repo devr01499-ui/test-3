@@ -8,57 +8,57 @@ export const governmentData: IndustryPageData = {
 
   heroData: {
     badgeIcon: "Building2",
-    badgeText: "Government & Public Sector",
-    headline: "Modernize Citizen Services at Scale",
-    subheading: "Enable faster, more efficient government operations with compliant BPO solutions built for the public sector.",
+    badgeText: "Institutional Government Mastery",
+    headline: "Government Integrity: Advanced Public Process & Citizen Orchestration",
+    subheading: "Modernize public institutional operations with mission-critical precision. We deliver scalable, compliant citizen services and advanced case management orchestration.",
     bullets: [
-      "Citizen helplines & service portals",
-      "Case management & benefits processing",
-      "FedRAMP and FISMA compliant operations",
-      "Multilingual citizen support services"
+      "Institutional Citizen Helplines & Neural Service Portals",
+      "Strategic Case Management & Verified Benefits Orchestration",
+      "FedRAMP & FISMA Compliant Mission-Critical Operations",
+      "Native Multilingual Citizen Support & Global Outreach"
     ],
-    primaryCta: "Modernize Public Ops",
-    secondaryCta: "View Government Brief",
+    primaryCta: "Architect Public Ops",
+    secondaryCta: "Access Government Brief",
     visualIcon: "Building2",
-    visualList: ["Citizen service portals", "Case management dashboards", "Benefits processing workflows", "Government data centers"],
+    visualList: ["Institutional Citizen Service Hubs", "Neural Case Management Control", "Verified Benefits Processing Meshes", "Institutional Public Data Integrity Centers"],
     certifications: [
-      { id: "c1", name: "FedRAMP" },
-      { id: "c2", name: "FISMA" },
-      { id: "c3", name: "NIST 800-53" },
+      { id: "c1", name: "FedRAMP Authorized" },
+      { id: "c2", name: "FISMA Compliant" },
+      { id: "c3", name: "NIST 800-53 Verified" },
       { id: "c4", name: "SOC 2 Type II" }
     ],
     clientSuccess: {
-      stat1: "50+ Government agencies served",
-      stat2: "92% Citizen satisfaction rate"
+      stat1: "50+ Institutional Government Partners",
+      stat2: "92.5% Verified Citizen CSAT"
     }
   },
 
   services: {
-    title: "Comprehensive Government BPO Support",
+    title: "Comprehensive Institutional Government Solutions",
     gridItems: [
       {
-        title: "CITIZEN SERVICES",
-        features: ["311 Call Centers", "Online Portal Support", "Multilingual Helplines", "Permit Inquiries", "License Queries"]
+        title: "STRATEGIC CITIZEN SERVICES",
+        features: ["Institutional 311 Contact Centers", "Neural Online Portal Orchestration", "Native Multilingual Helplines", "Verified Permit Adjudication", "Institutional License Queries"]
       },
       {
-        title: "CASE MANAGEMENT",
-        features: ["Benefits Processing", "Claims Adjudication", "Case Updates", "Document Verification", "Appeals Handling"]
+        title: "MISSION-CRITICAL CASE MGMT",
+        features: ["Institutional Benefits Processing", "Neural Claims Adjudication", "Strategic Case Status Logic", "Verified Document Integrity", "Institutional Appeals Stewardship"]
       },
       {
-        title: "ADMINISTRATIVE OPS",
-        features: ["Data Entry & Processing", "Records Management", "FOI/FOIA Processing", "Correspondence Mgmt", "Report Generation"]
+        title: "REGULATORY ADMIN OPS",
+        features: ["Institutional Data Integrity Processing", "Records Management Orchestration", "Verified FOI/FOIA Stewardship", "Strategic Correspondence Flow", "Institutional Regulatory Reporting"]
       },
       {
-        title: "BACK-OFFICE SUPPORT",
-        features: ["Invoice Processing", "Procurement Support", "Financial Reconciliation", "Grant Management", "Audit Preparation"]
+        title: "FEDERAL BACK-OFFICE OPS",
+        features: ["Institutional Invoice Adjudication", "Strategic Procurement Orchestration", "Verified Financial Reconciliation", "Institutional Grant Lifecycle Mgmt", "Regulatory Audit Stewardship"]
       },
       {
-        title: "DIGITAL TRANSFORMATION",
-        features: ["Legacy System Data Migration", "Portal Transition Support", "Digital Form Processing", "Citizen Onboarding", "Document Digitization"]
+        title: "NEURAL TRANSFORMATION",
+        features: ["Institutional Legacy Migration", "Strategic Portal Transition Mesh", "Neural Digital Form Processing", "Institutional Citizen Onboarding", "Verified Document Digitization"]
       },
       {
-        title: "EMERGENCY MANAGEMENT",
-        features: ["Disaster Relief Hotlines", "Emergency Information Lines", "Benefit Distribution", "Crisis Communication", "Coordination Support"]
+        title: "MISSION-CRITICAL EMERGENCY",
+        features: ["Institutional Disaster Relief Hubs", "Neural Emergency Info Lines", "Strategic Benefit Distribution", "Global Crisis Communication Mesh", "Institutional Coordination Support"]
       }
     ]
   },

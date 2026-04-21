@@ -6,14 +6,45 @@ export const claimsProcessingData: SolutionPageData = {
   slug: "claims-processing",
   breadcrumb: "Claims Processing",
   heroData: {
-    badgeIcon: "FileSignature", badgeText: "Claims Processing", headline: "Accelerate Approvals. Eliminate Errors.", subheading: "Outsource data-intensive claims adjudication to specialized administrative teams wielding advanced OCR extraction and compliance auditing.", bullets: ["Healthcare (Medical/Dental) Claims", "Automotive & Property Insurance", "Freight & Logistics Damage Claims", "100% HIPAA & SOC-2 Compliant"], primaryCta: "Speed Up Processing", secondaryCta: "View Compliance Specs", visualIcon: "ClipboardCheck", visualText: "Claims Adjudication Interface", metricsOverlay: [{ value: "99.9%", label: "Accuracy Rate" }, { value: "24h", label: "Turnaround Time" }, { value: "40%", label: "Cost Reduction" }]
+    badgeIcon: "FileSignature",
+    badgeText: "Institutional Adjudication Excellence",
+    headline: "Accelerate Approvals: High-Precision Claims Orchestration",
+    subheading: "Compress adjudication cycles and eliminate regulatory friction with AI-augmented diagnostic extraction and expert administrative teams specialized in institutional-grade claims processing.",
+    bullets: [
+      "Full-Spectrum Healthcare & Medical Adjudication",
+      "Institutional Insurance & Property Claims Mesh",
+      "High-Resolution Logistics & Freight Damage Claims",
+      "Carrier-Grade Security (HIPAA & SOC 2 Type II)"
+    ],
+    primaryCta: "Compress Processing Cycles",
+    secondaryCta: "Access Compliance Matrix",
+    visualIcon: "ClipboardCheck",
+    visualText: "Institutional Adjudication & Compliance Interface",
+    metricsOverlay: [
+      { value: "99.95%", label: "Adjudication Accuracy" },
+      { value: "Sub-24h", label: "Cycle-Time Performance" },
+      { value: "40%+", label: "Admin OpEx Compression" }
+    ]
   },
   quickStats: [{ icon: "FileText", text: "5M+ Claims Processed" }, { icon: "ShieldCheck", text: "100% HIPAA Compliant" }, { icon: "Clock", text: "24 Hour Average TAT" }, { icon: "TrendingDown", text: "40% Admin Cost Saved" }],
   services: {
-    title: "Comprehensive Claims Administration", items: [
-      { title: "Healthcare Claims", icon: "Stethoscope", features: ["CMS-1500 & UB-04 Entry", "Medical Coding Verification", "Denial Management", "Prior Authorizations"] },
-      { title: "Insurance Claims", icon: "Umbrella", features: ["FNOL (First Notice of Loss)", "Policy Verification", "Estimate Processing", "Document Assembly"] },
-      { title: "Logistics Claims", icon: "Truck", features: ["Damage & Shortage filings", "Bill of Lading reconciliation", "Carrier communication", "Settlement processing"] }
+    title: "Institutional Claims Framework",
+    items: [
+      {
+        title: "Healthcare Claims Mastery",
+        icon: "Stethoscope",
+        features: ["Neuro-ICR CMS-1500 & UB-04 Processing", "Strategic Medical Coding Verification", "Holistic Denial Management Logic", "Prior Authorization Orchestration"]
+      },
+      {
+        title: "Enterprise Insurance Adjudication",
+        icon: "Umbrella",
+        features: ["Institutional FNOL Intake", "Advanced Policy Integrity Verification", "Precision Estimate Processing", "Unified Compliance Documentation"]
+      },
+      {
+        title: "Global Logistics Claims Oversight",
+        icon: "Truck",
+        features: ["Damage & Shortage Resolution", "Strategic Bill of Lading Reconciliation", "Institutional Carrier Communication", "High-Resolution Settlement Processing"]
+      }
     ]
   },
   processFlow: {

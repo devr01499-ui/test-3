@@ -8,57 +8,57 @@ export const travelHospitalityData: IndustryPageData = {
 
   heroData: {
     badgeIcon: "Plane",
-    badgeText: "Travel & Hospitality",
-    headline: "Elevate Guest Experiences at Scale",
-    subheading: "Deliver seamless 24/7 booking support, concierge services, and loyalty management to keep travelers coming back.",
+    badgeText: "Institutional Guest Mastery",
+    headline: "Travel Integrity: Advanced Guest Lifecycle & Booking Orchestration",
+    subheading: "Elevate your global guest experiences with 24/7 institutional-grade booking support, concierge services, and mission-critical loyalty management.",
     bullets: [
-      "24/7 multilingual guest support",
-      "Real-time GDS & PMS integration",
-      "Loyalty program management",
-      "Peak season surge capacity"
+      "24/7/365 Native Multilingual Guest Engagement Hubs",
+      "Strategic Real-Time GDS & PMS Integrity Integration",
+      "Institutional Loyalty Program Orchestration & Retention",
+      "Mission-Critical Peak Season Surge Resilience"
     ],
-    primaryCta: "Boost Guest satisfaction",
-    secondaryCta: "View Case Studies",
+    primaryCta: "Boost Guest Index",
+    secondaryCta: "Access Travel Brief",
     visualIcon: "Plane",
-    visualList: ["Reservation desks in action", "Loyalty platform dashboards", "Multilingual agent teams", "Real-time booking screens"],
+    visualList: ["Institutional Reservation Control Centers", "Neural Loyalty Integrity Dashboards", "Global Multilingual Agent Hubs", "Mission-Critical Booking Resilience Screens"],
     certifications: [
-      { id: "c1", name: "PCI DSS" },
-      { id: "c2", name: "ISO 27001" },
-      { id: "c3", name: "GDPR" },
-      { id: "c4", name: "IATA Accredited" }
+      { id: "c1", name: "PCI DSS v4.0" },
+      { id: "c2", name: "ISO 27001:2022" },
+      { id: "c3", name: "GDPR Verified" },
+      { id: "c4", name: "IATA Regulatory Accredited" }
     ],
     clientSuccess: {
-      stat1: "200+ Travel & Hotel clients",
-      stat2: "96% Guest satisfaction CSAT"
+      stat1: "200+ Institutional Travel Partners",
+      stat2: "96.5% Verified Guest CSAT"
     }
   },
 
   services: {
-    title: "Full-Spectrum Travel & Hospitality BPO",
+    title: "Full-Spectrum Institutional Travel Solutions",
     gridItems: [
       {
-        title: "RESERVATIONS & BOOKING",
-        features: ["Flight Reservations", "Hotel Bookings", "Car Rental Support", "Itinerary Management", "Group Bookings"]
+        title: "STRATEGIC RESERVATIONS",
+        features: ["Institutional Flight Reservations", "Neural Hotel Booking Hubs", "Strategic Car Rental Support", "Verified Itinerary Orchestration", "Institutional Group Booking Logic"]
       },
       {
-        title: "GUEST SERVICES",
-        features: ["24/7 Concierge", "Check-in/Check-out Support", "Special Requests", "Complaint Resolution", "Loyalty Inquiries"]
+        title: "GUEST STEWARDSHIP",
+        features: ["24/7 Mission-Critical Concierge", "Neural Check-in/out Hubs", "Strategic Special Requests", "Verified Complaint Adjudication", "Institutional Loyalty Inquiries"]
       },
       {
-        title: "LOYALTY PROGRAMS",
-        features: ["Points Management", "Tier Upgrades", "Redemption Support", "Member Retention", "Partner Rewards"]
+        title: "LOYALTY ORCHESTRATION",
+        features: ["Institutional Points Integrity", "Neural Tier Upgrade Logic", "Strategic Redemption Support", "Verified Member Retention", "Institutional Partner Reward Mesh"]
       },
       {
-        title: "BACK OFFICE",
-        features: ["Invoice Processing", "Commission Reconciliation", "Refund Management", "Reporting & Analytics", "Data Entry"]
+        title: "REGULATORY BACK OFFICE",
+        features: ["Institutional Invoice Processing", "Verified Commission Reconciliation", "Neural Refund Adjudication", "Strategic Regulatory Analytics", "Precision Data Integrity"]
       },
       {
-        title: "TRAVEL AGENCY SUPPORT",
-        features: ["GDS Ticketing", "Visa Assistance", "Travel Insurance", "Package Customization", "Agent Training"]
+        title: "AGENCY ECOSYSTEM SUPPORT",
+        features: ["Institutional GDS Ticketing", "Verified Visa Assistance", "Strategic Travel Insurance Ops", "Neural Package Customization", "Institutional Agent Excellence"]
       },
       {
-        title: "CRISIS MANAGEMENT",
-        features: ["Flight Disruption Rebooking", "Natural Disaster Response", "Medical Assistance Coord.", "Mass Cancellations", "Overflow Handling"]
+        title: "MISSION-CRITICAL CRISIS OPS",
+        features: ["Institutional Disruption Rebooking", "Neural Natural Disaster Response", "Strategic Medical Coordination", "Verified Mass Cancellation Logic", "Institutional Overflow Resilience"]
       }
     ]
   },

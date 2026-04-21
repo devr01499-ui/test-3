@@ -8,57 +8,57 @@ export const bankingFinanceData: IndustryPageData = {
 
   heroData: {
     badgeIcon: "Landmark",
-    badgeText: "Banking & Finance",
-    headline: "Secure & Compliant Financial Operations",
-    subheading: "Partner with a professional BPO to scale your financial services safely, ensuring the highest standards of security and compliance.",
+    badgeText: "Institutional Banking Excellence",
+    headline: "Financial Integrity: Advanced Banking & Regulatory Orchestration",
+    subheading: "Scale your financial institution with absolute regulatory maturity. We deliver secure, bank-grade operations and institutional KYC/AML orchestration for global financial leaders.",
     bullets: [
-      "SOC 2 & ISO 27001 certified",
-      "Robust KYC/AML procedures",
-      "24/7 fraud monitoring",
-      "Dedicated compliance teams"
+      "SOC 2 Type II & ISO 27001:2022 Certified",
+      "Institutional-Grade KYC/AML & Fraud Protocols",
+      "24/7 Mission-Critical Financial Surveillance",
+      "Dedicated Regulatory Compliance Architectures"
     ],
-    primaryCta: "Optimize Finance",
-    secondaryCta: "View Security",
+    primaryCta: "Architect Financial Integrity",
+    secondaryCta: "Access Security Blueprint",
     visualIcon: "ShieldCheck",
-    visualList: ["Encrypted data processing", "KYC/AML verification desks", "Financial reporting scenes", "Secure facility snapshots"],
+    visualList: ["Neural Financial Data Encryption", "Institutional KYC/AML Control Hubs", "Global Financial Regulatory Reporting", "Bank-Grade Infrastructure Metrics"],
     certifications: [
-      { id: "c1", name: "PCI DSS" },
+      { id: "c1", name: "PCI DSS v4.0" },
       { id: "c2", name: "SOC 2 Type II" },
-      { id: "c3", name: "ISO 27001" },
-      { id: "c4", name: "GDPR" }
+      { id: "c3", name: "ISO 27001:2022" },
+      { id: "c4", name: "GDPR Compliant" }
     ],
     clientSuccess: {
-      stat1: "150+ Financial clients",
-      stat2: "99.9% Compliance rating"
+      stat1: "150+ Institutional Banks",
+      stat2: "Zero Regulatory Deviations"
     }
   },
 
   services: {
-    title: "End-to-End Financial Support",
+    title: "Institutional Financial Support Framework",
     gridItems: [
       {
-        title: "ACCOUNT SERVICES",
-        features: ["Account Opening", "KYC & AML Checks", "Customer Onboarding", "Document Verification", "Maintenance Support"]
+        title: "STRATEGIC ACCOUNT SERVICES",
+        features: ["Institutional Account Opening", "Advanced KYC & AML Orchestration", "Global Customer Onboarding", "Rigorous Document Verification", "Institutional Maintenance Support"]
       },
       {
-        title: "LENDING OPERATIONS",
-        features: ["Loan Origination", "Credit Scoring", "Underwriting Support", "Closing & Disbursement", "Loan Servicing"]
+        title: "LENDING OPERATIONS ARCHITECTURE",
+        features: ["Strategic Loan Origination", "Neural Credit Scoring", "Institutional Underwriting Support", "Failsafe Closing & Disbursement", "Global Loan Servicing"]
       },
       {
-        title: "PAYMENTS & CARDS",
-        features: ["Transaction Processing", "Card Issuance Support", "Chargeback Mgmt", "Fraud Investigation", "Reconciliations"]
+        title: "PAYMENTS & CARDS ORCHESTRATION",
+        features: ["Mission-Critical Transaction Processing", "Institutional Card Issuance Support", "Strategic Chargeback Management", "High-Resolution Fraud Investigation", "Institutional Reconciliations"]
       },
       {
-        title: "COMPLIANCE & RISK",
-        features: ["Regulatory Reporting", "Internal Audits", "Risk Assessments", "Sanctions Screening", "Transaction Monitoring"]
+        title: "REGULATORY COMPLIANCE & RISK",
+        features: ["Institutional Regulatory Reporting", "Rigorous Internal Audits", "Strategic Risk Assessments", "Global Sanctions Screening", "Real-Time Transaction Monitoring"]
       },
       {
-        title: "CUSTOMER CARE",
-        features: ["Omnichannel Support", "Digital Banking Help", "Wealth Mgmt Support", "Credit Card Queries", "Insurance Claims"]
+        title: "INSTITUTIONAL CUSTOMER CARE",
+        features: ["Omnichannel Engagement Support", "Digital Banking Resilience Help", "Strategic Wealth Management Support", "Institutional Credit Card Queries", "High-Resolution Insurance Claims"]
       },
       {
-        title: "BACK OFFICE",
-        features: ["Check Processing", "Statement Prep", "Image Indexing", "Tax Reporting", "Ledger Maintenance"]
+        title: "STRATEGIC BACK OFFICE",
+        features: ["High-Velocity Check Processing", "Institutional Statement Preparation", "Strategic Image Indexing", "Regulatory Tax Reporting", "Institutional Ledger Maintenance"]
       }
     ]
   },

@@ -8,23 +8,23 @@ export const financeAccountingData: SolutionPageData = {
   
   heroData: {
     badgeIcon: "Banknote",
-    badgeText: "Finance & Accounting",
-    headline: "Precision Accounting, Automated Scale",
-    subheading: "Transform your finance department from a cost center to a strategic asset. Outsource routine accounting safely under CPA supervision.",
+    badgeText: "Finance & Accounting mastery",
+    headline: "Institutional Precision: Advanced F&A Orchestration",
+    subheading: "Transform your finance department into a strategic engine of growth. We deliver secure, CPA-led accounting operations that ensure absolute regulatory integrity and operational scale.",
     bullets: [
-      "End-to-end Accounts Payable & Receivable",
-      "Month-end close and reconciliation",
-      "US GAAP & IFRS compliant reporting",
-      "SOC 2 Type II strict environments"
+      "End-to-End Procure-to-Pay (P2P) Orchestration",
+      "Institutional Record-to-Report (R2R) Standards",
+      "US GAAP & IFRS Regulatory Compliance",
+      "SOC 2 Type II Certified Financial Environments"
     ],
-    primaryCta: "Optimize Finance",
-    secondaryCta: "View Security Specs",
+    primaryCta: "Architect Finance Ops",
+    secondaryCta: "Access Security Matrix",
     visualIcon: "PieChart",
-    visualText: "Financial Analytics & Ledger",
+    visualText: "Institutional Ledger & Analytics Control",
     metricsOverlay: [
-      { value: "0%", label: "Compliance Breaches" },
-      { value: "40%", label: "Dept. Cost Savings" },
-      { value: "3 Days", label: "Faster Month Close" }
+      { value: "Zero", label: "Compliance Deviations" },
+      { value: "40%+", label: "Operational Cost Savings" },
+      { value: "72h", label: "Faster Closing Cycles" }
     ]
   },
 

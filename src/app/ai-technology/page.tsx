@@ -202,140 +202,80 @@ export default function AITechnologyPage() {
         </div>
       </section>
 
-      {/* ═══════════════════ AI CAPABILITIES ═══════════════════ */}
-      <section id="capabilities" className={styles.section}>
+      {/* AI CAPABILITIES */}
+      <section id="capabilities" className={styles.section} style={{ background: "var(--background)" }}>
         <div className="container">
           <motion.div className={styles.sectionHeader} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <h2 className={styles.sectionTitle}>Comprehensive AI Suite</h2>
-            <p className={styles.sectionSub}>Nine purpose-built AI engines working in concert to transform every facet of your BPO operations.</p>
+            <h2 className={styles.sectionTitle} style={{ fontSize: "3.5rem", fontWeight: 900 }}>Enterprise AI <span style={{ color: "var(--primary)" }}>Engines</span></h2>
+            <p className={styles.sectionSub} style={{ fontWeight: 600, color: "var(--text-main)" }}>Nine purpose-built AI engines working in concert to transform every facet of your BPO operations.</p>
           </motion.div>
 
-          <motion.div className={styles.capGrid} variants={stagger} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+          <motion.div className={styles.capGrid} variants={stagger} initial="hidden" whileInView="visible" viewport={{ once: true }} style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "2rem" }}>
             {capabilities.map((cap, i) => (
-              <motion.div key={cap.slug} custom={i} variants={fadeUp}>
-                <Link href={`/ai-technology/${cap.slug}`} className={styles.capCard}>
-                  <div className={styles.capIconWrap} style={{ background: cap.gradient }}>
-                    {cap.icon}
+              <div key={cap.slug} className="card-3d-wrapper" style={{ height: "450px" }}>
+                <motion.div 
+                  custom={i} 
+                  variants={fadeUp}
+                  whileHover={{ rotateY: 8, rotateX: -4, scale: 1.05 }}
+                  className={`card-3d-content ${styles.capCard}`}
+                  style={{ border: "1px solid var(--border)", position: "relative" }}
+                >
+                  <Image 
+                    src={`https://images.unsplash.com/photo-${i === 0 ? '1677442136019-21780ecad995' : i === 1 ? '1551288049-bebda4e38f71' : i === 2 ? '1519389950473-47ba0277781c' : '1485827404703-89b55fcc595e'}?auto=format&fit=crop&q=80&w=800`}
+                    alt={cap.title}
+                    fill
+                    className="card-image-bg"
+                  />
+                  <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(8, 47, 73, 0.4) 0%, rgba(8, 47, 73, 0.9) 100%)", zIndex: 1 }} />
+                  
+                  <div style={{ position: "relative", zIndex: 2, height: "100%", display: "flex", flexDirection: "column", padding: "2rem", color: "white" }}>
+                    <div className={styles.capIconWrap} style={{ background: "rgba(255,255,255,0.2)", backdropFilter: "blur(12px)", border: "1px solid rgba(255,255,255,0.2)", marginBottom: "auto" }}>
+                      {cap.icon}
+                    </div>
+                    <h3 className={styles.capTitle} style={{ color: "white", fontSize: "1.5rem", fontWeight: 900, marginBottom: "1rem" }}>{cap.title}</h3>
+                    <ul className={styles.capFeatures} style={{ marginBottom: "1.5rem" }}>
+                      {cap.features.map((f) => (
+                        <li key={f} style={{ color: "rgba(255,255,255,0.9)", fontWeight: 600 }}>
+                          <span className={styles.featureDot} style={{ background: "var(--primary)" }} />
+                          {f}
+                        </li>
+                      ))}
+                    </ul>
+                    <Link href={`/ai-technology/${cap.slug}`} className={styles.capLink} style={{ color: "var(--secondary)", fontWeight: 800 }}>
+                      Architecture Details <ArrowRight size={16} />
+                    </Link>
                   </div>
-                  <h3 className={styles.capTitle}>{cap.title}</h3>
-                  <ul className={styles.capFeatures}>
-                    {cap.features.map((f) => (
-                      <li key={f}>
-                        <span className={styles.featureDot} />
-                        {f}
-                      </li>
-                    ))}
-                  </ul>
-                  <div className={styles.capLink}>
-                    Learn More <ArrowRight size={16} />
-                  </div>
-                </Link>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
-
-      {/* ═══════════════════ AI + HUMAN COLLABORATION ═══════════════════ */}
-      <section className={styles.collabSection}>
-        <div className="container">
-          <motion.div className={styles.sectionHeader} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <h2 className={styles.sectionTitle}>The Perfect Partnership: AI Augments, Humans Decide</h2>
-            <p className={styles.sectionSub}>Our hybrid model ensures AI handles routine tasks while humans manage complexity, empathy, and judgment calls.</p>
-          </motion.div>
-
-          {/* Collaboration Flow */}
-          <motion.div className={styles.flowContainer} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
-            <div className={styles.flowLine} />
-            {flowSteps.map((step, i) => (
-              <motion.div
-                key={step.label}
-                className={styles.flowStep}
-                custom={i}
-                variants={fadeUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-              >
-                <div className={styles.flowNode}>
-                  {step.icon}
-                </div>
-                <h4 className={styles.flowLabel}>{step.label}</h4>
-                <p className={styles.flowDesc}>{step.desc}</p>
-              </motion.div>
-            ))}
-          </motion.div>
-
-          {/* Split: AI vs Human */}
-          <div className={styles.splitGrid}>
-            <motion.div className={styles.splitCard} whileHover={{ y: -4 }} style={{ borderTop: "3px solid #0ea5e9" }}>
-              <Bot size={32} style={{ color: "#0ea5e9" }} />
-              <h4>AI Handles</h4>
-              <ul>
-                {["Simple & routine queries", "Data lookups & validation", "Standard procedures", "High-volume processing"].map(t => <li key={t}><CheckCircle size={14} /> {t}</li>)}
-              </ul>
-            </motion.div>
-            <motion.div className={styles.splitCard} whileHover={{ y: -4 }} style={{ borderTop: "3px solid #8b5cf6" }}>
-              <Users size={32} style={{ color: "#8b5cf6" }} />
-              <h4>Human Handles</h4>
-              <ul>
-                {["Complex problem-solving", "Emotional interactions", "Judgment-based decisions", "Relationship management"].map(t => <li key={t}><CheckCircle size={14} /> {t}</li>)}
-              </ul>
-            </motion.div>
-          </div>
-
-          {/* Outcome Metrics */}
-          <motion.div className={styles.outcomeGrid} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            {[
-              { value: "70%", label: "Automated Resolution" },
-              { value: "30%", label: "Human-Handled Complexity" },
-              { value: "100%", label: "Quality Monitoring" },
-              { value: "99.5%", label: "Customer Satisfaction" },
-            ].map((m) => (
-              <div key={m.label} className={styles.outcomeItem}>
-                <span className={styles.outcomeValue}>{m.value}</span>
-                <span className={styles.outcomeLabel}>{m.label}</span>
+                </motion.div>
               </div>
             ))}
           </motion.div>
         </div>
       </section>
 
-      {/* ═══════════════════ TECHNOLOGY PARTNERS ═══════════════════ */}
-      <section className={styles.section}>
+      {/* AI INNOVATION LAB */}
+      <section className={styles.labSection} style={{ background: "var(--surface)" }}>
         <div className="container">
           <motion.div className={styles.sectionHeader} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <h2 className={styles.sectionTitle}>Technology Partners</h2>
-            <p className={styles.sectionSub}>Built on and integrated with the world&apos;s leading AI platforms.</p>
-          </motion.div>
-
-          <motion.div className={styles.partnerGrid} variants={stagger} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-            {partners.map((p, i) => (
-              <motion.div key={p.name} custom={i} variants={fadeUp} className={styles.partnerCard}>
-                <div className={styles.partnerIcon}>{p.icon}</div>
-                <span className={styles.partnerName}>{p.name}</span>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
-
-      {/* ═══════════════════ AI INNOVATION LAB ═══════════════════ */}
-      <section className={styles.labSection}>
-        <div className="container">
-          <motion.div className={styles.sectionHeader} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <div className={styles.labBadge}><FlaskConical size={18} /> Innovation Lab</div>
+            <div className={styles.labBadge} style={{ background: "var(--primary)", color: "white", border: "none" }}><FlaskConical size={18} /> RESEARCH & DEVELOPMENT</div>
             <h2 className={styles.sectionTitle}>AI Innovation Lab</h2>
-            <p className={styles.sectionSub}>Research initiatives driving the next generation of intelligent BPO operations.</p>
+            <p className={styles.sectionSub} style={{ fontWeight: 700, color: "var(--text-main)" }}>Next-generation initiatives bridging the gap between research and production.</p>
           </motion.div>
 
-          <motion.div className={styles.labGrid} variants={stagger} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+          <motion.div className={styles.labGrid} variants={stagger} initial="hidden" whileInView="visible" viewport={{ once: true }} style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "2rem" }}>
             {labItems.map((item, i) => (
-              <motion.div key={item.title} custom={i} variants={fadeUp} className={styles.labCard}>
-                <div className={styles.labIcon}>{item.icon}</div>
-                <h4>{item.title}</h4>
-                <p>{item.desc}</p>
-              </motion.div>
+              <div key={item.title} className="card-3d-wrapper" style={{ height: "300px" }}>
+                <motion.div 
+                  custom={i} 
+                  variants={fadeUp} 
+                  whileHover={{ rotateY: -10, rotateX: 5, scale: 1.05 }}
+                  className={`card-3d-content ${styles.labCard}`}
+                  style={{ background: "white", border: "1px solid var(--border)", padding: "2rem" }}
+                >
+                  <div className={styles.labIcon} style={{ background: "var(--surface)", color: "var(--primary)", border: "1px solid var(--border)" }}>{item.icon}</div>
+                  <h4 style={{ fontWeight: 800, color: "var(--text-main)", fontSize: "1.1rem" }}>{item.title}</h4>
+                  <p style={{ fontWeight: 500, color: "var(--text-muted)", fontSize: "0.9rem" }}>{item.desc}</p>
+                </motion.div>
+              </div>
             ))}
           </motion.div>
         </div>

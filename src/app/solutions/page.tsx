@@ -1,76 +1,130 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { ArrowRight, Laptop, HeadphonesIcon, TrendingUp, Layers, Banknote, Users, Keyboard, ShieldAlert, MessageCircle, ShoppingCart, FileSignature } from "lucide-react";
+import { 
+  ArrowRight, 
+  Laptop, 
+  HeadphonesIcon, 
+  TrendingUp, 
+  Layers, 
+  Banknote, 
+  Users, 
+  Keyboard, 
+  ShieldAlert, 
+  MessageCircle, 
+  ShoppingCart, 
+  FileSignature,
+  Zap,
+  Cpu,
+  ShieldCheck
+} from "lucide-react";
 import { motion } from "framer-motion";
-import styles from "@/components/Solutions/SharedTemplate/SolutionTemplate.module.css";
+import { BPOEnterpriseCard } from "@/components/Shared/BPOEnterpriseCard";
+import { GeometricDivider } from "@/components/Shared/GeometricDivider";
+import Image from "next/image";
 
 const allSolutions = [
-  { name: "Customer Service", icon: <HeadphonesIcon size={28} />, path: "/solutions/customer-service", desc: "Exceptional omnichannel experiences blending AI and human empathy.", img: "https://loremflickr.com/800/400/headset,support/all", glow: "hover-glow-1" },
-  { name: "Technical Support", icon: <Laptop size={28} />, path: "/solutions/technical-support", desc: "L1/L2/L3 IT engineering helpdesk with automated diagnostic engines.", img: "https://loremflickr.com/800/400/laptop,server/all", glow: "hover-glow-2" },
-  { name: "Sales & Telemarketing", icon: <TrendingUp size={28} />, path: "/solutions/sales-telemarketing", desc: "Accelerate revenue via predictive AI dialers and trained closer pods.", img: "https://loremflickr.com/800/400/sales,meeting/all", glow: "hover-glow-3" },
-  { name: "Back Office Operations", icon: <Layers size={28} />, path: "/solutions/back-office-operations", desc: "Hyper-efficient admin workflows guided by Six Sigma RPA automation.", img: "https://loremflickr.com/800/400/documents,office/all", glow: "hover-glow-4" },
-  { name: "Finance & Accounting", icon: <Banknote size={28} />, path: "/solutions/finance-accounting", desc: "SOC 2 secure Procure-to-Pay and Order-to-Cash CPA operations.", img: "https://loremflickr.com/800/400/finance,money/all", glow: "hover-glow-5" },
-  { name: "HR & Recruitment", icon: <Users size={28} />, path: "/solutions/hr-recruitment", desc: "Scale hiring with semantic AI screening and embedded offshore recruiters.", img: "https://loremflickr.com/800/400/hiring,team/all", glow: "hover-glow-1" },
-  { name: "Data Entry & Processing", icon: <Keyboard size={28} />, path: "/solutions/data-entry", desc: "Double-blind key verification for 99.9% accurate document extraction.", img: "https://loremflickr.com/800/400/typing,keyboard/all", glow: "hover-glow-2" },
-  { name: "Content Moderation", icon: <ShieldAlert size={28} />, path: "/solutions/content-moderation", desc: "Protect platforms with real-time UGC monitoring and 24/7 moderation.", img: "https://loremflickr.com/800/400/security,screen/all", glow: "hover-glow-3" },
-  { name: "Email & Chat Support", icon: <MessageCircle size={28} />, path: "/solutions/email-chat", desc: "Always-on conversational support across webchat, WhatsApp, and email.", img: "https://loremflickr.com/800/400/chat,typing/all", glow: "hover-glow-4" },
-  { name: "Order Processing", icon: <ShoppingCart size={28} />, path: "/solutions/order-processing", desc: "Flawless B2B/B2C fulfillment administration and backorder management.", img: "https://loremflickr.com/800/400/warehouse,boxes/all", glow: "hover-glow-5" },
-  { name: "Claims Processing", icon: <FileSignature size={28} />, path: "/solutions/claims-processing", desc: "Speed up adjudication with HIPAA-compliant medical & logistics claims teams.", img: "https://loremflickr.com/800/400/contract,paperwork/all", glow: "hover-glow-1" }
+  { name: "Omnichannel CX", icon: <HeadphonesIcon size={24} />, path: "/solutions/customer-service", desc: "AI-augmented customer journeys with real-time sentiment mapping and 0.4s agent assistance.", img: "1534536281715-e28d76689b4d", color: "var(--electric-blue)" },
+  { name: "Technical Support", icon: <Laptop size={24} />, path: "/solutions/technical-support", desc: "L1-L3 technical support powered by predictive troubleshooting and automated ticket routing.", img: "1517694712202-14dd9538aa97", color: "var(--cyan-accent)" },
+  { name: "Sales & Telemarketing", icon: <TrendingUp size={24} />, path: "/solutions/sales-telemarketing", desc: "Accelerate revenue via predictive AI dialers and trained high-closer pods.", img: "1552581230-c817309701b1", color: "var(--sunrise-amber)" },
+  { name: "Back Office Operations", icon: <Layers size={24} />, path: "/solutions/back-office-operations", desc: "Autonomous workflow orchestration for complex invoicing and document extraction.", img: "1450101499163-c8848c66ca85", color: "var(--emerald-green)" },
+  { name: "Finance & Accounting", icon: <Banknote size={24} />, path: "/solutions/finance-accounting", desc: "SOC 2 compliant CPA operations with integrated AI auditing and spend analysis.", img: "1554224155-8d04cb21cd6c", color: "var(--teal-accent)" },
+  { name: "Strategic Talent AI", icon: <Users size={24} />, path: "/solutions/hr-recruitment", desc: "Global recruitment and workforce management powered by semantic skill matching.", img: "1521791136064-7986c2959441", color: "var(--electric-blue-deep)" },
+  { name: "Content Integrity", icon: <ShieldAlert size={24} />, path: "/solutions/content-moderation", desc: "High-tier content moderation and identity verification using neural compliance oversight.", img: "1563986768609-322da13575f3", color: "var(--emerald-vibrant)" },
+  { name: "Order Architecture", icon: <ShoppingCart size={24} />, path: "/solutions/order-processing", desc: "Autonomous supply chain fulfillment administration and inventory choreography.", img: "1586528116311-ad99c7a61677", color: "var(--cyan-accent)" },
+  { name: "Claims Engineering", icon: <FileSignature size={24} />, path: "/solutions/claims-processing", desc: "Rapid adjudication cycles via HIPAA-compliant medical and logistics claim engines.", img: "1505664194779-847a7ad0d26a", color: "var(--electric-blue)" }
 ];
 
 export default function SolutionsIndex() {
   return (
-    <div style={{ background: "var(--background)", minHeight: "100vh", paddingTop: "8rem", paddingBottom: "8rem" }}>
-      <div className="container">
+    <div style={{ background: "var(--white)", minHeight: "100vh" }}>
+      {/* HERO SECTION */}
+      <section style={{ 
+        padding: "160px 0 120px 0", 
+        background: "var(--charcoal-deep)", 
+        position: "relative",
+        overflow: "hidden"
+      }}>
+        {/* Geometric Mesh Overlay */}
+        <div style={{ 
+          position: "absolute", 
+          inset: 0, 
+          opacity: 0.1, 
+          backgroundImage: "linear-gradient(var(--electric-blue) 1px, transparent 1px), linear-gradient(90deg, var(--electric-blue) 1px, transparent 1px)", 
+          backgroundSize: "40px 40px" 
+        }} />
         
-        <div style={{ textAlign: "center", marginBottom: "5rem" }}>
-          <h1 style={{ fontSize: "4rem", fontWeight: 800, marginBottom: "1.5rem", color: "var(--text-main)", letterSpacing: "-0.02em" }}>Our Solutions Architecture</h1>
-          <p style={{ fontSize: "1.25rem", color: "var(--text-muted)", maxWidth: "800px", margin: "0 auto", lineHeight: "1.6" }}>
-            Enterprise-grade outsourcing frameworks combining purpose-built AI automation with expert human talent across 11 critical departments.
-          </p>
+        <div className="container" style={{ position: "relative", zIndex: 10 }}>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            style={{ textAlign: "center", maxWidth: "900px", margin: "0 auto" }}
+          >
+            <div style={{ color: "var(--electric-blue)", fontWeight: 800, textTransform: "uppercase", letterSpacing: "3px", fontSize: "14px", marginBottom: "1.5rem" }}>
+              Enterprise Operations
+            </div>
+            <h1 style={{ fontSize: "72px", lineHeight: 1, fontWeight: 700, color: "var(--white)", marginBottom: "2rem" }}>
+              Global <span style={{ color: "var(--electric-blue)" }}>Solutions</span> Architecture.
+            </h1>
+            <p style={{ fontSize: "20px", color: "rgba(255,255,255,0.7)", lineHeight: 1.6, marginBottom: "3rem" }}>
+              Next-generation outsourcing frameworks harmonizing purpose-built AI agents with high-tier human intelligence to drive exponential operational growth.
+            </p>
+          </motion.div>
         </div>
         
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "2.5rem" }}>
-          {allSolutions.map((sol, i) => (
-            <Link 
-              href={sol.path} 
-              key={i} 
-              style={{ textDecoration: "none", color: "inherit" }}
-              className="card-3d-wrapper"
-            >
-              <motion.div 
-                whileHover={{ rotateY: 5, rotateX: -5, scale: 1.02 }}
-                transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                className={`card-3d-content ${styles.serviceCard}`} 
-                style={{ height: "100%", display: "flex", flexDirection: "column", padding: 0 }}
+        <GeometricDivider type="slant-down" color="var(--white)" height="100px" />
+      </section>
+
+      {/* SOLUTIONS GRID */}
+      <section style={{ padding: "100px 0 160px 0" }}>
+        <div className="container">
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(400px, 1fr))", gap: "3rem" }}>
+            {allSolutions.map((sol, i) => (
+              <Link 
+                href={sol.path} 
+                key={sol.name} 
+                style={{ textDecoration: "none", color: "inherit" }}
               >
-                {/* 3D Option B: Top Half Image */}
-                <div style={{ height: "200px", width: "100%", position: "relative", overflow: "hidden" }}>
-                  {/* The bright gradient overlay covering the top half slightly */}
-                  <div className={sol.glow} style={{ position: "absolute", inset: 0, opacity: 0.6, zIndex: 1, mixBlendMode: "overlay" }} />
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={sol.img} alt={sol.name} style={{ width: "100%", height: "100%", objectFit: "cover", zIndex: 0, position: "absolute" }} />
-                </div>
+                <BPOEnterpriseCard elevation={3} intensity={15}>
+                  <div style={{ height: "450px", display: "flex", flexDirection: "column" }}>
+                    <div style={{ height: "220px", position: "relative", borderRadius: "8px", overflow: "hidden", marginBottom: "2rem" }}>
+                      <Image 
+                        src={`https://images.unsplash.com/photo-${sol.img}?auto=format&fit=crop&q=80&w=800`} 
+                        alt={sol.name} 
+                        fill 
+                        style={{ objectFit: "cover" }} 
+                      />
+                      <div style={{ position: "absolute", top: "1rem", left: "1rem", padding: "6px 12px", background: "var(--white)", borderRadius: "100px", display: "flex", alignItems: "center", gap: "6px", fontSize: "11px", fontWeight: 800, color: sol.color, boxShadow: "var(--shadow-level-2)" }}>
+                        <Cpu size={12} /> NEURAL-READY
+                      </div>
+                    </div>
 
-                <div style={{ padding: "2.5rem", display: "flex", flexDirection: "column", flexGrow: 1, background: "white", zIndex: 2, position: "relative" }}>
-                  <div style={{ padding: "16px", background: "var(--surface)", display: "inline-flex", borderRadius: "16px", color: "var(--primary)", marginBottom: "1.5rem", width: "max-content", boxShadow: "0 4px 12px rgba(14, 165, 233, 0.1)", marginTop: "-4rem", zIndex: 3, position: "relative" }}>
-                    {sol.icon}
+                    <div style={{ display: "flex", gap: "1rem", marginBottom: "1rem" }}>
+                      <div style={{ color: sol.color }}>{sol.icon}</div>
+                      <h2 style={{ fontSize: "26px", fontWeight: 700, color: "var(--charcoal-deep)" }}>{sol.name}</h2>
+                    </div>
+
+                    <p style={{ color: "var(--medium-gray)", fontSize: "16px", lineHeight: 1.6, flexGrow: 1 }}>
+                      {sol.desc}
+                    </p>
+
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", paddingTop: "2rem", borderTop: "1px solid var(--border)", marginTop: "1rem" }}>
+                      <div style={{ fontFamily: "var(--font-mono)", fontSize: "13px", fontWeight: 700, color: "var(--electric-blue)", textTransform: "uppercase" }}>
+                        Architecture Scope x0{i+1}
+                      </div>
+                      <div style={{ display: "flex", alignItems: "center", gap: "6px", fontWeight: 800, color: "var(--charcoal-deep)", cursor: "pointer", fontSize: "14px" }}>
+                        Specs <ArrowRight size={16} />
+                      </div>
+                    </div>
                   </div>
-                  <h2 style={{ fontSize: "1.5rem", fontWeight: 800, color: "var(--text-main)", marginBottom: "1rem" }}>{sol.name}</h2>
-                  <p style={{ color: "var(--text-muted)", fontSize: "1.05rem", lineHeight: "1.6", flexGrow: 1, marginBottom: "2rem" }}>
-                    {sol.desc}
-                  </p>
-                  <div style={{ color: "var(--primary)", fontWeight: 700, display: "flex", alignItems: "center", gap: "8px", marginTop: "auto" }}>
-                    View Solution Specs <ArrowRight size={18} />
-                  </div>
-                </div>
-              </motion.div>
-            </Link>
-          ))}
+                </BPOEnterpriseCard>
+              </Link>
+            ))}
+          </div>
         </div>
+      </section>
 
-      </div>
+      <GeometricDivider type="slant-up" color="var(--charcoal-deep)" height="100px" flip />
     </div>
   );
 }

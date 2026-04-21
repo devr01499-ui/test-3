@@ -16,7 +16,15 @@ const routeMap: Record<string, string> = {
   "Logistics & Supply Chain": "/industries/logistics",
   "Media & Entertainment": "/industries/media-entertainment",
   "Real Estate": "/industries/real-estate",
-  "Automotive": "/industries/automotive"
+  "Automotive": "/industries/automotive",
+  "Crypto & Fintech": "/industries/crypto-fintech",
+  "Legal Services": "/industries/legal",
+  "Manufacturing": "/industries/manufacturing",
+  "Non-Profit": "/industries/non-profit",
+  "Gaming & Esports": "/industries/gaming",
+  "Food & Beverage": "/industries/food-beverage",
+  "Government & Public": "/industries/government",
+  "Professional Services": "/industries/professional-services"
 };
 
 export function IndustriesMegaMenu() {

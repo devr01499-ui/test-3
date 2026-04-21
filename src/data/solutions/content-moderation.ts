@@ -8,23 +8,23 @@ export const contentModerationData: SolutionPageData = {
   
   heroData: {
     badgeIcon: "ShieldAlert",
-    badgeText: "Trust & Safety",
-    headline: "Protect Your Brand, Secure Your Community",
-    subheading: "Keep your platforms safe from UGC (User Generated Content) violations with our hybrid AI and human Trust & Safety moderation teams.",
+    badgeText: "Institutional Trust & Safety",
+    headline: "Protect Your Institution: Advanced Integrity Architecture",
+    subheading: "Secure your platforms and protect institutional brand equity with 24/7 AI-augmented content moderation. We merge neural vision with high-tier human nuance to ensure online safety and community resilience.",
     bullets: [
-      "Image, Video, Audio, and Text moderation",
-      "Real-time live stream monitoring",
-      "Strict psychological support for moderators",
-      "Global 24/7 coverage in 50+ languages"
+      "Multi-Modal Image, Video, & Neural Text Review",
+      "Real-Time Institutional Live Stream Monitoring",
+      "Advanced Psychological Resilience Programs",
+      "Global 24/7/365 Coverage in 50+ Dialects"
     ],
-    primaryCta: "Secure Your Platform",
-    secondaryCta: "Review Capabilities",
+    primaryCta: "Secure Your Ecosystem",
+    secondaryCta: "Institutional Safety Review",
     visualIcon: "Eye",
-    visualText: "UGC Moderation Queue Dashboard",
+    visualText: "Institutional Integrity & Moderation Control",
     metricsOverlay: [
-      { value: "99.8%", label: "Accuracy Rate" },
-      { value: "<60s", label: "Average TAT" },
-      { value: "24/7", label: "Active Coverage" }
+      { value: "99.9%", label: "Moderation Precision" },
+      { value: "Sub-60s", label: "Engagement Latency" },
+      { value: "24/7/365", label: "Active Resilience" }
     ]
   },
 
@@ -36,22 +36,22 @@ export const contentModerationData: SolutionPageData = {
   ],
 
   services: {
-    title: "Comprehensive Moderation Frameworks",
+    title: "Institutional Safety Frameworks",
     items: [
       {
-        title: "Visual Media Moderation",
+        title: "Neural Media Orchestration",
         icon: "Image",
-        features: ["NSFW Image Screening", "Video Frame Analysis", "Live Stream Monitoring", "Deepfake Detection", "Copyright Infringement"]
+        features: ["Neuro-Vision NSFW Screening", "Frame-By-Frame Integrity Analysis", "Mission-Critical Live Monitoring", "Institutional Deepfake Detection", "Intellectual Property Protection"]
       },
       {
-        title: "Text & Audio Context",
+        title: "Linguistic & Contextual Integrity",
         icon: "MessageSquareAlert",
-        features: ["Cyberbullying & Hate Speech", "Spam & Bot Detection", "Sentiment Analysis", "Profanity Filtering", "Podcast/Audio Review"]
+        features: ["Institutional Anti-Toxicity Protocols", "Neural Spam & Bot Eradication", "Deep Sentiment Architecture", "Advanced Profanity Orchestration", "Institutional Audio/Podcast Review"]
       },
       {
-        title: "Trust & Safety (T&S)",
+        title: "Holistic Trust & Safety (T&S)",
         icon: "UserX",
-        features: ["Fraud & Scam Prevention", "Account Takedowns", "Appeals Management", "Policy Enforcement", "Threat Escalation"]
+        features: ["Zero-Trust Fraud Prevention", "Institutional Account Stewardship", "Neural Appeals Orchestration", "Dynamic Policy Enforcement", "Critical Threat Escalation Logic"]
       }
     ]
   },
@@ -144,9 +144,9 @@ export const contentModerationData: SolutionPageData = {
   },
 
   cta: {
-    title: "Ready to Secure Your Community?",
-    primaryBtn: "Talk to a T&S Expert",
-    secondaryBtn1: "Review Wellness Policies",
-    secondaryBtn2: "AI Integration Demo"
+    title: "Ready to Architect Your Community Integrity?",
+    primaryBtn: "Talk to a T&S Architect",
+    secondaryBtn1: "Review Resilience Policies",
+    secondaryBtn2: "Institutional Tech Demo"
   }
 };

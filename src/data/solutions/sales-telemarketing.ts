@@ -8,23 +8,23 @@ export const salesTelemarketingData: SolutionPageData = {
   
   heroData: {
     badgeIcon: "TrendingUp",
-    badgeText: "Sales & Telemarketing",
-    headline: "Accelerate Revenue. Scale Growth.",
-    subheading: "Combine predictive AI dialing and intent data with highly persuasive, trained sales professionals.",
+    badgeText: "High-Performance Sales Orchestration",
+    headline: "Accelerate Revenue: Advanced Growth & Sales Architecture",
+    subheading: "Drive exponential revenue growth by merging predictive neural dialing with high-tier human persuasion. We deliver scalable, performance-driven sales ecosystems for global enterprises.",
     bullets: [
-      "B2B and B2C outbound sales",
-      "Inbound lead qualification",
-      "Predictive AI dialing technology",
-      "Commission & performance-based models"
+      "Institutional B2B & B2C Growth Operations",
+      "Strategic Lead Qualification Architecture",
+      "Predictive Neural Dialing & Intent Mapping",
+      "Performance-Augmented Revenue Share Models"
     ],
-    primaryCta: "Drive More Revenue",
-    secondaryCta: "Calculate ROI",
+    primaryCta: "Drive Institutional Growth",
+    secondaryCta: "Access Revenue Blueprint",
     visualIcon: "LineChart",
-    visualText: "Sales CRM & Analytics Dashboard",
+    visualText: "Institutional Sales CRM & Pipeline Control",
     metricsOverlay: [
-      { value: "35%", label: "Conversion Lift" },
-      { value: "3x", label: "Pipeline Growth" },
-      { value: "48h", label: "Campaign Launch" }
+      { value: "35%+", label: "Conversion Velocity Lift" },
+      { value: "3x", label: "Pipeline Density Growth" },
+      { value: "48h", label: "Global Campaign Deployment" }
     ]
   },
 
@@ -36,22 +36,22 @@ export const salesTelemarketingData: SolutionPageData = {
   ],
 
   services: {
-    title: "End-to-End Sales Operations",
+    title: "Institutional Sales Architecture",
     items: [
       {
-        title: "B2B Lead Generation",
+        title: "B2B Strategic Lead Generation",
         icon: "Briefcase",
-        features: ["Account-Based Marketing", "Cold Outreach", "List Building", "Survey Campaigns", "Trade Show Follow-ups"]
+        features: ["Account-Based Marketing Logic", "High-Resolution Cold Outreach", "Institutional List Architecture", "Market Intelligence Surveys", "Executive Follow-up Orchestration"]
       },
       {
-        title: "Appointment Setting",
+        title: "Precision Appointment Setting",
         icon: "CalendarCheck",
-        features: ["Decision Maker Access", "Calendar Integration", "Qualification Frameworks", "Reminder Campaigns", "No-show Rescheduling"]
+        features: ["Institutional Decision Maker Access", "Frictionless Calendar Integration", "High-Resolution Qualification Frameworks", "Strategic Engagement Triggers", "Failsafe Rescheduling Protocols"]
       },
       {
-        title: "Full-Cycle Sales",
+        title: "Full-Cycle Revenue Operations",
         icon: "Award",
-        features: ["Inbound Closing", "Telesales", "Upselling & Cross-selling", "Contract Negotiation", "Retention & Win-backs"]
+        features: ["High-Impact Inbound Closing", "Strategic Multi-Channel Telesales", "LTV-Driven Upsell Orchestration", "Institutional Contract Negotiation", "Neural Win-Back & Retention Logic"]
       }
     ]
   },
@@ -144,9 +144,9 @@ export const salesTelemarketingData: SolutionPageData = {
   },
 
   cta: {
-    title: "Ready to Supercharge Your Pipeline?",
-    primaryBtn: "Talk to a Sales Architect",
-    secondaryBtn1: "View Outbound Case Studies",
-    secondaryBtn2: "Pricing Breakdown"
+    title: "Ready to Supercharge Your Institutional Pipeline?",
+    primaryBtn: "Talk to a Revenue Architect",
+    secondaryBtn1: "Review Growth Case Studies",
+    secondaryBtn2: "Pricing Structure Overview"
   }
 };

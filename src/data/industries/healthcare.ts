@@ -8,28 +8,28 @@ export const healthcareData: IndustryPageData = {
 
   heroData: {
     badgeIcon: "HeartPulse",
-    badgeText: "Healthcare & Medical",
-    headline: "HIPAA-Compliant Healthcare BPO Services",
-    subheading: "Supporting better patient outcomes through intelligent operations, revenue cycle management, and 24/7 dedicated medical support teams.",
+    badgeText: "Institutional Healthcare Mastery",
+    headline: "Institutional Healthcare BPO: HIPAA-Grade Operational Excellence",
+    subheading: "Orchestrate complex medical operations and enhance patient outcomes with high-precision clinical support and institutional-grade revenue cycle management.",
     bullets: [
-      "HIPAA compliant at every level",
-      "Trained and certified medical staff",
-      "24/7 patient support & triage",
-      "Direct EHR/EMR integration"
+      "Rigorous Institutional HIPAA/HITRUST Compliance",
+      "Specialized Clinically-Trained Support Talent",
+      "24/7/365 Patient Care Orchestration & Triage",
+      "Seamless Bi-Directional EHR/EMR Integration"
     ],
-    primaryCta: "Get Started",
-    secondaryCta: "Case Studies",
+    primaryCta: "Architect Healthcare Ops",
+    secondaryCta: "Institutional Case Studies",
     visualIcon: "Stethoscope",
-    visualList: ["EHR interfaces synced in real-time", "Medical staff augmentation", "Patient care coordination scenes", "Technology integration pipelines"],
+    visualList: ["Neural EHR Synchronization Pipeline", "Institutional Medical Staff Augmentation", "Patient Outcome Coordination Control", "Regulatory Technology Mesh"],
     certifications: [
-      { id: "c1", name: "HIPAA" },
-      { id: "c2", name: "HITRUST" },
-      { id: "c3", name: "ISO 27001" },
-      { id: "c4", name: "SOC 2" }
+      { id: "c1", name: "HIPAA Certified" },
+      { id: "c2", name: "HITRUST Validated" },
+      { id: "c3", name: "ISO 27001:2022" },
+      { id: "c4", name: "SOC 2 Type II" }
     ],
     clientSuccess: {
-      stat1: "500+ Healthcare clients",
-      stat2: "98.5% Patient satisfaction"
+      stat1: "500+ Institutional Partners",
+      stat2: "99.2% Clinical Accuracy Index"
     }
   },
 

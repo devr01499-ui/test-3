@@ -8,57 +8,57 @@ export const mediaEntertainmentData: IndustryPageData = {
 
   heroData: {
     badgeIcon: "Clapperboard",
-    badgeText: "Media & Entertainment",
-    headline: "Power Your Content & Fan Operations",
-    subheading: "From content moderation to subscriber retention, we support media brands in delivering exceptional audience experiences at scale.",
+    badgeText: "Global Media Integrity Hub",
+    headline: "Media Excellence: Advanced Audience & Content Orchestration",
+    subheading: "Orchestrate complex media ecoystems and enhance fan engagement with institutional-grade content moderation and mission-critical subscriber retention services.",
     bullets: [
-      "AI-assisted content moderation at scale",
-      "Subscriber acquisition & retention",
-      "Multilingual fan support 24/7",
-      "Royalty & rights management support"
+      "Institutional-Grade Neural Content Moderation at Scale",
+      "Strategic Subscriber Acquisition & Retention Lifecycle",
+      "24/7/365 Native Multilingual Fan Engagement Hubs",
+      "Institutional Royalty & IP Rights Integrity Support"
     ],
-    primaryCta: "Scale Media Operations",
-    secondaryCta: "View Media Brief",
+    primaryCta: "Architect Media Ops",
+    secondaryCta: "Access Media Brief",
     visualIcon: "Clapperboard",
-    visualList: ["Content moderation dashboards", "Subscriber management screens", "Fan community platforms", "Streaming analytics panels"],
+    visualList: ["Institutional Content Integrity Hubs", "Neural Subscriber Lifecycle Control", "Global Fan Community Resilience", "Streaming Performance Integrity Panels"],
     certifications: [
-      { id: "c1", name: "ISO 27001" },
+      { id: "c1", name: "ISO 27001:2022" },
       { id: "c2", name: "SOC 2 Type II" },
-      { id: "c3", name: "GDPR" },
-      { id: "c4", name: "COPPA" }
+      { id: "c3", name: "GDPR Verified" },
+      { id: "c4", name: "COPPA Standards Compliant" }
     ],
     clientSuccess: {
-      stat1: "75+ Media & streaming clients",
-      stat2: "99.2% Content accuracy rate"
+      stat1: "75+ Institutional Media Partners",
+      stat2: "99.9% Content Integrity Index"
     }
   },
 
   services: {
-    title: "Complete Media & Entertainment BPO",
+    title: "Complete Institutional Media & Entertainment BPO",
     gridItems: [
       {
-        title: "CONTENT MODERATION",
-        features: ["UGC Moderation", "Video & Image Review", "Community Guidelines Enforcement", "Hate Speech Detection", "Appeals Handling"]
+        title: "NEURAL CONTENT INTEGRITY",
+        features: ["Institutional UGC Moderation", "High-Resolution Video/Image Review", "Strategic Guidelines Orchestration", "Neural Hate Speech Detection", "Verified Appeals Stewardship"]
       },
       {
-        title: "SUBSCRIBER SERVICES",
-        features: ["Acquisition Support", "Billing Inquiries", "Plan Upgrades", "Churn Prevention", "Win-back Campaigns"]
+        title: "STRATEGIC SUBSCRIBER CARE",
+        features: ["Institutional Acquisition Support", "Verified Billing Integrity", "Strategic Plan Orchestration", "Neural Churn Eradication", "Institutional Win-back Campaigns"]
       },
       {
-        title: "FAN & AUDIENCE SUPPORT",
-        features: ["Live Event Support", "Social Media Response", "Multilingual Help", "Ticketing Inquiries", "VIP Fan Relations"]
+        title: "GLOBAL FAN STEWARDSHIP",
+        features: ["Mission-Critical Live Event Support", "Strategic Social Mesh Response", "Native Multilingual Engagement", "Verified Ticketing Integrity", "VIP Fan Ecosystem Relations"]
       },
       {
-        title: "RIGHTS & ROYALTIES",
-        features: ["Rights Clearance Support", "Royalty Statements", "Licensing Admin", "ISRC/ISWC Processing", "Dispute Handling"]
+        title: "RIGHTS & IP INTEGRITY",
+        features: ["Institutional Rights Clearance", "Verified Royalty Stewardship", "Strategic Licensing Admin", "Neural ISRC/ISWC Processing", "Institutional Dispute Adjudication"]
       },
       {
-        title: "DIGITAL OPERATIONS",
-        features: ["Metadata Management", "Content Tagging", "Subtitle QC", "Localization Support", "Digital Asset Mgmt"]
+        title: "NEURAL DIGITAL OPS",
+        features: ["Institutional Metadata Stewardship", "Advanced Content Tagging Labs", "High-Resolution Subtitle QC", "Global Localization Support", "Institutional Digital Asset Hubs"]
       },
       {
-        title: "ANALYTICS & INSIGHTS",
-        features: ["Audience Analytics", "Churn Modeling", "Content Performance", "Social Listening", "A/B Test Support"]
+        title: "MEDIA ANALYTICS & BI",
+        features: ["Institutional Audience Intelligence", "Neural Churn Architectures", "Strategic Content Performance", "Global Social Listening Mesh", "Institutional A/B Logic Support"]
       }
     ]
   },

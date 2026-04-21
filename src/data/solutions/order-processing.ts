@@ -6,14 +6,45 @@ export const orderProcessingData: SolutionPageData = {
   slug: "order-processing",
   breadcrumb: "Order Processing",
   heroData: {
-    badgeIcon: "ShoppingCart", badgeText: "Order Processing", headline: "Fulfill Orders Faster. Zero Errors.", subheading: "Accelerate your supply chain by outsourcing sales order entry, payment verification, and fulfillment administration.", bullets: ["B2B Purchase Order (PO) Processing", "E-commerce order verification", "Returns and refund management", "Inventory synchronization"], primaryCta: "Streamline Orders", secondaryCta: "See Processing Demo", visualIcon: "Package", visualText: "Order Management System", metricsOverlay: [{ value: "99.9%", label: "Order Accuracy" }, { value: "<2h", label: "Entry TAT" }, { value: "30%", label: "Cost Savings" }]
+    badgeIcon: "ShoppingCart",
+    badgeText: "Institutional Order Orchestration",
+    headline: "Zero-Defect Fulfillment: Advanced Order Lifecycle Architecture",
+    subheading: "Accelerate your global supply chain with institutional-grade order processing. We deliver scalable, high-precision orchestration from initial PO intake to final fulfillment tracking.",
+    bullets: [
+      "Institutional B2B Purchase Order (PO) Orchestration",
+      "Enterprise E-Commerce Order Integrity Verification",
+      "Global Returns & Reverse Logistics Management",
+      "Real-Time Institutional Inventory Synchronization"
+    ],
+    primaryCta: "Architect Your Fulfillment",
+    secondaryCta: "Access Processing Blueprint",
+    visualIcon: "Package",
+    visualText: "Institutional Order & Fulfillment Control Center",
+    metricsOverlay: [
+      { value: "99.95%", label: "Order Accuracy Index" },
+      { value: "Sub-2h", label: "Entry Latency Performance" },
+      { value: "30%+", label: "Admin OpEx Compression" }
+    ]
   },
   quickStats: [{ icon: "PackageCheck", text: "10M+ Orders Processed" }, { icon: "Clock", text: "<2 Hour Turnaround" }, { icon: "Shield", text: "PCI DSS Compliant" }, { icon: "TrendingDown", text: "30% Reduction in Opex" }],
   services: {
-    title: "End-to-End Order Management", items: [
-      { title: "B2B Order Entry", icon: "FileText", features: ["Purchase Order transcription", "EDI discrepancy resolution", "Quote-to-cash administration", "Credit hold releases"] },
-      { title: "E-Commerce Operations", icon: "ShoppingCart", features: ["Fraud flag review", "Fulfillment routing", "Dropship coordination", "Backorder management"] },
-      { title: "Reverse Logistics", icon: "ArrowLeftRight", features: ["RMA generation", "Refund processing", "Exchange coordination", "Warranty validation"] }
+    title: "End-to-End Institutional Management",
+    items: [
+      {
+        title: "B2B Strategic Order Entry",
+        icon: "FileText",
+        features: ["Institutional PO Transcription", "Advanced EDI Discrepancy Resolution", "Quote-to-Cash Lifecycle Administration", "Strategic Credit Release Logic"]
+      },
+      {
+        title: "Enterprise E-Commerce Operations",
+        icon: "ShoppingCart",
+        features: ["Strategic Fraud Integrity Review", "Global Fulfillment Routing", "Neural Dropship Orchestration", "Predictive Backorder Management"]
+      },
+      {
+        title: "Institutional Reverse Logistics",
+        icon: "ArrowLeftRight",
+        features: ["High-Resolution RMA Generation", "Institutional Refund Orchestration", "Global Exchange Coordination", "Carrier-Grade Warranty Validation"]
+      }
     ]
   },
   processFlow: {
@@ -73,6 +104,6 @@ export const orderProcessingData: SolutionPageData = {
     ]
   },
   cta: {
-    title: "Ready to Accelerate Fulfillment?", primaryBtn: "Process More Orders", secondaryBtn1: "Review Cost Savings", secondaryBtn2: "Discuss Integration"
+    title: "Ready to Architect Your Fulfillment Strategy?", primaryBtn: "Calculate Capacity", secondaryBtn1: "Review Cost Savings", secondaryBtn2: "Institutional Integration Brief"
   }
 };
