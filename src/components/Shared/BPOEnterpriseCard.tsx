@@ -63,7 +63,7 @@ export function BPOEnterpriseCard({
           <div style={{
             position: "absolute",
             inset: 0,
-            background: "rgba(14, 165, 233, 0.05)",
+            background: "var(--soft-gray)",
             transform: "translateZ(-10px)",
             borderRadius: "4px"
           }} />

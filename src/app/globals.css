@@ -14,9 +14,9 @@
   --cyan-accent: #06b6d4;
   --teal-accent: #14b8a6;
   
-  /* Neutral Palette (Excluded Black) */
+  /* Neutral Palette (Optimized for Clear Sky Aesthetic) */
   --white: #ffffff;
-  --soft-gray: #f8fafc;
+  --soft-gray: #e0f2fe; /* Clear Sky Blue */
   --medium-gray: #64748b;
   --charcoal: #1e293b;
   --charcoal-deep: #0f172a;

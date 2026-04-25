@@ -63,7 +63,7 @@ export function IndustryHero({ data, breadcrumb }: { data: IndustryHeroData, bre
               </div>
             </div>
             
-            <div style={{ background: "rgba(14, 165, 233, 0.05)", padding: "1.5rem", borderRadius: "8px" }}>
+            <div style={{ background: "var(--soft-gray)", padding: "1.5rem", borderRadius: "8px" }}>
               <div style={{ fontSize: "0.8rem", fontWeight: 700, letterSpacing: "1px", color: "var(--primary)", marginBottom: "0.5rem", textTransform: "uppercase" }}>
                 Client Success
               </div>
