@@ -3,7 +3,7 @@
   /* Vibrant Corporate Palette */
   --electric-blue: #0ea5e9;
   --electric-blue-deep: #0284c7;
-  --sky-blue-light: #e0f2fe;
+  --sky-blue-light: #f0f9ff;
   
   --emerald-green: #10b981;
   --emerald-vibrant: #059669;
@@ -16,7 +16,7 @@
   
   /* Neutral Palette (Optimized for Clear Sky Aesthetic) */
   --white: #ffffff;
-  --soft-gray: #e0f2fe; /* Clear Sky Blue */
+  --soft-gray: #f0f9ff; /* Clear Sky Blue (Tint of the Primary Blue) */
   --medium-gray: #64748b;
   --charcoal: #1e293b;
   --charcoal-deep: #0f172a;
