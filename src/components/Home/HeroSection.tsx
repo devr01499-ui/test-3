@@ -7,7 +7,7 @@ import Image from "next/image";
 export function HeroSection() {
   return (
     <>
-      {/* ── FULLSCREEN CLEAN VIDEO — No overlay content ── */}
+      {/* ── FULLSCREEN VIDEO WITH ORANGE HIGHLIGHTED HEADING ── */}
       <section style={{
         position: "relative",
         width: "100%",
@@ -38,13 +38,53 @@ export function HeroSection() {
             height: "100%",
             objectFit: "cover",
             zIndex: 0,
-            opacity: 1,
+            opacity: 0.7,
           }}
         >
           <source src="/hero-video.mp4" type="video/mp4" />
         </video>
 
-        {/* Subtle bottom fade only — for smooth transition to content */}
+        {/* HEADING OVERLAY ON VIDEO */}
+        <div style={{
+          position: "absolute",
+          inset: 0,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          zIndex: 5,
+          padding: "0 20px"
+        }}>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            style={{
+              background: "var(--sunrise-amber)",
+              padding: "2.5rem 4rem",
+              borderRadius: "4px", 
+              boxShadow: "0 30px 60px rgba(217, 119, 6, 0.4)",
+              textAlign: "center",
+              maxWidth: "1100px",
+              backdropFilter: "blur(4px)"
+            }}
+          >
+            <h1 style={{ 
+              fontSize: "clamp(32px, 5vw, 68px)", 
+              lineHeight: 1.1, 
+              fontWeight: 900, 
+              color: "var(--white)", 
+              letterSpacing: "-0.04em",
+              margin: 0,
+              textTransform: "uppercase"
+            }}>
+              Intelligent Operations.<br />
+              Human Excellence.<br />
+              Exponential Scale.
+            </h1>
+          </motion.div>
+        </div>
+
+        {/* Subtle bottom fade */}
         <div style={{
           position: "absolute",
           bottom: 0,
@@ -57,7 +97,7 @@ export function HeroSection() {
         }} />
       </section>
 
-      {/* ── CONTENT SECTION — Below the video ── */}
+      {/* ── DESCRIPTION SECTION — Below the video ── */}
       <section style={{ background: "var(--background)", paddingTop: "5rem", paddingBottom: "6rem" }}>
         <div className="container">
           <motion.div
@@ -73,15 +113,8 @@ export function HeroSection() {
               24/7 Intelligent Global Operations
             </div>
 
-            {/* Heading */}
-            <h1 style={{ fontSize: "clamp(42px, 6vw, 76px)", lineHeight: 1.08, fontWeight: 800, color: "var(--charcoal-deep)", letterSpacing: "-0.03em", marginBottom: "1.75rem" }}>
-              Intelligent <span style={{ color: "var(--electric-blue)" }}>Operations.</span><br />
-              Human Excellence.<br />
-              Exponential Scale.
-            </h1>
-
             {/* Description */}
-            <p style={{ fontSize: "1.2rem", color: "var(--text-muted)", lineHeight: 1.75, marginBottom: "2.5rem", maxWidth: "680px" }}>
+            <p style={{ fontSize: "1.3rem", color: "var(--text-main)", lineHeight: 1.7, marginBottom: "2.5rem", maxWidth: "700px", fontWeight: 500 }}>
               The definitive architecture for modern Business Process Outsourcing. We harmonize advanced AI automation with high-tier human strategic intelligence to drive enterprise transformation and operational resilience.
             </p>
 
@@ -100,3 +133,4 @@ export function HeroSection() {
     </>
   );
 }
+

@@ -12,6 +12,7 @@
 - Optimized global image infrastructure with responsive `sizes` and `AVIF/WebP` support.
 - Performance tuned Hero section (video preloading and prioritized posters).
 - Replaced broken Unsplash and slow `loremflickr` assets.
+- Refactored Hero section to move heading onto video with an orange (`sunrise-amber`) highlight box.
 
 ### Fixed
 - Multiple 404 image errors in Leadership and Industries sections.
