@@ -14,7 +14,7 @@
 }
 
 .bgGradient {
-  background: linear-gradient(135deg, var(--white) 0%, var(--soft-gray) 100%);
+  background: linear-gradient(135deg, #e0f2fe 0%, var(--soft-gray) 100%);
 }
 
 .container {
