@@ -34,3 +34,6 @@ steps:
   - id: 7
     task: Consolidate About sub-pages into a single high-end corporate page.
     status: COMPLETED
+  - id: 8
+    task: Global performance and image optimization.
+    status: COMPLETED

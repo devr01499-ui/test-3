@@ -93,6 +93,7 @@ export default function SolutionsIndex() {
                         alt={sol.name} 
                         fill 
                         style={{ objectFit: "cover" }} 
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px"
                       />
                       <div style={{ position: "absolute", top: "1rem", left: "1rem", padding: "6px 12px", background: "var(--white)", borderRadius: "100px", display: "flex", alignItems: "center", gap: "6px", fontSize: "11px", fontWeight: 800, color: sol.color, boxShadow: "var(--shadow-level-2)" }}>
                         <Cpu size={12} /> NEURAL-READY

@@ -44,10 +44,18 @@ export function AboutLeadership() {
             >
               <div className={styles.memberImage}>
                 <Image 
-                  src={`https://images.unsplash.com/photo-${1500000000000 + i}?auto=format&fit=crop&q=80&w=600`}
+                  src={`https://images.unsplash.com/photo-${
+                    i === 0 ? "1507003211163-49d055f1a7ec" : 
+                    i === 1 ? "1573497019940-1c28c88b4f3e" : 
+                    i === 2 ? "1560250097-0b93528c311a" : 
+                    i === 3 ? "1519085360753-af0119f7cbe7" : 
+                    i === 4 ? "1580489944761-15a19d654956" : 
+                    "1506794778202-cad84cf45f1d"
+                  }?auto=format&fit=crop&q=80&w=600`}
                   alt={member.title}
                   fill
                   style={{ objectFit: "cover" }}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
               <h3 className={styles.memberName}>{member.title}</h3>

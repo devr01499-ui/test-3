@@ -27,7 +27,7 @@ export function Footer() {
           {/* BRAND COLUMN */}
           <div className={styles.brandCol}>
             <Link href="/" className={styles.logo}>
-              <Image src="/logo.png" alt="Claritiy Logo" width={36} height={36} />
+              <Image src="/logo.png" alt="Claritiy Logo" width={36} height={36} sizes="36px" />
               <span>Claritiy</span>
             </Link>
             <p className={styles.desc}>

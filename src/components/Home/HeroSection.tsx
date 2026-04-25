@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 export function HeroSection() {
   return (
@@ -14,12 +15,20 @@ export function HeroSection() {
         overflow: "hidden",
         background: "#0f172a",
       }}>
+        <Image 
+          src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1920"
+          alt="Hero Background"
+          fill
+          priority
+          style={{ objectFit: "cover", zIndex: -1 }}
+          sizes="100vw"
+        />
         <video
           autoPlay
           loop
           muted
           playsInline
-          preload="auto"
+          preload="metadata"
           poster="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1920"
           style={{
             position: "absolute",
@@ -32,8 +41,6 @@ export function HeroSection() {
             opacity: 1,
           }}
         >
-          {/* WebM first for better compression/speed, MP4 as fallback */}
-          <source src="/hero-video.webm" type="video/webm" />
           <source src="/hero-video.mp4" type="video/mp4" />
         </video>
 

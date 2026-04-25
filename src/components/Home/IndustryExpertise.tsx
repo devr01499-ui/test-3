@@ -58,7 +58,13 @@ export function IndustryExpertise() {
               <BPOEnterpriseCard elevation={3} intensity={12}>
                 <div style={{ height: "420px", display: "flex", flexDirection: "column" }}>
                    <div style={{ height: "180px", position: "relative", borderRadius: "8px", overflow: "hidden", marginBottom: "2rem" }}>
-                      <Image src={ind.img} alt={ind.name} fill style={{ objectFit: "cover", opacity: 0.9 }} />
+                      <Image 
+                        src={ind.img} 
+                        alt={ind.name} 
+                        fill 
+                        style={{ objectFit: "cover", opacity: 0.9 }} 
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px"
+                      />
                       <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(15, 23, 42, 0.6), transparent)" }} />
                    </div>
                    

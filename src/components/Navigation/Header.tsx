@@ -57,6 +57,7 @@ export function Header() {
             height={36}
             className={styles.aiIcon}
             priority
+            sizes="36px"
           />
           <span>Claritiy</span>
         </Link>

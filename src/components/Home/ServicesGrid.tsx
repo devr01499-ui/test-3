@@ -103,7 +103,13 @@ export function ServicesGrid() {
               <BPOEnterpriseCard elevation={3} intensity={15}>
                 <div style={{ height: "450px", display: "flex", flexDirection: "column" }}>
                   <div style={{ height: "200px", position: "relative", borderRadius: "8px", overflow: "hidden", marginBottom: "2rem" }}>
-                    <Image src={sol.img} alt={sol.title} fill style={{ objectFit: "cover" }} />
+                    <Image 
+                      src={sol.img} 
+                      alt={sol.title} 
+                      fill 
+                      style={{ objectFit: "cover" }} 
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px"
+                    />
                     <div style={{ position: "absolute", top: "1rem", left: "1rem", padding: "6px 12px", background: "var(--white)", borderRadius: "100px", display: "flex", alignItems: "center", gap: "6px", fontSize: "11px", fontWeight: 800, color: sol.color, boxShadow: "var(--shadow-level-2)" }}>
                        <Zap size={12} /> AI OPERATING
                     </div>

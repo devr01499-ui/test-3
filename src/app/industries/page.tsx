@@ -90,6 +90,7 @@ export default function IndustriesIndex() {
                     alt={ind.name}
                     fill
                     className="card-image-bg"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px"
                   />
                   <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(8, 47, 73, 0.2) 0%, rgba(8, 47, 73, 0.8) 100%)", zIndex: 1 }} />
                   

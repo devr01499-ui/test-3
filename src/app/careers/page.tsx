@@ -105,6 +105,7 @@ export default function CareersPage() {
                     fill
                     className="card-image-bg"
                     priority
+                    sizes="(max-width: 768px) 100vw, 600px"
                   />
                   <div className="card-overlay" style={{ background: "linear-gradient(to top, rgba(8, 47, 73, 0.7), transparent)" }} />
                   <div className={styles.statsOverlay}>
@@ -292,7 +293,13 @@ export default function CareersPage() {
                   className="card-3d-content"
                   style={{ overflow: "hidden" }}
                 >
-                  <Image src={img.url} alt={img.alt} fill style={{ objectFit: "cover" }} />
+                  <Image 
+                    src={img.url} 
+                    alt={img.alt} 
+                    fill 
+                    style={{ objectFit: "cover" }} 
+                    sizes="(max-width: 768px) 100vw, 400px"
+                  />
                 </motion.div>
               </div>
             ))}

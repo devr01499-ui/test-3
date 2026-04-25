@@ -226,6 +226,7 @@ export default function AITechnologyPage() {
                     alt={cap.title}
                     fill
                     className="card-image-bg"
+                    sizes="(max-width: 768px) 100vw, 400px"
                   />
                   <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(8, 47, 73, 0.4) 0%, rgba(8, 47, 73, 0.9) 100%)", zIndex: 1 }} />
                   
