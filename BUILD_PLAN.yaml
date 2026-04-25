@@ -31,3 +31,6 @@ steps:
   - id: 6
     task: Final Vercel Build Check.
     status: PLANNED
+  - id: 7
+    task: Consolidate About sub-pages into a single high-end corporate page.
+    status: COMPLETED

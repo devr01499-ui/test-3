@@ -19,7 +19,14 @@ export function AboutMegaMenu() {
               </h4>
               <ul className={styles.list}>
                 {group.items.map(item => (
-                  <li key={item}><a href="#" className={styles.link}><div className={styles.bullet} /> {item}</a></li>
+                  <li key={item}>
+                    <a 
+                      href={item === "About Us" ? "/about#overview" : item === "Company Story" ? "/about#story" : "#"} 
+                      className={styles.link}
+                    >
+                      <div className={styles.bullet} /> {item}
+                    </a>
+                  </li>
                 ))}
               </ul>
             </div>
@@ -48,7 +55,16 @@ export function AboutMegaMenu() {
                 {group.title}
               </h4>
               <ul className={styles.list}>
-                {group.items.map(item => <li key={item}><a href="#" className={styles.link}>{item}</a></li>)}
+                {group.items.map(item => (
+                  <li key={item}>
+                    <a 
+                      href={item === "Executive Team" ? "/about#leadership" : "#"} 
+                      className={styles.link}
+                    >
+                      {item}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
           ))}
@@ -57,7 +73,7 @@ export function AboutMegaMenu() {
             <h4 className={styles.subTitle}><Leaf size={16} color="var(--primary)" /> Sustainability</h4>
             <ul className={styles.list}>
               {["Environmental Impact", "Social Responsibility", "Ethics & Integrity", "ESG Reporting"].map(item => (
-                <li key={item}><a href="#" className={styles.link}>{item}</a></li>
+                <li key={item}><a href="/about#impact" className={styles.link}>{item}</a></li>
               ))}
             </ul>
           </div>
@@ -83,7 +99,14 @@ export function AboutMegaMenu() {
               </h4>
               <ul className={styles.list}>
                 {group.items.map(item => (
-                  <li key={item}><a href="#" className={styles.link}>{item}</a></li>
+                  <li key={item}>
+                    <a 
+                      href={item === "Awards Won" ? "/about#excellence" : "#"} 
+                      className={styles.link}
+                    >
+                      {item}
+                    </a>
+                  </li>
                 ))}
               </ul>
             </div>
