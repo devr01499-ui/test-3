@@ -23,8 +23,3 @@
 ## [ADR-005] Navigation System
 **Decision**: React-based Mega Menu with hover interaction and sticky glassmorphic header.
 **Rationale**: Matches the complex architecture provided. Using `framer-motion` for smooth transitions.
-
-## [ADR-006] Hero Layout and Accent Colors
-**Decision**: Move Hero heading onto video background with a `sunrise-amber` (orange) highlight box.
-**Rationale**: Enhances visual hierarchy by placing the primary message over the immersive video while ensuring legibility through a high-contrast background highlight.
-**Trade-offs**: Introduces a strong secondary color (`amber`) into the primarily `sky-blue` aesthetic.
