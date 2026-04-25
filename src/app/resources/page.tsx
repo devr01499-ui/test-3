@@ -37,6 +37,33 @@ const CategoryIcon = ({ title, size = 28 }: { title: string; size?: number }) =>
 };
 
 export default function ResourcesPage() {
+  const [subscribed, setSubscribed] = React.useState(false);
+
+  const handleSubscribe = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const email = formData.get('email');
+
+    try {
+      const response = await fetch('/api/telegram', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          formType: "Newsletter Subscription",
+          email: email
+        }),
+      });
+
+      if (response.ok) {
+        setSubscribed(true);
+        setTimeout(() => setSubscribed(false), 5000);
+        e.currentTarget.reset();
+      }
+    } catch (error) {
+      console.error('Subscription error:', error);
+    }
+  };
+
   return (
     <div className={styles.page}>
       
@@ -247,10 +274,18 @@ export default function ResourcesPage() {
          <div className="container">
             <h2 className={styles.sectionTitle}>Ready to stay informed?</h2>
             <p style={{ color: "var(--text-muted)", marginBottom: "3rem" }}>Join 50,000+ industry leaders who receive our weekly insights.</p>
-            <div style={{ maxWidth: "600px", margin: "0 auto", display: "flex", gap: "1rem" }}>
-               <input type="email" placeholder="Enter your business email" style={{ flexGrow: 1, padding: "1rem 1.5rem", borderRadius: "12px", border: "1px solid var(--border)", outline: "none" }} />
-               <button className="btn-modern-primary" style={{ padding: "1rem 2.5rem" }}>Subscribe</button>
-            </div>
+            <form onSubmit={handleSubscribe} style={{ maxWidth: "600px", margin: "0 auto", display: "flex", gap: "1rem" }}>
+               <input 
+                 type="email" 
+                 name="email"
+                 placeholder="Enter your business email" 
+                 style={{ flexGrow: 1, padding: "1rem 1.5rem", borderRadius: "12px", border: "1px solid var(--border)", outline: "none" }} 
+                 required
+               />
+               <button type="submit" className="btn-modern-primary" style={{ padding: "1rem 2.5rem" }} disabled={subscribed}>
+                 {subscribed ? "Subscribed!" : "Subscribe"}
+               </button>
+            </form>
             <div style={{ marginTop: "1rem", fontSize: "0.8rem", color: "var(--text-muted)" }}>
                By subscribing, you agree to our <Link href="/about">Privacy Policy</Link>.
             </div>

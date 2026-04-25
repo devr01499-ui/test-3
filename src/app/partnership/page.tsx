@@ -31,10 +31,30 @@ const IconMap = ({ name, size = 24 }: { name: string; size?: number }) => {
 export default function PartnershipPage() {
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 5000);
+    
+    const formData = new FormData(e.currentTarget);
+    const data = Object.fromEntries(formData.entries());
+    
+    try {
+      const response = await fetch('/api/telegram', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          formType: "Partnership Application",
+          ...data
+        }),
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+        setTimeout(() => setSubmitted(false), 5000);
+        e.currentTarget.reset();
+      }
+    } catch (error) {
+      console.error('Submission error:', error);
+    }
   };
 
   return (
@@ -177,11 +197,11 @@ export default function PartnershipPage() {
              <form onSubmit={handleSubmit} style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "2rem" }}>
                 <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
                   <label style={{ fontWeight: 700, fontSize: "0.9rem" }}>Company Name *</label>
-                  <input type="text" placeholder="Your company name" style={{ padding: "1rem", borderRadius: "10px", border: "1.5px solid var(--border)" }} required />
+                  <input type="text" name="companyName" placeholder="Your company name" style={{ padding: "1rem", borderRadius: "10px", border: "1.5px solid var(--border)" }} required />
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
                   <label style={{ fontWeight: 700, fontSize: "0.9rem" }}>Partner Type *</label>
-                  <select style={{ padding: "1rem", borderRadius: "10px", border: "1.5px solid var(--border)" }} required>
+                  <select name="partnerType" style={{ padding: "1rem", borderRadius: "10px", border: "1.5px solid var(--border)" }} required>
                     <option>Technology Partner</option>
                     <option>Channel / Reseller</option>
                     <option>Strategic Alliance</option>
@@ -190,15 +210,15 @@ export default function PartnershipPage() {
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
                   <label style={{ fontWeight: 700, fontSize: "0.9rem" }}>Contact Name *</label>
-                  <input type="text" placeholder="Your full name" style={{ padding: "1rem", borderRadius: "10px", border: "1.5px solid var(--border)" }} required />
+                  <input type="text" name="contactName" placeholder="Your full name" style={{ padding: "1rem", borderRadius: "10px", border: "1.5px solid var(--border)" }} required />
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
                   <label style={{ fontWeight: 700, fontSize: "0.9rem" }}>Business Email *</label>
-                  <input type="email" placeholder="your@company.com" style={{ padding: "1rem", borderRadius: "10px", border: "1.5px solid var(--border)" }} required />
+                  <input type="email" name="email" placeholder="your@company.com" style={{ padding: "1rem", borderRadius: "10px", border: "1.5px solid var(--border)" }} required />
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem", gridColumn: "span 2" }}>
                   <label style={{ fontWeight: 700, fontSize: "0.9rem" }}>Partner Goals *</label>
-                  <textarea rows={4} placeholder="Briefly describe your partnership goals and current business footprint..." style={{ padding: "1rem", borderRadius: "10px", border: "1.5px solid var(--border)" }} required />
+                  <textarea name="goals" rows={4} placeholder="Briefly describe your partnership goals and current business footprint..." style={{ padding: "1rem", borderRadius: "10px", border: "1.5px solid var(--border)" }} required />
                 </div>
                 <div style={{ gridColumn: "span 2" }}>
                    <button type="submit" className="btn-modern-primary" style={{ width: "100%", padding: "1.25rem" }} disabled={submitted}>

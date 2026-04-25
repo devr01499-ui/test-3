@@ -42,10 +42,46 @@ export default function ContactPage() {
   const [formType, setFormType] = useState("New Business");
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 5000);
+    
+    const formData = new FormData(e.currentTarget);
+    const data = Object.fromEntries(formData.entries());
+    
+    // Handle checkboxes (services)
+    const services = Array.from(formData.getAll('services'));
+    
+    try {
+      const response = await fetch('/api/telegram', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          formType: "Contact Inquiry",
+          interest: data.interest,
+          name: `${data.firstName} ${data.lastName}`,
+          email: data.email,
+          phone: data.phone,
+          company: data.company,
+          jobTitle: data.jobTitle,
+          industry: data.industry,
+          companySize: data.companySize,
+          services: services,
+          contactMethod: data.method,
+          timeline: data.timeline,
+          projectDetails: data.projectDetails,
+          source: data.source,
+          marketingConsent: data.consent === 'on' ? 'Yes' : 'No'
+        }),
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+        setTimeout(() => setSubmitted(false), 5000);
+        e.currentTarget.reset();
+      }
+    } catch (error) {
+      console.error('Submission error:', error);
+    }
   };
 
   return (
@@ -222,37 +258,37 @@ export default function ContactPage() {
 
               <div className={styles.formGroup}>
                 <label className={styles.label}>First Name *</label>
-                <input type="text" className={styles.input} placeholder="Your first name" required />
+                <input type="text" name="firstName" className={styles.input} placeholder="Your first name" required />
               </div>
 
               <div className={styles.formGroup}>
                 <label className={styles.label}>Last Name *</label>
-                <input type="text" className={styles.input} placeholder="Your last name" required />
+                <input type="text" name="lastName" className={styles.input} placeholder="Your last name" required />
               </div>
 
               <div className={styles.formGroup}>
                 <label className={styles.label}>Business Email *</label>
-                <input type="email" className={styles.input} placeholder="your@company.com" required />
+                <input type="email" name="email" className={styles.input} placeholder="your@company.com" required />
               </div>
 
               <div className={styles.formGroup}>
                 <label className={styles.label}>Phone Number</label>
-                <input type="tel" className={styles.input} placeholder="+1 (___) ___-____" />
+                <input type="tel" name="phone" className={styles.input} placeholder="+1 (___) ___-____" />
               </div>
 
               <div className={styles.formGroup}>
                 <label className={styles.label}>Company Name *</label>
-                <input type="text" className={styles.input} placeholder="Your company name" required />
+                <input type="text" name="company" className={styles.input} placeholder="Your company name" required />
               </div>
 
               <div className={styles.formGroup}>
                 <label className={styles.label}>Job Title</label>
-                <input type="text" className={styles.input} placeholder="Your job title" />
+                <input type="text" name="jobTitle" className={styles.input} placeholder="Your job title" />
               </div>
 
               <div className={styles.formGroup}>
                 <label className={styles.label}>Industry *</label>
-                <select className={styles.select} required defaultValue="">
+                <select name="industry" className={styles.select} required defaultValue="">
                    <option value="" disabled>Select Industry</option>
                    {contactData.dropdowns.industries.map(ind => <option key={ind} value={ind}>{ind}</option>)}
                 </select>
@@ -260,7 +296,7 @@ export default function ContactPage() {
 
               <div className={styles.formGroup}>
                 <label className={styles.label}>Company Size *</label>
-                <select className={styles.select} required defaultValue="">
+                <select name="companySize" className={styles.select} required defaultValue="">
                    <option value="" disabled>Select Size</option>
                    {contactData.dropdowns.companySizes.map(size => <option key={size} value={size}>{size}</option>)}
                 </select>
@@ -271,7 +307,7 @@ export default function ContactPage() {
                 <div className={styles.checkboxContainer}>
                    {contactData.dropdowns.services.map(svc => (
                      <label key={svc} className={styles.checkboxLabel}>
-                        <input type="checkbox" className={styles.checkboxInput} /> {svc}
+                        <input type="checkbox" name="services" value={svc} className={styles.checkboxInput} /> {svc}
                      </label>
                    ))}
                 </div>
@@ -282,7 +318,7 @@ export default function ContactPage() {
                 <div className={styles.radioGroup}>
                    {["Email", "Phone", "Video Call"].map(m => (
                      <label key={m} className={styles.radioLabel}>
-                        <input type="radio" name="method" className={styles.radioInput} /> {m}
+                        <input type="radio" name="method" value={m} className={styles.radioInput} /> {m}
                      </label>
                    ))}
                 </div>
@@ -290,7 +326,7 @@ export default function ContactPage() {
 
               <div className={styles.formGroup}>
                 <label className={styles.label}>When would you like to start? *</label>
-                <select className={styles.select} required defaultValue="">
+                <select name="timeline" className={styles.select} required defaultValue="">
                    <option value="" disabled>Select Timeline</option>
                    <option>Immediately</option>
                    <option>Within 1-3 months</option>
@@ -302,6 +338,7 @@ export default function ContactPage() {
               <div className={`${styles.formGroup} ${styles.fullWidth}`}>
                 <label className={styles.label}>Tell us about your project: *</label>
                 <textarea 
+                  name="projectDetails"
                   className={styles.textarea} 
                   rows={4} 
                   maxLength={500} 
@@ -313,7 +350,7 @@ export default function ContactPage() {
 
               <div className={styles.formGroup}>
                 <label className={styles.label}>How did you hear about us?</label>
-                <select className={styles.select} defaultValue="">
+                <select name="source" className={styles.select} defaultValue="">
                    <option value="" disabled>Select Source</option>
                    {contactData.dropdowns.sources.map(src => <option key={src} value={src}>{src}</option>)}
                 </select>
@@ -321,7 +358,7 @@ export default function ContactPage() {
 
               <div className={`${styles.formGroup} ${styles.fullWidth}`} style={{ marginTop: "1rem" }}>
                  <label className={styles.checkboxLabel}>
-                    <input type="checkbox" className={styles.checkboxInput} />
+                    <input type="checkbox" name="consent" className={styles.checkboxInput} />
                     I'd like to receive updates and insights from Claritiy
                  </label>
                  <label className={styles.checkboxLabel} style={{ marginTop: "0.5rem" }}>

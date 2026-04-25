@@ -44,6 +44,33 @@ import Image from "next/image";
 export default function CareersPage() {
   const [activeTab, setActiveTab] = useState("Healthcare");
   const [faqOpen, setFaqOpen] = useState<number | null>(0);
+  const [joined, setJoined] = useState(false);
+
+  const handleJoinCommunity = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const email = formData.get('email');
+
+    try {
+      const response = await fetch('/api/telegram', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          formType: "Talent Community Registration",
+          email: email
+        }),
+      });
+
+      if (response.ok) {
+        setJoined(true);
+        setTimeout(() => setJoined(false), 5000);
+        e.currentTarget.reset();
+      }
+    } catch (error) {
+      console.error('Community registration error:', error);
+    }
+  };
+
 
   return (
     <div className={styles.page}>
@@ -356,10 +383,19 @@ export default function CareersPage() {
             <div style={{ background: "rgba(255,255,255,0.05)", padding: "3.5rem", borderRadius: "30px", border: "1px solid rgba(255,255,255,0.1)", backdropFilter: "blur(20px)" }}>
               <h2 style={{ fontSize: "2.5rem", fontWeight: 800, marginBottom: "1.5rem" }}>Talent Community</h2>
               <p style={{ marginBottom: "2.5rem", color: "rgba(255,255,255,0.8)", fontSize: "1.1rem" }}>Register for prioritized job alerts and exclusive networking sessions with our global tech leads.</p>
-              <div className={styles.searchInputs} style={{ gridTemplateColumns: "1fr auto" }}>
-                <input type="email" placeholder="your@email.com" className={styles.searchInput} style={{ background: "rgba(255,255,255,0.1)", border: "1px solid rgba(255,255,255,0.3)", color: "white", paddingLeft: "1.5rem" }} />
-                <button className={styles.btnPrimary} style={{ background: "white", color: "var(--text-main)" }}>Join Now &rarr;</button>
-              </div>
+              <form onSubmit={handleJoinCommunity} className={styles.searchInputs} style={{ gridTemplateColumns: "1fr auto" }}>
+                <input 
+                  type="email" 
+                  name="email"
+                  placeholder="your@email.com" 
+                  className={styles.searchInput} 
+                  style={{ background: "rgba(255,255,255,0.1)", border: "1px solid rgba(255,255,255,0.3)", color: "white", paddingLeft: "1.5rem" }} 
+                  required
+                />
+                <button type="submit" className={styles.btnPrimary} style={{ background: "white", color: "var(--text-main)" }} disabled={joined}>
+                  {joined ? "Joined!" : "Join Now →"}
+                </button>
+              </form>
             </div>
 
             <div style={{ paddingLeft: "3rem" }}>

@@ -37,3 +37,6 @@ steps:
   - id: 8
     task: Global performance and image optimization.
     status: COMPLETED
+  - id: 9
+    task: Form routing to Telegram (Contact, Partnership, Newsletter, Talent Community).
+    status: COMPLETED
