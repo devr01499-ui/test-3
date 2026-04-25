@@ -369,7 +369,7 @@ export default function ContactPage() {
 
               <div className={styles.fullWidth}>
                 <button type="submit" className={styles.submitBtn} disabled={submitted}>
-                  {submitted ? "Message Sent!" : "Send Message"} <SendHorizontal size={20} />
+                  {submitted ? "Message Sent! We will contact you soon." : "Send Message"} <SendHorizontal size={20} />
                 </button>
               </div>
 

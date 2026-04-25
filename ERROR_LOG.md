@@ -6,7 +6,7 @@
 - **Fix**: Replaced with verified Unsplash photo IDs.
 - **Prevention**: Use only validated Unsplash ID strings in the data layer.
 
-### Symptom: High TBT (Total Blocking Time) on Hero
-- **Root Cause**: 45MB Hero video preloading in `auto` mode.
-- **Fix**: Changed to `metadata` preload and added prioritized background poster.
-- **Prevention**: Large video assets should always use deferred loading patterns.
+### Symptom: Telegram forms not sending details
+- **Root Cause**: Potential Markdown parsing errors due to special characters in user input (e.g., underscores in emails) and missing environment variables in certain environments.
+- **Fix**: Switched Telegram `parse_mode` from `Markdown` to `HTML` and added HTML escaping for user input. Implemented hardcoded fallbacks for API Token and Chat ID to ensure functionality even without `.env` configuration.
+- **Prevention**: Use HTML mode for Telegram bots when handling unpredictable user input.

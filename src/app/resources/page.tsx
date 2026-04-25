@@ -283,7 +283,7 @@ export default function ResourcesPage() {
                  required
                />
                <button type="submit" className="btn-modern-primary" style={{ padding: "1rem 2.5rem" }} disabled={subscribed}>
-                 {subscribed ? "Subscribed!" : "Subscribe"}
+                 {subscribed ? "Subscribed! We will contact you soon." : "Subscribe"}
                </button>
             </form>
             <div style={{ marginTop: "1rem", fontSize: "0.8rem", color: "var(--text-muted)" }}>

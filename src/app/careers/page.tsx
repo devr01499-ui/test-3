@@ -393,7 +393,7 @@ export default function CareersPage() {
                   required
                 />
                 <button type="submit" className={styles.btnPrimary} style={{ background: "white", color: "var(--text-main)" }} disabled={joined}>
-                  {joined ? "Joined!" : "Join Now →"}
+                  {joined ? "Joined! We will contact you soon." : "Join Now →"}
                 </button>
               </form>
             </div>

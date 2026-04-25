@@ -222,7 +222,7 @@ export default function PartnershipPage() {
                 </div>
                 <div style={{ gridColumn: "span 2" }}>
                    <button type="submit" className="btn-modern-primary" style={{ width: "100%", padding: "1.25rem" }} disabled={submitted}>
-                      {submitted ? "Application Sent!" : "Submit Partner Application"} <SendHorizontal size={20} style={{ marginLeft: "0.5rem" }} />
+                      {submitted ? "Application Sent! We will contact you soon." : "Submit Partner Application"} <SendHorizontal size={20} style={{ marginLeft: "0.5rem" }} />
                    </button>
                 </div>
                 <div style={{ gridColumn: "span 2", textAlign: "center", fontSize: "0.85rem", color: "var(--text-muted)", display: "flex", alignItems: "center", justifyContent: "center", gap: "0.5rem" }}>

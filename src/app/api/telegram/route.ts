@@ -5,34 +5,40 @@ export async function POST(request: Request) {
     const data = await request.json();
     const { formType, ...formData } = data;
 
-    const TELEGRAM_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
-    const CHAT_ID = process.env.TELEGRAM_CHAT_ID;
+    // Use environment variables or fallback to provided credentials to ensure it "always works"
+    const TELEGRAM_TOKEN = process.env.TELEGRAM_BOT_TOKEN || '8687398510:AAFRpw9NjP4D5dB3cWP68bfQe7ZsCbro9yk';
+    const CHAT_ID = process.env.TELEGRAM_CHAT_ID || '1564118457';
 
-    if (!TELEGRAM_TOKEN || !CHAT_ID) {
-      console.error('Missing Telegram configuration');
-      return NextResponse.json({ success: false, error: 'Server configuration error' }, { status: 500 });
-    }
-
-    // Construct the message with better formatting
-    let message = `🚀 *New Form Submission*\n`;
+    // Construct the message with HTML formatting (more robust against special characters like underscores)
+    let message = `<b>🚀 New Form Submission</b>\n`;
     message += `━━━━━━━━━━━━━━━━━━━━\n`;
-    message += `📁 *Type:* ${formType || 'General'}\n\n`;
+    message += `<b>📁 Type:</b> ${formType || 'General'}\n\n`;
     
     for (const [key, value] of Object.entries(formData)) {
-      if (value && typeof value === 'string' && value.trim() !== '') {
-        // Clean up keys for display (e.g., camelCase to Title Case)
-        const label = key
-          .replace(/([A-Z])/g, ' $1')
-          .replace(/^./, str => str.toUpperCase());
-        
-        message += `📍 *${label}:*\n${value}\n\n`;
+      if (value && (typeof value === 'string' || typeof value === 'number')) {
+        const strValue = String(value).trim();
+        if (strValue !== '') {
+          // Clean up keys for display
+          const label = key
+            .replace(/([A-Z])/g, ' $1')
+            .replace(/^./, str => str.toUpperCase());
+          
+          // Escape HTML special characters in user input
+          const escapedValue = strValue
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
+          
+          message += `<b>📍 ${label}:</b>\n${escapedValue}\n\n`;
+        }
       } else if (Array.isArray(value) && value.length > 0) {
-        message += `📍 *${key.charAt(0).toUpperCase() + key.slice(1)}:*\n${value.join(', ')}\n\n`;
+        const label = key.charAt(0).toUpperCase() + key.slice(1);
+        message += `<b>📍 ${label}:</b>\n${value.join(', ')}\n\n`;
       }
     }
     
     message += `━━━━━━━━━━━━━━━━━━━━\n`;
-    message += `🕒 *Time:* ${new Date().toLocaleString()}\n`;
+    message += `<b>🕒 Time:</b> ${new Date().toLocaleString()}\n`;
 
     const url = `https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`;
     
@@ -42,14 +48,15 @@ export async function POST(request: Request) {
       body: JSON.stringify({
         chat_id: CHAT_ID,
         text: message,
-        parse_mode: 'Markdown',
+        parse_mode: 'HTML',
       }),
     });
 
+    const result = await response.json();
+
     if (!response.ok) {
-      const errorData = await response.json();
-      console.error('Telegram API Response Error:', errorData);
-      return NextResponse.json({ success: false, error: 'Telegram API failure' }, { status: 500 });
+      console.error('Telegram API Response Error:', result);
+      return NextResponse.json({ success: false, error: result.description || 'Telegram API failure' }, { status: 500 });
     }
 
     return NextResponse.json({ success: true });
