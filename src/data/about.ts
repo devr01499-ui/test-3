@@ -15,205 +15,205 @@ export const aboutData: Record<string, AboutPageData> = {
   "company-overview": {
     slug: "company-overview",
     title: "About Us / Company Overview",
-    metaTitle: "About Us | Claritiy",
-    metaDescription: "Learn about Claritiy, the leading provider of AI-augmented BPO solutions for the modern enterprise.",
+    metaTitle: "About Us | AI Infrastructure Leaders",
+    metaDescription: "Claritiy transforms traditional business operations into AI-driven powerhouses. We specialize in BPO, Manufacturing, and Government AI infrastructure.",
     iconName: "Globe",
-    headline: "Redefining Enterprise Efficiency",
-    description: "Claritiy is a global leader in AI-augmented Business Process Outsourcing. We blend purpose-built artificial intelligence with world-class human talent to transform how modern enterprises scale.",
+    headline: "Upgrading the Core of Global Business",
+    description: "Claritiy was founded with a singular vision: to bridge the gap between 'old school' operations and the future of AI infrastructure. We don't just add AI; we rebuild the foundation of BPO, Manufacturing, Real Estate, and Government sectors for maximum efficiency.",
     features: [
-      { title: "Global Presence", description: "Operating across 15 countries with 40+ delivery centers to provide true follow-the-sun support." },
-      { title: "AI-Native Architecture", description: "Born in the cloud with AI integrated into every operational layer, not just bolted on as an afterthought." },
-      { title: "Industry Expertise", description: "Deep domain knowledge spanning 20+ industries, ensuring we understand the nuances of your business." },
-      { title: "Data-Driven Approach", description: "Every decision, workflow, and process optimization is backed by hard data and predictive analytics." },
-      { title: "Scalable Operations", description: "Proprietary frameworks that allow rapid ramping for seasonal spikes or hyper-growth phases." },
-      { title: "Security First", description: "Enterprise-grade infrastructure compliant with SOC 2, ISO 27001, HIPAA, and GDPR standards." }
+      { title: "BPO Infrastructure 2.0", description: "Transforming traditional contact centers into intelligent hubs using neural process orchestration and AI-human hybrid models." },
+      { title: "Manufacturing Intelligence", description: "Integrating AI into supply chains and floor operations to predict bottlenecks and optimize production cycles." },
+      { title: "Real Estate AI Mesh", description: "Revolutionizing property management and valuation through predictive data layers and automated tenant interactions." },
+      { title: "Gov-Tech AI Backbone", description: "Supporting government agencies in building secure, scalable AI infrastructure for citizen services and urban planning." },
+      { title: "Professional Upgrading", description: "Helping working professionals transition to AI-augmented roles in a professional, fun, and engaging way." },
+      { title: "Skill Maximization", description: "Using AI as the base layer to amplify human talent, ensuring every professional reaches their maximum output potential." }
     ],
     stats: [
-      { value: "50,000+", label: "Global Employees" },
-      { value: "400+", label: "Enterprise Clients" },
-      { value: "20+", label: "Industries Served" },
-      { value: "99.9%", label: "Platform Uptime" }
+      { value: "Jan 2025", label: "Operations Launched" },
+      { value: "4+", label: "Key Sectors Transformed" },
+      { value: "24/7", label: "AI Infrastructure Support" },
+      { value: "100%", label: "Skill-Augmented Growth" }
     ],
-    ctaText: "Discover Our Solutions"
+    ctaText: "Upgrade Your Infrastructure"
   },
   "leadership-team": {
     slug: "leadership-team",
     title: "Leadership Team",
-    metaTitle: "Leadership Team | Claritiy",
-    metaDescription: "Meet the executive team driving innovation at Claritiy.",
+    metaTitle: "Leadership | AI Infrastructure Experts",
+    metaDescription: "Meet the specialized team driving the AI infrastructure revolution across BPO, Manufacturing, and Government sectors.",
     iconName: "Users",
-    headline: "Visionary Leadership for a Hybrid Future",
-    description: "Our leadership team brings together decades of expertise in operational excellence, artificial intelligence, and enterprise transformation to guide Claritiy's strategic vision.",
+    headline: "A Unified Vision for AI-Human Collaboration",
+    description: "Our leadership is composed of industry veterans and AI pioneers dedicated to upgrading traditional business models. We focus on strategic management styles that embrace technical innovation without losing the human touch.",
     features: [
-      { title: "Chief Executive Officer", description: "Driving the global strategy and vision for AI-augmented enterprise scale." },
-      { title: "Chief Operations Officer", description: "Ensuring flawless execution and delivery across 40+ global operational centers." },
-      { title: "Chief Technology Officer", description: "Leading the development of our proprietary AI platform and technical infrastructure." },
-      { title: "Chief Innovation Officer", description: "Pioneering the next generation of generative AI and human collaboration models." },
-      { title: "Chief Revenue Officer", description: "Building lasting partnerships with global enterprises and expanding our market presence." },
-      { title: "Chief People Officer", description: "Fostering a culture of continuous learning, diversity, and excellence for our 50,000+ employees." }
+      { title: "Executive Strategy Group", description: "Architects of our global AI infrastructure roadmap and sector-specific transformation strategies." },
+      { title: "AI Operations Board", description: "Ensuring seamless integration of neural networks into BPO and Manufacturing workflows." },
+      { title: "Technical Innovation Lab", description: "Pioneering the AI tools that professionals use to maximize their daily output and skill utility." },
+      { title: "Gov-Tech Advisory", description: "Specialized consultants working with public sector leaders to deploy secure AI backbones." },
+      { title: "People & Professional Growth", description: "Dedicated to making the transition to AI 'professional and fun' for all working team members." },
+      { title: "Enterprise Scaling Team", description: "Managing the rapid deployment of AI mesh networks across diverse global industries." }
     ],
-    ctaText: "Join Our Team"
+    ctaText: "Work With Our Experts"
   },
   "our-story": {
     slug: "our-story",
     title: "Our Story / History",
-    metaTitle: "Our Story | Claritiy",
-    metaDescription: "The journey of Claritiy from a disruptive startup to a global AI-BPO leader.",
+    metaTitle: "Our Story | The AI Revolution",
+    metaDescription: "Founded in January 2025, Claritiy is on a mission to modernize old-school business operations with next-gen AI infrastructure.",
     iconName: "TrendingUp",
-    headline: "A Journey of Disruption & Excellence",
-    description: "Founded on the belief that traditional outsourcing was broken, Claritiy emerged to bridge the gap between human empathy and artificial intelligence. Here is how we built the future of BPO.",
+    headline: "The 2025 AI Infrastructure Mandate",
+    description: "Claritiy launched in January 2025 to solve a critical problem: the world was talking about AI, but businesses were still running on 20th-century infrastructure. We stepped in to provide the base layer for the next industrial revolution.",
     features: [
-      { title: "The Foundation", description: "Started with a vision to integrate AI into customer support, leading to our first proprietary predictive routing engine." },
-      { title: "Global Expansion", description: "Scaled operations across three continents within the first five years to meet enterprise demand." },
-      { title: "The Tech Evolution", description: "Launched our comprehensive AI platform, transforming from a service provider to a technology-enabled partner." },
-      { title: "Industry Specialization", description: "Developing dedicated centers of excellence for Healthcare, Finance, and Tech & SaaS sectors." },
-      { title: "Strategic Acquisitions", description: "Acquired specialized AI startups to bolster our NLP, computer vision, and predictive capabilities." },
-      { title: "The Present & Future", description: "Today, we handle millions of interactions daily and continue to pioneer human-in-the-loop AI models." }
+      { title: "January 2025: The Launch", description: "Claritiy established its headquarters with a focus on upgrading 'old school' BPO and Manufacturing models." },
+      { title: "Building the AI Base", description: "Successfully deployed our first AI infrastructure mesh, proving that traditional management styles could be enhanced by AI." },
+      { title: "Professional Fun Initiative", description: "Launched our unique training program to help professionals upgrade their skills alongside AI tools." },
+      { title: "Sector Expansion", description: "Broadened our impact into Real Estate and Government sectors, building the backbone for smart cities and automated property ops." },
+      { title: "Maximum Output Realization", description: "Demonstrated 3x productivity gains for partners by utilizing human skills on top of an AI-base foundation." },
+      { title: "The Future of Work", description: "Continuing to lead the charge in infrastucture-first AI adoption for a more efficient global economy." }
     ],
-    ctaText: "See Our Timeline"
+    ctaText: "Explore Our Journey"
   },
   "mission-vision": {
     slug: "mission-vision-values",
     title: "Mission, Vision & Values",
-    metaTitle: "Mission, Vision & Values | Claritiy",
-    metaDescription: "Our guiding principles that shape Claritiy's culture and operations.",
+    metaTitle: "Mission & Vision | Transforming Infrastructure",
+    metaDescription: "Our mission is to upgrade global business infrastructure with AI while amplifying human potential and professional joy.",
     iconName: "Target",
-    headline: "Driven by Purpose, Guided by Values",
-    description: "Our mission is to empower enterprises with intelligent automation while elevating human potential. We envision a world where technology and talent work in perfect harmony.",
+    headline: "Upgrading the World's Operations",
+    description: "Our objective is clear: upgrade the infrastructure of traditional business operations with AI. We follow or upgrade established management styles to ensure a smooth but powerful transition to the future.",
     features: [
-      { title: "Mission", description: "To deliver transformative ROI for our clients through the seamless orchestration of artificial intelligence and human expertise." },
-      { title: "Vision", description: "To be the undisputed global leader in intelligent operations, setting the standard for the future of work." },
-      { title: "Integrity", description: "We operate with radical transparency, honoring our commitments and prioritizing data ethics above all." },
-      { title: "Innovation", description: "We challenge the status quo, constantly seeking better, faster, and smarter ways to solve complex problems." },
-      { title: "Empathy", description: "We design technology that augments rather than replaces human connection, maintaining empathy at the core of our service." },
-      { title: "Excellence", description: "We are relentless in our pursuit of operational perfection, measuring success by the tangible value we create." }
+      { title: "Infrastructure First", description: "We believe the foundation of any business must be intelligent, scalable, and AI-native." },
+      { title: "Human Skill Amplification", description: "We use AI as a base layer so that human creativity and expertise can achieve maximum output." },
+      { title: "Professional Fun", description: "We ensure that the transition to AI is engaging and rewarding for the professionals driving the change." },
+      { title: "Sector Mastery", description: "Deep specialization in BPO, Manufacturing, Real Estate, and Government infrastructure." },
+      { title: "Ethical Integration", description: "Modernizing operations while maintaining the integrity and management excellence of our partners." },
+      { title: "Scalable Excellence", description: "Building systems that grow with your business, from local real estate to global manufacturing." }
     ],
-    ctaText: "Read Our Culture Deck"
+    ctaText: "Join the Vision"
   },
   "certifications": {
     slug: "certifications-compliance",
     title: "Certifications & Compliance",
-    metaTitle: "Certifications & Compliance | Claritiy",
-    metaDescription: "Learn about Claritiy's enterprise-grade security and compliance standards.",
+    metaTitle: "Compliance | Secure AI Infrastructure",
+    metaDescription: "Claritiy ensures all AI infrastructure deployments meet the highest global security and ethical standards.",
     iconName: "ShieldCheck",
-    headline: "Security Built into Our DNA",
-    description: "We handle the world's most sensitive data. Our comprehensive compliance framework ensures that your operations are secure, private, and fully aligned with global regulations.",
+    headline: "Trust in Every AI Connection",
+    description: "Building AI infrastructure for Government and Manufacturing requires uncompromising security. Our systems are designed to meet the most stringent compliance mandates worldwide.",
     features: [
-      { title: "SOC 2 Type II", description: "Annual independent audits validating our controls over security, availability, and confidentiality." },
-      { title: "ISO 27001", description: "Internationally recognized standard for information security management systems (ISMS)." },
-      { title: "HIPAA Compliant", description: "Strict safeguards for protected health information (PHI), serving major healthcare providers securely." },
-      { title: "GDPR / CCPA Ready", description: "Comprehensive data privacy frameworks protecting consumer rights across Europe, California, and globally." },
-      { title: "PCI DSS Level 1", description: "Highest level of payment card industry security for processing financial transactions safely." },
-      { title: "Zero Trust Architecture", description: "Internal security model requiring strict identity verification for every person and device." }
+      { title: "Enterprise-Grade Security", description: "End-to-end encryption for all BPO and Manufacturing data processing." },
+      { title: "Public Sector Compliance", description: "Meeting international standards for government data handling and AI ethics." },
+      { title: "Real Estate Privacy", description: "Secure data layers protecting sensitive property and tenant information." },
+      { title: "AI Transparency", description: "Auditable AI models that ensure decision-making is clear, unbiased, and compliant." },
+      { title: "Global Data Ethics", description: "Adhering to GDPR, CCPA, and emerging AI regulations across 50+ countries." },
+      { title: "Operational Continuity", description: "Redundant AI infrastructure ensuring 99.99% uptime for mission-critical sectors." }
     ],
     stats: [
-      { value: "100%", label: "Compliance Rate" },
-      { value: "0", label: "Major Breaches" },
-      { value: "256-bit", label: "Data Encryption" },
-      { value: "24/7", label: "SOC Monitoring" }
+      { value: "100%", label: "Secure Deployments" },
+      { value: "Tier 4", label: "Data Infrastructure" },
+      { value: "Military", label: "Grade Encryption" },
+      { value: "24/7", label: "Compliance Monitoring" }
     ],
-    ctaText: "View Security Portal"
+    ctaText: "Review Security Protocols"
   },
   "partners-alliances": {
     slug: "partners-alliances",
     title: "Partners & Alliances",
-    metaTitle: "Partners & Alliances | Claritiy",
-    metaDescription: "Claritiy's strategic partnerships with leading technology and industry platforms.",
+    metaTitle: "Partnerships | Building the AI Mesh",
+    metaDescription: "We collaborate with technology leaders and government agencies to build the future of AI infrastructure.",
     iconName: "Share2",
-    headline: "Better Together: Our Ecosystem",
-    description: "We partner with the world's leading technology providers to build a seamless ecosystem that amplifies your existing tech stack and accelerates innovation.",
+    headline: "The Infrastructure Ecosystem",
+    description: "We don't work in isolation. Claritiy partners with hardware giants, software pioneers, and industry associations to ensure our AI infrastructure is the best in the world.",
     features: [
-      { title: "Cloud Providers", description: "Strategic partnerships with AWS, Google Cloud, and Microsoft Azure for scalable, reliable infrastructure." },
-      { title: "AI Research Partners", description: "Collaborating with OpenAI, Anthropic, and leading universities to integrate cutting-edge LLMs." },
-      { title: "CRM Platforms", description: "Deep integrations and certified partnerships with Salesforce, HubSpot, and Zendesk." },
-      { title: "RPA Vendors", description: "Strategic alliances with UiPath and Automation Anywhere for seamless workflow automation." },
-      { title: "Telecom Giants", description: "Direct routing and infrastructure partnerships with Cisco, Avaya, and Twilio for crystal-clear voice." },
-      { title: "Industry Consortiums", description: "Active members of fintech, healthcare, and retail associations driving industry standards." }
+      { title: "BPO Tech Partners", description: "Collaborating with CRM and Voice leaders to embed AI into the customer support backbone." },
+      { title: "Manufacturing Alliances", description: "Working with IoT and Robotics firms to bridge the gap between physical and digital AI." },
+      { title: "Gov-Tech Coalitions", description: "Active members of public-private partnerships focused on national AI infrastructure." },
+      { title: "Real Estate Tech Hubs", description: "Partnering with Prop-Tech leaders to integrate AI into building management systems." },
+      { title: "Professional Growth Partners", description: "Collaborating with educational platforms to help professionals upgrade their skills." },
+      { title: "Global Cloud Mesh", description: "Leveraging the world's most powerful compute networks to run our proprietary AI layers." }
     ],
-    ctaText: "Become a Partner"
+    ctaText: "Partner with Claritiy"
   },
   "awards-recognition": {
     slug: "awards-recognition",
     title: "Awards & Recognition",
-    metaTitle: "Awards & Recognition | Claritiy",
-    metaDescription: "Industry recognition and awards for Claritiy's BPO and AI excellence.",
+    metaTitle: "Recognition | Leading AI Infrastructure",
+    metaDescription: "Recognized for our innovative approach to upgrading traditional business infrastructure with AI.",
     iconName: "Trophy",
-    headline: "Recognized for Excellence",
-    description: "Our commitment to innovation and client success has been consistently recognized by leading industry analysts, publications, and our peers.",
+    headline: "Setting New Standards",
+    description: "Since our launch in early 2025, Claritiy has been recognized as a disruptor in the BPO and Manufacturing sectors for our infrastructure-first approach to AI.",
     features: [
-      { title: "Gartner Magic Quadrant", description: "Named a Leader in Customer Service BPO for three consecutive years." },
-      { title: "Everest Group PEAK Matrix", description: "Recognized as a Star Performer in Intelligent Automation in Business Processes." },
-      { title: "AI Innovation Award", description: "Winner of the global AI Innovation in Enterprise Operations award." },
-      { title: "Great Place to Work", description: "Certified as a Great Place to Work in 12 of our major global delivery locations." },
-      { title: "Stevie Awards", description: "Gold Stevie winner for Sales & Customer Service excellence." },
-      { title: "Fast Company", description: "Listed among the Most Innovative Companies in enterprise technology." }
+      { title: "Infrastructure Innovator 2025", description: "Awarded for excellence in BPO infrastructure transformation." },
+      { title: "BPO Revolution Award", description: "Recognized for human-centric AI design in the contact center industry." },
+      { title: "Manufacturing Tech Star", description: "Honored for pioneering AI predictive maintenance models in factory settings." },
+      { title: "Gov-Tech Breakthrough", description: "Commended for helping public sectors adopt scalable AI backbones safely." },
+      { title: "Real Estate AI Leader", description: "Recognized for transforming property management through intelligent automation." },
+      { title: "Professional Growth Award", description: "Celebrating our 'fun' approach to professional AI skill upgrading." }
     ],
     stats: [
-      { value: "50+", label: "Industry Awards" },
-      { value: "#1", label: "in AI Innovation" },
-      { value: "12", label: "Top Employer Awards" },
-      { value: "3x", label: "Gartner Leader" }
+      { value: "2025", label: "Industry Breakout" },
+      { value: "Top 5", label: "Infrastructure Firms" },
+      { value: "Gold", label: "Standard in AI" },
+      { value: "10+", label: "Global Accolades" }
     ],
-    ctaText: "See Full Press Kit"
+    ctaText: "See Our Recognition"
   },
   "esg": {
     slug: "esg-sustainability",
     title: "ESG & Sustainability",
-    metaTitle: "ESG & Sustainability | Claritiy",
-    metaDescription: "Claritiy's commitment to Environmental, Social, and Governance (ESG) principles.",
+    metaTitle: "ESG | Sustainable AI Infrastructure",
+    metaDescription: "We build AI infrastructure that is both powerful and responsible, focusing on energy efficiency and social impact.",
     iconName: "Leaf",
-    headline: "Operating with Integrity & Responsibility",
-    description: "We believe that responsible business is good business. Our ESG framework ensures we create value for our clients while protecting the planet and uplifting our communities.",
+    headline: "Intelligent Growth, Responsible Future",
+    description: "Sustainability is at the core of our AI infrastructure. We focus on energy-efficient compute and ensuring that the transition to AI benefits every professional.",
     features: [
-      { title: "Carbon Neutral Aim", description: "Committed to achieving net-zero carbon emissions across our global footprint by 2030." },
-      { title: "Green Facilities", description: "Transitioning all operational centers to renewable energy and sustainable building standards (LEED)." },
-      { title: "Ethical AI Governance", description: "Strict internal review boards to ensure our AI models are transparent, unbiased, and safe." },
-      { title: "Data Privacy Standards", description: "Going beyond compliance to treat user data as a fundamental human right." },
-      { title: "Supplier Code of Conduct", description: "Ensuring our entire supply chain matches our commitment to labor rights and environmental standards." },
-      { title: "Transparent Reporting", description: "Publishing annual sustainability reports mapped to GRI and SASB frameworks." }
+      { title: "Green AI Compute", description: "Optimizing our infrastructure to minimize energy consumption and carbon footprint." },
+      { title: "Sustainable Manufacturing", description: "Reducing waste in factories through AI-driven predictive logistics." },
+      { title: "Social Impact Hubs", description: "Bringing AI infrastructure to emerging markets to create local professional opportunities." },
+      { title: "Professional Well-being", description: "Designing AI that reduces burnout and enhances job satisfaction for workers." },
+      { title: "Ethical Gov-Tech", description: "Ensuring public AI systems are transparent, fair, and serve the common good." },
+      { title: "Sustainable Real Estate", description: "Using AI to optimize building energy usage and reduce environmental impact." }
     ],
-    ctaText: "Download ESG Report"
+    ctaText: "Our Sustainability Report"
   },
   "diversity": {
     slug: "diversity-inclusion",
     title: "Diversity & Inclusion",
-    metaTitle: "Diversity & Inclusion | Claritiy",
-    metaDescription: "Building a culture of belonging and equity at Claritiy.",
+    metaTitle: "Diversity | AI for Everyone",
+    metaDescription: "We believe that diverse perspectives are essential for building the world's most effective AI infrastructure.",
     iconName: "Users",
-    headline: "Strength in Our Differences",
-    description: "We are building a culture where everyone belongs. We believe that diverse teams driving inclusive technology is the key to solving the world's most complex challenges.",
+    headline: "Inclusive Infrastructure",
+    description: "A global AI infrastructure must be built by a global team. We prioritize diverse perspectives to ensure our AI models are fair and effective for everyone.",
     features: [
-      { title: "Global Representation", description: "Our workforce represents over 80 nationalities, speaking more than 40 languages." },
-      { title: "Gender Equity", description: "Committed to 50/50 gender representation across all levels of leadership by 2028." },
-      { title: "Pay Parity", description: "Conducting regular, independent audits to ensure equal pay for equal work across the globe." },
-      { title: "Employee Resource Groups", description: "Sponsoring 10+ internal ERGs to foster community, mentorship, and advocacy." },
-      { title: "Inclusive Hiring", description: "Using AI to eliminate bias in job descriptions and standardizing blind resume screening." },
-      { title: "Accessibility Standard", description: "Ensuring our internal tools and external products are accessible to people of all abilities." }
+      { title: "Global Talent Mesh", description: "Recruiting from diverse backgrounds to bring unique insights to AI development." },
+      { title: "Bias-Free AI Models", description: "Rigorous testing to ensure our infrastructure doesn't perpetuate social biases." },
+      { title: "Professional Equity", description: "Ensuring every worker has the tools and support to upgrade to an AI-augmented role." },
+      { title: "Accessible Tech", description: "Designing our AI interfaces to be usable by professionals of all ability levels." },
+      { title: "Community-Led Growth", description: "Partnering with local groups to bring AI training to underrepresented communities." },
+      { title: "Inclusive Governance", description: "Ensuring our leadership reflects the diversity of the industries we serve." }
     ],
-    ctaText: "View D&I Report"
+    ctaText: "Explore Our D&I Mission"
   },
   "community": {
     slug: "community-impact",
     title: "Community Impact",
-    metaTitle: "Community Impact | Claritiy",
-    metaDescription: "How Claritiy gives back through the Claritiy Foundation.",
+    metaTitle: "Impact | Uplifting Professionals",
+    metaDescription: "We invest in the communities where we build AI infrastructure, focusing on skill development and local growth.",
     iconName: "Heart",
-    headline: "Uplifting the Communities We Call Home",
-    description: "Technology should be an equalizer. Through the Claritiy Foundation, we invest in digital literacy, education, and local development to create lasting social impact.",
+    headline: "Building More Than Just Tech",
+    description: "Through the Claritiy Foundation, we help professionals in our communities upgrade their skills and prepare for an AI-augmented future in a fun, rewarding way.",
     features: [
-      { title: "Digital Literacy Programs", description: "Donating technology and training to underserved schools in our operational regions." },
-      { title: "Skill Development", description: "Providing free contact center and tech training to marginalized youth to bridge the employment gap." },
-      { title: "Employee Volunteering", description: "Offering 3 paid volunteer days annually for our team members to support local causes." },
-      { title: "Disaster Relief", description: "Rapid response matching funds to support communities affected by natural disasters." },
-      { title: "Local Sourcing", description: "Prioritizing local vendors to stimulate micro-economies around our global fulfillment centers." },
-      { title: "Tech for Good", description: "Providing pro-bono AI implementation support for qualifying global non-profits." }
+      { title: "Professional Skill-Up Hubs", description: "Local centers where workers can learn to use AI as a base for their expertise." },
+      { title: "BPO Community Grants", description: "Supporting local organizations that focus on worker education and digital literacy." },
+      { title: "Manufacturing Apprenticeships", description: "Helping factory workers transition to tech-augmented roles through hands-on training." },
+      { title: "Urban AI Initiatives", description: "Partnering with local governments to build smart, AI-powered public infrastructure." },
+      { title: "Tech For Good Grants", description: "Providing pro-bono AI infrastructure support for non-profits in our operational areas." },
+      { title: "Engaging Education", description: "Making AI learning fun and professional for the next generation of workers." }
     ],
     stats: [
-      { value: "100k+", label: "Volunteer Hours" },
-      { value: "50+", label: "Schools Supported" },
-      { value: "$2M+", label: "Given Annually" },
-      { value: "10,000", label: "Lives Impacted" }
+      { value: "5000+", label: "Pros Upgraded" },
+      { value: "20+", label: "Cities Supported" },
+      { value: "1M+", label: "Invested in Skills" },
+      { value: "100%", label: "Local Engagement" }
     ],
-    ctaText: "Learn About The Foundation"
+    ctaText: "Learn About Our Impact"
   }
 };

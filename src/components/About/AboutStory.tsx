@@ -56,7 +56,7 @@ export function AboutStory() {
                   transition={{ delay: i * 0.1 }}
                   className={styles.timelineItem}
                 >
-                  <span className={styles.year}>{2018 + i}</span>
+                  <span className={styles.year}>{i === 0 ? "Jan 2025" : i === 1 ? "Feb 2025" : i === 2 ? "Mar 2025" : "Q2 2025"}</span>
                   <div className={styles.timelineDesc}>
                     <h4>{item.title}</h4>
                     <p>{item.description}</p>
