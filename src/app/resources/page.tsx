@@ -281,6 +281,8 @@ export default function ResourcesPage() {
                  placeholder="Enter your business email" 
                  style={{ flexGrow: 1, padding: "1rem 1.5rem", borderRadius: "12px", border: "1px solid var(--border)", outline: "none" }} 
                  required
+                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                 title="Please enter a valid email address"
                />
                <button type="submit" className="btn-modern-primary" style={{ padding: "1rem 2.5rem" }} disabled={subscribed}>
                  {subscribed ? "Subscribed! We will contact you soon." : "Subscribe"}

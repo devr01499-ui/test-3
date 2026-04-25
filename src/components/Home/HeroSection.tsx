@@ -28,7 +28,7 @@ export function HeroSection() {
           loop
           muted
           playsInline
-          preload="metadata"
+          preload="auto"
           poster="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1920"
           style={{
             position: "absolute",

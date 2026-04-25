@@ -135,10 +135,10 @@ export function MobileMenu({ onClose }: MobileMenuProps) {
         <div className={styles.drawerFooter}>
           <div className={styles.footerContact}>
              <div className={styles.contactItem}>
-                <Phone size={18} /> <span>+1-800-BPO-HELP</span>
+                <Phone size={18} /> <span>+91 6026520056</span>
              </div>
              <div className={styles.contactItem}>
-                <Mail size={18} /> <span>sales@claritiy.com</span>
+                <Mail size={18} /> <span>support@claritiy.com</span>
              </div>
              <div className={styles.contactItem}>
                 <Globe size={18} /> <span>50+ Global Centers</span>

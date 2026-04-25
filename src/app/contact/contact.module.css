@@ -351,6 +351,20 @@
   transition: all 0.2s;
 }
 
+.phoneInputGroup {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.countrySelect {
+  width: 120px;
+  flex-shrink: 0;
+}
+
+.phoneNumberInput {
+  flex-grow: 1;
+}
+
 .input:focus, .select:focus, .textarea:focus {
   outline: none;
   border-color: var(--primary);

@@ -214,7 +214,15 @@ export default function PartnershipPage() {
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
                   <label style={{ fontWeight: 700, fontSize: "0.9rem" }}>Business Email *</label>
-                  <input type="email" name="email" placeholder="your@company.com" style={{ padding: "1rem", borderRadius: "10px", border: "1.5px solid var(--border)" }} required />
+                  <input 
+                    type="email" 
+                    name="email" 
+                    placeholder="your@company.com" 
+                    style={{ padding: "1rem", borderRadius: "10px", border: "1.5px solid var(--border)" }} 
+                    required 
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    title="Please enter a valid email address"
+                  />
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem", gridColumn: "span 2" }}>
                   <label style={{ fontWeight: 700, fontSize: "0.9rem" }}>Partner Goals *</label>

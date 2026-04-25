@@ -23,6 +23,7 @@ import {
   SendHorizontal
 } from "lucide-react";
 import { contactData } from "@/data/contact";
+import { countryCodes } from "@/data/countries";
 import styles from "./contact.module.css";
 
 const IconMap = ({ name, size = 24 }: { name: string; size?: number }) => {
@@ -60,7 +61,7 @@ export default function ContactPage() {
           interest: data.interest,
           name: `${data.firstName} ${data.lastName}`,
           email: data.email,
-          phone: data.phone,
+          phone: `${data.countryCode} ${data.phone}`,
           company: data.company,
           jobTitle: data.jobTitle,
           industry: data.industry,
@@ -116,14 +117,14 @@ export default function ContactPage() {
                 <div className={styles.quickIcon}><Phone size={20}/></div>
                 <div className={styles.quickText}>
                   <h4>Call Us</h4>
-                  <p>+1-800-BPO-HELP</p>
+                  <p>+91 6026520056</p>
                 </div>
               </div>
               <div className={styles.quickItem}>
                 <div className={styles.quickIcon}><Mail size={20}/></div>
                 <div className={styles.quickText}>
                   <h4>Email Us</h4>
-                  <p>sales@claritiy.com</p>
+                  <p>support@claritiy.com</p>
                 </div>
               </div>
               <div className={styles.quickItem}>
@@ -268,12 +269,35 @@ export default function ContactPage() {
 
               <div className={styles.formGroup}>
                 <label className={styles.label}>Business Email *</label>
-                <input type="email" name="email" className={styles.input} placeholder="your@company.com" required />
+                <input 
+                  type="email" 
+                  name="email" 
+                  className={styles.input} 
+                  placeholder="your@company.com" 
+                  required 
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  title="Please enter a valid email address"
+                />
               </div>
 
               <div className={styles.formGroup}>
-                <label className={styles.label}>Phone Number</label>
-                <input type="tel" name="phone" className={styles.input} placeholder="+1 (___) ___-____" />
+                <label className={styles.label}>Phone Number *</label>
+                <div className={styles.phoneInputGroup}>
+                  <select name="countryCode" className={`${styles.select} ${styles.countrySelect}`} required defaultValue="+91">
+                    {countryCodes.map(c => (
+                      <option key={c.code} value={c.code}>{c.code} ({c.name})</option>
+                    ))}
+                  </select>
+                  <input 
+                    type="tel" 
+                    name="phone" 
+                    className={`${styles.input} ${styles.phoneNumberInput}`} 
+                    placeholder="6026520056" 
+                    required
+                    pattern="[0-9]{8,15}"
+                    title="Please enter a valid phone number (8-15 digits)"
+                  />
+                </div>
               </div>
 
               <div className={styles.formGroup}>
