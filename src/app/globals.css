@@ -1,9 +1,9 @@
 /* Reset & Base */
 :root {
   /* Vibrant Corporate Palette */
-  --electric-blue: #0ea5e9;
-  --electric-blue-deep: #0284c7;
-  --sky-blue-light: rgba(14, 165, 233, 0.3);
+  --electric-blue: #1561ad;
+  --electric-blue-deep: #0e4a85;
+  --sky-blue-light: rgba(21, 97, 173, 0.3);
   
   --emerald-green: #10b981;
   --emerald-vibrant: #059669;
@@ -16,7 +16,7 @@
   
   /* Neutral Palette (Optimized for Clear Sky Aesthetic) */
   --white: #ffffff;
-  --soft-gray: rgba(14, 165, 233, 0.15); /* Company Blue Glass */
+  --soft-gray: rgba(21, 97, 173, 0.12); /* Deep Sky Blue Glass */
   --medium-gray: #64748b;
   --charcoal: #1e293b;
   --charcoal-deep: #0f172a;
