@@ -25,6 +25,7 @@ import {
 import { contactData } from "@/data/contact";
 import { countryCodes } from "@/data/countries";
 import styles from "./contact.module.css";
+import { GlobeVisual } from "@/components/Shared/GlobeVisual";
 
 const IconMap = ({ name, size = 24 }: { name: string; size?: number }) => {
   const components: any = {
@@ -150,26 +151,9 @@ export default function ContactPage() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
           >
-            <div className={styles.mapWrapper}>
-               {/* Simplified SVG Map for Performance and Aesthetic */}
-               <svg viewBox="0 0 800 400" className={styles.mapSvg} fill="none" stroke="currentColor" strokeWidth="0.5" strokeOpacity="0.2">
-                  <path d="M150,150 Q200,100 250,150 T350,150 T450,100 T550,150 T650,150" strokeDasharray="4 4" />
-                  <circle cx="200" cy="150" r="2" fill="currentColor" />
-                  <circle cx="400" cy="180" r="2" fill="currentColor" />
-                  <circle cx="600" cy="140" r="2" fill="currentColor" />
-               </svg>
-               
-               {/* HQ Pulse */}
-               <div className={styles.pulse} style={{ top: '40%', left: '30%' }}></div>
-               <div className={styles.pulse} style={{ top: '55%', left: '55%' }}></div>
-               <div className={styles.pulse} style={{ top: '35%', left: '75%' }}></div>
-               <div className={styles.pulse} style={{ top: '65%', left: '15%' }}></div>
-
-               <div className={styles.mapPin} style={{ top: '35%', left: '25%' }}><MapPin size={24} fill="currentColor"/></div>
-               <div className={styles.mapPin} style={{ top: '50%', left: '50%' }}><MapPin size={24} fill="currentColor"/></div>
-               <div className={styles.mapPin} style={{ top: '30%', left: '70%' }}><MapPin size={24} fill="currentColor"/></div>
-
-               <div style={{ position: "absolute", bottom: "1rem", left: "1rem", right: "1rem", background: "white", padding: "1rem", borderRadius: "12px", border: "1px solid var(--border)", fontSize: "0.8rem", color: "var(--text-muted)" }}>
+            <div className={styles.mapWrapper} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
+               <GlobeVisual />
+               <div style={{ position: "absolute", bottom: "1rem", left: "1rem", right: "1rem", background: "rgba(255, 255, 255, 0.9)", padding: "1rem", borderRadius: "12px", border: "1px solid var(--border)", fontSize: "0.8rem", color: "var(--text-muted)", zIndex: 20 }}>
                   <p><strong>Interactive Map:</strong> Our global centers are connected 24/7 ensuring seamless handover and continuous service delivery.</p>
                </div>
             </div>
