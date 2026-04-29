@@ -4,6 +4,7 @@ import { Check, ArrowRight, ShieldCheck } from "lucide-react";
 import { IndustryHeroData } from "@/types/industries";
 import styles from "./IndustryTemplate.module.css";
 import { IconResolver } from "@/components/Solutions/SharedTemplate/IconResolver";
+import { VideoBackground } from "@/components/Shared/VideoBackground";
 
 export function IndustryHero({ data, breadcrumb }: { data: IndustryHeroData, breadcrumb: string }) {
   return (
@@ -63,7 +64,8 @@ export function IndustryHero({ data, breadcrumb }: { data: IndustryHeroData, bre
               </div>
             </div>
             
-            <div style={{ background: "var(--soft-gray)", padding: "1.5rem", borderRadius: "8px" }}>
+            <div style={{ background: "transparent", padding: "1.5rem", borderRadius: "8px", position: "relative", overflow: "hidden" }}>
+              <VideoBackground opacity={0.3} />
               <div style={{ fontSize: "0.8rem", fontWeight: 700, letterSpacing: "1px", color: "var(--primary)", marginBottom: "0.5rem", textTransform: "uppercase" }}>
                 Client Success
               </div>

@@ -6,6 +6,7 @@ import { IconResolver } from "./IconResolver";
 import { HeroData, QuickStat } from "@/types/solutions";
 import styles from "./SolutionTemplate.module.css";
 import { BPOEnterpriseCard } from "@/components/Shared/BPOEnterpriseCard";
+import { VideoBackground } from "@/components/Shared/VideoBackground";
 import { motion } from "framer-motion";
 
 export function HeroAndStats({ heroData, quickStats, breadcrumb }: { heroData: HeroData, quickStats: QuickStat[], breadcrumb: string }) {
@@ -67,7 +68,8 @@ export function HeroAndStats({ heroData, quickStats, breadcrumb }: { heroData: H
           
           <div className="card-perspective">
             <BPOEnterpriseCard elevation={4} intensity={12}>
-              <div className={styles.heroVisual} style={{ background: "var(--soft-gray)", border: "none" }}>
+              <div className={styles.heroVisual} style={{ background: "transparent", border: "none", position: "relative", overflow: "hidden" }}>
+                <VideoBackground opacity={0.5} />
                 <div className={styles.visualPlaceholder}>
                   <div style={{ background: "var(--white)", padding: "2.5rem", borderRadius: "24px", boxShadow: "var(--shadow-level-2)", marginBottom: "2rem" }}>
                     <IconResolver name={heroData.visualIcon} size={64} style={{ color: "var(--electric-blue)" }} />

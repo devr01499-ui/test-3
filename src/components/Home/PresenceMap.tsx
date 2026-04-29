@@ -6,6 +6,7 @@ import {
 } from "lucide-react";
 import { motion } from "framer-motion";
 import { BPOEnterpriseCard } from "../Shared/BPOEnterpriseCard";
+import { VideoBackground } from "../Shared/VideoBackground";
 import { GeometricDivider } from "../Shared/GeometricDivider";
 
 const regions = [
@@ -18,7 +19,8 @@ const regions = [
 
 export function PresenceMap() {
   return (
-    <section style={{ padding: "0 0 128px 0", background: "var(--soft-gray)", position: "relative", overflow: "hidden" }}>
+    <section style={{ padding: "0 0 128px 0", background: "transparent", position: "relative", overflow: "hidden" }}>
+      <VideoBackground opacity={0.6} />
       <GeometricDivider type="trapezoid" color="var(--soft-gray)" height="100px" flip />
       
       <div className="container" style={{ marginTop: "4rem" }}>

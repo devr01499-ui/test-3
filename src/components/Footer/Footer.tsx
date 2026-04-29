@@ -12,6 +12,7 @@ import {
   Check
 } from "lucide-react";
 import styles from "./Footer.module.css";
+import { VideoBackground } from "../Shared/VideoBackground";
 
 export function Footer() {
   const [year, setYear] = React.useState<number | string>("2026");
@@ -21,7 +22,8 @@ export function Footer() {
   }, []);
 
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} style={{ position: "relative", overflow: "hidden", background: "transparent" }}>
+      <VideoBackground opacity={0.4} />
       <div className="container">
         <div className={styles.grid}>
           {/* BRAND COLUMN */}

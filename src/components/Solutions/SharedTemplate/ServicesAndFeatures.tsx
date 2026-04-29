@@ -7,13 +7,15 @@ import { IconResolver } from "./IconResolver";
 import styles from "./SolutionTemplate.module.css";
 import { BPOEnterpriseCard } from "@/components/Shared/BPOEnterpriseCard";
 import { GeometricDivider } from "@/components/Shared/GeometricDivider";
+import { VideoBackground } from "@/components/Shared/VideoBackground";
 import Image from "next/image";
 
 export function ServicesAndFeatures({ services, processFlow, features }: { services: { title: string, items: ServiceItem[] }, processFlow: ProcessFlow, features: { title: string, items: FeatureItem[] } }) {
   return (
     <div style={{ background: "var(--white)" }}>
       {/* Service Overview Architecture */}
-      <section style={{ padding: "128px 0", background: "var(--soft-gray)", position: "relative" }}>
+      <section style={{ padding: "128px 0", background: "transparent", position: "relative", overflow: "hidden" }}>
+        <VideoBackground opacity={0.3} />
         <div className="container">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -79,7 +81,8 @@ export function ServicesAndFeatures({ services, processFlow, features }: { servi
             {processFlow.title}
           </motion.h2>
           
-          <div style={{ position: "relative", maxWidth: "1000px", margin: "0 auto", padding: "6rem 4rem", background: "var(--soft-gray)", borderRadius: "40px", border: "1px solid var(--border)", textAlign: "center" }}>
+          <div style={{ position: "relative", maxWidth: "1000px", margin: "0 auto", padding: "6rem 4rem", background: "transparent", borderRadius: "40px", border: "1px solid var(--border)", textAlign: "center", overflow: "hidden" }}>
+            <VideoBackground opacity={0.2} />
             <div style={{ position: "absolute", top: "2rem", left: "50%", transform: "translateX(-50%)", fontSize: "12px", fontWeight: 800, color: "var(--medium-gray)", textTransform: "uppercase", letterSpacing: "2px" }}>Neural Routing Protocol v1.0</div>
             
             <motion.div 
@@ -140,7 +143,8 @@ export function ServicesAndFeatures({ services, processFlow, features }: { servi
       <GeometricDivider type="slant-down" color="var(--soft-gray)" height="100px" />
 
       {/* Key Feature Architecture */}
-      <section style={{ padding: "128px 0", background: "var(--soft-gray)" }}>
+      <section style={{ padding: "128px 0", background: "transparent", position: "relative", overflow: "hidden" }}>
+        <VideoBackground opacity={0.3} />
         <div className="container">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
