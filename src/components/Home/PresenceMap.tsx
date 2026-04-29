@@ -1,16 +1,10 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import createGlobe from "cobe";
 import { 
-  Globe, 
-  Users, 
-  MessageSquare, 
-  ArrowRight,
-  MapPin,
-  TowerControl,
-  Zap
+  ArrowRight
 } from "lucide-react";
 import { motion } from "framer-motion";
-import styles from "./PresenceMap.module.css";
 import { BPOEnterpriseCard } from "../Shared/BPOEnterpriseCard";
 import { GeometricDivider } from "../Shared/GeometricDivider";
 
@@ -20,13 +14,6 @@ const regions = [
   { name: "EMEA", count: "Multilingual Excellence Hubs (PL/ZA)", latency: "18ms" },
   { name: "Asia Pacific", count: "High-Tier Technology Clusters (PH/SG)", latency: "12ms" },
   { name: "South Asia", count: "Global Engineering Hubs (BLR/HYD)", latency: "8ms" },
-];
-
-const pins = [
-  { x: "15%", y: "35%" }, { x: "22%", y: "42%" }, { x: "28%", y: "68%" },
-  { x: "48%", y: "25%" }, { x: "52%", y: "30%" }, { x: "55%", y: "45%" },
-  { x: "68%", y: "52%" }, { x: "72%", y: "45%" }, { x: "78%", y: "55%" },
-  { x: "82%", y: "78%" },
 ];
 
 export function PresenceMap() {
@@ -72,24 +59,14 @@ export function PresenceMap() {
           </div>
 
           <div style={{ position: "relative", height: "600px", background: "var(--white)", borderRadius: "24px", border: "1px solid var(--border)", boxShadow: "var(--shadow-level-3)", overflow: "hidden" }}>
-             {/* SIMPLIFIED MAP VISUAL */}
-             <div style={{ position: "absolute", inset: 0, opacity: 0.05, backgroundImage: "radial-gradient(var(--electric-blue) 1px, transparent 1px)", backgroundSize: "20px 20px" }} />
+             {/* 3D INTERACTIVE GLOBE */}
+             <div style={{ position: "absolute", inset: 0, opacity: 0.05, backgroundImage: "radial-gradient(var(--sunrise-amber) 1px, transparent 1px)", backgroundSize: "20px 20px" }} />
              
-             {/* MAP PINS */}
-             {pins.map((pin, i) => (
-               <div key={i} style={{ position: "absolute", left: pin.x, top: pin.y }}>
-                 <motion.div 
-                   animate={{ scale: [1, 2.5, 1], opacity: [0.6, 0, 0.6] }}
-                   transition={{ duration: 3, repeat: Infinity, delay: i * 0.3 }}
-                   style={{ position: "absolute", width: "30px", height: "30px", borderRadius: "50%", left: "-15px", top: "-15px", background: "var(--electric-blue)" }}
-                 />
-                 <div style={{ width: "8px", height: "8px", borderRadius: "50%", background: "var(--white)", border: "2px solid var(--electric-blue)", position: "relative" }} />
-               </div>
-             ))}
+             <GlobeVisual />
 
-             <div style={{ position: "absolute", bottom: "2rem", right: "2rem", padding: "1.5rem", background: "rgba(15, 23, 42, 0.9)", backdropFilter: "blur(10px)", borderRadius: "12px", color: "white", width: "220px" }}>
+             <div style={{ position: "absolute", bottom: "2rem", right: "2rem", padding: "1.5rem", background: "rgba(15, 23, 42, 0.9)", backdropFilter: "blur(10px)", borderRadius: "12px", color: "white", width: "220px", pointerEvents: "none" }}>
                  <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "1rem" }}>
-                  <div style={{ width: "8px", height: "8px", background: "#22c55e", borderRadius: "50%" }} />
+                  <div style={{ width: "8px", height: "8px", background: "#f59e0b", borderRadius: "50%" }} />
                   <span style={{ fontSize: "12px", fontWeight: 700 }}>52,000+ AGENTS LIVE</span>
                 </div>
                 <div style={{ color: "rgba(255,255,255,0.6)", fontSize: "11px", lineHeight: 1.4 }}>
@@ -111,5 +88,105 @@ export function PresenceMap() {
 
       </div>
     </section>
+  );
+}
+
+function GlobeVisual() {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const pointerInteracting = useRef<number | null>(null);
+  const phiRef = useRef(0);
+
+  useEffect(() => {
+    let width = 0;
+    const onResize = () => canvasRef.current && (width = canvasRef.current.offsetWidth)
+    window.addEventListener('resize', onResize)
+    onResize()
+
+    if (!canvasRef.current) return;
+
+    const globe = createGlobe(canvasRef.current, {
+      devicePixelRatio: 2,
+      width: width * 2,
+      height: width * 2,
+      phi: 0,
+      theta: 0.3,
+      dark: 0,
+      diffuse: 1.2,
+      mapSamples: 16000,
+      mapBrightness: 6,
+      baseColor: [1, 1, 1],
+      markerColor: [0.96, 0.61, 0.04], // Bright Orange
+      glowColor: [1, 0.92, 0.83],
+      markers: [
+        { location: [37.7749, -122.4194], size: 0.06 },
+        { location: [40.7128, -74.0060], size: 0.08 },
+        { location: [19.4326, -99.1332], size: 0.07 },
+        { location: [4.7110, -74.0721], size: 0.05 },
+        { location: [52.2297, 21.0122], size: 0.06 },
+        { location: [-26.2041, 28.0473], size: 0.07 },
+        { location: [14.5995, 120.9842], size: 0.1 },
+        { location: [1.3521, 103.8198], size: 0.06 },
+        { location: [12.9716, 77.5946], size: 0.09 },
+        { location: [17.3850, 78.4867], size: 0.08 },
+      ],
+      // @ts-expect-error onRender is missing from COBEOptions in some versions but is supported
+      onRender: (state) => {
+        if (pointerInteracting.current === null) {
+          phiRef.current += 0.005;
+        }
+        state.phi = phiRef.current;
+        state.width = width * 2;
+        state.height = width * 2;
+      }
+    });
+
+    return () => {
+      globe.destroy();
+      window.removeEventListener('resize', onResize);
+    };
+  }, []);
+
+  return (
+    <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'grab' }}
+         onPointerDown={(e) => {
+           pointerInteracting.current = e.clientX;
+           if (canvasRef.current) canvasRef.current.style.cursor = 'grabbing';
+         }}
+         onPointerUp={() => {
+           pointerInteracting.current = null;
+           if (canvasRef.current) canvasRef.current.style.cursor = 'grab';
+         }}
+         onPointerOut={() => {
+           pointerInteracting.current = null;
+           if (canvasRef.current) canvasRef.current.style.cursor = 'grab';
+         }}
+         onMouseMove={(e) => {
+           if (pointerInteracting.current !== null) {
+             const delta = e.clientX - pointerInteracting.current;
+             pointerInteracting.current = e.clientX;
+             phiRef.current += delta / 200;
+           }
+         }}
+         onTouchMove={(e) => {
+           if (pointerInteracting.current !== null && e.touches[0]) {
+             const delta = e.touches[0].clientX - pointerInteracting.current;
+             pointerInteracting.current = e.touches[0].clientX;
+             phiRef.current += delta / 200;
+           }
+         }}
+    >
+      <canvas
+        ref={canvasRef}
+        style={{
+          width: '100%',
+          height: '100%',
+          maxWidth: '600px',
+          maxHeight: '600px',
+          aspectRatio: 1,
+          contain: 'layout paint size',
+          pointerEvents: 'none'
+        }}
+      />
+    </div>
   );
 }

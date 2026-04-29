@@ -3,7 +3,7 @@
   /* Vibrant Corporate Palette */
   --electric-blue: #0ea5e9;
   --electric-blue-deep: #0284c7;
-  --sky-blue-light: #bae6fd;
+  --sky-blue-light: #ffedd5;
   
   --emerald-green: #10b981;
   --emerald-vibrant: #059669;
@@ -16,7 +16,7 @@
   
   /* Neutral Palette (Optimized for Clear Sky Aesthetic) */
   --white: #ffffff;
-  --soft-gray: #bae6fd; /* Vibrant Clear Sky Blue (Sky 200) */
+  --soft-gray: #ffedd5; /* Bright Orange Shaded Background */
   --medium-gray: #64748b;
   --charcoal: #1e293b;
   --charcoal-deep: #0f172a;
