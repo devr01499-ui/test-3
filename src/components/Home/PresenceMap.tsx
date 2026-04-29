@@ -60,7 +60,7 @@ export function PresenceMap() {
 
           <div style={{ position: "relative", height: "600px", background: "var(--white)", borderRadius: "24px", border: "1px solid var(--border)", boxShadow: "var(--shadow-level-3)", overflow: "hidden" }}>
              {/* 3D INTERACTIVE GLOBE */}
-             <div style={{ position: "absolute", inset: 0, opacity: 0.05, backgroundImage: "radial-gradient(var(--sunrise-amber) 1px, transparent 1px)", backgroundSize: "20px 20px" }} />
+             <div style={{ position: "absolute", inset: 0, opacity: 0.05, backgroundImage: "radial-gradient(var(--electric-blue) 1px, transparent 1px)", backgroundSize: "20px 20px" }} />
              
              <GlobeVisual />
 

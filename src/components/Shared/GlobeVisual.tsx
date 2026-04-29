@@ -26,8 +26,8 @@ export function GlobeVisual() {
       mapSamples: 16000,
       mapBrightness: 6,
       baseColor: [0.95, 0.95, 0.95],
-      markerColor: [1, 0.4, 0], // Bright Orange
-      glowColor: [1, 0.9, 0.8],
+      markerColor: [0.05, 0.65, 0.91], // Electric Blue markers
+      glowColor: [0.73, 0.90, 0.99], // Clear Sky Blue glow
       markers: [
         { location: [37.7749, -122.4194], size: 0.06 },
         { location: [40.7128, -74.0060], size: 0.08 },
