@@ -80,6 +80,10 @@ body {
   font-family: var(--font-body);
   color: var(--text-main);
   background: var(--background);
+  background-image: 
+    linear-gradient(var(--soft-gray) 1px, transparent 1px),
+    linear-gradient(90deg, var(--soft-gray) 1px, transparent 1px);
+  background-size: 80px 80px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
