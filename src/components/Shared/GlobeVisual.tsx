@@ -61,7 +61,7 @@ export function GlobeVisual() {
           pointRadius="size"
           pointsMerge={true}
           backgroundColor="rgba(0,0,0,0)"
-          atmosphereColor="#1561ad"
+          atmosphereColor="#1e3a8a"
           atmosphereAltitude={0.15}
         />
       )}
