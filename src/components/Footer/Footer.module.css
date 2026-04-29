@@ -40,7 +40,7 @@
 .colTitle {
   font-size: 1rem;
   font-weight: 800;
-  color: var(--text-main);
+  color: var(--white);
   margin-bottom: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -54,12 +54,12 @@
 
 .link {
   font-size: 0.95rem;
-  color: var(--text-muted);
+  color: rgba(255, 255, 255, 0.6);
   transition: color 0.2s ease;
 }
 
 .link:hover {
-  color: var(--primary);
+  color: var(--white);
 }
 
 .newsletter {

@@ -22,7 +22,7 @@ export function Footer() {
   }, []);
 
   return (
-    <footer className={styles.footer} style={{ position: "relative", overflow: "hidden", background: "transparent" }}>
+    <footer className={styles.footer} style={{ position: "relative", overflow: "hidden", background: "transparent", color: "var(--white)" }}>
       <VideoBackground opacity={0.4} />
       <div className="container">
         <div className={styles.grid}>
@@ -30,9 +30,9 @@ export function Footer() {
           <div className={styles.brandCol}>
             <Link href="/" className={styles.logo}>
               <Image src="/logo.png" alt="Claritiy Logo" width={36} height={36} sizes="36px" />
-              <span>Claritiy</span>
+              <span style={{ color: "var(--white)" }}>Claritiy</span>
             </Link>
-            <p className={styles.desc}>
+            <p className={styles.desc} style={{ color: "rgba(255,255,255,0.7)" }}>
               The future of intelligent outsourcing. Seamlessly integrating AI capabilities 
               with human expertise to deliver enterprise-grade business operations.
             </p>

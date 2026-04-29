@@ -36,11 +36,11 @@ export function PresenceMap() {
             >
               Global Infrastructure
             </motion.div>
-            <h2 style={{ fontSize: "52px", fontWeight: 700, lineHeight: 1.1, marginBottom: "2rem" }}>
+            <h2 style={{ fontSize: "52px", fontWeight: 700, lineHeight: 1.1, marginBottom: "2rem", color: "var(--white)" }}>
               The Intelligent <br />
               <span style={{ color: "var(--electric-blue)" }}>Global Node.</span>
             </h2>
-            <p style={{ color: "var(--medium-gray)", fontSize: "18px", lineHeight: 1.6, marginBottom: "3rem" }}>
+            <p style={{ color: "rgba(255,255,255,0.8)", fontSize: "18px", lineHeight: 1.6, marginBottom: "3rem" }}>
               Our 50+ global delivery centers are unified via a high-tier neural backbone, delivering 24/7/365 operational continuity with carrier-grade latency and deep redundancy.
             </p>
 

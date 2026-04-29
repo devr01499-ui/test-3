@@ -22,6 +22,7 @@ export function ServicesAndFeatures({ services, processFlow, features }: { servi
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className={styles.sectionTitle}
+            style={{ color: "var(--white)" }}
           >
             {services.title}
           </motion.h2>
@@ -83,7 +84,7 @@ export function ServicesAndFeatures({ services, processFlow, features }: { servi
           
           <div style={{ position: "relative", maxWidth: "1000px", margin: "0 auto", padding: "6rem 4rem", background: "transparent", borderRadius: "40px", border: "1px solid var(--border)", textAlign: "center", overflow: "hidden" }}>
             <VideoBackground opacity={0.2} />
-            <div style={{ position: "absolute", top: "2rem", left: "50%", transform: "translateX(-50%)", fontSize: "12px", fontWeight: 800, color: "var(--medium-gray)", textTransform: "uppercase", letterSpacing: "2px" }}>Neural Routing Protocol v1.0</div>
+            <div style={{ position: "absolute", top: "2rem", left: "50%", transform: "translateX(-50%)", fontSize: "12px", fontWeight: 800, color: "rgba(255,255,255,0.6)", textTransform: "uppercase", letterSpacing: "2px" }}>Neural Routing Protocol v1.0</div>
             
             <motion.div 
               animate={{ y: [0, -10, 0] }}
@@ -151,6 +152,7 @@ export function ServicesAndFeatures({ services, processFlow, features }: { servi
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className={styles.sectionTitle}
+            style={{ color: "var(--white)" }}
           >
             {features.title}
           </motion.h2>

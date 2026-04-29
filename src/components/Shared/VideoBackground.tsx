@@ -22,13 +22,12 @@ export function VideoBackground({ opacity = 0.5 }: VideoBackgroundProps) {
       >
         <source src="/blue.mp4" type="video/mp4" />
       </video>
-      {/* Optional overlay to keep the glass touch and blend with theme colors */}
+      {/* Dark gradient overlay for extreme readability */}
       <div style={{ 
         position: "absolute", 
         inset: 0, 
-        background: "var(--soft-gray)", 
-        backdropFilter: "blur(4px)",
-        mixBlendMode: "overlay"
+        background: "linear-gradient(to bottom, rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.6))", 
+        backdropFilter: "blur(2px)"
       }} />
     </div>
   );

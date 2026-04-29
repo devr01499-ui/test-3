@@ -16,6 +16,7 @@ import { motion } from "framer-motion";
 import styles from "./ResultsDashboard.module.css";
 import { BPOEnterpriseCard } from "../Shared/BPOEnterpriseCard";
 import { GeometricDivider } from "../Shared/GeometricDivider";
+import { VideoBackground } from "../Shared/VideoBackground";
 
 const performanceMetrics = [
   { label: "Predictive First-Contact Resolution", value: "95%+", icon: <Zap size={20} />, color: "var(--electric-blue)" },
@@ -76,14 +77,15 @@ export function ResultsDashboard() {
         </div>
 
         {/* BOTTOM METRIC STRIP */}
-        <div style={{ marginTop: "5rem", padding: "3rem", background: "var(--soft-gray)", borderRadius: "12px", border: "1px solid var(--border)", display: "flex", justifyContent: "space-around", alignItems: "center", flexWrap: "wrap", gap: "2rem" }}>
-           <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
-              <div style={{ fontSize: "14px", fontWeight: 800, color: "var(--charcoal-deep)" }}>TRUSTED BY FORTUNE 500</div>
-              <div style={{ height: "1px", width: "100px", background: "var(--border)" }} />
+        <div style={{ marginTop: "5rem", padding: "3rem", background: "transparent", borderRadius: "12px", border: "1px solid var(--border)", display: "flex", justifyContent: "space-around", alignItems: "center", flexWrap: "wrap", gap: "2rem", position: "relative", overflow: "hidden" }}>
+           <VideoBackground opacity={0.3} />
+           <div style={{ display: "flex", alignItems: "center", gap: "1rem", position: "relative", zIndex: 1 }}>
+              <div style={{ fontSize: "14px", fontWeight: 800, color: "var(--white)" }}>TRUSTED BY FORTUNE 500</div>
+              <div style={{ height: "1px", width: "100px", background: "rgba(255,255,255,0.2)" }} />
            </div>
-           <div style={{ color: "var(--medium-gray)", fontSize: "14px", fontWeight: 600 }}>HIPAA COMPLIANT</div>
-           <div style={{ color: "var(--medium-gray)", fontSize: "14px", fontWeight: 600 }}>PCI DSS LEVEL 1</div>
-           <div style={{ color: "var(--medium-gray)", fontSize: "14px", fontWeight: 600 }}>ISO 27001</div>
+           <div style={{ color: "rgba(255,255,255,0.7)", fontSize: "14px", fontWeight: 600, position: "relative", zIndex: 1 }}>HIPAA COMPLIANT</div>
+           <div style={{ color: "rgba(255,255,255,0.7)", fontSize: "14px", fontWeight: 600, position: "relative", zIndex: 1 }}>PCI DSS LEVEL 1</div>
+           <div style={{ color: "rgba(255,255,255,0.7)", fontSize: "14px", fontWeight: 600, position: "relative", zIndex: 1 }}>ISO 27001</div>
         </div>
       </div>
     </section>

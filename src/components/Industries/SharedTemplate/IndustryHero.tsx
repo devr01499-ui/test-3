@@ -69,8 +69,8 @@ export function IndustryHero({ data, breadcrumb }: { data: IndustryHeroData, bre
               <div style={{ fontSize: "0.8rem", fontWeight: 700, letterSpacing: "1px", color: "var(--primary)", marginBottom: "0.5rem", textTransform: "uppercase" }}>
                 Client Success
               </div>
-              <div style={{ fontWeight: 800, color: "var(--text-main)", marginBottom: "0.25rem" }}>{data.clientSuccess.stat1}</div>
-              <div style={{ fontWeight: 800, color: "var(--text-main)" }}>{data.clientSuccess.stat2}</div>
+              <div style={{ fontWeight: 800, color: "var(--white)", marginBottom: "0.25rem", position: "relative", zIndex: 1 }}>{data.clientSuccess.stat1}</div>
+              <div style={{ fontWeight: 800, color: "var(--white)", position: "relative", zIndex: 1 }}>{data.clientSuccess.stat2}</div>
             </div>
           </div>
         </div>

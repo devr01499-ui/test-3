@@ -74,7 +74,7 @@ export function HeroAndStats({ heroData, quickStats, breadcrumb }: { heroData: H
                   <div style={{ background: "var(--white)", padding: "2.5rem", borderRadius: "24px", boxShadow: "var(--shadow-level-2)", marginBottom: "2rem" }}>
                     <IconResolver name={heroData.visualIcon} size={64} style={{ color: "var(--electric-blue)" }} />
                   </div>
-                  <p style={{ color: "var(--charcoal-deep)", textTransform: "uppercase", letterSpacing: "2px", fontSize: "12px" }}>
+                  <p style={{ color: "var(--white)", textTransform: "uppercase", letterSpacing: "2px", fontSize: "12px", position: "relative", zIndex: 1 }}>
                     {heroData.visualText}
                   </p>
                 </div>
