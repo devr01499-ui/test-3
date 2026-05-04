@@ -46,7 +46,7 @@ export default function RootLayout({
       <head>
         <link 
           rel="preload" 
-          href="/hero-video.mp4" 
+          href="/hero-video-optimized.mp4" 
           as="video" 
           type="video/mp4" 
           // @ts-ignore

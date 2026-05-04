@@ -44,7 +44,7 @@ export function HeroSection() {
             pointerEvents: "none"
           }}
         >
-          <source src="/hero-video.mp4" type="video/mp4" />
+          <source src="/hero-video-optimized.mp4" type="video/mp4" />
         </video>
 
         {/* Subtle bottom fade only — for smooth transition to content */}
