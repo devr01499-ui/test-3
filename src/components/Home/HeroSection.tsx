@@ -16,7 +16,7 @@ export function HeroSection() {
         background: "#0f172a",
       }}>
         <Image 
-          src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1920"
+          src="/hero-poster.jpg"
           alt="Hero Background"
           fill
           priority
@@ -31,7 +31,7 @@ export function HeroSection() {
           preload="auto"
           disablePictureInPicture
           disableRemotePlayback
-          poster="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1920"
+          poster="/hero-poster.jpg"
           style={{
             position: "absolute",
             top: 0,
