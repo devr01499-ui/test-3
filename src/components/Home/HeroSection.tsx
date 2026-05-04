@@ -13,16 +13,8 @@ export function HeroSection() {
         width: "100%",
         height: "100vh",
         overflow: "hidden",
-        background: "#0f172a",
+        background: "#0f172a url('/hero-poster.jpg') center/cover no-repeat",
       }}>
-        <Image 
-          src="/hero-poster.jpg"
-          alt="Hero Background"
-          fill
-          priority
-          style={{ objectFit: "cover", zIndex: -1 }}
-          sizes="100vw"
-        />
         <video
           autoPlay
           loop
@@ -39,7 +31,7 @@ export function HeroSection() {
             width: "100%",
             height: "100%",
             objectFit: "cover",
-            zIndex: 0,
+            zIndex: 1,
             opacity: 1,
             pointerEvents: "none"
           }}
