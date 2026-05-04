@@ -29,6 +29,8 @@ export function HeroSection() {
           muted
           playsInline
           preload="auto"
+          disablePictureInPicture
+          disableRemotePlayback
           poster="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1920"
           style={{
             position: "absolute",
@@ -39,6 +41,7 @@ export function HeroSection() {
             objectFit: "cover",
             zIndex: 0,
             opacity: 1,
+            pointerEvents: "none"
           }}
         >
           <source src="/hero-video.mp4" type="video/mp4" />

@@ -43,6 +43,16 @@ export default function RootLayout({
       lang="en"
       className={`${spaceGrotesk.variable} ${inter.variable} ${jetbrainsMono.variable} ${outfit.variable} h-full antialiased`}
     >
+      <head>
+        <link 
+          rel="preload" 
+          href="/hero-video.mp4" 
+          as="video" 
+          type="video/mp4" 
+          // @ts-ignore
+          fetchpriority="high" 
+        />
+      </head>
       <body className="min-h-full flex flex-col" style={{ 
         "--font-heading": spaceGrotesk.style.fontFamily,
         "--font-body": inter.style.fontFamily,

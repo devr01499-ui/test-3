@@ -13,11 +13,15 @@ export function VideoBackground({ opacity = 0.5 }: VideoBackgroundProps) {
         muted
         loop
         playsInline
+        preload="auto"
+        disablePictureInPicture
+        disableRemotePlayback
         style={{
           width: "100%",
           height: "100%",
           objectFit: "cover",
-          opacity: opacity
+          opacity: opacity,
+          pointerEvents: "none"
         }}
       >
         <source src="/blue.mp4" type="video/mp4" />
