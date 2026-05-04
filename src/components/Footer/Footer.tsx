@@ -12,7 +12,6 @@ import {
   Check
 } from "lucide-react";
 import styles from "./Footer.module.css";
-import { VideoBackground } from "../Shared/VideoBackground";
 
 export function Footer() {
   const [year, setYear] = React.useState<number | string>("2026");
@@ -22,17 +21,16 @@ export function Footer() {
   }, []);
 
   return (
-    <footer className={styles.footer} style={{ position: "relative", overflow: "hidden", background: "transparent", color: "var(--white)" }}>
-      <VideoBackground opacity={0.4} />
+    <footer className={styles.footer}>
       <div className="container">
         <div className={styles.grid}>
           {/* BRAND COLUMN */}
           <div className={styles.brandCol}>
             <Link href="/" className={styles.logo}>
               <Image src="/logo.png" alt="Claritiy Logo" width={36} height={36} sizes="36px" />
-              <span style={{ color: "var(--white)" }}>Claritiy</span>
+              <span>Claritiy</span>
             </Link>
-            <p className={styles.desc} style={{ color: "rgba(255,255,255,0.7)" }}>
+            <p className={styles.desc}>
               The future of intelligent outsourcing. Seamlessly integrating AI capabilities 
               with human expertise to deliver enterprise-grade business operations.
             </p>

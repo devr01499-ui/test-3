@@ -1,9 +1,10 @@
 /* Reset & Base */
 :root {
-  /* Vibrant Corporate Palette */
-  --electric-blue: #1e3a8a;
-  --electric-blue-deep: #172554;
-  --sky-blue-light: rgba(30, 58, 138, 0.3);
+  /* Vibrant Corporate Palette - Refined Sky Blue */
+  --electric-blue: #0ea5e9; /* Vibrant Sky Blue */
+  --electric-blue-deep: #0369a1;
+  --sky-blue-light: rgba(14, 165, 233, 0.1);
+  --sky-blue-vibrant: #38bdf8;
   
   --emerald-green: #10b981;
   --emerald-vibrant: #059669;
@@ -16,7 +17,7 @@
   
   /* Neutral Palette (Optimized for Clear Sky Aesthetic) */
   --white: #ffffff;
-  --soft-gray: rgba(30, 58, 138, 0.12); /* Deep Navy Blue Glass */
+  --soft-gray: rgba(14, 165, 233, 0.05);
   --medium-gray: #64748b;
   --charcoal: #1e293b;
   --charcoal-deep: #0f172a;
@@ -31,40 +32,32 @@
   --text-muted: var(--medium-gray);
   --border: #e2e8f0;
 
-  /* Typography Stacks */
-  --font-heading: 'Space Grotesk', sans-serif;
-  --font-subheading: 'Inter', sans-serif;
+  /* Typography Stacks - ADR-004 Compliant */
+  --font-heading: 'Outfit', sans-serif;
+  --font-subheading: 'Outfit', sans-serif;
   --font-body: 'Inter', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
   --font-accent: 'Outfit', sans-serif;
 
-  /* 3D Elevation Architecture */
-  --z-level-1: translateZ(0px);
-  --z-level-2: translateZ(8px);
-  --z-level-3: translateZ(16px);
-  --z-level-4: translateZ(24px);
-  --z-level-5: translateZ(32px);
+  /* Glassmorphism System */
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(14, 165, 233, 0.2);
+  --glass-blur: 16px;
 
-  --shadow-level-2: 0 4px 16px rgba(14, 165, 233, 0.1);
-  --shadow-level-3: 0 8px 32px rgba(14, 165, 233, 0.15);
-  --shadow-level-4: 0 12px 48px rgba(14, 165, 233, 0.2);
-  --shadow-level-5: 0 20px 64px rgba(14, 165, 233, 0.25);
+  /* Premium Elevation Architecture */
+  --radius-card: 24px;
+  --radius-btn: 12px;
+
+  --shadow-sm: 0 4px 12px rgba(14, 165, 233, 0.05);
+  --shadow-md: 0 8px 24px rgba(14, 165, 233, 0.1);
+  --shadow-lg: 0 16px 48px rgba(14, 165, 233, 0.15);
+  --shadow-glow: 0 0 30px rgba(14, 165, 233, 0.3);
 
   /* Animation */
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
   --transition-snappy: 300ms var(--ease-out-expo);
   --transition-smooth: 600ms var(--ease-out-expo);
-
-  /* Semantic Colors */
-  --success: #10b981;
-  --warning: #f59e0b;
-  --error: #ef4444;
-
-  /* Card Shadows */
-  --shadow-level-1: 0 2px 8px rgba(0, 0, 0, 0.04);
-  --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-  --card-shadow-hover: 0 12px 40px rgba(14, 165, 233, 0.15);
 }
 
 * {
@@ -119,15 +112,15 @@ h1, h2, h3, h4, h5, h6 {
 .card-3d-enterprise {
   position: relative;
   background: var(--white);
-  border-radius: 4px; /* Corporate sharp corners */
+  border-radius: var(--radius-card);
   transform-style: preserve-3d;
   transition: transform 0.4s var(--ease-out-expo), box-shadow 0.4s var(--ease-out-expo);
   border: 1px solid var(--border);
 }
 
 .card-3d-enterprise:hover {
-  transform: var(--z-level-3);
-  box-shadow: var(--shadow-level-3);
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
   border-color: var(--electric-blue);
 }
 
@@ -139,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-premium {
   font-family: var(--font-accent);
   padding: 1rem 2rem;
-  border-radius: 8px;
+  border-radius: var(--radius-btn);
   font-weight: 600;
   transition: all 0.25s var(--ease-out-back);
   display: inline-flex;
@@ -194,16 +187,16 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   transform-style: preserve-3d;
   background: var(--white);
-  border-radius: 4px; /* Corporate Sharp */
+  border-radius: var(--radius-card);
   transition: all 0.4s var(--ease-out-expo);
   overflow: hidden;
   border: 1px solid var(--border);
 }
 
 .card-3d-wrapper:hover .card-3d-content {
-  transform: rotateY(8deg) rotateX(-5deg) translateY(-8px);
+  transform: rotateY(4deg) rotateX(-2deg) translateY(-8px);
   border-color: var(--primary);
-  box-shadow: var(--shadow-level-4);
+  box-shadow: var(--shadow-glow);
 }
 
 .card-image-bg {

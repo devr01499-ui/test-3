@@ -265,18 +265,13 @@ export default function AboutPage() {
       {/* ── FINAL CTA ── */}
       <section className={styles.cta}>
         <div className={styles.container}>
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            className={styles.ctaContent}
-          >
+          <div className={styles.ctaContent}>
             <h2>Upgrade Your Legacy Infrastructure</h2>
             <p>From manufacturing floors to government backbones, we provide the AI base to maximize your output.</p>
             <button className="btn-modern-primary" style={{ padding: "1.25rem 3rem", fontSize: "1.125rem" }}>
               Start Your AI Upgrade <ArrowRight size={22} />
             </button>
-          </motion.div>
+          </div>
         </div>
       </section>
 

@@ -5,7 +5,6 @@ import {
   ShieldCheck, 
   ArrowRight
 } from "lucide-react";
-import { motion } from "framer-motion";
 import styles from "./ComplianceStrip.module.css";
 
 const badges = [
@@ -23,40 +22,29 @@ export function ComplianceStrip() {
   return (
     <section className={styles.section}>
       <div className="container">
-        <motion.h2 
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className={styles.title}
-        >
+        <h2 className={styles.title}>
           Institutional Security & Global Compliance Framework
-        </motion.h2>
+        </h2>
 
         <div className={styles.grid}>
           {badges.map((badge, i) => (
-            <motion.div 
+            <div 
               key={i}
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.05 }}
-              whileHover={{ scale: 1.05 }}
               className={styles.badgeCard}
             >
               <ShieldCheck size={24} color="var(--primary)" />
               <div className={styles.badgeName}>{badge.name}</div>
               <div className={styles.badgeSub}>{badge.sub}</div>
-            </motion.div>
+            </div>
           ))}
         </div>
 
-        <motion.a 
+        <a 
           href="#" 
           className={styles.viewAll}
-          whileHover={{ x: 5 }}
         >
           View All Certifications <ArrowRight size={16} style={{ verticalAlign: "middle", marginLeft: "4px" }} />
-        </motion.a>
+        </a>
       </div>
     </section>
   );

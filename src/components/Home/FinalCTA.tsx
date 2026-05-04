@@ -6,48 +6,28 @@ import {
   Play, 
   Download
 } from "lucide-react";
-import { motion } from "framer-motion";
 import styles from "./FinalCTA.module.css";
 
 export function FinalCTA() {
   return (
     <section className={styles.section}>
       <div className="container">
-        <motion.h2 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className={styles.title}
-        >
+        <h2 className={styles.title}>
           Ready to Scale with Institutional Precision?
-        </motion.h2>
-        <motion.p 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.1 }}
-          className={styles.subtitle}
-        >
+        </h2>
+        <p className={styles.subtitle}>
           Partner with Clarity to integrate high-tier human strategic intelligence with advanced neural architectures.
-        </motion.p>
+        </p>
 
         <div className={styles.actions}>
-          <motion.button 
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className={styles.primary}
-          >
+          <button className={styles.primary}>
             Deploy Global Platform <ArrowRight size={20} style={{ verticalAlign: "middle", marginLeft: "8px" }} />
-          </motion.button>
+          </button>
           
-          <motion.button 
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className={styles.secondary}
-          >
+          <button className={styles.secondary}>
             <Play size={20} fill="currentColor" style={{ verticalAlign: "middle", marginRight: "8px" }} />
             Request Strategy Brief
-          </motion.button>
+          </button>
           
           <button className={styles.tertiary}>
             <Download size={20} />

@@ -1,11 +1,6 @@
 .footer {
   padding: 100px 0 40px;
   background: var(--surface);
-  background-image: 
-    linear-gradient(rgba(30, 58, 138, 0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(30, 58, 138, 0.08) 1px, transparent 1px);
-  background-size: 40px 40px;
-  backdrop-filter: blur(12px);
   border-top: 1px solid var(--border);
 }
 
@@ -40,7 +35,7 @@
 .colTitle {
   font-size: 1rem;
   font-weight: 800;
-  color: var(--white);
+  color: var(--text-main);
   margin-bottom: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -54,12 +49,11 @@
 
 .link {
   font-size: 0.95rem;
-  color: rgba(255, 255, 255, 0.6);
-  transition: color 0.2s ease;
+  color: var(--text-muted);
 }
 
 .link:hover {
-  color: var(--white);
+  color: var(--primary);
 }
 
 .newsletter {
@@ -118,7 +112,6 @@
 
 .socialIcon {
   color: var(--text-muted);
-  transition: color 0.2s ease;
 }
 
 .socialIcon:hover {

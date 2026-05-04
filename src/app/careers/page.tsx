@@ -420,13 +420,9 @@ export default function CareersPage() {
       {/* FINAL CTA */}
       <section className={styles.section} style={{ textAlign: "center", background: "var(--surface)" }}>
         <div className="container">
-          <motion.h2 
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            style={{ fontSize: "3.2rem", fontWeight: 900, color: "var(--text-main)", marginBottom: "3rem" }}
-          >
+          <h2 style={{ fontSize: "3.2rem", fontWeight: 900, color: "var(--text-main)", marginBottom: "3rem" }}>
             Ready to <span style={{ color: "var(--primary)" }}>Elevate</span> Your Career?
-          </motion.h2>
+          </h2>
           <div style={{ display: "flex", justifyContent: "center", gap: "1.5rem" }}>
              <button className={styles.btnSecondary} style={{ padding: "1.25rem 3.5rem", borderRadius: "50px", fontWeight: 800 }}>Schedule Discovery Call</button>
              <button className={styles.btnPrimary} style={{ padding: "1.25rem 3.5rem", borderRadius: "50px", fontWeight: 800 }}>View All Job Listings</button>

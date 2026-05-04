@@ -6,7 +6,6 @@ import {
 } from "lucide-react";
 import { motion } from "framer-motion";
 import { BPOEnterpriseCard } from "../Shared/BPOEnterpriseCard";
-import { VideoBackground } from "../Shared/VideoBackground";
 import { GeometricDivider } from "../Shared/GeometricDivider";
 
 const regions = [
@@ -19,8 +18,7 @@ const regions = [
 
 export function PresenceMap() {
   return (
-    <section style={{ padding: "0 0 128px 0", background: "transparent", position: "relative", overflow: "hidden" }}>
-      <VideoBackground opacity={0.6} />
+    <section style={{ padding: "0 0 128px 0", background: "var(--soft-gray)", position: "relative", overflow: "hidden" }}>
       <GeometricDivider type="trapezoid" color="var(--soft-gray)" height="100px" flip />
       
       <div className="container" style={{ marginTop: "4rem" }}>
@@ -36,11 +34,11 @@ export function PresenceMap() {
             >
               Global Infrastructure
             </motion.div>
-            <h2 style={{ fontSize: "52px", fontWeight: 700, lineHeight: 1.1, marginBottom: "2rem", color: "var(--white)" }}>
+            <h2 style={{ fontSize: "52px", fontWeight: 700, lineHeight: 1.1, marginBottom: "2rem" }}>
               The Intelligent <br />
               <span style={{ color: "var(--electric-blue)" }}>Global Node.</span>
             </h2>
-            <p style={{ color: "rgba(255,255,255,0.8)", fontSize: "18px", lineHeight: 1.6, marginBottom: "3rem" }}>
+            <p style={{ color: "var(--medium-gray)", fontSize: "18px", lineHeight: 1.6, marginBottom: "3rem" }}>
               Our 50+ global delivery centers are unified via a high-tier neural backbone, delivering 24/7/365 operational continuity with carrier-grade latency and deep redundancy.
             </p>
 
